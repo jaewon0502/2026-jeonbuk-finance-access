@@ -14,10 +14,11 @@
 
 ## 1. 빠른 실행 (5분)
 
-원본 대용량 데이터나 API 키 없이, 이 압축파일만으로 전체 검증이 돌아간다.
+API 키 없이, 이 저장소만으로 전체 검증이 돌아간다.
 
 ```bash
-cd 금방_전북금융사각지대진단과찾아가는은행최적동선설계_코드분석파일
+git clone https://github.com/ekdms0502/2026-jeonbuk-finance-access.git
+cd 2026-jeonbuk-finance-access
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 python3 -m pip install -r requirements.txt
@@ -47,7 +48,7 @@ open docs/demo-jeonbuk/index.html          # Windows: start docs\demo-jeonbuk\in
 | 항목 | 요구 |
 |---|---|
 | 운영체제 | macOS / Linux / Windows(WSL 권장) |
-| Python | 3.11 이상 (개발·검증: 3.14.6) |
+| Python | 3.12 이상 (개발·검증: 3.14.6) — numpy 2.4는 3.11 이하 미지원 |
 | Node.js | 20 이상 — 브라우저 시나리오 엔진 테스트용 (개발·검증: 26.4.0) |
 | 브라우저 | Chrome·Safari·Edge 최신 (대시보드 열람) |
 | 네트워크 | **불필요** — 위 검증은 전부 오프라인 |
@@ -69,7 +70,7 @@ Node.js는 별도 패키지 설치 없이 내장 `node:test`만 쓴다.
 ## 4. 폴더 구성
 
 ```
-금방_전북금융사각지대진단과찾아가는은행최적동선설계_코드분석파일/
+2026-jeonbuk-finance-access/
 ├── README.md                  이 문서 — 실행 설명서
 ├── requirements.txt           필요 라이브러리
 ├── verify_offline.sh          제출 검증 (키·원본 없이 실행)
@@ -80,6 +81,7 @@ Node.js는 별도 패키지 설치 없이 내장 `node:test`만 쓴다.
 ├── tests/                     경로 엔진·유형화·대시보드 엔진 테스트
 ├── data/
 │   ├── processed/             코드가 참조하는 실제 가공 데이터 (전량 포함)
+│   ├── raw/                   원본 공개 데이터 (osm.pbf 285MB만 Release 자산으로 별도)
 │   └── source_manifest.json   원천별 URL·기준일·수집일·라이선스·SHA-256
 ├── data_sample/               가공 데이터 상위 20행 미리보기 + 데이터 설명서
 ├── result/
@@ -106,12 +108,14 @@ Jupyter 노트북은 두지 않았다. 수집부터 시각화까지 전 과정�
 | 경로 | 내용 | 포함 여부 |
 |---|---|---|
 | `data/processed/` | 가공·검증 완료 데이터 28개 | **포함** — 그대로 실행 가능 |
-| `data/raw/` | 원본 공개 데이터 | **미포함** — 용량(약 370MB)·재배포 조건 |
+| `data/raw/` | 원본 공개 데이터 | **포함** — 단 `south-korea-latest.osm.pbf`(285MB)는 GitHub 파일당 100MB 제한으로 Release `raw-data-v1` 자산 |
 | `data/source_manifest.json` | 원천 URL·기준일·수집일·라이선스·SHA-256 | 포함 |
 | `docs/demo-jeonbuk/data.js`, `map-data.js` | 대시보드 입력 번들 (재생성됨) | 포함 |
 
-`data/raw/`가 없어도 `verify_offline.sh`는 전부 통과한다. 원본이 필요한 단계
-(OSM 도로망 재구축, 원천 SHA-256 대조)는 `verify_source_lineage.sh`로 분리했다.
+`verify_offline.sh`는 `data/raw/` 없이도 전부 통과한다. 원본이 필요한 단계
+(OSM 도로망 재구축, 원천 SHA-256 대조)는 `verify_source_lineage.sh`로 분리했고,
+Release의 osm.pbf를 `data/raw/`에 내려받은 뒤 실행하면 75/75 전체 통과한다.
+osm.pbf의 SHA-256은 `data/source_manifest.json` 원장과 일치한다.
 
 ### 주요 파일
 
