@@ -1,0 +1,171 @@
+Reused graph cache: 9cd7ec51fc39095a1c50c1289e7dc03d544d035a4f822f3c526a2ff90d674b11.pickle
+Evaluate pool: baseline
+Evaluate pool: expanded
+{
+  "cells": {
+    "baseline_internal": {
+      "admin_count": 243,
+      "distance_category_counts": {
+        "within_threshold": 172,
+        "P2": 43,
+        "P1": 28
+      },
+      "routing_category_counts": {
+        "within_threshold": 170,
+        "P2": 43,
+        "P1": 27,
+        "quality_deferred": 3
+      },
+      "route_status_counts": {
+        "ok": 240,
+        "fallback_nearest_reachable": 3
+      },
+      "outside_origin_codes": [],
+      "distance_km_all_routed": {
+        "n": 243,
+        "min": 0.04598309085823022,
+        "p10": 0.4636645587384044,
+        "median": 1.8677438673330176,
+        "p90": 5.290669093607026,
+        "max": 16.472580112641534,
+        "mean": 2.503153270605537
+      },
+      "distance_km_valid_primary": {
+        "n": 240,
+        "min": 0.04598309085823022,
+        "p10": 0.4586736801508308,
+        "median": 1.8646588529460018,
+        "p90": 5.311984194762853,
+        "max": 16.472580112641534,
+        "mean": 2.4953878782627084
+      }
+    },
+    "baseline_centroid": {
+      "admin_count": 243,
+      "distance_category_counts": {
+        "within_threshold": 171,
+        "P2": 43,
+        "P1": 28,
+        "unrouted": 1
+      },
+      "routing_category_counts": {
+        "within_threshold": 169,
+        "P2": 43,
+        "P1": 26,
+        "outside_origin": 2,
+        "quality_deferred": 3
+      },
+      "route_status_counts": {
+        "ok": 239,
+        "admin_snap_failed": 1,
+        "fallback_nearest_reachable": 3
+      },
+      "outside_origin_codes": [
+        "5213039000",
+        "5280042000"
+      ],
+      "distance_km_all_routed": {
+        "n": 242,
+        "min": 0.04596989752479809,
+        "p10": 0.4626775889054127,
+        "median": 1.8516653685198396,
+        "p90": 5.2981906382242645,
+        "max": 16.472691483062857,
+        "mean": 2.496634893009992
+      },
+      "distance_km_valid_primary": {
+        "n": 238,
+        "min": 0.04596989752479809,
+        "p10": 0.4525137431923898,
+        "median": 1.8305025672566766,
+        "p90": 5.250096724601672,
+        "max": 16.472691483062857,
+        "mean": 2.475266500991638
+      }
+    },
+    "expanded_internal": {
+      "admin_count": 243,
+      "distance_category_counts": {
+        "within_threshold": 188,
+        "P2": 34,
+        "P1": 21
+      },
+      "routing_category_counts": {
+        "within_threshold": 186,
+        "P2": 33,
+        "P1": 21,
+        "quality_deferred": 3
+      },
+      "route_status_counts": {
+        "ok": 240,
+        "fallback_nearest_reachable": 3
+      },
+      "outside_origin_codes": [],
+      "distance_km_all_routed": {
+        "n": 243,
+        "min": 0.03773290809215668,
+        "p10": 0.419793218992247,
+        "median": 1.7028409034668233,
+        "p90": 4.472293545987707,
+        "max": 16.08888474929019,
+        "mean": 2.213792418501926
+      },
+      "distance_km_valid_primary": {
+        "n": 240,
+        "min": 0.03773290809215668,
+        "p10": 0.41884999826890035,
+        "median": 1.700543445670737,
+        "p90": 4.43591341059952,
+        "max": 16.08888474929019,
+        "mean": 2.2043539510585655
+      }
+    },
+    "expanded_centroid": {
+      "admin_count": 243,
+      "distance_category_counts": {
+        "within_threshold": 187,
+        "P2": 34,
+        "P1": 21,
+        "unrouted": 1
+      },
+      "routing_category_counts": {
+        "within_threshold": 185,
+        "P2": 33,
+        "P1": 20,
+        "outside_origin": 2,
+        "quality_deferred": 3
+      },
+      "route_status_counts": {
+        "ok": 239,
+        "admin_snap_failed": 1,
+        "fallback_nearest_reachable": 3
+      },
+      "outside_origin_codes": [
+        "5213039000",
+        "5280042000"
+      ],
+      "distance_km_all_routed": {
+        "n": 242,
+        "min": 0.03771971475872455,
+        "p10": 0.4195014450284139,
+        "median": 1.700493402357219,
+        "p90": 4.477349425528499,
+        "max": 16.088996119711513,
+        "mean": 2.20671470344563
+      },
+      "distance_km_valid_primary": {
+        "n": 238,
+        "min": 0.03771971475872455,
+        "p10": 0.41812319581257457,
+        "median": 1.690927976581753,
+        "p90": 4.302849883183378,
+        "max": 16.088996119711513,
+        "mean": 2.1826880725099618
+      }
+    }
+  },
+  "origin_robustness": {
+    "stable": 238,
+    "not_comparable_quality_or_outside": 5
+  }
+}

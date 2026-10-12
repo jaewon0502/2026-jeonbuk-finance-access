@@ -1,0 +1,39 @@
+{
+  "boundary_buffer_m": 20000,
+  "boundary_buffer_crs": "EPSG:5179",
+  "old_snapshot_total": 681,
+  "old_snapshot_eligible": 643,
+  "input_nh_bbox_count": 1018,
+  "geographic_decisions": {
+    "outside_predeclared_20km_boundary_buffer": 316,
+    "include_border_nh": 316,
+    "include_jeonbuk_coop": 334,
+    "existing_jeonbuk_nh_bank_category_retained_from_submission": 52
+  },
+  "input_cu_bbox_eligible_count": 190,
+  "cu_geographic_decisions": {
+    "include_border_cu": 54,
+    "outside_predeclared_20km_boundary_buffer": 136
+  },
+  "scenario_groups": {
+    "submission_snapshot": 681,
+    "border_nh_20km": 316,
+    "jeonbuk_coop": 334,
+    "border_cu_20km": 54
+  },
+  "scenario_total": 1385,
+  "scenario_eligible": 1347,
+  "limitations": [
+    "Current official listings are an assumed-open proxy, not an operating audit.",
+    "October additions do not establish their presence at the August baseline.",
+    "NH and regional CU records in the collection rectangle and within a 20 km province buffer are expanded; other border providers are not a complete census.",
+    "Original submitted outlets and coordinates are frozen to isolate additive scope.",
+    "CU records with invalid source coordinates are not assumed absent from the collection rectangle."
+  ],
+  "source_hashes": {
+    "data/processed/outlets_validated.csv": "04fc53933a80bce09e0d74b4d42d2a1f7cd8b3c7c2122f02e3c34d429a92bca4",
+    "analysis/theory_validation/inputs/hjd2026.geojson": "a394b1741d89f9c3556b6d83845b899f8ebe32f13fd77646fa07cabf76c286b4",
+    "analysis/theory_validation/outlets/nh_branches_context_bbox.csv": "825e80740197d3ec89fafd4ce29ceb25c8a44fbde320861ec5ce90ce86c6b4f5",
+    "analysis/theory_validation/outlets/cu_outside_jeonbuk_context_eligible.csv": "40237e230f0e37752836c6bddc23fb46afd858e051fd8e5bd1ecebf31d4a900f"
+  }
+}

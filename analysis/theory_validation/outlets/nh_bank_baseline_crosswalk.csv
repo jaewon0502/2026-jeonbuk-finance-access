@@ -1,0 +1,53 @@
+﻿current_id,current_name,baseline_id,baseline_name,matching_rule,coordinate_difference_km,current_addr,baseline_addr
+NHMAP-442,고창군지부,JB-BFA592A47AEA,NH농협은행 고창군지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0118,"전북특별자치도 고창군 고창읍 중앙로 232, 3층 (고창읍)",전북특별자치도 고창군 중앙로 232 3층
+NHMAP-445,고창군청(출),JB-640295149153,NH농협은행 고창군청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,1.5114,전북특별자치도 고창군 고창읍 중앙로 245 (고창읍),전북특별자치도 고창군 중앙로 245
+NHMAP-426,군산시지부,JB-0CCFBC726609,NH농협은행 군산시지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0262,전북특별자치도 군산시 조촌로 91 (조촌동),전북특별자치도 군산시 조촌로 91
+NHMAP-439,군산시청(출),JB-5AB474A278D4,NH농협은행 군산시청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0238,전북특별자치도 군산시 시청로 17 (조촌동),전북특별자치도 군산시 시청로 17
+NHMAP-449,군산중앙로지점,JB-8E53E6CDBF55,NH농협은행 군산중앙로지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0781,전북특별자치도 군산시 중앙로 169 (중앙로1가),전북특별자치도 군산시 중앙로 169
+NHMAP-11890,금암동지점,JB-81695639C53A,NH농협은행 금암동지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0032,전북특별자치도 전주시 덕진구 기린대로 418 (금암동),전북특별자치도 전주시 기린대로 418 1층
+NHMAP-446,김제시지부,JB-E9DA67823BBE,NH농협은행 김제시지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0002,전북특별자치도 김제시 중앙로 139 (요촌동),전북특별자치도 김제시 중앙로 139
+NHMAP-417,김제시청(출),JB-DE4F0B8FEEAC,NH농협은행 김제시청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0485,전북특별자치도 김제시 중앙로 40 (서암동),전북특별자치도 김제시 중앙로 40
+NHMAP-414,나운센트럴지점,JB-DDAAD658D84F,NH농협은행 나운센터지점,name_variant_same_road_address_30m_candidate,0.0305,전북특별자치도 군산시 대학로 342 우성26빌딩 1층 (나운1동),전북특별자치도 군산시 대학로 342
+NHMAP-433,남원시지부,JB-8F27AC6F03AF,NH농협은행 남원시지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0217,전북특별자치도 남원시 광한북로 63 (하정동),전북특별자치도 남원시 광한북로 63
+NHMAP-441,남원시청(출),JB-DEC31B27913B,NH농협은행 남원시청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0251,전북특별자치도 남원시 시청로 60 (도통동),전북특별자치도 남원시 시청로 60
+NHMAP-63049,남원지원(출),JB-9F78655F2045,NH농협은행 남원지원,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0257,전북특별자치도 남원시 용성로 59 (동충동),전북특별자치도 남원시 용성로 59
+NHMAP-14825,농촌진흥청(출),JB-F755329E1DC3,NH농협은행 농촌진흥청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0892,전북특별자치도 전주시 완산구 농생명로 300 (중동),전북특별자치도 전주시 농생명로 300
+NHMAP-427,무주군지부,JB-3285E6D97490,NH농협은행 무주군지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0164,전북특별자치도 무주군 무주읍 주계로 106 (무주읍),전북특별자치도 무주군 주계로 106
+NHMAP-421,무주군청(출),JB-3E50BA01DAD0,NH농협은행 무주군청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0467,전북특별자치도 무주군 무주읍 주계로 97 무주군청 (무주읍),전북특별자치도 무주군 주계로 97
+NHMAP-444,부안군지부,JB-5A5725BB32B6,NH농협은행 부안군지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0079,전북특별자치도 부안군 부안읍 석정로 255 (부안읍),전북특별자치도 부안군 석정로 255
+NHMAP-559,부안군청(출),JB-E9BDA2A9B27D,NH농협은행 부안군청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0766,전북특별자치도 부안군 부안읍 당산로 91 (부안읍),전북특별자치도 부안군 당산로 91
+NHMAP-839,삼천동지점,JB-997B9A4343D4,NH농협은행 삼천동지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0049,전북특별자치도 전주시 완산구 용리로 56 (삼천동),전북특별자치도 전주시 용리로 56 누가빌딩 102호
+NHMAP-334,서신동지점,JB-A2936335FA05,NH농협은행 서신동지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0174,전북특별자치도 전주시 완산구 온고을로 1 (서신동),전북특별자치도 전주시 온고을로 1 한국교직원공제회관 1층
+NHMAP-12485,수송동지점,JB-CE4BEA30EC7A,NH농협은행 수송동지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0107,전북특별자치도 군산시 문화로 86 (수송동),전북특별자치도 군산시 문화로 86
+NHMAP-435,순창군지부,JB-B3C811BFDACC,NH농협은행 순창군지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0139,전북특별자치도 순창군 순창읍 순창로 214 (순창읍),전북특별자치도 순창군 순창로 214
+NHMAP-434,순창군청(출),JB-972EAED20C51,NH농협은행 순창군청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0192,전북특별자치도 순창군 경천로 33 (순창읍),전북특별자치도 순창군 경천로 33 순창군청 1층
+NHMAP-840,아중지점,JB-7813053A90D7,NH농협은행 아중지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0615,전북특별자치도 전주시 덕진구 건산로 240 (인후동1가),전북특별자치도 전주시 건산로 240
+NHMAP-423,어양센트럴지점,JB-931F9F34B576,NH농협은행 어양센트럴지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0362,"전북특별자치도 익산시 하나로 337 123호, 124호, 126호 (어양동)",전북특별자치도 익산시 하나로 337 1층
+NHMAP-63307,완주군지부,JB-9916589B3D35,NH농협은행 완주군지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0066,전북특별자치도 완주군 용진읍 운곡2로 3 (용진읍),전북특별자치도 완주군 운곡2로 3
+NHMAP-14041,완주군청(출),JB-4F99B41FD49B,NH농협은행 완주군청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.1025,전북특별자치도 완주군 용진읍 지암로 61 완주군청 (운곡리),전북특별자치도 완주군 지암로 61
+NHMAP-311,익산시지부,JB-315D142A1613,NH농협은행 익산시지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0487,"전북특별자치도 익산시 무왕로 1069, 1층",전북특별자치도 익산시 무왕로 1063
+NHMAP-299,익산시청(출),JB-960964868063,NH농협은행 익산시청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0741,전북특별자치도 익산시 인북로32길 1 (남중동),전북특별자치도 익산시 인북로32길 1 지하1층
+NHMAP-452,익산중앙지점,JB-2F10740F5AB6,NH농협은행 익산중앙지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.007,전북특별자치도 익산시 인북로3길 24 (중앙동3가),전북특별자치도 익산시 인북로3길 24
+NHMAP-15746,인후동지점,JB-AC7E3889197C,NH농협은행 인후동지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0016,전북특별자치도 전주시 덕진구 백제대로 751 뱅크빌딩1층 (인후동2가),전북특별자치도 전주시 백제대로 751
+NHMAP-431,임실군지부,JB-362E45982A5C,NH농협은행 임실군지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0218,전북특별자치도 임실군 봉황로 135 (임실읍),전북특별자치도 임실군 봉황로 135
+NHMAP-432,임실군청(출),JB-C0D9B12EFC69,NH농협은행 임실군청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.1185,전북특별자치도 임실군 수정로 30 (임실읍),전북특별자치도 임실군 수정로 30
+NHMAP-429,장수군지부,JB-D12BBEF9984A,NH농협은행 장수군지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0041,전북특별자치도 장수군 장수읍 호비로 9 (농협협동),전북특별자치도 장수군 호비로 9
+NHMAP-12479,장수군청(출),JB-71CECD6F751F,NH농협은행 장수군청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.041,전북특별자치도 장수군 호비로 10 (장수읍),전북특별자치도 장수군 호비로 10
+NHMAP-416,전북영업부,JB-0C35784B6D7F,NH농협은행 전북영업부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0154,전북특별자치도 전주시 완산구 우전로 290 (효자동),전북특별자치도 전주시 우전로 290
+NHMAP-422,전북특별자치도교육청(출),JB-62968A654D44,NH농협은행 전북특별자치도교육청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0259,전북특별자치도 전주시 완산구 홍산로 111 (효자4동),전북특별자치도 전주시 홍산로 111
+NHMAP-12059,전북특별자치도청(출),JB-90A6E97F99EF,NH농협은행 전북특별자치도청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.2332,전북특별자치도 전주시 완산구 효자로 225 (효자5동),전북특별자치도 전주시 효자로 225
+NHMAP-14756,전북혁신도시지점,JB-6C01DA3D9A59,NH농협은행 전북혁신도시지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0224,전북특별자치도 완주군 이서면 안전로 163 (이서면),전북특별자치도 완주군 이서면 안전로 163
+NHMAP-63042,전주법원(출),JB-DF7FB5FD1C43,NH농협은행 전주법원,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0112,전북특별자치도 전주시 덕진구 가인로 33 (만성동),전북특별자치도 전주시 가인로 33
+NHMAP-418,전주송천센트럴지점,JB-6EE35E3422F4,NH농협은행 전주송천센트럴지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0411,전북특별자치도 전주시 덕진구 송천로 1 (송천동1가),전북특별자치도 전주시 송천로 1
+NHMAP-413,전주시지부,JB-68572D661C13,NH농협은행 전주시지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0302,전북특별자치도 전주시 완산구 팔달로 277 (서노송동),전북특별자치도 전주시 팔달로 277
+NHMAP-12438,전주시청(출),JB-248D8F79ABF1,NH농협은행 전주시청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0351,전북특별자치도 전주시 완산구 노송광장로 10 (서노송동),전북특별자치도 전주시 노송광장로 10 지하1층
+NHMAP-12848,전주에코시티지점,JB-7B585D4CC329,NH농협은행 전주에코시티지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.1029,전북특별자치도 전주시 덕진구 세병로 30 (송천동2가),전북특별자치도 전주시 세병로 30 1층
+NHMAP-420,전주한옥마을지점,JB-60264C238092,NH농협은행 전주한옥마을지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0077,전북특별자치도 전주시 완산구 충경로 102 (풍남동1가),전북특별자치도 전주시 충경로 102
+NHMAP-437,정읍시지부,JB-F0DD5BFAB485,NH농협은행 정읍시지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0209,전북특별자치도 정읍시 중앙로 62 농협 중앙회 (연지동),전북특별자치도 정읍시 중앙로 62
+NHMAP-440,정읍시청(출),JB-F1E350AD3C80,NH농협은행 정읍시청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0727,전북특별자치도 정읍시 충정로 234 (수성동),전북특별자치도 정읍시 충정로 234
+NHMAP-63045,정읍지원(출),JB-6B3829D85042,NH농협은행 정읍지원,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0057,전북특별자치도 정읍시 수성6로 29 (수성동),전북특별자치도 정읍시 수성6로 29
+NHMAP-415,중화산동지점,JB-EA28EB112425,NH농협은행 중화산동지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0115,전북특별자치도 전주시 완산구 효자로 280 (중화산동2가),전북특별자치도 전주시 효자로 280
+NHMAP-425,진안군지부,JB-19038AF50725,NH농협은행 진안군지부,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0117,전북특별자치도 진안군 진안읍 중앙로 70 (진안읍),전북특별자치도 진안군 중앙로 70
+NHMAP-12334,진안군청(출),JB-2E10CADC091A,NH농협은행 진안군청,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0614,전북특별자치도 진안군 중앙로 67 (진안읍),전북특별자치도 진안군 중앙로 67
+NHMAP-454,함열(출),JB-752DC5380895,NH농협은행 함열,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0092,전북특별자치도 익산시 함열읍 함열중앙로 21 (함열읍),전북특별자치도 익산시 함열중앙로 21
+NHMAP-263,효자동지점,JB-5A468FA007C5,NH농협은행 효자동지점,unique_normalized_name_ignore_bank_prefix_and_outlet_suffix,0.0065,전북특별자치도 전주시 완산구 백제대로 141 (효자2동),전북특별자치도 전주시 백제대로 141

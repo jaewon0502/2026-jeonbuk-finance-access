@@ -60,7 +60,7 @@
       }
       normalized.service_cycle_days = cycle;
       if (normalized.operating_days_per_cycle > cycle) {
-        throw new Error("주간 운영일은 서비스 주기를 넘을 수 없습니다.");
+        throw new Error("주기 내 운영일은 서비스 주기를 넘을 수 없습니다.");
       }
     }
 
@@ -381,6 +381,53 @@
       if (!selected || compareValue(aggregateKey(province, state), aggregateKey(province, selected)) < 0) selected = state;
     }
 
+    return summarizeProvince(province, parameters, selected, "priority_dp");
+  }
+
+  function routeTimeline(engine, route) {
+    const candidates = new Map(engine.candidates.map((candidate) => [candidate.candidate_id, candidate]));
+    let previous = engine.start_node_id;
+    let minute = parseHHMM(engine.operating_start);
+    const timeline = route.stops.map((id) => {
+      const candidate = candidates.get(id);
+      const travelMinutes = Number(engine.travel_minutes[previous][id]);
+      const travelKm = Number(engine.distance_km[previous][id]);
+      const arrival = minute + travelMinutes;
+      const begin = Math.max(arrival, parseHHMM(candidate.time_window_start));
+      minute = begin + candidate.service_minutes;
+      previous = id;
+      return {
+        candidate_id: id,
+        name: candidate.name,
+        serves_target_ids: [...candidate.serves_target_ids],
+        arrival_time: formatHHMM(arrival),
+        service_start: formatHHMM(begin),
+        service_end: formatHHMM(minute),
+        arrival_minute: round(arrival, 6),
+        service_start_minute: round(begin, 6),
+        service_end_minute: round(minute, 6),
+        travel_minutes_from_previous: travelMinutes,
+        travel_km_from_previous: travelKm,
+        wait_minutes: round(begin - arrival, 6),
+        service_minutes: candidate.service_minutes,
+      };
+    });
+    return {
+      ...route,
+      start_node_id: engine.start_node_id,
+      end_node_id: engine.end_node_id,
+      start_time: engine.operating_start,
+      timeline,
+      return_leg: {
+        travel_minutes: Number(engine.travel_minutes[previous][engine.end_node_id]),
+        travel_km: Number(engine.distance_km[previous][engine.end_node_id]),
+      },
+    };
+  }
+
+  function summarizeProvince(province, parameters, selected, allocationMethod) {
+    const capacity = province.vehicle_count * province.operating_days_per_cycle;
+    const zones = [...province.zones].sort((left, right) => compareValue(left.zone_id, right.zone_id));
     const totals = {
       travel_km: 0,
       travel_minutes: 0,
@@ -403,7 +450,7 @@
     const targetCount = zones.reduce((sum, zone) => sum + zone.engine_input.targets.length, 0);
     const routeItems = selected.plans.flatMap((plan) => plan.summary.routes.map((route) => ({
       service_zone: plan.zone_id,
-      ...route,
+      ...routeTimeline(zones.find((zone) => zone.zone_id === plan.zone_id).engine_input, route),
     })));
     routeItems.sort((left, right) => compareValue(
       [left.service_zone, left.stops],
@@ -414,16 +461,34 @@
       cycle_day: Math.floor(index / province.vehicle_count) + 1,
       vehicle_id: `vehicle-${index % province.vehicle_count + 1}`,
     }));
+    const coveredIds = new Set(selected.plans.flatMap((plan) => plan.summary.covered_target_ids));
+    const unvisited = zones.flatMap((zone) => {
+      const plan = selected.plans.find((item) => item.zone_id === zone.zone_id);
+      const candidateTargets = new Set(zone.engine_input.candidates.flatMap((candidate) => candidate.serves_target_ids));
+      return zone.engine_input.targets.filter((target) => !coveredIds.has(target.target_id)).map((target) => ({
+        target_id: target.target_id,
+        name: target.name,
+        priority_tier: target.priority_tier,
+        service_zone: zone.zone_id,
+        reason: !candidateTargets.has(target.target_id) ? "no_eligible_candidate"
+          : plan.allocated_route_days === 0 ? "zone_not_allocated_route_day"
+            : "not_selected_under_stop_time_objective",
+      }));
+    });
     return {
       parameters,
+      allocation_method: allocationMethod,
+      allocated_route_days: selected.allocated_route_days,
       route_day_capacity: capacity,
       minimum_route_days_per_active_zone: province.minimum_route_days_per_active_zone,
       all_zones_allocated: selected.plans.every((plan) => plan.allocated_route_days > 0),
       coverage_by_tier: selected.coverage_by_tier,
       covered_target_count: selected.covered_target_count,
+      covered_target_ids: [...coveredIds].sort(),
       target_count: targetCount,
       route_days_used: routeDaysUsed,
       unvisited_target_count: targetCount - selected.covered_target_count,
+      unvisited_targets: unvisited,
       routes,
       totals: {
         travel_km: round(totals.travel_km, 3),
@@ -462,5 +527,107 @@
     return solveConfiguredProvince(configureProvince(base, normalized), normalized);
   }
 
-  return { calculate, parseHHMM, validateParameters, sliceProvinceInput };
+  function greedyZone(engine, days, priorityFirst) {
+    const candidates = engine.candidates.map((candidate, index) => ({ ...candidate, index }));
+    let used = 0;
+    const routes = [];
+    for (let day = 0; day < days; day += 1) {
+      let state = {
+        mask: 0, last_node_id: engine.start_node_id,
+        finish_minute: parseHHMM(engine.operating_start),
+        travel_minutes: 0, travel_km: 0, wait_minutes: 0, service_minutes: 0, stops: [],
+      };
+      for (let stop = 0; stop < engine.max_stops_per_vehicle; stop += 1) {
+        const before = coverage(engine, used | state.mask);
+        let best = null;
+        for (const candidate of candidates) {
+          const bit = 1 << candidate.index;
+          if ((used | state.mask) & bit) continue;
+          const next = transition(engine, state, candidate);
+          if (!next) continue;
+          const after = coverage(engine, used | state.mask | bit);
+          const added = after.covered.size - before.covered.size;
+          if (priorityFirst && added === 0) continue;
+          const key = [
+            ...(priorityFirst ? [
+              ...engine.priority_tiers.map((tier) => -(after.counts[tier.tier_id] - before.counts[tier.tier_id])),
+              -added,
+            ] : []),
+            round(Number(engine.travel_minutes[state.last_node_id][candidate.candidate_id])),
+            candidate.candidate_id,
+          ];
+          if (!best || compareValue(key, best.key) < 0) best = { key, next };
+        }
+        if (!best) break;
+        state = best.next;
+      }
+      if (state.mask) {
+        used |= state.mask;
+        routes.push(finalizeRoute(engine, state));
+      }
+    }
+    return summarizeZone(engine, { candidate_mask: used, routes });
+  }
+
+  // Match the report experiment: decide days by target counts before comparing routes.
+  function compare(base, parameters, controls) {
+    const normalized = validateParameters(parameters, controls);
+    const province = configureProvince(base, normalized);
+    const capacity = province.vehicle_count * province.operating_days_per_cycle;
+    const zones = [...province.zones].sort((a, b) => compareValue(a.zone_id, b.zone_id));
+    const table = zones.map((zone) => {
+      const summaries = exactZoneOptions(zone.engine_input, Math.min(zone.engine_input.candidates.length, capacity), true);
+      const feasible = summaries.length > 1 && summaries[1].route_count > 0;
+      return {
+        zone, summaries,
+        lower: feasible ? province.minimum_route_days_per_active_zone : 0,
+        upper: feasible ? summaries.length - 1 : 0,
+        weight: new Set(zone.engine_input.targets.map((target) => target.target_id)).size,
+      };
+    });
+    const assigned = Object.fromEntries(table.map((row) => [row.zone.zone_id, row.lower]));
+    let remaining = Math.min(capacity, table.reduce((sum, row) => sum + row.upper, 0))
+      - Object.values(assigned).reduce((sum, days) => sum + days, 0);
+    while (remaining > 0) {
+      const eligible = table.filter((row) => assigned[row.zone.zone_id] < row.upper);
+      const weight = eligible.reduce((sum, row) => sum + row.weight, 0);
+      if (weight <= 0) throw new Error("방문 대상이 없는 시군에 운영일을 배정할 수 없습니다.");
+      const quotas = eligible.map((row) => ({ ...row, quota: remaining * row.weight / weight }));
+      for (const row of quotas) {
+        const days = Math.min(Math.floor(row.quota), row.upper - assigned[row.zone.zone_id]);
+        assigned[row.zone.zone_id] += days;
+        remaining -= days;
+      }
+      quotas.sort((a, b) => compareValue(
+        [-(a.quota - Math.floor(a.quota)), a.zone.zone_id],
+        [-(b.quota - Math.floor(b.quota)), b.zone.zone_id],
+      ));
+      for (const row of quotas) {
+        if (!remaining) break;
+        if (assigned[row.zone.zone_id] < row.upper) {
+          assigned[row.zone.zone_id] += 1;
+          remaining -= 1;
+        }
+      }
+    }
+    const results = {};
+    for (const method of ["nearest", "priority_nearest", "exact_dp"]) {
+      let selected = {
+        coverage_by_tier: Object.fromEntries(province.priority_tiers.map((tier) => [tier.tier_id, 0])),
+        covered_target_count: 0, travel_plus_wait_minutes: 0, max_route_elapsed_minutes: 0,
+        allocated_route_days: 0, plans: [],
+      };
+      for (const row of table) {
+        const days = assigned[row.zone.zone_id];
+        const summary = method === "exact_dp" ? row.summaries[days]
+          : greedyZone(row.zone.engine_input, days, method === "priority_nearest");
+        selected = addPlan(province, selected, { zone_id: row.zone.zone_id, allocated_route_days: days, summary });
+      }
+      results[method] = { ...summarizeProvince(province, normalized, selected, "target_count_reference"), method };
+    }
+    return { parameters: normalized, allocation_method: "target_count_reference", zone_allocation: assigned,
+      allocated_route_days: Object.values(assigned).reduce((sum, days) => sum + days, 0), results };
+  }
+
+  return { calculate, compare, parseHHMM, validateParameters, sliceProvinceInput };
 });

@@ -1,0 +1,197 @@
+{
+  "frozen_at": "2026-10-12T12:33:52.033841+00:00",
+  "requested_scope": "Official NH regional agricultural/livestock cooperative staffed-branch listings in Jeonbuk, plus NH and CU neighboring-province context candidates.",
+  "retrieval_date_local": "2026-10-12",
+  "temporal_interpretation": "October retrieval is an expanded current-listing sensitivity scenario. August 2026 existence and operating status are unknown; original source baseline is not silently replaced.",
+  "context_bbox_lon_lat": [
+    126,
+    35.1,
+    128.1,
+    36.35
+  ],
+  "nh": {
+    "official_homepage": "https://www.nonghyup.com/main/psniMain.do",
+    "official_map": "https://nonghyup.ttmap.co.kr/main.jsp",
+    "endpoint": "https://nonghyup.ttmap.co.kr/list_branch_2017.jsp",
+    "province_query_rows": 332,
+    "province_query_pages": 42,
+    "context_query_rows": 1018,
+    "context_query_pages": 128,
+    "context_type_counts": {
+      "농협은행": 133,
+      "농·축협": 885
+    },
+    "jeonbuk_address_coop_rows": 334,
+    "jeonbuk_address_bank_rows": 52,
+    "outside_jeonbuk_address_rows": 632,
+    "province_query_omission_vs_bbox": [
+      {
+        "outlet_id": "NHMAP-58973",
+        "name": "도드람양돈농협 전주지점",
+        "branch_code": "175265",
+        "addr": "전북특별자치도 전주시 덕진구 안덕원로 266 (인후동1가)",
+        "lat": "35.836432",
+        "lon": "127.155983",
+        "raw_path": "raw/nh_branches_context_bbox/page_045.html"
+      },
+      {
+        "outlet_id": "NHMAP-65761",
+        "name": "익산군산축협 구암지점",
+        "branch_code": "175073",
+        "addr": "전북특별자치도 군산시 구암3.1로 209-1 (구암동)",
+        "lat": "35.983713",
+        "lon": "126.741673",
+        "raw_path": "raw/nh_branches_context_bbox/page_091.html"
+      }
+    ],
+    "discrepancy_interpretation": "Two Jeonbuk-address records appear in coordinate-bounds query but not province query. Source filter cause is unknown. Use reconciled spatial candidates without calling either query a confirmed real-world census.",
+    "service_interpretation": "svc1=1 branch tab; svc2=2 agricultural/livestock cooperative vs svc2=1 NH Bank. No ATM/store tab queried. Individual financial-service availability/hours unverified. Economic/store-like names retained consistently when official branch category is identical and flagged for review.",
+    "coordinate_interpretation": "Official map setMarker arguments mapX longitude/mapY latitude. No geocoding API used. Source coordinates are not independent ground truth.",
+    "duplicate_bank_handling": "Current Jeonbuk NH Bank 52 records should not be appended to the frozen 52 NH Bank baseline records. Crosswalk is candidate identity evidence, not a coordinate replacement instruction.",
+    "bank_coordinate_disagreements_over_1km": [
+      {
+        "current_id": "NHMAP-445",
+        "current_name": "고창군청(출)",
+        "baseline_id": "JB-640295149153",
+        "baseline_name": "NH농협은행 고창군청",
+        "matching_rule": "unique_normalized_name_ignore_bank_prefix_and_outlet_suffix",
+        "coordinate_difference_km": "1.5114",
+        "current_addr": "전북특별자치도 고창군 고창읍 중앙로 245 (고창읍)",
+        "baseline_addr": "전북특별자치도 고창군 중앙로 245"
+      }
+    ],
+    "retrieval_started_at": "2026-10-12T12:24:40.499631+00:00",
+    "retrieval_finished_at": "2026-10-12T12:27:26.925898+00:00",
+    "request_manifest_files": [
+      "nh_coops_jeonbuk_manifest.json",
+      "nh_branches_context_bbox_manifest.json"
+    ]
+  },
+  "cu": {
+    "official_finder": "https://www.cu.co.kr/cu/ad/cuSearch.do?mi=100076",
+    "official_detail_endpoint": "https://www.cu.co.kr/cu/ad/assc.do",
+    "province_counts": [
+      {
+        "code": "sido07",
+        "name": "대전",
+        "reported_total": 82,
+        "collected_rows": 82
+      },
+      {
+        "code": "sido11",
+        "name": "경북",
+        "reported_total": 83,
+        "collected_rows": 83
+      },
+      {
+        "code": "sido12",
+        "name": "경남",
+        "reported_total": 86,
+        "collected_rows": 86
+      },
+      {
+        "code": "sido13",
+        "name": "충북",
+        "reported_total": 137,
+        "collected_rows": 137
+      },
+      {
+        "code": "sido14",
+        "name": "충남",
+        "reported_total": 99,
+        "collected_rows": 99
+      },
+      {
+        "code": "sido18",
+        "name": "전남광주",
+        "reported_total": 196,
+        "collected_rows": 196
+      }
+    ],
+    "six_province_unique_details": 683,
+    "context_bbox_rows": 214,
+    "regional_common_bond_input_rows": 190,
+    "context_exclusion_counts": {
+      "단체": 17,
+      "직장": 7
+    },
+    "restriction_rule": "Include only official uniRelTy=1 지역; exclude uniRelTy=3 직장 and hold uniRelTy=2 단체 because general access is unconfirmed. Official finder explicitly cautions workplace and some group coops restrict users.",
+    "invalid_coordinate_rows": [
+      {
+        "outlet_id": "CUOFF-05002-02",
+        "name": "증평신용협동조합 지점",
+        "addr": "충청북도 증평군 증평읍송산로1길 17-11 101호 [증평신협 송산지점]",
+        "lat": "0",
+        "lon": "0",
+        "raw_path": "raw/cu/details/05002_02.json"
+      },
+      {
+        "outlet_id": "CUOFF-08156-03",
+        "name": "목포우리신용협동조합 지점",
+        "addr": "전남광주통합특별시 무안군 일로읍오룡번영3로 36 1층",
+        "lat": "0",
+        "lon": "0",
+        "raw_path": "raw/cu/details/08156_03.json"
+      }
+    ],
+    "coordinate_missingness_rule": "Two (0,0) source coordinates excluded from coordinate filtering; not assumed absent from target region. Their listed addresses and raw JSON are preserved.",
+    "retrieval_started_at": "2026-10-12T12:29:45.958057+00:00",
+    "retrieval_finished_at": "2026-10-12T12:31:58.647957+00:00",
+    "request_manifest_file": "cu_collection_manifest.json"
+  },
+  "remaining_coverage_gaps": [
+    "Cross-border non-NH banks, KFCC, and financial-service post offices were not collected in this supplement. Do not claim exhaustive all-provider border coverage.",
+    "KFCC official list endpoint timed out on bounded probe; no repeated unbounded retrieval was attempted.",
+    "Current official listing does not independently verify staffed opening hours, service equivalence, accessibility, or August 2026 presence.",
+    "NH province selector omitted two current Jeonbuk-address branches present in coordinate query; unresolved source-side inconsistency.",
+    "Two CU source coordinates are (0,0), retained as unresolved source records."
+  ],
+  "integration_boundary": "Root performs exact administrative polygon assignment, origin-radius border filtering, deduplication, network snapping, and scenario analysis. These source-context counts are not final added-outlet or changed-priority counts.",
+  "normalized_files": [
+    {
+      "file": "cu_context_bbox_all_listed.csv",
+      "data_rows": 214,
+      "sha256": "223374248f85fc0afd7b98697e4b1b8a0cb554a9071c7363fe542d958f1f53c7"
+    },
+    {
+      "file": "cu_outside_jeonbuk_context_eligible.csv",
+      "data_rows": 190,
+      "sha256": "40237e230f0e37752836c6bddc23fb46afd858e051fd8e5bd1ecebf31d4a900f"
+    },
+    {
+      "file": "cu_six_provinces_all_listed.csv",
+      "data_rows": 683,
+      "sha256": "83c15a801cb29d6b9253460d1267fa9b45387d396b2c0c60e6cea3b0a00b28e4"
+    },
+    {
+      "file": "nh_bank_baseline_crosswalk.csv",
+      "data_rows": 52,
+      "sha256": "2f81d784ab3c474a2ece8dcc833c61099862a20ed357f806fb86782e63d2293c"
+    },
+    {
+      "file": "nh_branches_context_bbox.csv",
+      "data_rows": 1018,
+      "sha256": "825e80740197d3ec89fafd4ce29ceb25c8a44fbde320861ec5ce90ce86c6b4f5"
+    },
+    {
+      "file": "nh_branches_outside_jeonbuk_context.csv",
+      "data_rows": 632,
+      "sha256": "24a6d1cde175e5b4139f869061c23aad889f9a07da1a5d12619c2aff8b934420"
+    },
+    {
+      "file": "nh_context_with_eligibility.csv",
+      "data_rows": 1018,
+      "sha256": "3c16a6721133a783fef914028fc8f87ad427d1b3aed14c362148cc6d7f453671"
+    },
+    {
+      "file": "nh_coops_jeonbuk.csv",
+      "data_rows": 332,
+      "sha256": "a279cb301e5be277c0d2cfabf2c5c908282379ba7d8948a8dff3aae322ff9e31"
+    },
+    {
+      "file": "nh_coops_jeonbuk_reconciled.csv",
+      "data_rows": 334,
+      "sha256": "fad092eba6a4a8661a2fdbcdd2034d90beba37d8a189cb102d220a26601f86c0"
+    }
+  ]
+}

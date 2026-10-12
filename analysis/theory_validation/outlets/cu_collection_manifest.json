@@ -1,0 +1,1709 @@
+{
+  "source_entrypoint": "https://www.cu.co.kr/cu/ad/cuSearch.do?mi=100076",
+  "detail_endpoint": "https://www.cu.co.kr/cu/ad/assc.do",
+  "provinces": [
+    {
+      "code": "sido07",
+      "name": "대전",
+      "reported_total": 82,
+      "collected_rows": 82,
+      "pages": [
+        {
+          "parsed_rows": 10,
+          "reported_total": 82,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido07",
+            "signgu": "",
+            "currPage": "1",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:45.958057+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "e4aced4bf90c484994f59781ae494f19ac3db70b6441b5b79a73e0717188e980",
+          "byte_count": 78067,
+          "raw_path": "raw/cu/lists/sido07_001.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 82,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido07",
+            "signgu": "",
+            "currPage": "2",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:46.786828+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "af3b119007a3d4ae42974e63828c1a6a5119d59691bea85dbb285b8d531ca7ae",
+          "byte_count": 78338,
+          "raw_path": "raw/cu/lists/sido07_002.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 82,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido07",
+            "signgu": "",
+            "currPage": "3",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:47.467613+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "53045a5cb195cd211294e74f63276e41cfc273c4503238816d5509aed9a48851",
+          "byte_count": 78453,
+          "raw_path": "raw/cu/lists/sido07_003.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 82,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido07",
+            "signgu": "",
+            "currPage": "4",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:48.182200+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "2149d4a2d67be3967b9550c2b5e371226e57362019b681ddd24f748b3de1a4c3",
+          "byte_count": 78356,
+          "raw_path": "raw/cu/lists/sido07_004.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 82,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido07",
+            "signgu": "",
+            "currPage": "5",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:48.768661+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "36afa25fd0f64d80971c5eef9add7132a85503fc006649bbec91e58f17a00bd0",
+          "byte_count": 78303,
+          "raw_path": "raw/cu/lists/sido07_005.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 82,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido07",
+            "signgu": "",
+            "currPage": "6",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:49.502319+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "358af27c693aa38246cc65810bb3b85319bcadfd687cbd8a0ef2103ccddc26df",
+          "byte_count": 78166,
+          "raw_path": "raw/cu/lists/sido07_006.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 82,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido07",
+            "signgu": "",
+            "currPage": "7",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:50.112114+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "6d1c2cfb5386e6e2bb2baf23fe2105111d0719b742a1529b27b41b97a5c531f3",
+          "byte_count": 78344,
+          "raw_path": "raw/cu/lists/sido07_007.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 82,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido07",
+            "signgu": "",
+            "currPage": "8",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:50.820502+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "8f834f8556b66ff9e0d256e33ce01f4fe6dbf220314075284d10ab80dad80342",
+          "byte_count": 78327,
+          "raw_path": "raw/cu/lists/sido07_008.html"
+        },
+        {
+          "parsed_rows": 2,
+          "reported_total": 82,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido07",
+            "signgu": "",
+            "currPage": "9",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:51.771950+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "af0e7fe172b192862b39b7e5a03532a4828ed440afc51318d90d2c5429f1e05f",
+          "byte_count": 73979,
+          "raw_path": "raw/cu/lists/sido07_009.html"
+        }
+      ]
+    },
+    {
+      "code": "sido11",
+      "name": "경북",
+      "reported_total": 83,
+      "collected_rows": 83,
+      "pages": [
+        {
+          "parsed_rows": 10,
+          "reported_total": 83,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido11",
+            "signgu": "",
+            "currPage": "1",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:46.069557+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "0ba3712e1c2ae095175563a56df0f9712d4acecb3e7300853a3fb2f8c90c8622",
+          "byte_count": 78049,
+          "raw_path": "raw/cu/lists/sido11_001.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 83,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido11",
+            "signgu": "",
+            "currPage": "2",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:46.703453+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "f09ccff5f0b66f87f5599ae3d10bdaabcb712f1c07db6678e3cc1b958fb8b279",
+          "byte_count": 78189,
+          "raw_path": "raw/cu/lists/sido11_002.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 83,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido11",
+            "signgu": "",
+            "currPage": "3",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:47.310216+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "e7a6ab71087073475420d05844707dddff258fa74f72da4344cd945491ace9c3",
+          "byte_count": 78132,
+          "raw_path": "raw/cu/lists/sido11_003.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 83,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido11",
+            "signgu": "",
+            "currPage": "4",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:47.993138+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "2711791c2a9ffae8de9b7cbb096fc525391169803506f67863e8baecac965866",
+          "byte_count": 78195,
+          "raw_path": "raw/cu/lists/sido11_004.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 83,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido11",
+            "signgu": "",
+            "currPage": "5",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:48.584401+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "c83ea2b4e632f6de0a99a0f76ae557061b494ed53d04da4882a2667d14c536e7",
+          "byte_count": 78218,
+          "raw_path": "raw/cu/lists/sido11_005.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 83,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido11",
+            "signgu": "",
+            "currPage": "6",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:49.184341+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "48c386e0cf99685b756317c861258b5bb83f5b9af1f4b8b17d142c4b0e338bbf",
+          "byte_count": 78141,
+          "raw_path": "raw/cu/lists/sido11_006.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 83,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido11",
+            "signgu": "",
+            "currPage": "7",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:49.955666+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "47f6196db5209662e46666d13c5bc549f5bbd300df54d419c644fb9c4528e748",
+          "byte_count": 78336,
+          "raw_path": "raw/cu/lists/sido11_007.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 83,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido11",
+            "signgu": "",
+            "currPage": "8",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:50.502857+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "41cf4683c6b596c9f24c8921ec41a8d61fa1751b39b8a6199b9e27343fb1a7c4",
+          "byte_count": 78303,
+          "raw_path": "raw/cu/lists/sido11_008.html"
+        },
+        {
+          "parsed_rows": 3,
+          "reported_total": 83,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido11",
+            "signgu": "",
+            "currPage": "9",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:51.061310+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "53aecb6bb56f6467b41cea82f02ec3c988f2785c87692e24b71a19282a6a6d30",
+          "byte_count": 74497,
+          "raw_path": "raw/cu/lists/sido11_009.html"
+        }
+      ]
+    },
+    {
+      "code": "sido12",
+      "name": "경남",
+      "reported_total": 86,
+      "collected_rows": 86,
+      "pages": [
+        {
+          "parsed_rows": 10,
+          "reported_total": 86,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido12",
+            "signgu": "",
+            "currPage": "1",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:46.059321+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "3685680de776119d43e5933b3be7b3c5fbd929953fda8555f16616e10e70eb99",
+          "byte_count": 78110,
+          "raw_path": "raw/cu/lists/sido12_001.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 86,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido12",
+            "signgu": "",
+            "currPage": "2",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:46.689887+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "3f97ea950b89bf670c9387b20ad3f0c95822076328c75d3c9c4bc9cdc45bda5c",
+          "byte_count": 78472,
+          "raw_path": "raw/cu/lists/sido12_002.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 86,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido12",
+            "signgu": "",
+            "currPage": "3",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:47.592152+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "9be0680c1b70034d823a1b2dcd7821a1b56e7a1a76dbfcdc3e9edf2c4b52bad9",
+          "byte_count": 78282,
+          "raw_path": "raw/cu/lists/sido12_003.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 86,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido12",
+            "signgu": "",
+            "currPage": "4",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:48.423401+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "bd6b088d10cdb448cea45e0f0a6c193ce739b45ba0332532a90f8a501c65fd95",
+          "byte_count": 78274,
+          "raw_path": "raw/cu/lists/sido12_004.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 86,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido12",
+            "signgu": "",
+            "currPage": "5",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:48.984201+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "b910c72ad9aecb018bcaa0c47952b706d943b0ad56f8c099f9fb03a2e7756d5a",
+          "byte_count": 78290,
+          "raw_path": "raw/cu/lists/sido12_005.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 86,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido12",
+            "signgu": "",
+            "currPage": "6",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:49.710905+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "5c39c4e26bb741ace7c552af85ae835c234cd01ce81f8ce14b8f17419cd88f7d",
+          "byte_count": 78483,
+          "raw_path": "raw/cu/lists/sido12_006.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 86,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido12",
+            "signgu": "",
+            "currPage": "7",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:50.511675+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "64b2e41559c13d0536d90006358cf5aa586e2c90e2a373adf66619270247ce36",
+          "byte_count": 78212,
+          "raw_path": "raw/cu/lists/sido12_007.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 86,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido12",
+            "signgu": "",
+            "currPage": "8",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:51.306051+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "bbf2420277f955c09edcf729d7148fb30fce3cd8ab164c42a5f86868f78bdd03",
+          "byte_count": 78624,
+          "raw_path": "raw/cu/lists/sido12_008.html"
+        },
+        {
+          "parsed_rows": 6,
+          "reported_total": 86,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido12",
+            "signgu": "",
+            "currPage": "9",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:52.617517+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "310cb5837b37fdb75e7352791c68d955d53d03258e855f12444ddbc39d69f13f",
+          "byte_count": 76173,
+          "raw_path": "raw/cu/lists/sido12_009.html"
+        }
+      ]
+    },
+    {
+      "code": "sido13",
+      "name": "충북",
+      "reported_total": 137,
+      "collected_rows": 137,
+      "pages": [
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "1",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:52.086358+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "4302fdf3415631dc23d1718118663c779e9d139a3aa84b27fc62ea5a44107c58",
+          "byte_count": 78148,
+          "raw_path": "raw/cu/lists/sido13_001.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "2",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:53.325635+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "0c8ad840ed1ac93ecfc7708611f9858413a9bd308cf3186f584f22b47d254c0a",
+          "byte_count": 78435,
+          "raw_path": "raw/cu/lists/sido13_002.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "3",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:54.936895+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "bc850c6d77913ebcdd1205865b5ebbf45f3ba0ac4d8532d8e93349685840d4fc",
+          "byte_count": 78202,
+          "raw_path": "raw/cu/lists/sido13_003.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "4",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:55.902798+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "2a8f36979da55d0694e41bcb3349992e10117f8877ab694f6b5322810e09d748",
+          "byte_count": 78352,
+          "raw_path": "raw/cu/lists/sido13_004.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "5",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:56.753293+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "027f15f7baf049e48bc7f2469370e9374fd1845b4329afbd51c0f3cf00341790",
+          "byte_count": 78326,
+          "raw_path": "raw/cu/lists/sido13_005.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "6",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:57.344083+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "fed78ecab861195c7594735269a907732f22511b409771e9ff10383418808a9e",
+          "byte_count": 78474,
+          "raw_path": "raw/cu/lists/sido13_006.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "7",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:57.985699+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "5927b04b148f2a3fddd5397e9727f0ddd8a5283904ae85a978a0226ef41d151d",
+          "byte_count": 78385,
+          "raw_path": "raw/cu/lists/sido13_007.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "8",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:58.780790+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "f80fab1a14cda42572af66ea51aacf8844778ca706378515432eb4de07456243",
+          "byte_count": 78292,
+          "raw_path": "raw/cu/lists/sido13_008.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "9",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:59.559662+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "43b3f92c2dc4e7fe9c3b08d47be201c043a3f3c46aea530a13eae13419916837",
+          "byte_count": 78477,
+          "raw_path": "raw/cu/lists/sido13_009.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "10",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:00.391529+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "ea9b7a636ed7505f63d7eb6821b08a6900d59b2aff1b6ff0f1dbe643505ae576",
+          "byte_count": 78470,
+          "raw_path": "raw/cu/lists/sido13_010.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "11",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:01.221691+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "f6251cc61b5f8be32e13a9a4c2ce24d4c760ff4457007001ba036d34e4663a81",
+          "byte_count": 78032,
+          "raw_path": "raw/cu/lists/sido13_011.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "12",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:02.060863+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "0f3b2edc4833477851cf8b6e45034dfa011fd43d07c37b452a47e81ffb86158d",
+          "byte_count": 77939,
+          "raw_path": "raw/cu/lists/sido13_012.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "13",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:02.700630+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "6094a274f9d6cc37a53d83c2e721e18338276b2238b50e45ec28ccd3cc306469",
+          "byte_count": 77885,
+          "raw_path": "raw/cu/lists/sido13_013.html"
+        },
+        {
+          "parsed_rows": 7,
+          "reported_total": 137,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido13",
+            "signgu": "",
+            "currPage": "14",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:03.508631+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "0e7cdda5f72a3eaad3a39f41acd15d302211909c233652078aee0a4c43cfb52e",
+          "byte_count": 76344,
+          "raw_path": "raw/cu/lists/sido13_014.html"
+        }
+      ]
+    },
+    {
+      "code": "sido14",
+      "name": "충남",
+      "reported_total": 99,
+      "collected_rows": 99,
+      "pages": [
+        {
+          "parsed_rows": 10,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "1",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:53.185549+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "fd65c94b79dd65afe42b767c714a4ec34e71aab9b6f5e71d9687d63d9d8aa8f9",
+          "byte_count": 78064,
+          "raw_path": "raw/cu/lists/sido14_001.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "2",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:54.812381+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "c2099f62b7fc47ba7f40ec704da0ff22a13604b703f90c3914af54ee99facb38",
+          "byte_count": 78315,
+          "raw_path": "raw/cu/lists/sido14_002.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "3",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:55.603239+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "a21ec58e4c08e3f06023ae70d9a5b72b28bb7f00dc5269b7b993909d913e0946",
+          "byte_count": 78350,
+          "raw_path": "raw/cu/lists/sido14_003.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "4",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:56.513308+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "83439c14aeb1c23db14ce829093aa92d5fbcee3ae080f298b60bc3a9506c5205",
+          "byte_count": 78242,
+          "raw_path": "raw/cu/lists/sido14_004.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "5",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:57.144307+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "579c9a04b633380c35a474498867688a5dc8e93e5b6fc8c00a0642a485ad8d4c",
+          "byte_count": 78325,
+          "raw_path": "raw/cu/lists/sido14_005.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "6",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:57.791751+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "05168fd6ad81ed5592a69ff8e91d2d7376c7fe242873beceb251fc271ba9b42f",
+          "byte_count": 78275,
+          "raw_path": "raw/cu/lists/sido14_006.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "7",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:58.667934+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "c96436fafb2647eee020836eceb83bd3c9144754d2f51aef7256555271b5bf1b",
+          "byte_count": 78359,
+          "raw_path": "raw/cu/lists/sido14_007.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "8",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:59.549861+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "da8607ac1b0ed9fb92d43317b3f199210f3a2c23fe2004064c13e03cff4f20f9",
+          "byte_count": 78493,
+          "raw_path": "raw/cu/lists/sido14_008.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "9",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:00.154366+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "97b3ec82ea8c5899be4010ffb7fe70054d80a98860da0e6bc0f8d271d48537b1",
+          "byte_count": 78232,
+          "raw_path": "raw/cu/lists/sido14_009.html"
+        },
+        {
+          "parsed_rows": 9,
+          "reported_total": 99,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido14",
+            "signgu": "",
+            "currPage": "10",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:00.786870+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "cbca3b90b49f7ad007c39907ea13cca3fffad67def6d2bf743395b4b12be9124",
+          "byte_count": 77685,
+          "raw_path": "raw/cu/lists/sido14_010.html"
+        }
+      ]
+    },
+    {
+      "code": "sido18",
+      "name": "전남광주",
+      "reported_total": 196,
+      "collected_rows": 196,
+      "pages": [
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "1",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:53.857305+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "971e3226ceda05880e2bba15f206484150de57ee228a37ae4fe8503afff32cf9",
+          "byte_count": 78334,
+          "raw_path": "raw/cu/lists/sido18_001.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "2",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:54.812448+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "e279cb4d9329d33364cc4bd96358e6a2e4ac745ed77f7410025e230255183118",
+          "byte_count": 78394,
+          "raw_path": "raw/cu/lists/sido18_002.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "3",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:55.827713+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "700917db7477d239df559265610faeec58c6a624acee71dc60565efcd9646915",
+          "byte_count": 78504,
+          "raw_path": "raw/cu/lists/sido18_003.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "4",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:56.513353+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "bb1ce0a4d4475a64ba6ff670c8ec6e87f9eb8e56526ff4dd4c98ba86c7c6eaa7",
+          "byte_count": 78437,
+          "raw_path": "raw/cu/lists/sido18_004.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "5",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:57.330201+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "a7a0bb0b487faef5df8db8c6f6ce8a17761114d2ac118c17ea670baf2a99dbb8",
+          "byte_count": 78584,
+          "raw_path": "raw/cu/lists/sido18_005.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "6",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:58.195640+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "d6f434e0a1286593ad3b6ebcc9c63910b6571a1e1a0f845245bd8c6b35ce43f1",
+          "byte_count": 78483,
+          "raw_path": "raw/cu/lists/sido18_006.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "7",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:58.786088+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "a39bef69126f19c9300dbb5a90e563ad327e8976cf36fc3b88178917325ee351",
+          "byte_count": 78498,
+          "raw_path": "raw/cu/lists/sido18_007.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "8",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:29:59.714176+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "3997471fe1b0ae4111090745d5cb179a6ac9098f35a580366ac7dbd9fb9a6b74",
+          "byte_count": 78306,
+          "raw_path": "raw/cu/lists/sido18_008.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "9",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:00.355362+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "5d6e212ebda3262cc8c199a562f2a2f18af49b75411e4688edbc04cfcd04889e",
+          "byte_count": 78392,
+          "raw_path": "raw/cu/lists/sido18_009.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "10",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:00.957316+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "1c43f9762698d517944863988331f09720e99cf1ccff2586dd34f3175d46275c",
+          "byte_count": 78386,
+          "raw_path": "raw/cu/lists/sido18_010.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "11",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:01.622409+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "128b1fbb54844849a5eb2b2a63c4f2c89b96b659743640e79f798256a6014c49",
+          "byte_count": 78354,
+          "raw_path": "raw/cu/lists/sido18_011.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "12",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:02.487389+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "0581fa1e49ef8597e28c60e6d8e6e8e99309c7e73803c81aec4d5bc365862711",
+          "byte_count": 78494,
+          "raw_path": "raw/cu/lists/sido18_012.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "13",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:03.286175+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "7ef0797024bab583e1257179a99379f818ff287afb28b31c76810cc0cca60c40",
+          "byte_count": 78532,
+          "raw_path": "raw/cu/lists/sido18_013.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "14",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:03.906979+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "89f2e8a7d40de3c0cf6e4942e720230e65179859061c8fab550b72357968fc96",
+          "byte_count": 78450,
+          "raw_path": "raw/cu/lists/sido18_014.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "15",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:04.665525+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "ac235b0f0750a78c64ee3021c8bf8181c9bc6d1a0b228dcb99a07355c3a81789",
+          "byte_count": 78388,
+          "raw_path": "raw/cu/lists/sido18_015.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "16",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:05.380889+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "9f84decc69b2b259efa62e1075c31561cd24d92092e3e4eb80f62eed15106edb",
+          "byte_count": 78492,
+          "raw_path": "raw/cu/lists/sido18_016.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "17",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:06.118991+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "0f06ba6d1f9c6d60c9b5e69159fa8963587ba9dc410148f63b09f006bb0450bd",
+          "byte_count": 78370,
+          "raw_path": "raw/cu/lists/sido18_017.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "18",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:06.786195+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "1bd379fbca7465b769d40523521f61aaec2f0899901f330a1c399b00e31b85c7",
+          "byte_count": 78337,
+          "raw_path": "raw/cu/lists/sido18_018.html"
+        },
+        {
+          "parsed_rows": 10,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "19",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:08.034829+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "4c7ba37b5154168fa84ea0e8c66d9c5cde2cacef3be75110ce50628763be2bfd",
+          "byte_count": 78473,
+          "raw_path": "raw/cu/lists/sido18_019.html"
+        },
+        {
+          "parsed_rows": 6,
+          "reported_total": 196,
+          "url": "https://www.cu.co.kr/cu/ad/cuSearch.do",
+          "method": "POST",
+          "parameters": {
+            "mi": "100076",
+            "cuSearchTab": "1",
+            "ctprvn": "sido18",
+            "signgu": "",
+            "currPage": "20",
+            "searchTxt": "",
+            "searchTy": ""
+          },
+          "http_status": 200,
+          "retrieved_at": "2026-10-12T12:30:09.450620+00:00",
+          "content_type": "text/html; charset=UTF-8",
+          "sha256": "30abe93bfd7458829edb7b9aec9a112afc6affddedfce9b108ccd7a86333a343",
+          "byte_count": 76290,
+          "raw_path": "raw/cu/lists/sido18_020.html"
+        }
+      ]
+    }
+  ],
+  "unique_branches_queried": 683,
+  "collected_details": 683,
+  "context_bbox_lon_lat": [
+    126,
+    35.1,
+    128.1,
+    36.35
+  ],
+  "bbox_records": 214,
+  "eligible_outside_jeonbuk_records": 190,
+  "missing_or_invalid_coordinates": [
+    "CUOFF-05002-02",
+    "CUOFF-08156-03"
+  ],
+  "bbox_exclusions": [
+    {
+      "outlet_id": "CUOFF-06110-01",
+      "name": "대전YMCA신용협동조합 지점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-06142-01",
+      "name": "대전교직원신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-06205-01",
+      "name": "대전충남치과의사신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-06169-01",
+      "name": "혜화학원신용협동조합 본점",
+      "common_bond": "직장",
+      "eligibility": "exclude_workplace_restricted"
+    },
+    {
+      "outlet_id": "CUOFF-10122-01",
+      "name": "진주교회다소신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-10015-01",
+      "name": "경상국립대학교신용협동조합 본점",
+      "common_bond": "직장",
+      "eligibility": "exclude_workplace_restricted"
+    },
+    {
+      "outlet_id": "CUOFF-10042-01",
+      "name": "칠암경상국립대학교신용협동조합 본점",
+      "common_bond": "직장",
+      "eligibility": "exclude_workplace_restricted"
+    },
+    {
+      "outlet_id": "CUOFF-06064-01",
+      "name": "새마을고려신용협동조합 본점",
+      "common_bond": "직장",
+      "eligibility": "exclude_workplace_restricted"
+    },
+    {
+      "outlet_id": "CUOFF-08006-01",
+      "name": "광주YWCA신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08006-02",
+      "name": "광주YWCA신용협동조합 지점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08150-01",
+      "name": "광주개인택시신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08118-01",
+      "name": "광주건축사신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08159-01",
+      "name": "광주교회신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08117-01",
+      "name": "광주약사신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08139-01",
+      "name": "광주전남의사신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08128-01",
+      "name": "광주전남치과의사신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08007-01",
+      "name": "밀알신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08007-02",
+      "name": "밀알신용협동조합 지점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08007-03",
+      "name": "밀알신용협동조합 지점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08037-01",
+      "name": "삼애신용협동조합 본점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08037-02",
+      "name": "삼애신용협동조합 지점",
+      "common_bond": "단체",
+      "eligibility": "exclude_group_access_unconfirmed"
+    },
+    {
+      "outlet_id": "CUOFF-08111-01",
+      "name": "광주은행신용협동조합 본점",
+      "common_bond": "직장",
+      "eligibility": "exclude_workplace_restricted"
+    },
+    {
+      "outlet_id": "CUOFF-08189-01",
+      "name": "전남대학교신용협동조합 본점",
+      "common_bond": "직장",
+      "eligibility": "exclude_workplace_restricted"
+    },
+    {
+      "outlet_id": "CUOFF-08181-01",
+      "name": "조선대학교신용협동조합 본점",
+      "common_bond": "직장",
+      "eligibility": "exclude_workplace_restricted"
+    }
+  ],
+  "temporal_limit": "Retrieved 2026-10-12. Presence and operation at August 2026 baseline are unknown.",
+  "coverage_limit": "All listed branches from six specified province queries, then official-coordinate bbox filter. Not a nationwide or cross-provider census. Invalid-coordinate records are not assumed absent from bbox.",
+  "retrieval_started_at": "2026-10-12T12:29:45.958057+00:00",
+  "retrieval_finished_at": "2026-10-12T12:31:58.647957+00:00"
+}

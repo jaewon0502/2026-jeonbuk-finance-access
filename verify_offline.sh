@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# GitHub 클론만으로 가능한 공유 데이터 검증
+# 저장된 검증 입력과 기존 제출 자료를 함께 점검한다. 도로망 전체 재생성은 제외한다.
 set -uo pipefail
 cd "$(dirname "$0")"
 FAIL=0
@@ -20,7 +20,7 @@ else
   FAIL=1
 fi
 
-echo "== 3. 전북 분석·시나리오 산출물 재생성 =="
+echo "== 3. 기존 제출 분석 재검증과 보완 대시보드 재생성 =="
 if PYTHONPATH=src python3 src/build_typology.py && \
    PYTHONPATH=src python3 src/build_jeonbuk_route_scenario.py --reuse-matrix && \
    PYTHONPATH=src python3 src/build_scenario_evidence.py && \
@@ -28,7 +28,7 @@ if PYTHONPATH=src python3 src/build_typology.py && \
    node --check docs/demo-jeonbuk/app.js && \
    node --check docs/demo-jeonbuk/scenario-engine.js && \
    node --test tests/test_dashboard_engine.js; then
-  echo "  OK  전북 243개 행정동 유형·경로·민감도와 브라우저 엔진"
+  echo "  OK  기존 제출 분석 + 보완 자료의 보고서 수치·브라우저 엔진"
 else
   echo "  FAIL 전북 분석·시나리오 산출물 또는 브라우저 엔진"
   FAIL=1

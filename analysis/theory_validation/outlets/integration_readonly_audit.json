@@ -1,0 +1,30 @@
+{
+  "reviewed_at": "2026-10-12T12:36:14.031905+00:00",
+  "input_file": "analysis/theory_validation/inputs/outlets_expanded.csv",
+  "input_sha256": "0bc36abb3b216220da01e536c699fe5345d37c0328c089935ce405c77cad1d80",
+  "normalizer_file": "analysis/theory_validation/prepare_outlets.py",
+  "normalizer_sha256": "88f912ad146077363a18b383c29c53be326814fc4a027e50aab21394d81dcd47",
+  "mode": "read_only_review_no_pipeline_execution",
+  "outcome": "pass_for_declared_additive_scope",
+  "observed_total": 1385,
+  "observed_finance_open_Y": 1347,
+  "original_rows": 681,
+  "original_fields_preserved": true,
+  "unique_ids": 1385,
+  "added_rows": 704,
+  "groups": {
+    "jeonbuk_coop": 334,
+    "border_nh_20km": 316,
+    "border_cu_20km": 54
+  },
+  "source_field_comparison": "All 704 names, addresses, lat/lon, retrieved_at and baseline_date_status match corresponding official source rows.",
+  "restriction_check": "All 54 added CU rows have official regional common-bond code 1.",
+  "baseline_duplicate_check": "All 681 baseline coordinates are in Jeonbuk. No Jeonbuk NH Bank added. New Jeonbuk provider class is agricultural/livestock cooperative, absent from baseline. New NH Bank/CU rows are outside Jeonbuk. IDs unique.",
+  "coordinate_caveat": "Plausible geographic ranges and source transcription verified. Official coordinate ground truth not independently verified. Existing 1.5114km NH Bank Gochang county hall disagreement remains frozen and separately audited.",
+  "coverage_caveat": "Finite intersection of collection rectangle and 20km province buffer. Not exhaustive all-provider border coverage. Two CU source coordinates are invalid. All-valid-origin 5km rectangle coverage was checked separately by spatial lane.",
+  "remaining_missing_providers": [
+    "outside_province_non_NH_banks",
+    "outside_province_KFCC",
+    "outside_province_financial_post_offices"
+  ]
+}

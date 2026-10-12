@@ -4,7 +4,14 @@
   const data = window.JEONBUK_DASHBOARD;
   const mapData = window.JEONBUK_MAP;
   const scenario = window.JeonbukScenario;
-  if (!data || !mapData || !scenario) throw new Error("전북 대시보드 번들을 불러오지 못했습니다.");
+  if (!data || !mapData || !scenario || !data.report_evidence || !data.validation) {
+    const error = document.getElementById("load-error");
+    error.hidden = false;
+    error.textContent = "분석 자료를 불러오지 못했습니다. 페이지를 새로고침해 주세요. 계속 나타나면 data.js와 map-data.js 및 scenario-engine.js가 같은 폴더에 있는지 확인해 주세요.";
+    document.querySelector("main").hidden = true;
+    document.querySelectorAll(".top-nav button").forEach((button) => { button.disabled = true; });
+    return;
+  }
 
   const byId = (id) => document.getElementById(id);
   const format = new Intl.NumberFormat("ko-KR");
@@ -15,7 +22,6 @@
   }, { P1: 0, P2: 0 });
   const priorityLabels = { P1: "P1 최우선", P2: "P2 우선", accessible: "3km 이하", quality_deferred: "품질유보" };
   const priorityColors = { P1: "#b83a3a", P2: "#e18a26", accessible: "#2f7d58", quality_deferred: "#7666a9" };
-  const typePalette = ["#1769aa", "#7b61a8", "#2f7d58", "#d07a24", "#64748b"];
   const vehiclePalette = ["#1769aa", "#d97706", "#7b61a8", "#0f766e", "#c2410c", "#334155", "#be185d", "#4d7c0f", "#0369a1", "#6d28d9"];
   const vehicleDashes = ["", "8 4", "2 3", "10 3 2 3", "5 3"];
   const sizeDefinitions = {
@@ -24,12 +30,11 @@
     road_distance: { label: "도로거리", value: (row) => row.road_km, unit: "km" },
     fixed: { label: "동일 크기", value: () => 1, unit: "" },
   };
-  const globalTypeLabels = [...new Set(data.admins.map((row) => row.cluster_label || row.rule_type || "비교집단·미분류"))].sort();
   const zoneEngines = new Map(data.route.engine_input.zones.map((zone) => [zone.zone_id, zone.engine_input]));
   const routeLegs = new Map(mapData.route_legs.map((leg) => [`${leg.zone_id}|${leg.origin_id}|${leg.destination_id}`, leg]));
   const adminByCode = new Map(data.admins.map((row) => [row.code, row]));
-  const outletColors = { "우체국": "#2563EB", "은행": "#0891B2", "새마을금고": "#DB2777", "신협": "#B45309" };
-  const outletTypes = ["우체국", "은행", "새마을금고", "신협"];
+  const outletColors = { "우체국": "#2563EB", "은행": "#0891B2", "새마을금고": "#DB2777", "신협": "#B45309", "농·축협": "#278346", "농협은행": "#6D5AB8" };
+  const outletTypes = Object.keys(outletColors);
   const outletRadius = 2.8;
   const scenarioCache = new Map();
   const customResults = new Map();
@@ -60,11 +65,24 @@
   const mapScale = Math.min((mapWidth - mapPadding * 2) / worldWidth, (mapHeight - mapPadding * 2) / worldHeight);
 
   function pct(part, whole) {
-    return `${(part / whole * 100).toFixed(1)}%`;
+    return `${(whole ? part / whole * 100 : 0).toFixed(1)}%`;
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
+  }
+
+  function formatKm(km) {
+    return Number(km).toLocaleString("ko-KR", { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+  }
+
+  function parameterCopy(parameters) {
+    return `차량 ${parameters.vehicle_count}대 · 주기 내 ${parameters.operating_days_per_cycle}일 · ${parameters.operating_start}~${parameters.operating_end} · 장소당 ${parameters.service_minutes}분 · 경로당 최대 ${parameters.max_stops_per_route}곳 · ${parameters.service_cycle_days}일 주기`;
   }
 
   function formatMonth(iso) {
     if (!iso) return "";
+    if (!/^\d{4}-\d{2}/.test(iso)) return iso;
     const [year, month] = iso.split("-");
     return `${year}. ${month}`;
   }
@@ -124,6 +142,7 @@
     { const el = byId("as-of-date"); if (el) el.textContent = formatDate(data.analysis_date); }
     byId("src-admin-date").textContent = formatMonth(asOf.admin);
     byId("src-outlet-date").textContent = formatMonth(asOf.outlets);
+    byId("source-outlet-note").textContent = asOf.outlets_note || "";
     byId("src-outlet-retrieved").textContent = formatMonth(asOf.outlets_retrieved || asOf.outlets);
     byId("src-senior-date").textContent = formatMonth(asOf.population_65plus);
     byId("src-admin-count").textContent = format.format(data.scope.analysis_admin_count);
@@ -134,9 +153,24 @@
     byId("m-road-total").textContent = format.format(roadTotal);
     byId("m-road-primary-copy").textContent = format.format(roadPrimary);
     byId("m-road-nonprimary").textContent = format.format(roadTotal - roadPrimary);
+    byId("source-quality").textContent = `도로거리: 주 지표 ${roadPrimary}곳 · 품질유보 ${roadTotal - roadPrimary}곳`;
     byId("m-route-deferred").textContent = format.format(data.scope.route_quality_deferred_count);
     byId("analysis-date").textContent = data.analysis_date;
     byId("ops-speed").textContent = String(data.route.travel_model.uniform_speed_kmh);
+    byId("snapshot-summary").textContent = `전북 전체 고정 결과 · 보완 접점 수집 ${formatDate(data.analysis_date)} · 도로망 ${formatDate(data.validation.road_date)} · 자료 버전 ${data.report_evidence.snapshot_id}`;
+    renderReportEvidence();
+  }
+
+  function renderReportEvidence() {
+    const evidence = data.report_evidence;
+    const methods = evidence.methods;
+    const comparison = evidence.comparisons.priority_nearest;
+    byId("report-scope").textContent = `대표점 도로거리 3km 초과 ${data.scope.threshold_target_count}곳 중 품질유보 ${data.scope.route_quality_deferred_count}곳을 제외한 ${data.scope.route_eligible_target_count}곳이 경로대상입니다. 시군당 최소 1일을 먼저 배정한 뒤 남은 경로일을 대상 수에 따라 배정했습니다.`;
+    byId("report-parameters").textContent = `${parameterCopy(evidence.reference_parameters)}. 아래 결과는 시군 선택이나 사용자 입력에 따라 바뀌지 않습니다.`;
+    byId("report-comparison").innerHTML = `<thead><tr><th scope="col">방법</th><th scope="col">방문</th><th scope="col">P1 / P2</th><th scope="col">이동거리</th><th scope="col">DP와 방문 대상</th></tr></thead><tbody>${methods.map((method) => `<tr><th scope="row">${escapeHtml(method.label)}</th><td>${method.covered_target_count} / ${data.scope.route_eligible_target_count}곳</td><td>${method.coverage_by_tier.P1} / ${method.coverage_by_tier.P2}</td><td>${formatKm(method.travel_km)} km</td><td>${method.id === "exact_dp" ? "비교 기준" : method.same_targets_as_dp ? "같음" : "다름"}</td></tr>`).join("")}</tbody>`;
+    byId("report-takeaway").innerHTML = `우선순위 최근접 방법과 <strong>같은 ${methods.find((method) => method.id === "exact_dp").covered_target_count}곳</strong>을 방문하면서 DP의 이동거리가 <strong>${formatKm(comparison.distance_saved_km)}km (${comparison.distance_saved_percent.toFixed(2)}%)</strong> 짧았습니다. 운영비나 주민의 이동시간이 같은 비율로 줄었다는 뜻은 아닙니다.`;
+    const validation = evidence.validation;
+    byId("report-validation").innerHTML = `<div><dt>누락 접점 보완</dt><dd>같은 도로망에서 경로대상 ${validation.baseline_target_count} → ${validation.expanded_target_count}곳. 접점 추가 효과를 도로망 변경과 분리했습니다.</dd></div><div><dt>대표점 위치 점검</dt><dd>비교 가능한 ${validation.origin_comparable_count}곳 중 ${validation.origin_stable_count}곳의 거리 등급이 같았습니다. 주민 분포의 타당성을 입증한 검증은 아닙니다.</dd></div><div><dt>경로 제약 재확인</dt><dd>${validation.comparison_count}개 조건의 일정 재검산에서 제약 위반 ${validation.route_replay_violations}건. 실제 교통과 현장 운영은 미검증입니다.</dd></div>`;
   }
 
   function renderOverview(plan) {
@@ -152,7 +186,7 @@
     byId("ops-p2").textContent = `${p2} / ${tierTotals.P2}`;
     byId("ops-p2-pct").textContent = String(Math.round(p2 / tierTotals.P2 * 100));
     byId("ops-days").textContent = format.format(active.route_days_used);
-    byId("ops-km").textContent = format.format(Math.round(active.totals.travel_km));
+    byId("ops-km").textContent = formatKm(active.totals.travel_km);
     byId("ops-time").textContent = formatDuration(active.totals.travel_minutes);
   }
 
@@ -274,7 +308,8 @@
     if (excludedCodes().has(row.code)) return { label: "품질유보", cls: "quality_deferred", note: "경로 품질유보로 운영 대상에서 제외했습니다." };
     if (row.priority !== "P1" && row.priority !== "P2") return { label: "해당 없음", cls: "visit-na", note: "경로대상(P1·P2)이 아닙니다." };
     if (visitedCodes(plan).has(row.code)) return { label: "방문", cls: "visit-yes", note: `${scopedPlanLabel()} 운영주기 내 방문 대상입니다.` };
-    return { label: "미방문", cls: "visit-no", note: `${scopedPlanLabel()} 운영주기 방문 대상이 아닙니다.` };
+    const unvisited = plan?.unvisited_targets?.find((target) => target.target_id === row.code);
+    return { label: "미방문", cls: "visit-no", note: unvisited ? unvisitedReason(unvisited.reason) : `${scopedPlanLabel()} 운영주기 방문 대상이 아닙니다.` };
   }
 
   function rankedAdmins() {
@@ -283,23 +318,37 @@
 
   function csvCell(value) {
     const text = String(value ?? "");
-    return /[",\n]/.test(text) ? `"${text.replaceAll("\"", "\"\"")}"` : text;
+    const safeText = /^[=+@-]/.test(text) ? `'${text}` : text;
+    return /[",\r\n]/.test(safeText) ? `"${safeText.replaceAll("\"", "\"\"")}"` : safeText;
   }
 
-  function downloadAccessCsv() {
-    const rows = rankedAdmins();
-    const header = ["순위", "시군", "행정동", "도로거리km", "3km내접점", "65세이상인구", "65세이상비율", "취약유형", "우선순위", "운영주기방문", "비고"];
-    const body = rows.map((row, index) => {
-      const visit = visitStatus(row);
-      return [index + 1, row.service_zone, row.dong, row.road_km.toFixed(2), row.cnt_3km, row.pop_65plus, row.ratio_65plus.toFixed(1), row.cluster_label || row.rule_type || "도시 비교집단", priorityLabels[row.priority], visit.label, visit.note];
-    });
+  function downloadCsv(name, header, body) {
     const blob = new Blob(["\uFEFF" + [header, ...body].map((line) => line.map(csvCell).join(",")).join("\n")], { type: "text/csv;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "jeonbuk-access-admins.csv";
+    link.download = name;
     link.click();
     URL.revokeObjectURL(url);
+  }
+
+  function exportMetadata(plan) {
+    return {
+      header: ["자료버전", "분석일", "내보낸시각", "시군범위", "운영안", "적용조건", "배정방법", "시나리오입력SHA256"],
+      values: [data.report_evidence.snapshot_id, data.analysis_date, new Date().toISOString(), selectedZoneList().join("·"), activeScenarioLabel(), parameterCopy(plan.parameters), plan.allocation_method, data.validation.scenario_sha256],
+    };
+  }
+
+  function downloadAccessCsv() {
+    const rows = rankedAdmins();
+    const plan = activePlan();
+    const metadata = exportMetadata(plan);
+    const header = ["순위", "시군", "행정동", "도로거리km", "직선거리3km내접점", "65세이상인구", "65세이상비율", "우선순위", "운영주기방문", "도로품질", "비고", ...metadata.header];
+    const body = rows.map((row, index) => {
+      const visit = visitStatus(row);
+      return [index + 1, row.service_zone, row.dong, row.road_km.toFixed(3), row.cnt_3km, row.pop_65plus, row.ratio_65plus.toFixed(1), priorityLabels[row.priority], visit.label, row.road_distance_primary === "Y" ? "주 지표" : "품질유보", visit.note, ...metadata.values];
+    });
+    downloadCsv(`jeonbuk-access-${data.report_evidence.snapshot_id}.csv`, header, body);
   }
 
   function resetAnalysisFilters() {
@@ -316,11 +365,6 @@
     applyZoneSelection();
   }
 
-  function typologyColor(row) {
-    const label = row.cluster_label || row.rule_type || "비교집단·미분류";
-    return typePalette[globalTypeLabels.indexOf(label) % typePalette.length];
-  }
-
   function distanceOf(row) {
     return distanceMode === "road" ? row.road_km : row.line_km;
   }
@@ -332,7 +376,7 @@
   function pointColor(row, metric) {
     if (metric === "priority") return priorityColors[row.priority];
     if (metric === "distance") return distanceFill(distanceOf(row));
-    return typologyColor(row);
+    return distanceFill(distanceOf(row));
   }
 
   function sizeStats(key) {
@@ -372,10 +416,6 @@
   }
 
   function colorLegendItems(metric) {
-    if (metric === "typology") {
-      const visibleLabels = new Set(filteredAdmins().map((row) => row.cluster_label || row.rule_type || "비교집단·미분류"));
-      return globalTypeLabels.filter((label) => visibleLabels.has(label)).map((label) => ({ label, color: typePalette[globalTypeLabels.indexOf(label) % typePalette.length] }));
-    }
     if (metric === "distance") {
       return [
         { label: "5km 초과", color: "#F11D22" },
@@ -546,6 +586,8 @@
   function setupOutletLegend() {
     const master = byId("outlet-layer");
     if (!master) return;
+    const presentTypes = new Set((data.outlets || []).map((outlet) => outlet.type));
+    document.querySelector(".outlet-type-list").innerHTML = outletTypes.filter((type) => presentTypes.has(type)).map((type) => `<li><label class="outlet-type-toggle"><input type="checkbox" name="outlet-type" value="${escapeHtml(type)}" checked disabled><span class="outlet-type-key" style="background:${outletColors[type]}"></span>${escapeHtml(type)}</label></li>`).join("");
     master.addEventListener("change", () => {
       syncOutletLegendState();
       if (isOverview()) drawMap();
@@ -679,7 +721,7 @@
         tabindex: 0, role: "button", "aria-label": pointTitle(row, sizeKey),
       }, pointTitle(row, sizeKey));
       point.addEventListener("click", () => selectAdmin(row.code));
-      point.addEventListener("keydown", (event) => { if (event.key === "Enter" || event.key === " ") selectAdmin(row.code); });
+      point.addEventListener("keydown", (event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectAdmin(row.code); } });
       svg.appendChild(point);
     }
   }
@@ -748,7 +790,7 @@
 
   function renderAdminDetail(row) {
     const visit = visitStatus(row);
-    byId("detail").innerHTML = `<h3>${row.service_zone} ${row.dong} <span class="badge ${row.priority.toLowerCase()}">${priorityLabels[row.priority]}</span></h3><div class="stat"><span>도로거리</span><b>${row.road_km.toFixed(2)} km</b></div><div class="stat"><span>직선거리</span><b>${row.line_km.toFixed(2)} km</b></div><div class="stat"><span>최근접 금융접점</span><b>${row.nearest_name} · ${row.nearest_type}</b></div><div class="stat"><span>65세 이상</span><b>${format.format(row.pop_65plus)}명 · ${row.ratio_65plus.toFixed(1)}%</b></div><div class="stat"><span>3km 내 접점</span><b>${format.format(row.cnt_3km)}곳</b></div><div class="stat"><span>취약유형</span><b>${row.cluster_label || row.rule_type || "도시 비교집단"}</b></div><div class="stat"><span>도로 품질</span><b>${row.road_distance_primary === "Y" ? "주 지표" : `품질유보 · ${row.route_quality}`}</b></div><div class="detail-note"><b>운영주기 방문</b> (주기 ${format.format(activeCycleDays())}일) · ${visit.label}<br>${visit.note}</div>`;
+    byId("detail").innerHTML = `<h3>${row.service_zone} ${row.dong} <span class="badge ${row.priority.toLowerCase()}">${priorityLabels[row.priority]}</span></h3><div class="stat"><span>도로거리</span><b>${row.road_km.toFixed(2)} km</b></div><div class="stat"><span>직선거리</span><b>${row.line_km.toFixed(2)} km</b></div><div class="stat"><span>최근접 금융접점</span><b>${row.nearest_name} · ${row.nearest_type}</b></div><div class="stat"><span>65세 이상</span><b>${format.format(row.pop_65plus)}명 · ${row.ratio_65plus.toFixed(1)}%</b></div><div class="stat"><span>직선거리 3km 내 접점</span><b>${format.format(row.cnt_3km)}곳</b></div><div class="stat"><span>도로 품질</span><b>${row.road_distance_primary === "Y" ? "주 지표" : `품질유보 · ${row.route_quality}`}</b></div><div class="detail-note"><b>운영주기 방문</b> (주기 ${format.format(activeCycleDays())}일) · ${visit.label}<br>${visit.note}</div>`;
   }
 
   function selectAdmin(code, options = {}) {
@@ -768,10 +810,12 @@
     const start = (tablePage - 1) * tablePageSize;
     const pageRows = rows.slice(start, start + tablePageSize);
     byId("access-count").textContent = format.format(rows.length);
+    byId("download-access").disabled = rows.length === 0;
+    byId("download-table").disabled = rows.length === 0;
     byId("access-rows").innerHTML = pageRows.map((row, index) => {
       const visit = visitStatus(row);
       const kmClass = row.road_km > 5 ? "km-hot" : row.road_km > 3 ? "km-warm" : "";
-      return `<tr data-code="${row.code}" class="${row.code === selectedCode ? "sel" : ""}" tabindex="0"><td>${start + index + 1}</td><td>${row.service_zone}</td><td>${row.dong}</td><td class="${kmClass}">${row.road_km.toFixed(2)} km</td><td>${format.format(row.cnt_3km)}곳</td><td>${format.format(row.pop_65plus)}명</td><td>${row.ratio_65plus.toFixed(1)}%</td><td>${row.cluster_label || row.rule_type || "도시 비교집단"}</td><td><span class="badge ${row.priority.toLowerCase()}">${priorityLabels[row.priority]}</span></td><td><span class="badge ${visit.cls}">${visit.label}</span></td><td>${row.road_distance_primary === "Y" ? "-" : "품질유보"}</td></tr>`;
+      return `<tr data-code="${row.code}" class="${row.code === selectedCode ? "sel" : ""}" tabindex="0"><td>${start + index + 1}</td><td>${row.service_zone}</td><td>${row.dong}</td><td class="${kmClass}">${row.road_km.toFixed(2)} km</td><td>${format.format(row.cnt_3km)}곳</td><td>${format.format(row.pop_65plus)}명</td><td>${row.ratio_65plus.toFixed(1)}%</td><td><span class="badge ${row.priority.toLowerCase()}">${priorityLabels[row.priority]}</span></td><td><span class="badge ${visit.cls}">${visit.label}</span></td><td>${row.road_distance_primary === "Y" ? "-" : "품질유보"}</td></tr>`;
     }).join("");
     document.querySelectorAll("#access-rows tr").forEach((element) => {
       element.addEventListener("click", () => selectAdmin(element.dataset.code, { pan: true }));
@@ -1134,6 +1178,55 @@
     };
   }
 
+  function updateInputStatus() {
+    const plan = activePlan();
+    const input = readForm();
+    const pending = Object.keys(input).some((key) => input[key] !== plan.parameters[key]);
+    const status = byId("input-status");
+    status.classList.toggle("is-dirty", pending);
+    status.textContent = pending
+      ? "입력을 수정했습니다. 아래 결과와 CSV에는 아직 이전 계산 조건이 적용되어 있습니다. ‘새 시나리오 계산’을 눌러 반영해 주세요."
+      : "입력값과 현재 선택한 결과의 조건이 같습니다.";
+  }
+
+  function renderAppliedSummary(plan) {
+    byId("applied-summary").innerHTML = `<b>현재 결과: ${escapeHtml(scopedPlanLabel())} · ${escapeHtml(zoneSummaryLabel())}</b><br>${escapeHtml(parameterCopy(plan.parameters))}<br>경로일 배정과 방문 순서 재계산 · 자료 ${escapeHtml(data.report_evidence.snapshot_id)} · 분석일 ${escapeHtml(data.analysis_date)}`;
+    updateInputStatus();
+  }
+
+  function unvisitedReason(reason) {
+    const labels = {
+      no_eligible_candidate: "대응하는 방문 후보가 없습니다.",
+      zone_not_allocated_route_day: "해당 시군에 배정된 경로일이 없습니다.",
+      not_selected_under_stop_time_objective: "운영시간과 방문 상한 안에서 우선순위·이동시간을 비교한 결과 이번 주기에 선정되지 않았습니다.",
+    };
+    return labels[reason] || reason;
+  }
+
+  function renderItineraries(plan) {
+    const routes = plan.routes || [];
+    const unvisited = plan.unvisited_targets || [];
+    byId("download-itinerary").disabled = routes.length === 0 && unvisited.length === 0;
+    byId("itinerary-title").textContent = `${zoneSummaryLabel()} · ${activeScenarioLabel()} 방문 일정`;
+    byId("route-itineraries").innerHTML = routes.length ? routes.map((route) => {
+      const depots = data.route.depots_by_zone[route.service_zone];
+      return `<details class="route-detail"><summary>${route.cycle_day}일차 · ${escapeHtml(route.vehicle_id.replace("vehicle-", "차량 "))} · ${escapeHtml(route.service_zone)} · ${route.stops.length}곳 · ${formatKm(route.travel_km)}km</summary><p class="route-meta">출발 ${route.start_time} · 복귀 ${route.end_time} · 이동 ${formatDuration(route.travel_minutes)} · 현장 서비스 ${formatDuration(route.service_minutes)}</p><div class="compare"><table><thead><tr><th scope="col">순서</th><th scope="col">장소</th><th scope="col">도착</th><th scope="col">서비스</th><th scope="col">대기</th></tr></thead><tbody><tr><td>출발</td><td>${escapeHtml(depots.start.name)} (후보)</td><td>${route.start_time}</td><td>해당 없음</td><td>해당 없음</td></tr>${route.timeline.map((stop, index) => `<tr><td>${index + 1}</td><td>${escapeHtml(stop.name)}</td><td>${stop.arrival_time}</td><td>${stop.service_start}~${stop.service_end}</td><td>${Math.round(stop.wait_minutes)}분</td></tr>`).join("")}<tr><td>복귀</td><td>${escapeHtml(depots.end.name)} (후보)</td><td>${route.end_time}</td><td>해당 없음</td><td>해당 없음</td></tr></tbody></table></div></details>`;
+    }).join("") : '<p class="empty-note">계산된 방문 일정이 없습니다. 시군 선택과 운영 조건을 확인해 주세요.</p>';
+    byId("unvisited-title").textContent = `이번 주기 미방문 대상 ${unvisited.length}곳`;
+    byId("unvisited-list").innerHTML = unvisited.length
+      ? `<table class="unvisited-table"><thead><tr><th scope="col">시군</th><th scope="col">행정동</th><th scope="col">우선순위</th><th scope="col">미방문 사유</th></tr></thead><tbody>${unvisited.map((target) => `<tr><td>${escapeHtml(target.service_zone)}</td><td>${escapeHtml(target.name)}</td><td>${escapeHtml(target.priority_tier)}</td><td>${escapeHtml(unvisitedReason(target.reason))}</td></tr>`).join("")}</tbody></table>`
+      : `<p class="empty-note">${plan.target_count ? "선택 범위의 경로대상을 모두 방문합니다." : "선택 범위에 경로대상이 없습니다."}</p>`;
+  }
+
+  function downloadItineraryCsv() {
+    const plan = activePlan();
+    const metadata = exportMetadata(plan);
+    const header = ["구분", "일차", "차량", "시군", "순서", "장소", "출발시각", "도착시각", "서비스시작", "서비스종료", "복귀시각", "대기분", "경로전체거리km(경로당첫행)", "미방문사유", ...metadata.header];
+    const body = plan.routes.flatMap((route) => route.timeline.map((stop, index) => ["방문", route.cycle_day, route.vehicle_id, route.service_zone, index + 1, stop.name, route.start_time, stop.arrival_time, stop.service_start, stop.service_end, route.end_time, stop.wait_minutes, index === 0 ? route.travel_km : "", "", ...metadata.values]));
+    plan.unvisited_targets.forEach((target) => body.push(["미방문", "", "", target.service_zone, "", target.name, "", "", "", "", "", "", "", unvisitedReason(target.reason), ...metadata.values]));
+    downloadCsv(`jeonbuk-itinerary-${data.report_evidence.snapshot_id}.csv`, header, body);
+  }
+
   function referenceScenario(preset) {
     return { id: preset.preset_id, label: preset.label, parameters: preset.parameters, ...preset.result, all_zones_allocated: preset.all_zones_allocated };
   }
@@ -1188,9 +1281,13 @@
   function fairnessCopy(active, scope) {
     const capacity = active.parameters.vehicle_count * active.parameters.operating_days_per_cycle;
     if (isFullProvinceScope(scope)) {
-      return active.all_zones_allocated
-        ? `${active.label}: 차량×운영일 ${capacity}경로일로 14개 시·군에 최소 1회씩 배정할 수 있습니다.`
-        : `${active.label}: 가용 경로일이 ${capacity}일이라 14개 시·군 모두에 최소 1회 배정할 수 없습니다. 이 결과는 우선순위가 높은 일부 시·군 집중안입니다.`;
+      const zoneCount = data.scope.analysis_service_zone_count;
+      if (active.all_zones_allocated) return `${active.label}: 차량×운영일 ${capacity}경로일로 ${zoneCount}개 시·군에 최소 1회씩 배정할 수 있습니다.`;
+      const unallocated = (active.zone_allocations || []).filter((zone) => zone.allocated_route_days === 0).map((zone) => zone.zone_id);
+      const reason = capacity < zoneCount
+        ? `가용 경로일이 ${capacity}일이라 ${zoneCount}개 시·군 모두에 최소 1회 배정할 수 없습니다.`
+        : `가용 경로일은 ${capacity}일이지만 현재 운영시간·장소 시간창·방문 조건에서 모든 시군의 방문 일정을 만들 수 없습니다.`;
+      return `${active.label}: ${reason}${unallocated.length ? ` 미배정 시군: ${unallocated.join("·")}.` : ""}`;
     }
     const scopeList = (Array.isArray(scope) ? scope : [scope]).filter(Boolean);
     if (!scopeList.length) return `${active.label}: 선택된 시·군이 없어 비교할 경로대상이 없습니다. 시·군 필터에서 하나 이상을 선택해야 합니다.`;
@@ -1255,7 +1352,7 @@
     const allocCell = (row) => (zoneCount === 0
       ? "<td>—</td>"
       : `<td class="${row.all_zones_allocated ? "alloc-yes" : "alloc-no"}">${row.all_zones_allocated ? "가능" : "불가"}</td>`);
-    byId("scenario-table").innerHTML = `<thead><tr><th>지표</th>${rows.map((row) => `<th>${planCaption(row)}</th>`).join("")}</tr></thead><tbody><tr><td>차량 × 운영일</td>${rows.map((row) => `<td>${row.parameters ? `${row.parameters.vehicle_count}대 × ${row.parameters.operating_days_per_cycle}일` : "—"}</td>`).join("")}</tr><tr><td>서비스시간 (분)</td>${rows.map((row) => `<td>${row.parameters ? row.parameters.service_minutes : "—"}</td>`).join("")}</tr><tr><td>전체 방문 대상 (${format.format(scopeTotals.P1 + scopeTotals.P2)}개 기준)</td>${rows.map((row) => fractionCell(row.covered_target_count, row.target_count)).join("")}</tr><tr><td>P1 방문 (${format.format(scopeTotals.P1)}개) · 접근성 취약</td>${rows.map((row) => fractionCell(row.coverage_by_tier.P1, scopeTotals.P1)).join("")}</tr><tr><td>P2 방문 (${format.format(scopeTotals.P2)}개) · 기타</td>${rows.map((row) => fractionCell(row.coverage_by_tier.P2, scopeTotals.P2)).join("")}</tr><tr><td>경로일 (총)</td>${rows.map((row) => `<td>${format.format(row.route_days_used)}일</td>`).join("")}</tr><tr><td>이동거리 (추정, km)</td>${rows.map((row) => `<td>${format.format(Math.round(row.totals.travel_km))} km</td>`).join("")}</tr><tr><td>추정 이동시간*</td>${rows.map((row) => `<td>${formatDuration(row.totals.travel_minutes)}</td>`).join("")}</tr><tr><td>${allocationLabel}</td>${rows.map(allocCell).join("")}</tr></tbody>`;
+    byId("scenario-table").innerHTML = `<thead><tr><th>지표</th>${rows.map((row) => `<th>${planCaption(row)}</th>`).join("")}</tr></thead><tbody><tr><td>차량 × 운영일</td>${rows.map((row) => `<td>${row.parameters ? `${row.parameters.vehicle_count}대 × ${row.parameters.operating_days_per_cycle}일` : "—"}</td>`).join("")}</tr><tr><td>장소당 서비스시간 (분)</td>${rows.map((row) => `<td>${row.parameters ? row.parameters.service_minutes : "—"}</td>`).join("")}</tr><tr><td>전체 방문 대상 (${format.format(scopeTotals.P1 + scopeTotals.P2)}개 기준)</td>${rows.map((row) => fractionCell(row.covered_target_count, row.target_count)).join("")}</tr><tr><td>P1 방문 (${format.format(scopeTotals.P1)}개) · 5km 초과</td>${rows.map((row) => fractionCell(row.coverage_by_tier.P1, scopeTotals.P1)).join("")}</tr><tr><td>P2 방문 (${format.format(scopeTotals.P2)}개) · 3~5km</td>${rows.map((row) => fractionCell(row.coverage_by_tier.P2, scopeTotals.P2)).join("")}</tr><tr><td>경로일 (총)</td>${rows.map((row) => `<td>${format.format(row.route_days_used)}일</td>`).join("")}</tr><tr><td>모형 이동거리 (km)</td>${rows.map((row) => `<td>${formatKm(row.totals.travel_km)} km</td>`).join("")}</tr><tr><td>추정 이동시간*</td>${rows.map((row) => `<td>${formatDuration(row.totals.travel_minutes)}</td>`).join("")}</tr><tr><td>${allocationLabel}</td>${rows.map(allocCell).join("")}</tr></tbody>`;
     byId("scenario-note").textContent = `*추정 이동시간 = OSM 최단거리 ÷ ${speed}km/h 가정값입니다. 실제 교통시간을 반영하지 않습니다.`;
     const active = rows.find((row) => row.id === activeScenarioId) || rows[1];
     byId("fairness-warning").textContent = `${fairnessCopy(active, scope)} 차고지·장소 승인·시간창·서비스 시간·차량 재배치는 운영 가정값이며 미확정 상태입니다. 운영 확정 전에는 시연용 결과로만 활용해야 합니다.`;
@@ -1268,15 +1365,17 @@
     const totalP2 = zoneRows.reduce((sum, row) => sum + (visits.get(row.zone_id)?.P2 || 0), 0);
     byId("zone-title").textContent = `${format.format(zoneCount)}개 시·군 경로일 배정 결과`;
     byId("zone-plan-label").textContent = active ? `${active.label} 기준 · 총 ${format.format(active.route_days_used)}경로일` : "";
-    byId("zone-legend").innerHTML = `<span><i class="p1-dot"></i>P1: 접근성 취약 (${format.format(scopeTotals.P1)}개)</span><span><i class="p2-dot"></i>P2: 기타 (${format.format(scopeTotals.P2)}개)</span>`;
+    byId("zone-legend").innerHTML = `<span><i class="p1-dot"></i>P1: 5km 초과 (${format.format(scopeTotals.P1)}개)</span><span><i class="p2-dot"></i>P2: 3~5km (${format.format(scopeTotals.P2)}개)</span>`;
     byId("zone-list").innerHTML = `${zoneTableMarkup(zoneRows.slice(0, mid), visits, scopeTotals)}${zoneTableMarkup(zoneRows.slice(mid), visits, scopeTotals)}`;
     byId("zone-total").innerHTML = `<span>합계</span><span class="days">${format.format(totalDays)}일</span><span class="p1">P1 ${format.format(totalP1)}</span><span class="p2">P2 ${format.format(totalP2)}</span>`;
     byId("deferred-chip").textContent = `${format.format(data.scope.route_quality_deferred_count)}개`;
-    byId("status-chip").textContent = data.status;
-    byId("ready-chip").textContent = String(data.operational_ready);
+    byId("status-chip").textContent = data.status === "demonstration_not_operational" ? "시연용" : data.status;
+    byId("ready-chip").textContent = data.operational_ready ? "확정" : "미확정";
+    renderAppliedSummary(livePlan);
+    renderItineraries(livePlan);
     syncPlanChips();
     updateRouteDayOptions(activePlan());
-    if (isFullProvinceScope(scope)) renderOverview(planFor("default", scope));
+    renderOverview(planFor("default", "all"));
     if (!isOverview()) renderRank();
     else drawMap();
   }
@@ -1289,7 +1388,8 @@
     const activatePreset = (id) => {
       byId("preset-select").value = id;
       byId("form-error").classList.remove("show");
-      if (id !== "custom") fillForm(presets.get(id).parameters);
+      const parameters = id === "custom" ? customResults.get(scopeCacheKey())?.parameters : presets.get(id).parameters;
+      if (parameters) fillForm(parameters);
       renderScenarios(id);
     };
     byId("plan-chips").addEventListener("click", (event) => {
@@ -1302,7 +1402,11 @@
     });
     byId("preset-select").addEventListener("change", (event) => activatePreset(event.target.value === "custom" ? "custom" : event.target.value));
     byId("reset-inputs").addEventListener("click", () => activatePreset("default"));
-    document.querySelectorAll("#scenario-form input").forEach((input) => input.addEventListener("input", () => { byId("preset-select").value = "custom"; }));
+    byId("download-itinerary").addEventListener("click", downloadItineraryCsv);
+    document.querySelectorAll("#scenario-form input:not([type='checkbox'])").forEach((input) => input.addEventListener("input", () => {
+      byId("preset-select").value = "custom";
+      updateInputStatus();
+    }));
     document.querySelectorAll("[data-step-for]").forEach((button) => {
       button.addEventListener("click", () => {
         const input = byId(button.getAttribute("data-step-for"));
@@ -1310,6 +1414,7 @@
         const next = Number(input.value) + delta;
         input.value = String(Math.min(Number(input.max), Math.max(Number(input.min), next)));
         byId("preset-select").value = "custom";
+        updateInputStatus();
       });
     });
     byId("scenario-form").addEventListener("submit", (event) => {

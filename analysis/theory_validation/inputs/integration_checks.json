@@ -1,0 +1,13 @@
+{
+  "original_rows_preserved_exactly": 681,
+  "added_source_branch_keys_unique": 704,
+  "expanded_total": 1385,
+  "expanded_eligible": 1347,
+  "expanded_sha256": "0bc36abb3b216220da01e536c699fe5345d37c0328c089935ce405c77cad1d80",
+  "groups": {
+    "submission_snapshot": 681,
+    "border_nh_20km": 316,
+    "jeonbuk_coop": 334,
+    "border_cu_20km": 54
+  }
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="전북 금융 접근성 분석의 도로거리, 점 크기, AI 유형화, 차량 경로 계산을 고등학생도 이해할 수 있게 설명한 페이지">
+<meta name="description" content="보완 금융접점과 대표점 검증 및 동일 조건 경로 비교를 설명하는 전북 금융 접근성 분석 페이지">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
 <title>3분 만에 이해하는 계산 원리 · 전북 금융 접근성</title>
 <link rel="stylesheet" href="../fonts/pretendard.css">
@@ -17,38 +17,51 @@
 <header class="hero"><div class="wrap">
   <a class="back" href="index.html">← 대시보드로 돌아가기</a>
   <div class="eyebrow">3분 만에 이해하는 계산 원리</div>
-  <h1>은행이 먼 곳을 찾고,<br>방문 차량의 길을 짜는 방법</h1>
-  <p>어려운 수학부터 시작하지 않습니다. “왜 이런 계산이 필요한가?”를 그림과 예시로 먼저 이해한 뒤, 궁금할 때만 심화 수식을 펼쳐보세요.</p>
+  <h1>은행이 먼 곳을 찾고<br>방문 차량의 길을 짜는 방법</h1>
+  <p>2026년 10월 12일 보완 분석을 기준으로 설명합니다. 자료에 포함된 접점과 대표점의 한계를 확인한 뒤 같은 조건에서 경로를 비교합니다.</p>
 </div></header>
 <main class="main"><div class="wrap">
   <nav class="nav" aria-label="계산 이론 목차">
-    <a href="#distance">1. 왜 도로거리?</a><a href="#bubble">2. 점은 어떻게 읽나?</a><a href="#cluster">3. AI는 무엇을 하나?</a><a href="#route">4. 경로는 어떻게 짜나?</a>
+    <a href="#distance">1. 왜 도로거리?</a><a href="#bubble">2. 점은 어떻게 읽나?</a><a href="#cluster">3. 대표점은 타당한가?</a><a href="#route">4. 경로는 어떻게 짜나?</a>
   </nav>
 
   <section class="card">
     <span class="question">먼저 이것만 기억하세요</span>
     <h2>이 프로젝트는 네 가지 질문에 답합니다</h2>
-    <p class="lead">진단, 분류, 운영은 서로 다른 문제입니다. 한 개의 정체불명 “AI 점수”로 섞지 않았습니다.</p>
+    <p class="lead">접근성 진단과 경로 비교를 구분합니다. 기존 군집분석은 1차 제출 자료의 참고 결과로 남겼습니다.</p>
     <div class="grid">
-      <div class="mini"><b><span class="num">1</span> 실제 길은 얼마나 먼가?</b>지도 위 직선이 아니라 사람이 이동할 수 있는 도로를 따라 잽니다.</div>
-      <div class="mini"><b><span class="num">2</span> 지도 점은 무엇을 뜻하나?</b>색은 상태, 크기는 고령인구 같은 규모를 보여줍니다.</div>
-      <div class="mini"><b><span class="num">3</span> 비슷한 농촌은 어디인가?</b>AI가 거리·금융접점·고령비율이 비슷한 읍·면을 묶습니다.</div>
+      <div class="mini"><b><span class="num">1</span> 실제 길은 얼마나 먼가?</b>대표점에서 금융접점까지 차량 도로를 따라 거리를 잽니다.</div>
+      <div class="mini"><b><span class="num">2</span> 지도 점은 무엇을 뜻하나?</b>색은 우선순위나 방문 상태를 나타냅니다. 크기는 지역의 인구나 거리 수치를 보여줍니다.</div>
+      <div class="mini"><b><span class="num">3</span> 대표점이 달라도 같은가?</b>경계 내부 대표점과 전체 경계의 면적중심점을 비교해 분류가 바뀌는지 확인합니다.</div>
       <div class="mini"><b><span class="num">4</span> 차량은 어디부터 가야 하나?</b>차량 수와 운영시간 안에서 우선지역을 많이 방문할 순서를 찾습니다.</div>
     </div>
     <h3>페이지에서 자주 쓰는 말</h3>
     <div class="glossary">
       <div><b>대표점</b>행정동 전체를 계산하기 위해 정한 기준 위치</div>
-      <div><b>금융접점</b>은행·농협 등 금융서비스를 받을 수 있다고 확인한 장소</div>
+      <div><b>금융접점</b>공식 목록에 금융영업 접점으로 등재된 장소. 실제 영업과 업무 범위는 별도 확인 필요</div>
       <div><b>시나리오</b>차량 수·시간 등을 바꿔보는 하나의 운영 조건</div>
       <div><b>제약조건</b>차량 수나 퇴근시간처럼 반드시 지켜야 하는 규칙</div>
     </div>
   </section>
 
+  <section class="card" id="sources">
+    <span class="question">분석에 들어간 자료의 범위</span>
+    <h2>목록 1,385곳 중 1,347곳을 거리 계산에 사용했습니다</h2>
+    <p class="lead">기존 681곳에 전북 농·축협 334곳과 인접 지역 농협 316곳 및 지역신협 54곳을 더했습니다. 기존 목록에서 금융영업 제외로 분류한 38곳은 계속 제외했습니다.</p>
+    <div class="grid">
+      <div class="mini"><b>행정동 243곳</b>도로 연결 품질을 통과한 주 지표는 240곳입니다. 옥서면·정우면·칠보면 3곳은 대체 연결을 사용해 품질 유보로 남겼습니다.</div>
+      <div class="mini"><b>거리 3km 초과 55곳 → 경로 대상 54곳</b>55곳 중 품질 유보인 칠보면을 제외했습니다. 최종 경로 대상은 P1 21곳과 P2 33곳입니다.</div>
+    </div>
+    <p>같은 도로망에서 기존 접점만 사용하면 경로 대상이 70곳이었습니다. 보완 접점을 넣으면 54곳으로 줄었습니다. 접점을 추가한 영향이며 주민의 이동 여건이 실제로 개선됐다는 뜻은 아닙니다.</p>
+    <p class="source">자료 기준일은 원천마다 다릅니다. 기존 우체국 자료는 2025년 3월 1일 기준이고 은행 자료는 2025년 12월 31일 기준입니다. 기존 신협·새마을금고 목록은 2026년 8월에 수집했습니다.</p>
+    <div class="warning">추가 접점은 2026년 10월 12일 공식 목록을 확인한 결과입니다. 실제 영업 여부와 취급 업무 및 1차 제출 시점의 존재 여부를 현장에서 확인하지 않았습니다. 도 경계 밖은 농협과 지역신협 일부만 포함하므로 모든 인접 금융기관을 조사한 결과는 아닙니다.</div>
+  </section>
+
   <section class="card" id="distance">
     <span class="question">질문 1 · 가까워 보이는데 정말 가까울까?</span>
     <h2>직선거리 대신 도로거리를 씁니다</h2>
-    <p class="lead">산, 강, 끊긴 길이 있으면 지도에서는 가까워도 실제 이동은 멀 수 있습니다.</p>
-    <div class="story"><b>학교 가는 길로 생각해보세요.</b> 집과 학교가 운동장 하나만큼 가까워도, 사이에 강이 있다면 다리까지 돌아가야 합니다. 금융접점까지의 거리도 같은 방식으로 계산합니다.</div>
+    <p class="lead">산이나 강 때문에 지도에서는 가까워도 돌아가야 할 수 있습니다. 2026년 10월 11일 OSM 도로망에 일방통행을 반영했습니다.</p>
+    <div class="story"><b>학교 가는 길로 생각해보세요.</b> 집과 학교가 운동장 하나만큼 가까워도 사이에 강이 있다면 다리까지 돌아가야 합니다. 금융접점까지의 거리도 같은 방식으로 계산합니다.</div>
     <figure class="figure">
       <svg viewBox="0 0 760 260" role="img" aria-labelledby="distance-title distance-desc">
         <title id="distance-title">직선거리와 실제 도로거리 비교</title>
@@ -65,22 +78,22 @@
         <text x="492" y="128" text-anchor="middle" class="svg-label">도로 4.8km</text>
         <text x="344" y="121" text-anchor="middle" class="svg-small">다리</text>
       </svg>
-      <figcaption>빨간 점선은 눈에 보이는 직선, 회색선은 실제로 이동할 수 있는 도로의 예입니다.</figcaption>
+      <figcaption>빨간 점선은 직선입니다. 회색선은 다리를 거치는 도로의 예시이며 실제 분석 지역을 그린 것은 아닙니다.</figcaption>
     </figure>
     <div class="grid three">
       <div class="mini"><b>① 출발점을 도로에 연결</b>행정동 대표점에서 가장 가까운 도로로 들어갑니다.</div>
       <div class="mini"><b>② 도로를 따라 탐색</b>일방통행까지 지키며 가장 짧은 길을 찾습니다.</div>
       <div class="mini"><b>③ 가장 가까운 접점 선택</b>여러 금융접점 중 도로거리로 가장 가까운 곳을 고릅니다.</div>
     </div>
-    <div class="takeaway"><b>한 줄 결론:</b> “지도상 가까움”이 아니라 “실제로 갈 수 있는 길의 가까움”을 비교합니다.</div>
+    <div class="takeaway">도로를 따른 최단거리에 출발점과 도착점의 연결거리를 더합니다. 연결구간의 실제 진입 가능성과 차량 통행 여건은 현장에서 확인해야 합니다.</div>
     <details class="deep">
       <summary>수식과 P1·P2 기준이 궁금하면 펼쳐보기</summary>
       <div class="deep-body">
-        <p class="lead">컴퓨터는 출발 연결구간, 도로 위 최단거리, 도착 연결구간을 모두 더합니다.</p>
-        <div class="formula"><code>dᵢ = minⱼ { 출발 연결 + 최단도로거리(i, j) + 도착 연결 }</code><small>i는 행정동 대표점, j는 운영상태와 좌표 품질을 통과한 금융접점입니다.</small></div>
+        <p class="lead">출발 연결거리와 도로 위 최단거리 및 도착 연결거리를 모두 더합니다.</p>
+        <div class="formula"><code>dᵢ = minⱼ { 출발 연결 + 최단도로거리(i, j) + 도착 연결 }</code><small>i는 행정동 대표점입니다. j는 공식 목록과 좌표를 기준으로 분석에 포함한 금융접점입니다.</small></div>
         <div class="grid">
           <div class="mini"><b>P1 · 5km 초과</b>차량 방문 수를 가장 먼저 늘리는 프로젝트 운영 우선대상입니다.</div>
-          <div class="mini"><b>P2 · 3~5km</b>P1 다음으로 방문 수를 늘립니다. 3km와 5km는 법정 기준이 아닙니다.</div>
+          <div class="mini"><b>P2 · 3km 초과 5km 이하</b>P1 다음으로 방문 수를 늘립니다. 3km와 5km는 법정 기준이 아닙니다.</div>
         </div>
       </div>
     </details>
@@ -89,29 +102,29 @@
 
   <section class="card" id="bubble">
     <span class="question">질문 2 · 지도 위 원은 어떻게 읽을까?</span>
-    <h2>색은 상태, 크기는 규모를 뜻합니다</h2>
-    <p class="lead">두 정보를 한 원에 겹쳐 보여주면 “어디가 취약한지”와 “영향받을 사람이 얼마나 많은지”를 함께 볼 수 있습니다.</p>
+    <h2>색은 상태를 나타내고 크기는 지역 수치를 보여줍니다</h2>
+    <p class="lead">대표점의 거리와 해당 행정동의 인구 규모를 함께 봅니다. 원의 크기는 실제 이용자 수나 방문 서비스의 수혜 인구가 아닙니다.</p>
     <figure class="figure">
       <svg viewBox="0 0 760 250" role="img" aria-labelledby="bubble-title bubble-desc">
         <title id="bubble-title">지도 점의 색과 크기 읽는 법</title>
-        <desc id="bubble-desc">같은 빨간색이지만 크기가 다른 원과, 크기는 같지만 색이 다른 원을 비교하는 그림</desc>
+        <desc id="bubble-desc">같은 빨간색이지만 크기가 다른 원과 크기는 같지만 색이 다른 원을 비교하는 그림</desc>
         <rect width="760" height="250" rx="14" fill="#f7fbfe"/>
-        <text x="185" y="36" text-anchor="middle" class="svg-label">같은 색, 다른 크기</text>
+        <text x="185" y="36" text-anchor="middle" class="svg-label">같은 색 · 다른 크기</text>
         <circle cx="85" cy="137" r="26" fill="#d94b4b" opacity=".88"/><circle cx="180" cy="137" r="43" fill="#d94b4b" opacity=".88"/><circle cx="303" cy="137" r="61" fill="#d94b4b" opacity=".88"/>
         <text x="85" y="220" text-anchor="middle" class="svg-small">고령인구 적음</text><text x="303" y="220" text-anchor="middle" class="svg-small">고령인구 많음</text>
         <line x1="380" y1="28" x2="380" y2="224" stroke="#d9e2ea" stroke-width="2"/>
-        <text x="570" y="36" text-anchor="middle" class="svg-label">같은 크기, 다른 색</text>
+        <text x="570" y="36" text-anchor="middle" class="svg-label">같은 크기 · 다른 색</text>
         <circle cx="466" cy="136" r="43" fill="#d94b4b" opacity=".88"/><circle cx="570" cy="136" r="43" fill="#d97706" opacity=".88"/><circle cx="674" cy="136" r="43" fill="#2d8a68" opacity=".88"/>
         <text x="466" y="205" text-anchor="middle" class="svg-small">P1</text><text x="570" y="205" text-anchor="middle" class="svg-small">P2</text><text x="674" y="205" text-anchor="middle" class="svg-small">접근 가능</text>
       </svg>
-      <figcaption>기본 설정에서는 빨간색에 가까울수록 도로거리 우선순위가 높고, 원이 클수록 65세 이상 인구가 많습니다.</figcaption>
+      <figcaption>거리 색상에서는 빨강이 P1이고 주황이 P2입니다. 65세 이상 인구를 크기 기준으로 선택하면 인구가 많은 행정동의 원이 커집니다.</figcaption>
     </figure>
     <div class="grid">
-      <div class="mini"><b><span class="tag">색</span> 어떤 상태인가?</b>P1·P2·접근 가능·품질 유보, 또는 취약유형을 구분합니다.</div>
-      <div class="mini"><b><span class="tag">크기</span> 수치가 얼마나 큰가?</b>65세 이상 인구, 고령비율, 도로거리 중 하나를 선택해 비교합니다.</div>
+      <div class="mini"><b><span class="tag">색</span> 어떤 상태인가?</b>P1·P2·3km 이하·품질 유보 또는 현재 계획의 방문 상태를 구분합니다.</div>
+      <div class="mini"><b><span class="tag">크기</span> 수치가 얼마나 큰가?</b>65세 이상 인구나 고령비율 또는 도로거리 중 하나를 선택해 비교합니다.</div>
     </div>
-    <div class="story"><b>읽는 예:</b> 큰 빨간 점은 “금융접점까지 5km가 넘고, 65세 이상 인구 규모도 큰 행정동”입니다. 빨간색 자체가 인구수를 뜻하는 것은 아닙니다.</div>
-    <div class="takeaway"><b>한 줄 결론:</b> 원을 볼 때는 “무슨 색인가?”와 “얼마나 큰가?”를 따로 읽습니다.</div>
+    <div class="story"><b>읽는 예:</b> 큰 빨간 점은 “대표점에서 금융접점까지 5km가 넘고 65세 이상 인구 규모도 큰 행정동”입니다. 빨간색 자체가 인구수를 뜻하는 것은 아닙니다.</div>
+    <div class="takeaway">원은 행정동을 비교하는 표시입니다. 주민의 거주 위치나 후보 경로당까지의 접근성을 나타내지는 않습니다.</div>
     <details class="deep">
       <summary>왜 반지름이 아니라 원의 넓이로 계산하는지 펼쳐보기</summary>
       <div class="deep-body">
@@ -122,10 +135,29 @@
   </section>
 
   <section class="card" id="cluster">
-    <span class="question">질문 3 · AI는 챗봇 대신 무슨 일을 할까?</span>
-    <h2>조건이 비슷한 농촌 지역을 두 유형으로 묶습니다</h2>
-    <p class="lead">AI에게 답변 문장을 쓰게 하는 대신, 사람이 한눈에 찾기 어려운 “비슷한 지역 묶음”을 데이터로 찾게 했습니다.</p>
-    <div class="story"><b>반 친구를 모둠으로 나누는 상황을 떠올려보세요.</b> 통학시간, 관심 과목, 가능한 활동시간이 비슷한 학생끼리 모으면 함께 계획하기 쉽습니다. 여기서는 지역의 도로거리, 주변 금융접점 수, 고령비율을 비교합니다.</div>
+    <span class="question">질문 3 · 대표점이 달라지면 결과도 바뀔까?</span>
+    <h2>비교 가능한 238곳은 우선순위가 같았습니다</h2>
+    <p class="lead">기존 경계 내부 대표점과 전체 경계의 면적중심점을 같은 접점·도로망에서 비교했습니다. 도서 지역 2곳의 중심점은 경계 밖에 있어 제외했고 도로 연결 품질 유보 3곳도 비교에서 제외했습니다.</p>
+    <div class="grid">
+      <div class="mini"><b>비교 결과</b>유효한 238쌍 모두 P1·P2·3km 이하 분류와 최근접 접점이 같았습니다. 도로거리 차이의 절댓값 중앙값은 약 0.138m였습니다.</div>
+      <div class="mini"><b>검증 범위</b>기존 243개 대표점 중 242개가 이미 가장 큰 경계 조각의 중심점이었습니다. 비슷한 방식끼리의 비교라 주민 거주지를 대표한다는 근거로 볼 수는 없습니다.</div>
+    </div>
+    <div class="warning">이 검증은 대표점 위치를 조금 달리했을 때의 민감도 확인입니다. 주민 단위 자료나 고령인구 격자로 다시 분석해야 실제 접근성과 수혜 범위를 평가할 수 있습니다.</div>
+    <h3>거리 기준도 바꿔 확인했습니다</h3>
+    <div class="table-wrap"><table>
+      <caption>같은 보완 접점·도로망에서 하한 기준만 바꾼 결과</caption>
+      <thead><tr><th>경로 대상 거리 기준</th><th>주 지표인 대상 행정동</th><th>해석</th></tr></thead>
+      <tbody>
+        <tr><td>2.5km 초과</td><td>71곳</td><td>더 넓게 대상 선정</td></tr>
+        <tr><td>3km 초과</td><td>54곳</td><td>보고서와 대시보드의 기본 기준</td></tr>
+        <tr><td>3.5km 초과</td><td>37곳</td><td>더 좁게 대상 선정</td></tr>
+      </tbody>
+    </table></div>
+    <p class="source">3km와 5km는 프로젝트의 선정 기준입니다. 기준이 바뀐 모든 경우에 경로를 다시 계산한 결과는 아닙니다.</p>
+    <details class="deep">
+      <summary>1차 제출 자료의 Ward 군집분석 보기 · 보완 접점으로 재계산하지 않음</summary>
+      <div class="deep-body">
+        <p class="lead">1차 제출에서는 도로거리 품질을 통과한 농촌 읍면 155곳의 도로거리와 직선 3km 안 접점 수 및 고령비율을 비교했습니다. 단위를 중앙값과 사분위범위로 맞춘 뒤 Ward 군집분석으로 두 유형을 구분했습니다.</p>
     <figure class="figure">
       <svg viewBox="0 0 760 300" role="img" aria-labelledby="cluster-title cluster-desc">
         <title id="cluster-title">비슷한 특성의 지역을 묶는 군집화</title>
@@ -138,50 +170,18 @@
         <g fill="#d94b4b"><circle cx="475" cy="190" r="8"/><circle cx="525" cy="120" r="8"/><circle cx="575" cy="190" r="8"/><circle cx="625" cy="105" r="8"/><circle cx="660" cy="165" r="8"/></g>
         <text x="210" y="145" text-anchor="middle" class="svg-label">접점중심형</text><text x="555" y="38" text-anchor="middle" class="svg-label">장거리·접점희소형</text>
       </svg>
-      <figcaption>그림은 원리를 보여주는 예시입니다. 실제 분류는 세 가지 수치를 함께 사용합니다.</figcaption>
+      <figcaption>그림은 원리를 보여주는 예시입니다. 1차 제출 당시 분류는 도로거리와 3km 안 접점 수 및 고령비율을 함께 사용했습니다.</figcaption>
     </figure>
-    <h3>AI가 비교하는 세 가지</h3>
-    <div class="grid three">
-      <div class="mini"><b>도로거리</b>가장 가까운 금융접점까지 실제 길이 얼마나 먼가?</div>
-      <div class="mini"><b>3km 안 접점 수</b>가까운 선택지가 하나뿐인지, 여러 곳인지?</div>
-      <div class="mini"><b>65세 이상 비율</b>이동에 더 큰 어려움을 겪을 가능성이 있는 인구 비율은?</div>
-    </div>
-    <div class="takeaway"><b>왜 243개를 모두 묶지 않나요?</b> 전북 243개 행정동 중 도시 동과 농촌 읍·면은 생활환경이 크게 다릅니다. 그래서 비교 가능한 농촌 읍·면 가운데 도로거리 품질을 통과한 155개만 AI 분류에 넣고, 나머지는 비교대상 또는 품질 유보로 남깁니다.</div>
-    <h3>찾아낸 두 유형</h3>
-    <div class="grid">
-      <div class="mini"><b>농촌 접점중심형</b>금융접점이 상대적으로 가깝고 주변 선택지도 많은 유형</div>
-      <div class="mini"><b>장거리·접점희소형</b>도로거리가 길고 3km 안 금융접점도 드문 유형</div>
-    </div>
-    <div class="takeaway"><b>한 줄 결론:</b> AI가 “공식 취약등급”을 매기는 것이 아니라, 운영방법을 함께 고민할 만한 비슷한 농촌을 찾아줍니다.</div>
-    <details class="deep">
-      <summary>Ward 군집·표준화·안정성 검증을 쉽게 풀어보기</summary>
-      <div class="deep-body">
-        <h3>1. 단위를 공평하게 맞춥니다</h3>
-        <p class="lead">km, 개수, %는 단위가 다릅니다. 그대로 비교하면 숫자 범위가 큰 항목이 결과를 지배하므로, 중앙값에서 얼마나 떨어졌는지로 바꿉니다.</p>
-        <div class="formula"><code>표준화값 = (원래 값 − 중앙값) ÷ 사분위범위(IQR)</code><small>쉽게 말해 서로 다른 단위의 세 자를 같은 눈금으로 바꾸는 과정입니다.</small></div>
-        <h3>2. 가장 비슷한 묶음을 차례로 합칩니다</h3>
-        <p class="lead">Ward 계층군집은 처음에 각 지역을 따로 놓고, 묶었을 때 차이가 가장 적게 늘어나는 두 그룹을 반복해서 합칩니다.</p>
-        <h3>3. 우연히 나온 결과인지 다시 흔들어봅니다</h3>
-        <div class="table-wrap"><table>
-          <thead><tr><th>검사</th><th>고등학생식 설명</th><th>이번 결과</th></tr></thead>
-          <tbody>
-            <tr><td>실루엣</td><td>같은 모둠끼리는 가깝고 다른 모둠과는 잘 떨어졌는가?</td><td>k=2에서 0.686</td></tr>
-            <tr><td>ARI 안정성</td><td>자료 20%를 무작위로 빼도 전체 모둠 구조가 비슷한가?</td><td>중앙값 1.000</td></tr>
-            <tr><td>군집별 Jaccard</td><td>전체가 아니라 작은 모둠 하나만 유난히 흔들리지는 않는가?</td><td>재표집 중앙값 최솟값 1.000</td></tr>
-            <tr><td>전처리 민감도</td><td>큰 거리·개수를 로그로 압축해도 비슷한가?</td><td>ARI 0.779, 군집별 Jaccard 0.706 이상</td></tr>
-            <tr><td>규칙형 안전장치</td><td>AI 결과가 흔들려도 원래 수치로 다시 설명할 수 있는가?</td><td>3km·농촌 고령비율 중앙값 병행</td></tr>
-          </tbody>
-        </table></div>
+        <p>접점중심형과 장거리·접점희소형은 당시 자료를 설명하려고 붙인 이름입니다. 보완 접점으로 군집분석을 다시 하지 않았으므로 현재 지도에 이 유형을 표시하지 않습니다. 경로 우선순위는 군집명이 아닌 도로거리 기준으로 정합니다.</p>
       </div>
     </details>
-    <div class="warning">군집명은 AI가 만든 공식 등급이 아닙니다. 각 묶음의 중앙값을 사람이 해석해 붙인 설명명이며, 반드시 원자료와 함께 확인합니다.</div>
   </section>
 
   <section class="card" id="route">
     <span class="question">질문 4 · 방문 차량은 어떤 순서로 움직일까?</span>
     <h2>현장학습 시간표를 짜듯 경로를 만듭니다</h2>
-    <p class="lead">버스 수, 출발시간, 장소별 체류시간, 복귀시간을 지키면서 우선지역을 최대한 많이 방문합니다.</p>
-    <div class="story"><b>수학여행 버스 계획과 같습니다.</b> 오전 9시에 출발해 박물관마다 45분 머물고 오후 5시 전에 돌아와야 한다면, 단순히 가까운 곳만 고를 수 없습니다. 이동시간과 머무는 시간을 모두 더해야 합니다.</div>
+    <p class="lead">차량 수와 운영시간 및 장소별 체류시간을 지키면서 P1 방문 수를 먼저 늘립니다. 방문 수가 같으면 이동과 대기시간을 줄입니다.</p>
+    <div class="story"><b>수학여행 버스 계획과 같습니다.</b> 오전 9시에 출발해 장소마다 45분 머물고 오후 5시 전에 돌아와야 한다면 단순히 가까운 곳만 고를 수 없습니다. 이동시간과 머무는 시간을 모두 더해야 합니다.</div>
     <figure class="figure">
       <svg viewBox="0 0 760 265" role="img" aria-labelledby="route-title route-desc">
         <title id="route-title">하루 차량 경로와 시간표</title>
@@ -199,35 +199,58 @@
     </figure>
     <h3>사용자가 바꿀 수 있는 운영조건</h3>
     <div class="grid">
-      <div class="mini"><b>차량 대수·운영일</b>차량은 1대 단위, 운영일은 하루 단위로 입력합니다.</div>
-      <div class="mini"><b>출발·복귀 위치</b>시·군별 후보거점 중 실제 운용할 곳을 선택합니다.</div>
+      <div class="mini"><b>차량 대수·운영일</b>차량은 1대 단위로 입력합니다. 운영일은 1주가 아닌 설정한 주기 안의 운영일입니다.</div>
+      <div class="mini"><b>방문 상한·운영주기</b>하루 방문할 최대 장소 수와 한 주기의 길이를 바꿉니다. 실제 반복 방문을 보장하는 기능은 아닙니다.</div>
       <div class="mini"><b>운영시간</b>출발과 종료는 30분 단위로 바꿉니다.</div>
       <div class="mini"><b>장소당 서비스시간</b>15분 단위로 머무는 시간을 정합니다.</div>
     </div>
+    <p class="source">출발·복귀 장소와 방문 후보는 미리 고정한 행렬을 사용합니다. 실제 차고지로 확정된 곳은 아닙니다. 대상 행정동마다 경로당 1곳을 후보로 골랐으며 후보 위치 자체를 최적화한 것은 아닙니다. 위치나 대상이 바뀌면 도로행렬도 다시 계산해야 합니다.</p>
     <h3>컴퓨터가 지키는 우선순위</h3>
     <div class="ladder">
-      <div>P1 지역 방문 수를 가장 먼저 늘림</div><div>P2 지역 방문 수를 다음으로 늘림</div><div>전체 방문 수를 늘림</div><div>방문 수가 같다면 이동·대기시간을 줄임</div><div>특정 하루만 지나치게 길어지지 않게 함</div>
+      <div>P1 지역 방문 수를 가장 먼저 늘림</div><div>P2 지역 방문 수를 다음으로 늘림</div><div>전체 방문 수를 늘림</div><div>방문 수가 같다면 이동·대기시간을 줄임</div><div>앞선 값까지 같을 때 가장 긴 하루의 소요시간을 줄임</div>
     </div>
-    <div class="takeaway"><b>한 줄 결론:</b> 가장 짧은 길만 찾는 것이 아니라, 정해진 시간 안에 우선지역을 많이 방문하는 “실행 가능한 시간표”를 찾습니다.</div>
+    <div class="takeaway">입력한 모형 제약을 만족하는 시간표를 계산합니다. 실제 차고지와 장소 사용승인 및 차량 진입·주차 여건을 확인한 운영계획은 아닙니다.</div>
     <details class="deep">
       <summary>이동시간 수식과 ‘사전식 최적화’를 펼쳐보기</summary>
       <div class="deep-body">
-        <div class="formula"><code>이동시간(분) = 도로거리(km) ÷ 40(km/h) × 60</code><small>현재는 모든 도로에서 평균 40km/h라고 가정한 시연값이며 실제 교통시간은 아닙니다.</small></div>
+        <div class="formula"><code>이동시간(분) = 도로거리(km) ÷ 40(km/h) × 60</code><small>모든 도로에 평균 40km/h를 적용한 가정값입니다. 교통상황과 시군 간 차량 재배치 및 준비·휴식시간은 반영하지 않았습니다.</small></div>
         <div class="formula"><code>서비스 시작 = max(도착시각, 장소 시작시간)<br>서비스 종료 = 서비스 시작 + 장소당 서비스시간</code><small>서비스 뒤 차고지 복귀시간까지 더해 운영 종료시각을 넘으면 선택할 수 없습니다.</small></div>
-        <p class="lead"><b>사전식 최적화</b>는 국어사전에서 단어를 찾듯 1순위를 먼저 비교하고, 1순위가 같을 때만 2순위를 비교하는 방법입니다. 그래서 P1 한 곳을 포기하고 이동거리 몇 km만 줄이는 숨은 맞교환이 생기지 않습니다.</p>
-        <div class="formula"><code>전체 경로일 용량 = 차량 대수 × 주간 운영일</code><small>용량이 14 이상이면 14개 시·군에 최소 1경로일을 먼저 배정한 뒤 남은 용량을 배분합니다.</small></div>
+        <p class="lead"><b>사전식 최적화</b>는 국어사전에서 단어를 찾듯 1순위를 먼저 비교합니다. 1순위가 같을 때만 2순위를 비교하는 방법입니다. 그래서 P1 한 곳을 포기하고 이동거리 몇 km만 줄이는 숨은 맞교환이 생기지 않습니다.</p>
+        <div class="formula"><code>전체 경로일 용량 = 차량 대수 × 주기 내 운영일</code><small>사용자 조건 계산에서는 용량이 14 이상일 때 14개 시군에 최소 1경로일을 배정합니다. 용량이 부족하면 모든 시군을 방문하지 못할 수 있습니다.</small></div>
       </div>
     </details>
   </section>
 
+  <section class="card" id="comparison">
+    <span class="question">보고서 수치와 같은 조건으로 비교</span>
+    <h2>같은 50곳을 방문하며 이동거리 9.08% 감소</h2>
+    <p class="lead">차량 3대가 7일 주기 안에서 5일 운영하는 조건입니다. 하루 09:00~17:00에 최대 4곳을 방문합니다. 장소당 체류시간은 45분이며 장소의 이용 가능 시간은 09:00~16:30으로 가정했습니다.</p>
+    <div class="table-wrap"><table>
+      <caption>14개 시군의 경로일 배정을 같게 고정한 기본 비교</caption>
+      <thead><tr><th>방문 순서 계산 방법</th><th>P1 / P2 방문</th><th>전체 방문</th><th>이동거리</th><th>최적화와 방문 대상이 같은가?</th></tr></thead>
+      <tbody>
+        <tr><td>가까운 곳부터</td><td>21 / 29곳</td><td>50 / 54곳</td><td>1,078.751km</td><td>P2 1곳이 다름</td></tr>
+        <tr><td>우선순위 후 가까운 곳부터</td><td>21 / 29곳</td><td>50 / 54곳</td><td>1,103.950km</td><td>같음</td></tr>
+        <tr><td>우선순위와 경로 최적화</td><td>21 / 29곳</td><td>50 / 54곳</td><td>1,003.716km</td><td>비교 기준</td></tr>
+      </tbody>
+    </table></div>
+    <p>우선순위 후 가까운 곳부터 방문한 방법과 최적화는 같은 50곳을 방문합니다. 이동거리 차이는 100.234km로 9.08%입니다. 방문 수가 늘어난 성과는 아니며 총운영비가 같은 비율로 줄어든다는 뜻도 아닙니다.</p>
+    <div class="grid">
+      <div class="mini"><b>보고서 비교의 배정</b>각 시군에 1경로일을 주고 남은 1경로일을 완주군에 배정했습니다. 세 방법 모두 같은 15경로일 배정을 사용합니다.</div>
+      <div class="mini"><b>사용자 조건의 배정</b>화면의 조건 계산은 시군별 경로일 배정도 함께 최적화합니다. 기본 하루 4곳 조건에서는 보고서 배정과 같지만 하루 3곳이나 5곳에서는 배정과 거리가 달라질 수 있습니다.</div>
+    </div>
+    <p>기본안에서 남는 4곳은 P2인 계화면·진안읍·백운면·마령면입니다. 한 주기를 계산한 결과이므로 다음 주기에 자동으로 우선 방문하거나 반복 제외를 막아 주지는 않습니다.</p>
+    <div class="warning">보고서의 비교실험 21개 조건을 경로 315개로 다시 재생했을 때 모형 제약 위반은 없었습니다. 이는 고정된 후보와 행렬 및 가정 안의 검증입니다. 실제 차량 운영이나 주민의 금융업무 완료를 확인한 결과는 아닙니다.</div>
+  </section>
+
   <section class="card">
     <span class="question">지도 위 선과 점도 읽어봅시다</span>
-    <h2>경로선은 실제 도로 모양을 따라갑니다</h2>
-    <p class="lead">방문지끼리 직선으로 이은 장식이 아니라, 계산에 사용한 OSM 도로 경로를 단순화해 그렸습니다.</p>
+    <h2>경로선은 계산에 쓴 도로 형상을 따라갑니다</h2>
+    <p class="lead">보완 분석과 같은 OSM 도로망에서 방향별 경로를 다시 복원했습니다. 지도에 표시할 때는 굴곡을 단순화하고 출발·도착 연결구간을 함께 그립니다.</p>
     <figure class="figure">
       <svg viewBox="0 0 760 245" role="img" aria-labelledby="map-title map-desc">
         <title id="map-title">지도 경로선과 도로노드 범례</title>
-        <desc id="map-desc">회색 도로 위에 파란 차량 경로, 출발지 사각형, 방문지 원, 작은 도로 노드가 표시된 그림</desc>
+        <desc id="map-desc">회색 도로 위에 파란 차량 경로와 출발지 사각형 및 방문지 원과 작은 도로 노드가 표시된 그림</desc>
         <rect width="760" height="245" rx="14" fill="#f1f5f7"/>
         <g fill="none" stroke="#c1cad0" stroke-width="8" stroke-linecap="round"><path d="M30 180 C165 190 215 95 340 117 S545 198 730 86"/><path d="M75 45 C190 130 270 45 390 72 S570 135 705 40"/><path d="M160 20 C210 90 155 160 230 230"/></g>
         <path d="M80 172 C165 178 225 95 340 117 S545 198 675 120" fill="none" stroke="#1769aa" stroke-width="7" stroke-linecap="round"/>
@@ -236,19 +259,19 @@
         <g fill="#fff" stroke="#1769aa" stroke-width="4"><circle cx="340" cy="117" r="20"/><circle cx="505" cy="177" r="20"/><circle cx="675" cy="120" r="20"/></g>
         <g class="svg-label"><text x="340" y="122" text-anchor="middle">1</text><text x="505" y="182" text-anchor="middle">2</text><text x="675" y="125" text-anchor="middle">3</text></g>
       </svg>
-      <figcaption>회색은 주요도로, 파랑은 차량 경로, 작은 회색 점은 경로에 실제 사용된 도로노드의 표본입니다.</figcaption>
+      <figcaption>회색은 주요도로입니다. 파랑은 차량 경로를 나타냅니다. 작은 회색 점은 경로에 사용한 도로노드 표본입니다.</figcaption>
     </figure>
     <div class="grid">
       <div class="mini"><b>주요도로 회색선</b>motorway·trunk·primary·secondary 등급의 OSM 도로입니다.</div>
       <div class="mini"><b>차량 색상 경로</b>출발 → 방문 후보 → 복귀 순서의 실제 도로 형상입니다.</div>
       <div class="mini"><b>작은 회색 노드</b>현재 경로를 만든 도로 좌표를 구간당 최대 64개 보여줍니다.</div>
-      <div class="mini"><b>사각형·흰 원</b>사각형은 출발·복귀 후보, 흰 원은 방문 후보입니다.</div>
+      <div class="mini"><b>사각형·흰 원</b>사각형은 가정한 출발·복귀 장소입니다. 흰 원은 방문 후보입니다.</div>
     </div>
-    <div class="warning">전체 활성 도로노드 약 184만 개를 모두 표시하면 지도가 느려지고 읽기 어려워집니다. 그래서 선택된 경로에 사용된 노드만 표본으로 보여줍니다.</div>
+    <div class="warning">전체 활성 도로노드 약 187만 개를 모두 표시하면 지도가 느려지고 읽기 어려워집니다. 그래서 선택된 경로에 사용된 노드만 표본으로 보여줍니다.</div>
   </section>
 
-  <p class="source">재현 근거: <a href="../SCENARIO_CONTRACT.md">시나리오 계약</a> · <a href="../../reports/typology_evaluation.md">군집 평가 보고서</a> · <a href="../../DATASETS.md">데이터셋 문서</a> · 도로/경로 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></p>
-  <div class="footer"><a href="index.html">대시보드로 돌아가기</a> · 분석 기준일 2026-08-12</div>
+  <p class="source">재현 근거: <a href="data.js">보완 분석과 비교실험 묶음</a> · <a href="map-data.js">같은 도로망에서 만든 지도 경로</a><br>보완 분석 묶음의 validation.inputs에 입력 파일 경로와 SHA-256 해시를 기록했습니다. 저장소의 docs/SCENARIO_CONTRACT.md에서 계산 조건을 확인할 수 있습니다. reports/typology_evaluation.md는 1차 자료의 군집 평가입니다. 도로·경로 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></p>
+  <div class="footer"><a href="index.html">대시보드로 돌아가기</a> · 보완 분석 기준일 2026-10-12 · 도로망 기준일 2026-10-11</div>
 </div></main>
 </body>
 </html>

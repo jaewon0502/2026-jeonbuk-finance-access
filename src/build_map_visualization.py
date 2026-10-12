@@ -8,10 +8,13 @@ full 1.8M-node road graph; the UI exposes sampled nodes from the active routes.
 
 from __future__ import annotations
 
+import argparse
 import csv
+import hashlib
 import heapq
 import json
 import math
+import pickle
 from array import array
 from collections import defaultdict
 from pathlib import Path
@@ -19,15 +22,17 @@ from pathlib import Path
 import osmium
 
 from build_jeonbuk_route_scenario import load_graph_context
-from build_roadnet import PBF
+import build_roadnet
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_RAW = ROOT / "data" / "raw"
 DATA_OUT = ROOT / "data" / "processed"
-BOUNDARY_FILE = DATA_RAW / "hjd2026.geojson"
-SCENARIO_FILE = DATA_OUT / "jeonbuk_route_scenario.json"
-ACCESS_FILE = DATA_OUT / "access_road.csv"
+VALIDATION = ROOT / "analysis" / "theory_validation"
+BOUNDARY_FILE = VALIDATION / "inputs/hjd2026.geojson"
+SCENARIO_FILE = VALIDATION / "spatial/route_inputs/jeonbuk_route_scenario.json"
+ACCESS_FILE = VALIDATION / "spatial/route_inputs/access_road.csv"
+PBF = VALIDATION / "inputs/south-korea-261011.osm.pbf"
 OUTPUT = ROOT / "docs" / "demo-jeonbuk" / "map-data.js"
 
 BOUNDARY_TOLERANCE = 0.00035
@@ -365,19 +370,52 @@ def zone_labels() -> list[dict]:
     ]
 
 
-def build_payload() -> dict:
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(4 * 1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def validated_graph(scenario: dict) -> dict:
+    manifest = scenario["validation_provenance"]["graph"]
+    checks = {
+        PBF: manifest["inputs"]["pbf_sha256"],
+        BOUNDARY_FILE: manifest["inputs"]["boundary_sha256"],
+        ROOT / "src/build_roadnet.py": manifest["inputs"]["build_roadnet_sha256"],
+        ROOT / "src/geo_utils.py": manifest["inputs"]["geo_utils_sha256"],
+    }
+    for path, expected in checks.items():
+        if sha256(path) != expected:
+            raise RuntimeError(f"map graph input hash mismatch: {path.relative_to(ROOT)}")
+    cache = VALIDATION / "spatial/cache" / Path(manifest["cache_file"]).name
+    if cache.exists():
+        if sha256(cache) != manifest["graph_sha256"]:
+            raise RuntimeError("validated graph cache hash mismatch")
+        with cache.open("rb") as handle:
+            return pickle.load(handle)
+    build_roadnet.PBF = PBF
+    build_roadnet.GEOJSON = BOUNDARY_FILE
+    bbox, lats, lons, active, offsets, neighbors, weights, edge_count, active_count = build_roadnet.build_graph()
+    return {"bbox": bbox, "lats": lats, "lons": lons, "active": active,
+            "offsets": offsets, "neighbors": neighbors, "weights": weights,
+            "edge_count": edge_count, "active_count": active_count}
+
+
+def build_payload(legacy: bool = False) -> dict:
     if not PBF.exists() or not BOUNDARY_FILE.exists():
         raise RuntimeError("OSM PBF and SGIS boundary files are required")
     scenario = json.loads(SCENARIO_FILE.read_text(encoding="utf-8"))
-    roadnet = json.loads((DATA_OUT / "roadnet_metadata.json").read_text(encoding="utf-8"))
+    roadnet = json.loads((SCENARIO_FILE.parent / "roadnet_metadata.json").read_text(encoding="utf-8"))
     if scenario["travel_model"]["pbf_md5"] != roadnet["pbf_md5"]:
         raise RuntimeError("scenario and road-network PBF hashes do not match")
 
+    context = load_graph_context() if legacy else validated_graph(scenario)
     boundaries, bounds = extract_boundaries()
     print(f"[map 1/3] 전북 행정경계 {len(boundaries)}개", flush=True)
     major_roads, major_way_count = extract_major_roads(bounds)
     print(f"[map 2/3] OSM 주요도로 way {major_way_count:,}개", flush=True)
-    context = load_graph_context()
     route_legs, maximum_delta = build_route_legs(scenario, context)
     print(f"[map 3/3] 방향성 경로 구간 {len(route_legs):,}개", flush=True)
 
@@ -389,11 +427,16 @@ def build_payload() -> dict:
         "major_roads": major_roads,
         "route_legs": route_legs,
         "source": {
-            "boundary": "data/raw/hjd2026.geojson · SGIS 2026 행정동 경계",
-            "roads": "data/raw/south-korea-latest.osm.pbf · OpenStreetMap",
+            "version": "submission_snapshot" if legacy else "2026-10-12-expanded",
+            "scenario_sha256": sha256(SCENARIO_FILE),
+            "boundary": str(BOUNDARY_FILE.relative_to(ROOT)) + " · SGIS 2026 행정동 경계",
+            "roads": str(PBF.relative_to(ROOT)) + " · OpenStreetMap",
             "pbf_md5": roadnet["pbf_md5"],
+            "pbf_sha256": sha256(PBF),
+            "boundary_sha256": sha256(BOUNDARY_FILE),
+            "road_date": None if legacy else "2026-10-11",
             "oneway_respected": True,
-            "full_graph_active_nodes": roadnet["active_nodes"],
+            "full_graph_active_nodes": roadnet["active_nodes"] if legacy else context["active_count"],
             "major_road_way_count": major_way_count,
             "route_leg_count": len(route_legs),
             "maximum_matrix_path_delta_km": round(maximum_delta, 6),
@@ -405,7 +448,16 @@ def build_payload() -> dict:
 
 
 def main() -> int:
-    payload = build_payload()
+    global BOUNDARY_FILE, SCENARIO_FILE, ACCESS_FILE, PBF
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--legacy", action="store_true", help="1차 제출 자료로 명시적으로 재생성")
+    args = parser.parse_args()
+    if args.legacy:
+        BOUNDARY_FILE = DATA_RAW / "hjd2026.geojson"
+        SCENARIO_FILE = DATA_OUT / "jeonbuk_route_scenario.json"
+        ACCESS_FILE = DATA_OUT / "access_road.csv"
+        PBF = build_roadnet.PBF
+    payload = build_payload(legacy=args.legacy)
     encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(

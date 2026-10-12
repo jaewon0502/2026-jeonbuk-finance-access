@@ -1,0 +1,4 @@
+inputs/*.osm.pbf
+inputs/hjd2026.geojson
+spatial/cache/
+outlets/raw/

@@ -1,0 +1,1019 @@
+﻿outlet_id,name,type,addr,inside_jeonbuk,coord_admin_code,boundary_distance_m,decision
+NHMAP-393,가장동지점,농협은행,대전광역시 서구 갈마로 297 (가장동),False,3017057000,22629.571,outside_predeclared_20km_boundary_buffer
+NHMAP-355,강경(출),농협은행,충청남도 논산시 강경읍 계백로 112 (강경읍),False,4423025000,681.858,include_border_nh
+NHMAP-60736,강경농협,농·축협,충청남도 논산시 강경읍 계백로 134-2 (대흥리),False,4423025000,833.033,include_border_nh
+NHMAP-60735,강경농협 동흥지점,농·축협,충청남도 논산시 강경읍 계백로219번길 40-8 (동흥리),False,4423025000,1587.845,include_border_nh
+NHMAP-735,거창군지부,농협은행,경상남도 거창군 거창읍 중앙로 133 (거창읍),False,4888025000,20458.081,outside_predeclared_20km_boundary_buffer
+NHMAP-722,거창군청(출),농협은행,경상남도 거창군 거창읍 중앙로 103 (거창읍),False,4888025000,20420.748,outside_predeclared_20km_boundary_buffer
+NHMAP-62783,거창농협,농·축협,경상남도 거창군 거창읍 중앙로 114-1 (중앙리),False,4888025000,20517.338,outside_predeclared_20km_boundary_buffer
+NHMAP-62781,거창농협 대동지점,농·축협,경상남도 거창군 거창읍 중앙로 189 (대동리),False,4888025000,20580.74,outside_predeclared_20km_boundary_buffer
+NHMAP-62782,거창농협 아림지점,농·축협,경상남도 거창군 거창읍 거열로 122 (상림리),False,4888025000,20101.733,outside_predeclared_20km_boundary_buffer
+NHMAP-62779,거창농협 월천지점,농·축협,경상남도 거창군 거창읍 주곡로 226-12 (서변리),False,4888025000,18021.285,include_border_nh
+NHMAP-62780,거창농협 창남지점,농·축협,경상남도 거창군 거창읍 거창대로 24 (대평리),False,4888025000,21002.462,outside_predeclared_20km_boundary_buffer
+NHMAP-62786,거창사과농협,농·축협,경상남도 거창군 거창읍 수남로 2241 (김천리),False,4888025000,21207.788,outside_predeclared_20km_boundary_buffer
+NHMAP-62785,거창사과농협 남부지점,농·축협,경상남도 거창군 거창읍 강남로1길 90 (송정리),False,4888025000,20725.258,outside_predeclared_20km_boundary_buffer
+NHMAP-62784,거창사과농협 북부지점,농·축협,경상남도 거창군 거창읍 거창대로 100 (대동리),False,4888025000,20252.607,outside_predeclared_20km_boundary_buffer
+NHMAP-59152,거창축협,농·축협,경상남도 거창군 거창읍 강변로8길 32-25 (상림리),False,4888025000,20518.587,outside_predeclared_20km_boundary_buffer
+NHMAP-59155,거창축협 가조지점,농·축협,경상남도 거창군 가조면 지산로 1486 (마상리),False,4888040000,23551.675,outside_predeclared_20km_boundary_buffer
+NHMAP-63337,거창축협 거열지점,농·축협,경상남도 거창군 거창읍 거열로4길 123 (가지리),False,4888025000,19574.331,include_border_nh
+NHMAP-59154,거창축협 중앙지점,농·축협,경상남도 거창군 거창읍 거창대로 53 (대동리),False,4888025000,20703.691,outside_predeclared_20km_boundary_buffer
+NHMAP-59153,거창축협 코아루지점,농·축협,경상남도 거창군 거창읍 강남로 266 (대평리),False,4888025000,21041.714,outside_predeclared_20km_boundary_buffer
+NHMAP-60673,계룡농협 경천지점,농·축협,충청남도 공주시 계룡면 신원사로 123 (경천리),False,4415033000,22122.155,outside_predeclared_20km_boundary_buffer
+NHMAP-374,계룡대(출),농협은행,충청남도 계룡시 신도안면 계룡대로 663 (신도안면),False,4425033000,20081.213,outside_predeclared_20km_boundary_buffer
+NHMAP-338,계룡시지부,농협은행,충청남도 계룡시 계룡대로 303 (금암동),False,4425051000,16899.248,include_border_nh
+NHMAP-12253,계룡시청(출),농협은행,충청남도 계룡시 장안로 46 (금암동),False,4425051000,17234.07,include_border_nh
+NHMAP-61196,계화농협,농·축협,전북특별자치도 부안군 계화면 간재로 404 (창북리),True,5280034000,0.0,include_jeonbuk_coop
+NHMAP-61043,고산농협,농·축협,전북특별자치도 완주군 고산면 고산로 77 (읍내리),True,5271036000,0.0,include_jeonbuk_coop
+NHMAP-61048,고산농협 동상지점,농·축협,전북특별자치도 완주군 동상면 동상로 1404 (신월리),True,5271040000,0.0,include_jeonbuk_coop
+NHMAP-61044,고산농협 비봉지점,농·축협,전북특별자치도 완주군 비봉면 천호로 530 (소농리),True,5271037000,0.0,include_jeonbuk_coop
+NHMAP-61404,고서농협,농·축협,전남광주통합특별시 담양군 고서면 가사문학로 342-3 (성월리),False,1271032000,12594.751,include_border_nh
+NHMAP-61406,고서농협 가사문학지점,농·축협,전남광주통합특별시 담양군 가사문학면 독수정길 7-8 (연천리),False,1271033500,15224.045,include_border_nh
+NHMAP-442,고창군지부,농협은행,"전북특별자치도 고창군 고창읍 중앙로 232, 3층 (고창읍)",True,5279025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-445,고창군청(출),농협은행,전북특별자치도 고창군 고창읍 중앙로 245 (고창읍),True,5279025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61164,고창농협,농·축협,전북특별자치도 고창군 고창읍 보릿골로 124 (읍내리),True,5279025000,0.0,include_jeonbuk_coop
+NHMAP-61168,고창농협 고수지점,농·축협,전북특별자치도 고창군 고수면 고수로 9 (황산리),True,5279031000,0.0,include_jeonbuk_coop
+NHMAP-61166,고창농협 모양지점,농·축협,전북특별자치도 고창군 고창읍 성산로 22 (읍내리),True,5279025000,0.0,include_jeonbuk_coop
+NHMAP-61178,고창농협 부안지점,농·축협,전북특별자치도 고창군 부안면 인촌로 1249 (중흥리),True,5279043000,0.0,include_jeonbuk_coop
+NHMAP-61165,고창농협 성산지점,농·축협,전북특별자치도 고창군 고창읍 동리로 49 (읍내리),True,5279025000,0.0,include_jeonbuk_coop
+NHMAP-61167,고창농협 월곡지점,농·축협,전북특별자치도 고창군 고창읍 월곡로 42 (월곡리),True,5279025000,0.0,include_jeonbuk_coop
+NHMAP-58953,고창부안축협,농·축협,전북특별자치도 고창군 고창읍 중앙로 214 (읍내리),True,5279025000,0.0,include_jeonbuk_coop
+NHMAP-58955,고창부안축협 대성지점,농·축협,전북특별자치도 고창군 고창읍 보릿골로 85 (읍내리),True,5279025000,0.0,include_jeonbuk_coop
+NHMAP-58956,고창부안축협 부안지점,농·축협,전북특별자치도 부안군 부안읍 번영로 165 (봉덕리),True,5280025000,0.0,include_jeonbuk_coop
+NHMAP-58954,고창부안축협 흥덕지점,농·축협,전북특별자치도 고창군 흥덕면 선운대로 3730 (흥덕리),True,5279040000,0.0,include_jeonbuk_coop
+NHMAP-509,곡성군지부,농협은행,전남광주통합특별시 곡성군 곡성읍 중앙로112 (곡성읍),False,1272025000,3324.783,include_border_nh
+NHMAP-544,곡성군청(출),농협은행,전남광주통합특별시 곡성군 군청로 50 (곡성읍),False,1272025000,2654.601,include_border_nh
+NHMAP-61409,곡성농협,농·축협,전남광주통합특별시 곡성군 곡성읍 중앙로 138 (읍내리),False,1272025000,2404.569,include_border_nh
+NHMAP-61413,곡성농협 고달지점,농·축협,전남광주통합특별시 곡성군 고달면 고주로 24 (목동리),False,1272036000,1886.244,include_border_nh
+NHMAP-61412,곡성농협 삼기지점,농·축협,전남광주통합특별시 곡성군 삼기면 곡순로 1426 (원등리),False,1272032000,8873.622,include_border_nh
+NHMAP-61410,곡성농협 서부지점,농·축협,전남광주통합특별시 곡성군 곡성읍 군청로 19-1 (읍내리),False,1272025000,2815.148,include_border_nh
+NHMAP-61411,곡성농협 오곡지점,농·축협,전남광주통합특별시 곡성군 오곡면 기차마을로 156 (오지리),False,1272031000,3402.538,include_border_nh
+NHMAP-59025,곡성축산농협,농·축협,전남광주통합특별시 곡성군 곡성읍 군청로 3 (읍내리),False,1272025000,2932.542,include_border_nh
+NHMAP-59027,곡성축산농협 석곡지점,농·축협,전남광주통합특별시 곡성군 석곡면 석곡로 53-1 (석곡리),False,1272033000,19592.535,include_border_nh
+NHMAP-59026,곡성축산농협 옥과지점,농·축협,전남광주통합특별시 곡성군 옥과면 대학로 152 (옥과리),False,1272037000,3141.199,include_border_nh
+NHMAP-62821,곤명농협,농·축협,경상남도 사천시 곤명면 봉명로 507 (봉계리),False,4824036000,37988.912,outside_predeclared_20km_boundary_buffer
+NHMAP-62822,곤명농협 완사지점,농·축협,경상남도 사천시 곤명면 경서대로 3401 (정곡리),False,4824036000,39400.702,outside_predeclared_20km_boundary_buffer
+NHMAP-61218,공덕농협,농·축협,전북특별자치도 김제시 공덕면 공덕7길 4 (마현리),True,5221038000,0.0,include_jeonbuk_coop
+NHMAP-62172,공성농협,농·축협,경상북도 상주시 공성면 공성중앙로 96 (옥산리),False,4725035000,34762.8,outside_predeclared_20km_boundary_buffer
+NHMAP-15754,관저동지점,농협은행,대전광역시 서구 관저로 14번길 40 (관저2동),False,3017059700,18394.393,include_border_nh
+NHMAP-63284,광산구청(출),농협은행,전남광주통합특별시 광산구 광산로29번길 15 (송정2동),False,1233052500,24138.161,outside_predeclared_20km_boundary_buffer
+NHMAP-494,광산지점,농협은행,전남광주통합특별시 광산구 광산로29번길 8 (송정2동),False,1233052500,24219.448,outside_predeclared_20km_boundary_buffer
+NHMAP-60715,광석농협,농·축협,충청남도 논산시 광석면 광석로 145 (신당리),False,4423032000,11575.607,include_border_nh
+NHMAP-60714,광석농협 천동지점,농·축협,충청남도 논산시 광석면 천동길 6 (천동리),False,4423032000,11080.385,include_border_nh
+NHMAP-65558,광주광역시청,농협은행,전남광주통합특별시 서구 내방로 111 (치평동),False,1224074500,24965.212,outside_predeclared_20km_boundary_buffer
+NHMAP-61383,광주농협,농·축협,전남광주통합특별시 북구 동문대로 161 (두암동),False,1230066200,19029.317,include_border_nh
+NHMAP-61381,광주농협 동광지점,농·축협,전남광주통합특별시 북구 석곡로 611 (망월동),False,1230068500,14595.172,include_border_nh
+NHMAP-61380,광주농협 두암동지점,농·축협,전남광주통합특별시 북구 군왕로 82 광주농협 두암동지점 (두암동),False,1230066300,19561.005,include_border_nh
+NHMAP-61386,광주농협 매곡동지점,농·축협,"전남광주통합특별시 북구 매곡로 48 (매곡동), 2층",False,1230067300,19895.216,include_border_nh
+NHMAP-61382,광주농협 문화동지점,농·축협,전남광주통합특별시 북구 면앙로 24-1 (용봉동),False,1230059000,19487.233,include_border_nh
+NHMAP-61390,광주농협 문흥동지점,농·축협,전남광주통합특별시 북구 서하로 381 (문흥동),False,1230065600,18555.987,include_border_nh
+NHMAP-61387,광주농협 밤실지점,농·축협,전남광주통합특별시 동구 갈마로 56 (산수동),False,1221060000,20050.521,outside_predeclared_20km_boundary_buffer
+NHMAP-61384,광주농협 산수동지점,농·축협,전남광주통합특별시 동구 필문대로 208 (지산동),False,1221062000,21212.23,outside_predeclared_20km_boundary_buffer
+NHMAP-61377,광주농협 서방지점,농·축협,전남광주통합특별시 동구 무등로 338 (계림동),False,1221056000,20888.932,outside_predeclared_20km_boundary_buffer
+NHMAP-61379,광주농협 오치동지점,농·축협,전남광주통합특별시 북구 우치로 236 (오치동),False,1230067600,19478.126,include_border_nh
+NHMAP-61389,광주농협 용주지점,농·축협,전남광주통합특별시 북구 용봉택지로 95 (용봉동),False,1230059000,20612.95,outside_predeclared_20km_boundary_buffer
+NHMAP-61388,광주농협 일곡지점,농·축협,전남광주통합특별시 북구 일곡마을로 41 2층 (일곡동),False,1230066900,18520.838,include_border_nh
+NHMAP-61321,광주농협 중흥동지점,농·축협,전남광주통합특별시 북구 호동로 6 (중흥동),False,1230053500,20031.172,outside_predeclared_20km_boundary_buffer
+NHMAP-61385,광주농협 충효지점,농·축협,전남광주통합특별시 북구 송강로 393 (충효동),False,1230068500,15371.107,include_border_nh
+NHMAP-61378,광주농협 풍향지점,농·축협,전남광주통합특별시 북구 필문대로 69 (풍향동),False,1230063500,20356.333,outside_predeclared_20km_boundary_buffer
+NHMAP-61322,광주비아농협,농·축협,전남광주통합특별시 광산구 장신로 153 (수완동),False,1233063700,21094.824,outside_predeclared_20km_boundary_buffer
+NHMAP-61329,광주비아농협 금구지점,농·축협,전남광주통합특별시 광산구 목련로153번길 79-1 (운남동),False,1233063500,21970.081,outside_predeclared_20km_boundary_buffer
+NHMAP-61327,광주비아농협 남부지점,농·축협,"전남광주통합특별시 광산구 수등로 264, 1층 광주비아농협 남부지점 (신가동)",False,1233063000,22198.239,outside_predeclared_20km_boundary_buffer
+NHMAP-61317,광주비아농협 비아지점,농·축협,전남광주통합특별시 광산구 비아중앙로 36 (비아동),False,1233062000,18173.628,include_border_nh
+NHMAP-61319,광주비아농협 수완지점,농·축협,전남광주통합특별시 광산구 왕버들로 86 107호(수완동),False,1233063700,19707.275,include_border_nh
+NHMAP-61323,광주비아농협 신가지점,농·축협,전남광주통합특별시 광산구 하남대로261번길 32 (신가동),False,1233063000,21730.089,outside_predeclared_20km_boundary_buffer
+NHMAP-61325,광주비아농협 신창지점,농·축협,전남광주통합특별시 광산구 북문대로 419 (신창동),False,1233070000,21990.799,outside_predeclared_20km_boundary_buffer
+NHMAP-61326,광주비아농협 쌍암지점,농·축협,전남광주통합특별시 광산구 임방울대로 727-5 라인3차APT 상가101호 (월계동),False,1233062400,19201.512,include_border_nh
+NHMAP-61330,광주비아농협 운남지점,농·축협,전남광주통합특별시 광산구 목련로273번길 106 (운남동),False,1233063500,22158.558,outside_predeclared_20km_boundary_buffer
+NHMAP-61328,광주비아농협 월계지점,농·축협,전남광주통합특별시 광산구 월계로 72 (월계동),False,1233062600,19596.031,include_border_nh
+NHMAP-61331,광주비아농협 중앙지점,농·축협,전남광주통합특별시 광산구 신창로 68 (신창동),False,1233070000,21593.328,outside_predeclared_20km_boundary_buffer
+NHMAP-61324,광주비아농협 첨단동부지점,농·축협,전남광주통합특별시 광산구 월계로 217 첨단프라자 106호 (쌍암동),False,1233062600,20341.261,outside_predeclared_20km_boundary_buffer
+NHMAP-61318,광주비아농협 첨단북부지점,농·축협,전남광주통합특별시 광산구 임방울대로825번길 76 (쌍암동),False,1233062400,19694.237,include_border_nh
+NHMAP-860,광주비엔날레지점,농협은행,전남광주통합특별시 북구 비엔날레로 108 (용봉동),False,1230059000,20796.572,outside_predeclared_20km_boundary_buffer
+NHMAP-519,광주시교육청(출),농협은행,전남광주통합특별시 서구 화운로 93 (화정동),False,1224077000,24263.21,outside_predeclared_20km_boundary_buffer
+NHMAP-528,광주영업부,농협은행,전남광주통합특별시 광산구 무진대로 285 (우산동),False,1233058000,23196.02,outside_predeclared_20km_boundary_buffer
+NHMAP-61716,광주원예농협,농·축협,전남광주통합특별시 북구 동문대로 260 (각화동),False,1230065000,17977.099,include_border_nh
+NHMAP-61712,광주원예농협 광산지점,농·축협,전남광주통합특별시 광산구 송도로 195 (도산동),False,1233054000,24886.919,outside_predeclared_20km_boundary_buffer
+NHMAP-61714,광주원예농협 북부지점,농·축협,전남광주통합특별시 북구 제봉로 305 (중흥동),False,1230051000,21395.677,outside_predeclared_20km_boundary_buffer
+NHMAP-61717,광주원예농협 서부지점,농·축협,전남광주통합특별시 서구 상무민주로 107 (쌍촌동),False,1224075100,24453.945,outside_predeclared_20km_boundary_buffer
+NHMAP-61713,광주원예농협 수완지점,농·축협,전남광주통합특별시 광산구 장신로 44 (장덕동),False,1233063700,20542.812,outside_predeclared_20km_boundary_buffer
+NHMAP-61718,광주원예농협 첨단미래지점,농·축협,전남광주통합특별시 광산구 앰코로 21 첨단대라수 단지상가 109동 1층 105호 (쌍암동),False,1233062400,20019.526,outside_predeclared_20km_boundary_buffer
+NHMAP-61715,광주원예농협 풍암지점,농·축협,전남광주통합특별시 서구 매월1로 7 (매월동),False,1224080000,28483.91,outside_predeclared_20km_boundary_buffer
+NHMAP-503,광주지점,농협은행,전남광주통합특별시 북구 금남로 127 (북동),False,1230055500,22042.366,outside_predeclared_20km_boundary_buffer
+NHMAP-58979,광주축산농협,농·축협,전남광주통합특별시 광산구 상무대로 313 (신촌동),False,1233055000,24099.462,outside_predeclared_20km_boundary_buffer
+NHMAP-58978,광주축산농협 금호운천지점,농·축협,전남광주통합특별시 서구 운천로 131 (쌍촌동),False,1224075200,25873.318,outside_predeclared_20km_boundary_buffer
+NHMAP-58985,광주축산농협 동명로지점,농·축협,전남광주통합특별시 동구 동명로67번길 41 (산수동),False,1221059000,21366.187,outside_predeclared_20km_boundary_buffer
+NHMAP-58984,광주축산농협 북부지점,농·축협,전남광주통합특별시 북구 서방로 71 (우산동),False,1230062000,19851.619,include_border_nh
+NHMAP-65555,광주축산농협 상무대로지점,농·축협,"전남광주통합특별시 서구 상무대로 687 (마륵동), 2층 금융센터",False,1224080000,26220.021,outside_predeclared_20km_boundary_buffer
+NHMAP-59329,광주축산농협 신창지점,농·축협,전남광주통합특별시 광산구 신창로 129 상민빌딩 101호 (신창동),False,1233070000,21150.099,outside_predeclared_20km_boundary_buffer
+NHMAP-58980,광주축산농협 오치중앙지점,농·축협,전남광주통합특별시 북구 설죽로370번길 26 (오치동),False,1230067700,19148.705,include_border_nh
+NHMAP-58982,광주축산농협 중앙로지점,농·축협,전남광주통합특별시 동구 중앙로 157 (호남동),False,1221052500,22429.927,outside_predeclared_20km_boundary_buffer
+NHMAP-58981,광주축산농협 학동뉴타운지점,농·축협,전남광주통합특별시 동구 남문로753번길 20 아이파크상가동 116호 (학동),False,1221068500,22996.39,outside_predeclared_20km_boundary_buffer
+NHMAP-58983,광주축산농협 화정동지점,농·축협,전남광주통합특별시 서구 화정로 245-1 (화정동),False,1224077000,24055.724,outside_predeclared_20km_boundary_buffer
+NHMAP-59358,광주축산농협 효천행암지점,농·축협,전남광주통합특별시 남구 효우2로 26 (행암동),False,1227071000,27933.242,outside_predeclared_20km_boundary_buffer
+NHMAP-18655,광주화정역지점,농협은행,전남광주통합특별시 서구 상무대로 1046 (화정동),False,1224078000,24125.498,outside_predeclared_20km_boundary_buffer
+NHMAP-536,광천동지점,농협은행,전남광주통합특별시 서구 죽봉대로 68 (농성동),False,1224065000,23014.013,outside_predeclared_20km_boundary_buffer
+NHMAP-61207,광활농협,농·축협,전북특별자치도 김제시 광활면 광활로 465 (옥포리),True,5221046000,0.0,include_jeonbuk_coop
+NHMAP-511,구례군지부,농협은행,전남광주통합특별시 구례군 구례읍 봉성로 65 (구례읍),False,1273025000,12773.177,include_border_nh
+NHMAP-492,구례군청(출),농협은행,전남광주통합특별시 구례군 구례읍 봉성로 1 구례군청 차고동 (구례읍),False,1273025000,13272.866,include_border_nh
+NHMAP-61422,구례농협,농·축협,전남광주통합특별시 구례군 구례읍 봉성로 142 (봉북리),False,1273025000,12181.273,include_border_nh
+NHMAP-61424,구례농협 간전지점,농·축협,전남광주통합특별시 구례군 간전면 안음길 15 (간문리),False,1273032000,14825.757,include_border_nh
+NHMAP-61427,구례농협 광의지점,농·축협,전남광주통합특별시 구례군 광의면 광의철쭉동산로 5 (연파리),False,1273035000,6820.711,include_border_nh
+NHMAP-61426,구례농협 마산지점,농·축협,전남광주통합특별시 구례군 마산면 화엄사로 131 (마산리),False,1273034000,12760.016,include_border_nh
+NHMAP-61423,구례농협 문척지점,농·축협,전남광주통합특별시 구례군 문척면 수달생태로 268-5 (월전리),False,1273031000,15201.086,include_border_nh
+NHMAP-61428,구례농협 용방지점,농·축협,전남광주통합특별시 구례군 용방면 하용길 10 (용정리),False,1273036000,7059.202,include_border_nh
+NHMAP-61425,구례농협 토지지점,농·축협,전남광주통합특별시 구례군 토지면 구산길 3 (구산리),False,1273033000,13133.155,include_border_nh
+NHMAP-58998,구례축산농협,농·축협,전남광주통합특별시 구례군 구례읍 봉성로 48 (봉남리),False,1273025000,12947.508,include_border_nh
+NHMAP-58999,구례축산농협 봉동지점,농·축협,전남광주통합특별시 구례군 구례읍 봉동길 7 (봉동리),False,1273025000,12852.465,include_border_nh
+NHMAP-60758,구룡농협,농·축협,충청남도 부여군 구룡면 흥수로 160 (논티리),False,4476035000,14160.614,include_border_nh
+NHMAP-60751,구룡농협 내산지점,농·축협,충청남도 부여군 내산면 성충로 1023 (운치리),False,4476034000,17554.147,include_border_nh
+NHMAP-60757,구룡농협 외산지점,농·축협,충청남도 부여군 외산면 무량로 24 (만수리),False,4476033000,24578.385,outside_predeclared_20km_boundary_buffer
+NHMAP-61134,구림농협,농·축협,전북특별자치도 순창군 구림면 구림로 468 (운남리),True,5277040000,0.0,include_jeonbuk_coop
+NHMAP-61029,구이농협,농·축협,전북특별자치도 완주군 구이면 구이로 1510 (두현리),True,5271035000,0.0,include_jeonbuk_coop
+NHMAP-61030,구이농협 덕천지점,농·축협,전북특별자치도 완주군 구이면 구이로 1722 (덕천리),True,5271035000,0.0,include_jeonbuk_coop
+NHMAP-61075,구천동농협,농·축협,전북특별자치도 무주군 설천면 삼도봉로 6 (소천리),True,5273032000,0.0,include_jeonbuk_coop
+NHMAP-61076,구천동농협 구천지점,농·축협,전북특별자치도 무주군 설천면 구천동1로 15 (삼공리),True,5273032000,0.0,include_jeonbuk_coop
+NHMAP-61074,구천동농협 무풍지점,농·축협,전북특별자치도 무주군 무풍면 현내로 183 (현내리),True,5273031000,0.0,include_jeonbuk_coop
+NHMAP-61229,군산농협,농·축협,전북특별자치도 군산시 번영로 162 (조촌동),True,5213065000,0.0,include_jeonbuk_coop
+NHMAP-61242,군산농협 개정지점,농·축협,전북특별자치도 군산시 개정면 바르메길 17 (발산리),True,5213036000,0.0,include_jeonbuk_coop
+NHMAP-61223,군산농협 경암지점,농·축협,전북특별자치도 군산시 궁포3로 5 성보빌딩 101호 (조촌동),True,5213065000,0.0,include_jeonbuk_coop
+NHMAP-61224,군산농협 나운지점,농·축협,전북특별자치도 군산시 대학로 253 (나운동),True,5213070100,0.0,include_jeonbuk_coop
+NHMAP-61227,군산농협 미룡지점,농·축협,전북특별자치도 군산시 황룡로 27 (미룡동),True,5213070300,0.0,include_jeonbuk_coop
+NHMAP-61222,군산농협 삼학지점,농·축협,전북특별자치도 군산시 미원로 45 (삼학동),True,5213056000,0.0,include_jeonbuk_coop
+NHMAP-61225,군산농협 소룡지점,농·축협,"전북특별자치도 군산시 공항로 85 (소룡동, 농협소룡지소)",True,5213071000,0.0,include_jeonbuk_coop
+NHMAP-61226,군산농협 중미지점,농·축협,전북특별자치도 군산시 중앙로 71 (중앙로3가),True,5213064000,0.0,include_jeonbuk_coop
+NHMAP-61228,군산농협 진포지점,농·축협,전북특별자치도 군산시 수송로 133 (나운동),True,5213070200,0.0,include_jeonbuk_coop
+NHMAP-61221,군산농협 팔마지점,농·축협,전북특별자치도 군산시 미장안길 60 (미장동),True,5213069000,0.0,include_jeonbuk_coop
+NHMAP-426,군산시지부,농협은행,전북특별자치도 군산시 조촌로 91 (조촌동),True,5213065000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-439,군산시청(출),농협은행,전북특별자치도 군산시 시청로 17 (조촌동),True,5213065000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61247,군산원예농협,농·축협,전북특별자치도 군산시 하포로 29 (수송동),True,5213069000,0.0,include_jeonbuk_coop
+NHMAP-61246,군산원예농협 문화지점,농·축협,전북특별자치도 군산시 나운로 4 군산현대코아 112호 (문화동),True,5213055000,0.0,include_jeonbuk_coop
+NHMAP-61245,군산원예농협 죽성지점,농·축협,전북특별자치도 군산시 큰샘길 49 (죽성동),True,5213060500,0.0,include_jeonbuk_coop
+NHMAP-61244,군산원예농협 지곡지점,농·축협,전북특별자치도 군산시 백토로 239 (지곡동),True,5213069000,0.0,include_jeonbuk_coop
+NHMAP-449,군산중앙로지점,농협은행,전북특별자치도 군산시 중앙로 169 (중앙로1가),True,5213053000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61691,굴비골농협,농·축협,전남광주통합특별시 영광군 법성면 법성포로2길 28 (법성리),False,1283037000,4137.835,include_border_nh
+NHMAP-61688,굴비골농협 홍농지점,농·축협,전남광주통합특별시 영광군 홍농읍 상하길 62 (상하리),False,1283025600,2998.089,include_border_nh
+NHMAP-60756,규암농협,농·축협,충청남도 부여군 규암면 계백로 68 (규암리),False,4476031000,14453.763,include_border_nh
+NHMAP-60749,규암농협 은산지점,농·축협,충청남도 부여군 은산면 충의로 697 (은산리),False,4476032000,19144.173,include_border_nh
+NHMAP-65847,규암농협 장암지점,농·축협,충청남도 부여군 장암면 장암로 14 (석동리),False,4476042000,11230.376,include_border_nh
+NHMAP-493,금남로금융센터,농협은행,전남광주통합특별시 동구 금남로 217 (금남로3가),False,1221052500,22122.676,outside_predeclared_20km_boundary_buffer
+NHMAP-61272,금마농협,농·축협,전북특별자치도 익산시 금마면 금마길 33 (동고도리),True,5214040000,0.0,include_jeonbuk_coop
+NHMAP-61206,금만농협,농·축협,전북특별자치도 김제시 만경읍 만경로 786 (만경리),True,5221025000,0.0,include_jeonbuk_coop
+NHMAP-61209,금만농협 성덕지점,농·축협,전북특별자치도 김제시 성덕면 대석로 43 (석동리),True,5221040000,0.0,include_jeonbuk_coop
+NHMAP-61210,금만농협 청하지점,농·축협,전북특별자치도 김제시 청하면 만경로 1484-1 (동지산리),True,5221039000,0.0,include_jeonbuk_coop
+NHMAP-335,금산군지부,농협은행,충청남도 금산군 금산읍 인삼로 84 (금산읍),False,4471025000,7755.567,include_border_nh
+NHMAP-370,금산군청(출),농협은행,충청남도 금산군 금산읍 군청길 13 (상리),False,4471025000,8466.868,include_border_nh
+NHMAP-60520,금산농협,농·축협,충청남도 금산군 금산읍 비선길 37 (중도리),False,4471025000,7732.072,include_border_nh
+NHMAP-61213,금산농협,농·축협,전북특별자치도 김제시 금산면 원평로 48 (원평리),True,5221045000,0.0,include_jeonbuk_coop
+NHMAP-61214,금산농협 금산지소,농·축협,전북특별자치도 김제시 금산면 모악로 460-5 금산농협 금산지소 (금산리),True,5221045000,0.0,include_jeonbuk_coop
+NHMAP-60521,금산농협 금산지점,농·축협,"충청남도 금산군 금산읍 건삼전길 22-4 (중도리, 중오회)",False,4471025000,7539.881,include_border_nh
+NHMAP-60525,금산농협 금성지점,농·축협,충청남도 금산군 금성면 파초1로 63 (파초리),False,4471031000,10179.544,include_border_nh
+NHMAP-60533,금산농협 남이지점,농·축협,충청남도 금산군 남이면 진악로 21 (하금리),False,4471036000,2174.55,include_border_nh
+NHMAP-60532,금산농협 남일지점,농·축협,충청남도 금산군 남일면 하초현3길 7 (초현리),False,4471035000,2459.625,include_border_nh
+NHMAP-60523,금산농협 동부지점,농·축협,충청남도 금산군 금산읍 인삼약초로 45 (중도리),False,4471025000,7362.4,include_border_nh
+NHMAP-60522,금산농협 북부지점,농·축협,충청남도 금산군 금산읍 후곤천길 71 (상리),False,4471025000,8092.071,include_border_nh
+NHMAP-60524,금산농협 비호지점,농·축협,충청남도 금산군 금산읍 비단로 326-9 (상리),False,4471025000,8715.66,include_border_nh
+NHMAP-60529,금산농협 제원지점,농·축협,충청남도 금산군 제원면 금강로 131 (제원리),False,4471032000,7994.049,include_border_nh
+NHMAP-60526,금산농협 하신지점,농·축협,충청남도 금산군 금성면 어필각로 430 (하신리),False,4471031000,12627.365,include_border_nh
+NHMAP-60531,금산농협 황풍지점,농·축협,충청남도 금산군 남일면 무금로 2159 (황풍리),False,4471035000,5271.692,include_border_nh
+NHMAP-60768,금산인삼농협,농·축협,충청남도 부여군 부여읍 성왕로 311 (쌍북리),False,4476025000,14493.336,include_border_nh
+NHMAP-60769,금산인삼농협 목련지점,농·축협,대전광역시 서구 계백로 1442 (도마동),False,3017052000,20651.558,outside_predeclared_20km_boundary_buffer
+NHMAP-60539,금산인삼농협 새금산지점,농·축협,충청남도 금산군 금산읍 인삼약초로 42 (중도리),False,4471025000,7249.62,include_border_nh
+NHMAP-63179,금산인삼농협 호수지점,농·축협,대전광역시 서구 원도안로 259 (도안동),False,3017059300,21678.037,outside_predeclared_20km_boundary_buffer
+NHMAP-58842,금산축산농협,농·축협,충청남도 금산군 금산읍 오리정1길 48 (상리),False,4471025000,8055.846,include_border_nh
+NHMAP-58843,금산축산농협 비단로지점,농·축협,충청남도 금산군 금산읍 비단로 378 (아인리646-4),False,4471025000,8721.916,include_border_nh
+NHMAP-61400,금성농협,농·축협,전남광주통합특별시 담양군 금성면 석현길 9 (석현리),False,1271037000,2413.767,include_border_nh
+NHMAP-11890,금암동지점,농협은행,전북특별자치도 전주시 덕진구 기린대로 418 (금암동),True,5211357500,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-60590,기성농협,농·축협,대전광역시 서구 장안로 11 (흑석동),False,3017060000,13664.85,include_border_nh
+NHMAP-60589,기성농협 평촌지점,농·축협,대전광역시 서구 길마루길 10 (평촌동),False,3017060000,12092.432,include_border_nh
+NHMAP-61200,김제농협,농·축협,전북특별자치도 김제시 벽지산로 217 (옥산동),True,5221058000,0.0,include_jeonbuk_coop
+NHMAP-61198,김제농협 동부지점,농·축협,전북특별자치도 김제시 중앙로 260 (신풍동),True,5221052000,0.0,include_jeonbuk_coop
+NHMAP-61202,김제농협 부량지점,농·축협,전북특별자치도 김제시 부량면 벽골제로 214 (대평리),True,5221036000,0.0,include_jeonbuk_coop
+NHMAP-61199,김제농협 북부지점,농·축협,전북특별자치도 김제시 도작로 95 (신풍동),True,5221052000,0.0,include_jeonbuk_coop
+NHMAP-61205,김제농협 죽산지점,농·축협,전북특별자치도 김제시 죽산면 해학로 7 (죽산리),True,5221032000,0.0,include_jeonbuk_coop
+NHMAP-61197,김제농협 중부지점,농·축협,전북특별자치도 김제시 남북로 195 (요촌동),True,5221051000,0.0,include_jeonbuk_coop
+NHMAP-61204,김제농협 중앙지점,농·축협,전북특별자치도 김제시 동서로 185 (요촌동),True,5221051000,0.0,include_jeonbuk_coop
+NHMAP-446,김제시지부,농협은행,전북특별자치도 김제시 중앙로 139 (요촌동),True,5221051000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-417,김제시청(출),농협은행,전북특별자치도 김제시 중앙로 40 (서암동),True,5221051000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61219,김제원예농협,농·축협,전북특별자치도 김제시 월죽로 946 (교동),True,5221058000,0.0,include_jeonbuk_coop
+NHMAP-61220,김제원예농협 요촌지점,농·축협,전북특별자치도 김제시 남북로 198 (요촌동),True,5221051000,0.0,include_jeonbuk_coop
+NHMAP-62096,김천농협 경제서부,농·축협,경상북도 김천시 영남대로 1315 (백옥동),False,4715059500,21644.878,outside_predeclared_20km_boundary_buffer
+NHMAP-62094,김천농협 김산지점,농·축협,경상북도 김천시 문당길 16 (삼락동),False,4715057500,23120.365,outside_predeclared_20km_boundary_buffer
+NHMAP-62105,김천농협 대곡지점,농·축협,경상북도 김천시 문지왈1길 11 (부곡동),False,4715059500,22202.49,outside_predeclared_20km_boundary_buffer
+NHMAP-63152,김천농협 로컬푸드복합문화센터지점,농·축협,경상북도 김천시 부곡길 91 (부곡동),False,4715059500,22574.145,outside_predeclared_20km_boundary_buffer
+NHMAP-61678,나비골농협,농·축협,전남광주통합특별시 함평군 해보면 밀재로 1289 (문장리),False,1282037000,13360.702,include_border_nh
+NHMAP-61677,나비골농협 나산지점,농·축협,전남광주통합특별시 함평군 나산면 함장로 2400 (삼축리),False,1282036000,21004.837,outside_predeclared_20km_boundary_buffer
+NHMAP-414,나운센트럴지점,농협은행,전북특별자치도 군산시 대학로 342 우성26빌딩 1층 (나운1동),True,5213070100,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-62777,남거창농협,농·축협,경상남도 거창군 남상면 수남로 1835 (무촌리),False,4888037000,23524.107,outside_predeclared_20km_boundary_buffer
+NHMAP-62778,남거창농협 남하지점,농·축협,"경상남도 거창군 남하면 무릉1길 32 (무릉리, 남거창농협남하지점)",False,4888038000,23837.372,outside_predeclared_20km_boundary_buffer
+NHMAP-62767,남거창농협 신원지점,농·축협,경상남도 거창군 신원면 신차로 3054 (과정리),False,4888039000,26104.514,outside_predeclared_20km_boundary_buffer
+NHMAP-61371,남광주농협,농·축협,전남광주통합특별시 남구 대남대로 169 (봉선동),False,1227053700,24136.31,outside_predeclared_20km_boundary_buffer
+NHMAP-61374,남광주농협 무등지점,농·축협,전남광주통합특별시 동구 양림로 121 (학동),False,1221068500,22809.453,outside_predeclared_20km_boundary_buffer
+NHMAP-61372,남광주농협 방림동지점,농·축협,전남광주통합특별시 남구 봉선1로 122 (봉선동),False,1227053800,24170.73,outside_predeclared_20km_boundary_buffer
+NHMAP-61369,남광주농협 백운동지점,농·축협,전남광주통합특별시 남구 회재로 1295 (백운동),False,1227068000,24084.866,outside_predeclared_20km_boundary_buffer
+NHMAP-61373,남광주농협 봉선지점,농·축협,"전남광주통합특별시 남구 봉선중앙로 81, 1층 남광주농협 봉선지점 (봉선동)",False,1227053700,24425.543,outside_predeclared_20km_boundary_buffer
+NHMAP-61292,남광주농협 봉주지점,농·축협,전남광주통합특별시 남구 봉선로 55 (봉선동),False,1227053700,24666.483,outside_predeclared_20km_boundary_buffer
+NHMAP-61295,남광주농협 염주지점,농·축협,전남광주통합특별시 서구 월드컵4강로28번길 62 (화정동),False,1224077000,24640.278,outside_predeclared_20km_boundary_buffer
+NHMAP-61367,남광주농협 월산지점,농·축협,전남광주통합특별시 남구 중앙로 72-1 (서동),False,1227054500,23250.516,outside_predeclared_20km_boundary_buffer
+NHMAP-61391,남광주농협 장산지점,농·축협,전남광주통합특별시 남구 회서로22번길 18 (주월동),False,1227069000,25174.205,outside_predeclared_20km_boundary_buffer
+NHMAP-61375,남광주농협 주월지점,농·축협,전남광주통합특별시 남구 군분로 79-1 (월산동),False,1227064000,24277.913,outside_predeclared_20km_boundary_buffer
+NHMAP-61296,남광주농협 지원동지점,농·축협,전남광주통합특별시 동구 남문로 558 (소태동),False,1221074000,24162.001,outside_predeclared_20km_boundary_buffer
+NHMAP-61370,남광주농협 진월동지점,농·축협,전남광주통합특별시 남구 서문대로 658 (진월동),False,1227070500,25974.965,outside_predeclared_20km_boundary_buffer
+NHMAP-61291,남광주농협 푸른길지점,농·축협,전남광주통합특별시 남구 광복마을길 73 (진월동),False,1227070500,25461.899,outside_predeclared_20km_boundary_buffer
+NHMAP-61368,남광주농협 학동지점,농·축협,전남광주통합특별시 동구 남문로 666 (학동),False,1221071000,23398.329,outside_predeclared_20km_boundary_buffer
+NHMAP-61294,남광주농협 학림지점,농·축협,전남광주통합특별시 남구 방림로 19-2 (방림동),False,1227052000,23438.183,outside_predeclared_20km_boundary_buffer
+NHMAP-61366,남광주농협 학운동지점,농·축협,전남광주통합특별시 동구 의재로 69 (학동),False,1221071000,22981.642,outside_predeclared_20km_boundary_buffer
+NHMAP-61293,남광주농협 효덕지점,농·축협,전남광주통합특별시 남구 화산로 41 (진월동),False,1227070500,26370.52,outside_predeclared_20km_boundary_buffer
+NHMAP-61376,남광주농협 효천지점,농·축협,전남광주통합특별시 남구 효천2로 30 (임암동),False,1227072000,28669.635,outside_predeclared_20km_boundary_buffer
+NHMAP-62097,남김천농협,농·축협,경상북도 김천시 구성면 남김천대로 2381-17 (상좌원리),False,4715041000,14632.766,include_border_nh
+NHMAP-60591,남대전농협,농·축협,대전광역시 서구 구봉로 111 (관저동),False,3017059700,18424.102,include_border_nh
+NHMAP-60596,남대전농협 느리울지점,농·축협,대전광역시 서구 관저동로 86 (관저동),False,3017059700,18781.135,include_border_nh
+NHMAP-60598,남대전농협 도안지점,농·축협,"대전광역시 서구 원도안로 47 102호 (가수원동, 우보메디피아)",False,3017059300,19732.007,include_border_nh
+NHMAP-60595,남대전농협 만수원지점,농·축협,대전광역시 서구 도안대로 32 (관저동),False,3017059600,19267.846,include_border_nh
+NHMAP-60597,남대전농협 목원지점,농·축협,"대전광역시 서구 도안북로 107 2층 202호(도안동,성광타워)",False,3017059300,22170.622,outside_predeclared_20km_boundary_buffer
+NHMAP-60594,남대전농협 선정지점,농·축협,대전광역시 서구 정림로 18 (정림동),False,3017053500,19201.23,include_border_nh
+NHMAP-60592,남대전농협 정림지점,농·축협,대전광역시 서구 정림로 78 (정림동),False,3017053500,19764.311,include_border_nh
+NHMAP-60593,남대전농협 중앙지점,농·축협,대전광역시 서구 벌곡로 1379 (가수원동),False,3017059000,19316.936,include_border_nh
+NHMAP-61705,남면농협,농·축협,전남광주통합특별시 장성군 남면 황토단감로 27 (분향리),False,1284032000,15736.716,include_border_nh
+NHMAP-61193,남부안농협,농·축협,전북특별자치도 부안군 보안면 영전길 16 (영전리),True,5280035000,0.0,include_jeonbuk_coop
+NHMAP-61192,남부안농협 줄포지점,농·축협,전북특별자치도 부안군 줄포면 줄포중앙로 59 (줄포리),True,5280041000,0.0,include_jeonbuk_coop
+NHMAP-61194,남부안농협 진서지점,농·축협,전북특별자치도 부안군 진서면 곰소8길 1-4 (곰소리),True,5280037000,0.0,include_jeonbuk_coop
+NHMAP-63310,남원농협,농·축협,전북특별자치도 남원시 요천로 1838 (고죽동),True,5219059000,0.0,include_jeonbuk_coop
+NHMAP-61111,남원농협 대산지점,농·축협,전북특별자치도 남원시 대산면 운교2길 28 (운교리),True,5219037000,0.0,include_jeonbuk_coop
+NHMAP-61114,남원농협 덕과지점,농·축협,전북특별자치도 남원시 덕과면 덕오로 300 (고정리),True,5219039000,0.0,include_jeonbuk_coop
+NHMAP-61105,남원농협 도통지점,농·축협,전북특별자치도 남원시 용성로 220 (도통동),True,5219059000,0.0,include_jeonbuk_coop
+NHMAP-61103,남원농협 동문지점,농·축협,전북특별자치도 남원시 동문로 42-1 남원농협동문지점 (동충동),True,5219051000,0.0,include_jeonbuk_coop
+NHMAP-61115,남원농협 보절지점,농·축협,전북특별자치도 남원시 보절면 보산로 949 (신파리),True,5219040000,0.0,include_jeonbuk_coop
+NHMAP-61113,남원농협 사매지점,농·축협,전북특별자치도 남원시 사매면 덕오로 84 (오신리),True,5219038000,0.0,include_jeonbuk_coop
+NHMAP-61117,남원농협 산동지점,농·축협,전북특별자치도 남원시 산동면 요천로 2918 (태평리),True,5219041000,0.0,include_jeonbuk_coop
+NHMAP-61104,남원농협 용남지점,농·축협,전북특별자치도 남원시 남문로 419-9 (하정동),True,5219052000,0.0,include_jeonbuk_coop
+NHMAP-61106,남원농협 이백지점,농·축협,전북특별자치도 남원시 이백면 이백로 480 (과립리),True,5219042000,0.0,include_jeonbuk_coop
+NHMAP-61107,남원농협 주천지점,농·축협,전북특별자치도 남원시 주천면 정령치로 81 (장안리),True,5219031000,0.0,include_jeonbuk_coop
+NHMAP-61102,남원농협 향교지점,농·축협,전북특별자치도 남원시 충정로 100 (향교동),True,5219057000,0.0,include_jeonbuk_coop
+NHMAP-433,남원시지부,농협은행,전북특별자치도 남원시 광한북로 63 (하정동),True,5219052000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-441,남원시청(출),농협은행,전북특별자치도 남원시 시청로 60 (도통동),True,5219059000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61123,남원원예농협,농·축협,전북특별자치도 남원시 남문로 396-1 (금동),True,5219055000,0.0,include_jeonbuk_coop
+NHMAP-63352,남원원예농협 달빛지점,농·축협,전북특별자치도 남원시 남문로 283 (신정동),True,5219056000,0.0,include_jeonbuk_coop
+NHMAP-61124,남원원예농협 한빛지점,농·축협,전북특별자치도 남원시 오들로 49 (월락동),True,5219059000,0.0,include_jeonbuk_coop
+NHMAP-63049,남원지원(출),농협은행,전북특별자치도 남원시 용성로 59 (동충동),True,5219051000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-58947,남원축협,농·축협,전북특별자치도 남원시 붕맛길 99 (향교동),True,5219057000,0.0,include_jeonbuk_coop
+NHMAP-58949,남원축협 도통중앙지점,농·축협,전북특별자치도 남원시 시청로 52 (도통동),True,5219059000,0.0,include_jeonbuk_coop
+NHMAP-58948,남원축협 하정지점,농·축협,전북특별자치도 남원시 광한서로 88 (하정동),True,5219052000,0.0,include_jeonbuk_coop
+NHMAP-60791,남포농협,농·축협,충청남도 보령시 남포면 충서로 1839-6 (옥서리),False,4418036000,28409.492,outside_predeclared_20km_boundary_buffer
+NHMAP-61267,낭산농협,농·축협,전북특별자치도 익산시 낭산면 함낭로 948 (삼담리),True,5214037000,0.0,include_jeonbuk_coop
+NHMAP-12623,노대동지점,농협은행,전남광주통합특별시 남구 효우로 87 (노대동),False,1227070500,26927.851,outside_predeclared_20km_boundary_buffer
+NHMAP-60717,노성농협,농·축협,충청남도 논산시 노성면 논산평야로 1467 (읍내리),False,4423033000,16379.407,include_border_nh
+NHMAP-60716,노성농협 장마루지점,농·축협,충청남도 논산시 노성면 장마루로 934 (죽림리),False,4423033000,16994.128,include_border_nh
+NHMAP-60722,논산계룡농협,농·축협,충청남도 논산시 연산면 황산벌로 1544 (연산리),False,4423036000,11949.877,include_border_nh
+NHMAP-60745,논산계룡농협 가야곡지점,농·축협,충청남도 논산시 가야곡면 육곡길 10 (육곡리),False,4423040000,4728.819,include_border_nh
+NHMAP-60726,논산계룡농협 계룡지점,농·축협,충청남도 계룡시 엄사면 양정향한길 12 (엄사리),False,4425031500,18338.415,include_border_nh
+NHMAP-60730,논산계룡농협 도산지점,농·축협,충청남도 논산시 벌곡면 수락계곡길 11 (도산리),False,4423038000,3646.481,include_border_nh
+NHMAP-60727,논산계룡농협 두마지점,농·축협,"충청남도 계룡시 두마면 대실남북1길 7 (농소리) , 2층",False,4425051000,16104.181,include_border_nh
+NHMAP-60729,논산계룡농협 벌곡지점,농·축협,충청남도 논산시 벌곡면 대둔로 817 (한삼천리),False,4423038000,9614.006,include_border_nh
+NHMAP-60746,논산계룡농협 산노지점,농·축협,충청남도 논산시 가야곡면 덕은로 336-1 (목곡리),False,4423040000,6393.539,include_border_nh
+NHMAP-60728,논산계룡농협 엄사지점,농·축협,충청남도 계룡시 엄사면 번영로 48 (엄사리),False,4425031500,19003.034,include_border_nh
+NHMAP-60724,논산계룡농협 연산지점,농·축협,충청남도 논산시 연산면 황산벌로 1446 (연산리),False,4423036000,10975.365,include_border_nh
+NHMAP-60723,논산계룡농협 청동지점,농·축협,충청남도 논산시 연산면 선비로 289 (청동리),False,4423036000,12317.282,include_border_nh
+NHMAP-60731,논산계룡농협 하나로마트,농·축협,충청남도 논산시 연산면 청동로 18 (청동리),False,4423036000,11768.238,include_border_nh
+NHMAP-58851,논산계룡축산농협,농·축협,충청남도 논산시 시민로194번길 1 (내동),False,4423051000,6499.037,include_border_nh
+NHMAP-58853,논산계룡축산농협 서부지점,농·축협,충청남도 논산시 중앙로 496 (화지동),False,4423051000,7704.305,include_border_nh
+NHMAP-58852,논산계룡축산농협 연무로지점,농·축협,충청남도 논산시 연무읍 안심로127번길 10-1 (안심리),False,4423025300,3495.286,include_border_nh
+NHMAP-58857,논산계룡축산농협 중앙로지점,농·축협,충청남도 논산시 중앙로 264 (취암동),False,4423051000,6976.004,include_border_nh
+NHMAP-60708,논산농협,농·축협,충청남도 논산시 계백로 963 (부창동),False,4423052000,7246.639,include_border_nh
+NHMAP-60709,논산농협 남부지점,농·축협,충청남도 논산시 시민로307번길 14-42 (취암동),False,4423051000,6756.388,include_border_nh
+NHMAP-60710,논산농협 내동지점,농·축협,충청남도 논산시 대학로 48 (내동),False,4423051000,6190.39,include_border_nh
+NHMAP-60705,논산농협 동부지점,농·축협,충청남도 논산시 계백로 1016 논산농협 동부지점 (취암동),False,4423051000,7699.159,include_border_nh
+NHMAP-60707,논산농협 북부지점,농·축협,충청남도 논산시 해월로 261 논산농협북부지점 (화지동),False,4423051000,8535.492,include_border_nh
+NHMAP-60720,논산농협 성덕지점,농·축협,충청남도 논산시 은진면 원앙로 1162 (성덕리),False,4423041000,8076.767,include_border_nh
+NHMAP-60740,논산농협 우기지점,농·축협,충청남도 논산시 채운면 채운로 358 (심암리),False,4423042000,2239.545,include_border_nh
+NHMAP-60721,논산농협 은진지점,농·축협,충청남도 논산시 은진면 매죽헌로 23 (연서리),False,4423041000,5783.508,include_border_nh
+NHMAP-60741,논산농협 채운지점,농·축협,충청남도 논산시 채운면 화산1길 63-1 (화산리),False,4423042000,3662.623,include_border_nh
+NHMAP-60706,논산농협 화지지점,농·축협,충청남도 논산시 중앙로492번길 19 (화지동),False,4423051000,7804.456,include_border_nh
+NHMAP-353,논산시지부,농협은행,충청남도 논산시 중앙로 477 (반월동),False,4423051000,7565.728,include_border_nh
+NHMAP-352,논산시청(출),농협은행,충청남도 논산시 시민로210번길 9 (내동),False,4423051000,6619.515,include_border_nh
+NHMAP-14825,농촌진흥청(출),농협은행,전북특별자치도 전주시 완산구 농생명로 300 (중동),True,5211367000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61449,다압농협,농·축협,전남광주통합특별시 광양시 다압면 항동3길 11 (고사리),False,1219036000,22931.837,outside_predeclared_20km_boundary_buffer
+NHMAP-507,담양군지부,농협은행,전남광주통합특별시 담양군 담양읍 중앙로 82NH농협은행담양군지부) (담양읍),False,1271025000,5489.643,include_border_nh
+NHMAP-525,담양군청(출),농협은행,전남광주통합특별시 담양군 담양읍 추성로 1371 담양군청 (담양읍),False,1271025000,4971.359,include_border_nh
+NHMAP-61394,담양농협,농·축협,전남광주통합특별시 담양군 담양읍 죽향문화로 60 (천변리),False,1271025000,6211.299,include_border_nh
+NHMAP-61395,담양농협 남부지점,농·축협,전남광주통합특별시 담양군 담양읍 중앙로 34 (지침리),False,1271025000,5456.574,include_border_nh
+NHMAP-63354,담양농협 담빛문화지점,농·축협,전남광주통합특별시 담양군 담양읍 태왕2로 83-16 (담빛리),False,1271025000,8758.699,include_border_nh
+NHMAP-61399,담양농협 용면지점,농·축협,전남광주통합특별시 담양군 용면 추성2길 2 (추성리),False,1271038000,4134.8,include_border_nh
+NHMAP-61398,담양농협 월산지점,농·축협,전남광주통합특별시 담양군 월산면 도개안길 69-15 (월산리),False,1271039000,6045.151,include_border_nh
+NHMAP-61396,담양농협 중앙지점,농·축협,전남광주통합특별시 담양군 담양읍 죽녹원로 73 (객사리),False,1271025000,5267.544,include_border_nh
+NHMAP-61397,담양농협 추성로지점,농·축협,전남광주통합특별시 담양군 담양읍 추성로 1315 (담주리),False,1271025000,5551.155,include_border_nh
+NHMAP-58986,담양축산농협,농·축협,전남광주통합특별시 담양군 담양읍 천변1길 4 (천변리),False,1271025000,5526.889,include_border_nh
+NHMAP-59315,담양축산농협 백동지점,농·축협,전남광주통합특별시 담양군 담양읍 삼거리길 8-6 (백동리),False,1271025000,5711.187,include_border_nh
+NHMAP-58987,담양축산농협 창평지점,농·축협,전남광주통합특별시 담양군 창평면 의병로 141 (창평리),False,1271034000,9182.568,include_border_nh
+NHMAP-58988,담양축산농협 천변지점,농·축협,전남광주통합특별시 담양군 담양읍 천변5길 1 (천변리),False,1271025000,5751.107,include_border_nh
+NHMAP-344,대동지점,농협은행,"대전광역시 동구 계족로 167, 2층 (대동)",False,3011058500,23907.482,outside_predeclared_20km_boundary_buffer
+NHMAP-15747,대사동지점,농협은행,"대전광역시 중구 계룡로 931, 2층 (대사동)",False,3014063000,21985.916,outside_predeclared_20km_boundary_buffer
+NHMAP-62119,대산농협,농·축협,경상북도 김천시 대덕면 남김천대로 722 (관기리),False,4715044000,6166.284,include_border_nh
+NHMAP-62125,대산농협 부항지점,농·축협,경상북도 김천시 부항면 사등3길 4 (사등리),False,4715043000,5798.556,include_border_nh
+NHMAP-62118,대산농협 증산지점,농·축협,경상북도 김천시 증산면 증산1로 24 (유성리),False,4715045000,12414.827,include_border_nh
+NHMAP-62124,대산농협 지례지점,농·축협,경상북도 김천시 지례면 상부길 111 (교리),False,4715042000,11177.716,include_border_nh
+NHMAP-61179,대성농협,농·축협,전북특별자치도 고창군 대산면 대성로 247 (매산리),True,5279038000,0.0,include_jeonbuk_coop
+NHMAP-61171,대성농협 성송지점,농·축협,전북특별자치도 고창군 성송면 대성로 793 (계당리),True,5279037000,0.0,include_jeonbuk_coop
+NHMAP-61241,대야농협,농·축협,전북특별자치도 군산시 대야면 백마길 4 (지경리),True,5213035000,0.0,include_jeonbuk_coop
+NHMAP-500,대인동지점,농협은행,전남광주통합특별시 동구 구성로 218 (대인동),False,1221052500,21715.01,outside_predeclared_20km_boundary_buffer
+NHMAP-14765,대전계룡지점,농협은행,대전광역시 서구 문정로48번길 48 (탄방동),False,3017055500,24140.611,outside_predeclared_20km_boundary_buffer
+NHMAP-61408,대전농협,농·축협,전남광주통합특별시 담양군 대전면 추성1로 208 (대치리),False,1271041000,13704.594,include_border_nh
+NHMAP-346,대전영업부,농협은행,대전광역시 중구 중앙로 113 (선화동),False,3014053500,23141.701,outside_predeclared_20km_boundary_buffer
+NHMAP-60639,대전원예농협,농·축협,대전광역시 중구 대종로 411 (대흥동),False,3014057500,22747.917,outside_predeclared_20km_boundary_buffer
+NHMAP-60642,대전원예농협 둔산로지점,농·축협,대전광역시 서구 문정로 136 대전원예농협 둔산로지점 (탄방동),False,3017055500,24480.378,outside_predeclared_20km_boundary_buffer
+NHMAP-60640,대전원예농협 새산성지점,농·축협,대전광역시 중구 문화로 26 (산성동),False,3014074000,20405.504,outside_predeclared_20km_boundary_buffer
+NHMAP-60637,대전원예농협 서대전역지점,농·축협,대전광역시 중구 계백로1685번길 41 (오류동),False,3014067000,22131.654,outside_predeclared_20km_boundary_buffer
+NHMAP-60636,대전원예농협 석교지점,농·축협,대전광역시 중구 대종로 217 (석교동),False,3014062000,21872.37,outside_predeclared_20km_boundary_buffer
+NHMAP-339,대전지점,농협은행,대전광역시 동구 중앙로200번길 3 (중동),False,3011051500,23726.304,outside_predeclared_20km_boundary_buffer
+NHMAP-60600,대전진잠농협,농·축협,대전광역시 유성구 진잠로140번길 33 (원내동),False,3020052000,18996.622,include_border_nh
+NHMAP-60603,대전진잠농협 대정지점,농·축협,대전광역시 유성구 대정로28번안길 83 (대정동),False,3020052000,20267.33,outside_predeclared_20km_boundary_buffer
+NHMAP-60602,대전진잠농협 원내지점,농·축협,대전광역시 유성구 진잠로42번길 115 (원내동),False,3020052000,18649.516,include_border_nh
+NHMAP-60601,대전진잠농협 학하지점,농·축협,"대전광역시 유성구 학하중앙로 143 (학하동, 진잠농협하나로마트분사), 2층",False,3020052600,23359.005,outside_predeclared_20km_boundary_buffer
+NHMAP-58836,대전축산농협 경남지점,농·축협,대전광역시 서구 배재로 152 (도마동),False,3017052000,21446.324,outside_predeclared_20km_boundary_buffer
+NHMAP-58840,대전축산농협 도안동지점,농·축협,대전광역시 서구 도안중로305번길 6 (도안동),False,3017059300,20263.407,outside_predeclared_20km_boundary_buffer
+NHMAP-58837,대전축산농협 동서로지점,농·축협,대전광역시 동구 동서대로 1516 (삼성동),False,3011069500,24494.952,outside_predeclared_20km_boundary_buffer
+NHMAP-58835,대전축산농협 새용운지점,농·축협,대전광역시 동구 용운로 165 1층 (용운동),False,3011056000,24516.676,outside_predeclared_20km_boundary_buffer
+NHMAP-58834,대전축산농협 서대전지점,농·축협,대전광역시 중구 계룡로 852 (오류동),False,3014067000,22385.053,outside_predeclared_20km_boundary_buffer
+NHMAP-58838,대전축산농협 자양동지점,농·축협,대전광역시 동구 백룡로57번길 167 (자양동),False,3011059000,25306.548,outside_predeclared_20km_boundary_buffer
+NHMAP-59318,대전충남양돈농협 신갈마지점,농·축협,"대전광역시 서구 신갈마로 109 (갈마동, 갈마그랜드프라자) 2층",False,3017058100,23782.191,outside_predeclared_20km_boundary_buffer
+NHMAP-58924,대전충남양돈농협 신대전지점,농·축협,대전광역시 서구 정림로 56-9 (정림동),False,3017053500,19576.388,include_border_nh
+NHMAP-59324,대전충남양돈농협 큰마을지점,농·축협,대전광역시 서구 대덕대로 139 (갈마동),False,3017058200,24133.889,outside_predeclared_20km_boundary_buffer
+NHMAP-58917,대전충남우유농협,농·축협,대전광역시 동구 동대전로 262 (가양동),False,3011063000,25679.937,outside_predeclared_20km_boundary_buffer
+NHMAP-58914,대전충남우유농협 남둔산지점,농·축협,대전광역시 서구 문정로 118 (탄방동),False,3017055500,24436.436,outside_predeclared_20km_boundary_buffer
+NHMAP-58913,대전충남우유농협 동대전지점,농·축협,대전광역시 동구 흥룡로 20 (가양동),False,3011063000,26017.902,outside_predeclared_20km_boundary_buffer
+NHMAP-58916,대전충남우유농협 배재지점,농·축협,대전광역시 서구 도솔로 64 (도마동),False,3017053000,20845.39,outside_predeclared_20km_boundary_buffer
+NHMAP-59323,대전충남우유농협 백제지점,농·축협,충청남도 부여군 부여읍 사비로 69 (구아리),False,4476025000,14189.626,include_border_nh
+NHMAP-59370,대전충남우유농협 신가오지점,농·축협,대전광역시 동구 신기로 84 (가오동),False,3011053000,22479.24,outside_predeclared_20km_boundary_buffer
+NHMAP-58915,대전충남우유농협 우성지점,농·축협,대전광역시 중구 문화로 61 (유천동),False,3014070000,20637.145,outside_predeclared_20km_boundary_buffer
+NHMAP-372,대전터미널지점,농협은행,대전광역시 동구 동서대로1689 (용전동),False,3011064000,25833.828,outside_predeclared_20km_boundary_buffer
+NHMAP-65637,대천농협 대천지점,농·축협,"충청남도 보령시 남대천로 50 (대천동, 대천농협)",False,4418052500,32216.062,outside_predeclared_20km_boundary_buffer
+NHMAP-60785,대천농협 동대지점,농·축협,충청남도 보령시 한내로 82 (명천동),False,4418054500,32397.637,outside_predeclared_20km_boundary_buffer
+NHMAP-63053,대천농협 명천지점,농·축협,"충청남도 보령시 흥곡천변로 33 (명천동, 보령시선거관리위원회), 2층",False,4418054500,31559.196,outside_predeclared_20km_boundary_buffer
+NHMAP-60782,대천농협 한내지점,농·축협,충청남도 보령시 중앙로 57 (대천동),False,4418053500,32420.165,outside_predeclared_20km_boundary_buffer
+NHMAP-60784,대천농협 해수욕장지점,농·축협,충청남도 보령시 머드로 111 (신흑동),False,4418056500,26015.231,outside_predeclared_20km_boundary_buffer
+NHMAP-59039,도드람양돈농협 광주지점,농·축협,전남광주통합특별시 북구 서양로 45 (중흥동),False,1230053500,20775.781,outside_predeclared_20km_boundary_buffer
+NHMAP-58596,도드람양돈농협 대전,농·축협,대전광역시 서구 구봉산북로 12 (관저동),False,3017059700,18201.554,include_border_nh
+NHMAP-58973,도드람양돈농협 전주지점,농·축협,전북특별자치도 전주시 덕진구 안덕원로 266 (인후동1가),True,5211354000,0.0,include_jeonbuk_coop
+NHMAP-15527,도안동로지점,농협은행,"대전광역시 유성구 원신흥로 122-4 레이크빌딩 Ⅰ, 2층",False,3020061000,23184.652,outside_predeclared_20km_boundary_buffer
+NHMAP-62771,동거창농협,농·축협,경상남도 거창군 가조면 장군봉1길 6-1 (마상리),False,4888040000,23289.56,outside_predeclared_20km_boundary_buffer
+NHMAP-62774,동거창농협 가북지점,농·축협,경상남도 거창군 가북면 용암로 22 (우혜리),False,4888041000,18036.38,include_border_nh
+NHMAP-61127,동계농협,농·축협,전북특별자치도 순창군 동계면 동계로 47 (현포리 586),True,5277032000,0.0,include_jeonbuk_coop
+NHMAP-61237,동군산농협,농·축협,전북특별자치도 군산시 임피면 서원석곡로 597 (읍내리),True,5213033000,0.0,include_jeonbuk_coop
+NHMAP-61239,동군산농협 나포지점,농·축협,전북특별자치도 군산시 나포면 십자들로 626 (옥곤리),True,5213038000,0.0,include_jeonbuk_coop
+NHMAP-61238,동군산농협 서수지점,농·축협,전북특별자치도 군산시 서수면 항쟁로 233 (서수리),True,5213034000,0.0,include_jeonbuk_coop
+NHMAP-61236,동군산농협 성산지점,농·축협,전북특별자치도 군산시 성산면 송호로 218 (고봉리),True,5213037000,0.0,include_jeonbuk_coop
+NHMAP-61211,동김제농협,농·축협,전북특별자치도 김제시 금구면 봉두4길 59-48 (금구리),True,5221042000,0.0,include_jeonbuk_coop
+NHMAP-61212,동김제농협 낙성지점,농·축협,전북특별자치도 김제시 금구면 애통길 144 (낙성리),True,5221042000,0.0,include_jeonbuk_coop
+NHMAP-61215,동김제농협 봉남지점,농·축협,전북특별자치도 김제시 봉남면 봉남로 409 (대송리),True,5221043000,0.0,include_jeonbuk_coop
+NHMAP-61203,동김제농협 황산지점,농·축협,전북특별자치도 김제시 황산면 봉월5길 9 (봉월리),True,5221044000,0.0,include_jeonbuk_coop
+NHMAP-60544,동대전농협,농·축협,대전광역시 동구 계족로 63 (인동),False,3011054500,23052.752,outside_predeclared_20km_boundary_buffer
+NHMAP-60540,동대전농협 가오지점,농·축협,대전광역시 동구 대전로 453-1 (가오동),False,3011053000,21985.245,outside_predeclared_20km_boundary_buffer
+NHMAP-60541,동대전농협 목양지점,농·축협,대전광역시 중구 목동로 42 (목동),False,3014055000,23491.666,outside_predeclared_20km_boundary_buffer
+NHMAP-60546,동대전농협 부사동지점,농·축협,대전광역시 중구 대종로 316 (부사동),False,3014064000,22124.507,outside_predeclared_20km_boundary_buffer
+NHMAP-60550,동대전농협 용운지점,농·축협,대전광역시 동구 계족로140번길 183 덕림코아1층 (용운동),False,3011056000,24304.048,outside_predeclared_20km_boundary_buffer
+NHMAP-60547,동대전농협 용전동지점,농·축협,대전광역시 동구 동서대로 1688 (성남동),False,3011066500,25782.746,outside_predeclared_20km_boundary_buffer
+NHMAP-60549,동대전농협 우암로지점,농·축협,대전광역시 동구 우암로 172 (성남동),False,3011066500,24938.916,outside_predeclared_20km_boundary_buffer
+NHMAP-60545,동대전농협 중촌지점,농·축협,대전광역시 중구 목중로 50 (중촌동),False,3014056000,23870.393,outside_predeclared_20km_boundary_buffer
+NHMAP-60548,동대전농협 판암동지점,농·축협,대전광역시 동구 옥천로 183 (판암동),False,3011055100,23494.187,outside_predeclared_20km_boundary_buffer
+NHMAP-61565,동복농협 북면지점,농·축협,전남광주통합특별시 화순군 백아면 학천길 11 (북면농협),False,1276039500,14845.189,include_border_nh
+NHMAP-60766,동부여농협,농·축협,충청남도 부여군 석성면 증산로 45 (증산리),False,4476044000,11260.134,include_border_nh
+NHMAP-60767,동부여농협 석성지점,농·축협,충청남도 부여군 석성면 석성북로 9 (석성리),False,4476044000,8066.958,include_border_nh
+NHMAP-60765,동부여농협 초촌지점,농·축협,충청남도 부여군 초촌면 초촌로31번길 1 (응평리),False,4476045000,12702.4,include_border_nh
+NHMAP-60777,동서천농협,농·축협,충청남도 서천군 기산면 기산길 61 (화산리),False,4477033000,4869.031,include_border_nh
+NHMAP-60778,동서천농협 마산지점,농·축협,충청남도 서천군 마산면 삼일로 262-1 (신장리),False,4477035000,7441.596,include_border_nh
+NHMAP-60776,동서천농협 화양지점,농·축협,충청남도 서천군 화양면 옥포길 17 (옥포리),False,4477032000,904.3,include_border_nh
+NHMAP-58975,동진강낙농축협,농·축협,전북특별자치도 김제시 도작로 26 (검산동),True,5221054000,0.0,include_jeonbuk_coop
+NHMAP-58976,동진강낙농축협 군산제일지점,농·축협,전북특별자치도 군산시 하나운로 81 (나운동),True,5213070200,0.0,include_jeonbuk_coop
+NHMAP-59361,동진강낙농축협 익산제일지점,농·축협,전북특별자치도 익산시 부송로1길 35 (어양동),True,5214065200,0.0,include_jeonbuk_coop
+NHMAP-60536,만인산농협,농·축협,충청남도 금산군 추부면 하마전로 28 (마전리),False,4471039000,13452.767,include_border_nh
+NHMAP-60527,만인산농협 군북지점,농·축협,충청남도 금산군 군북면 군북로 735 (두두리),False,4471034000,14298.721,include_border_nh
+NHMAP-60528,만인산농협 내부지점,농·축협,충청남도 금산군 군북면 금산로 1745 (내부리),False,4471034000,10144.091,include_border_nh
+NHMAP-60538,만인산농협 복수지점,농·축협,충청남도 금산군 복수면 복수로 124 (곡남리),False,4471038000,6589.033,include_border_nh
+NHMAP-60534,만인산농협 신평지점,농·축협,충청남도 금산군 추부면 서대산로 554 (신평리),False,4471039000,18478.324,include_border_nh
+NHMAP-60535,만인산농협 중부대지점,농·축협,충청남도 금산군 추부면 대학로 201 (마전리),False,4471039000,11977.527,include_border_nh
+NHMAP-61265,망성농협,농·축협,전북특별자치도 익산시 망성면 무네미길 80 (신작리),True,5214038000,0.0,include_jeonbuk_coop
+NHMAP-62175,모서농협,농·축협,경상북도 상주시 모서면 백화로 1392 (삼포리),False,4725039000,34946.063,outside_predeclared_20km_boundary_buffer
+NHMAP-59032,목포무안신안축협 해제중앙지점,농·축협,전남광주통합특별시 무안군 해제면 봉대로 38 (신정리),False,1281036000,30438.978,outside_predeclared_20km_boundary_buffer
+NHMAP-61631,무안농협 해제지점,농·축협,전남광주통합특별시 무안군 해제면 현해로 1700 (신정리),False,1281036000,30738.089,outside_predeclared_20km_boundary_buffer
+NHMAP-61401,무정농협,농·축협,전남광주통합특별시 담양군 무정면 무정로 519 (봉안리),False,1271036000,3031.962,include_border_nh
+NHMAP-427,무주군지부,농협은행,전북특별자치도 무주군 무주읍 주계로 106 (무주읍),True,5273025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-421,무주군청(출),농협은행,전북특별자치도 무주군 무주읍 주계로 97 무주군청 (무주읍),True,5273025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61073,무주농협,농·축협,전북특별자치도 무주군 무주읍 단천로 91 (읍내리),True,5273025000,0.0,include_jeonbuk_coop
+NHMAP-61080,무주농협 부남지점,농·축협,전북특별자치도 무주군 부남면 부남로 866-2 (대소리),True,5273035000,0.0,include_jeonbuk_coop
+NHMAP-61078,무주농협 상곡지점,농·축협,전북특별자치도 무주군 적상면 괴목로 556 (포내리),True,5273033000,0.0,include_jeonbuk_coop
+NHMAP-61079,무주농협 안성지점,농·축협,전북특별자치도 무주군 안성면 안성로 280 (장기리),True,5273034000,0.0,include_jeonbuk_coop
+NHMAP-61077,무주농협 적상지점,농·축협,전북특별자치도 무주군 적상면 적상산로 47 (사천리),True,5273033000,0.0,include_jeonbuk_coop
+NHMAP-58966,무진장축산농협,농·축협,전북특별자치도 진안군 진안읍 중앙로 73 (군상리),True,5272025000,0.0,include_jeonbuk_coop
+NHMAP-58942,무진장축산농협 무주지점,농·축협,전북특별자치도 무주군 무주읍 한풍루로 389 (당산리),True,5273025000,0.0,include_jeonbuk_coop
+NHMAP-58943,무진장축산농협 안성지점,농·축협,전북특별자치도 무주군 안성면 안성로 288 (장기리),True,5273034000,0.0,include_jeonbuk_coop
+NHMAP-58967,무진장축산농협 장계지점,농·축협,전북특별자치도 장수군 장계면 한들로 80 (장계리),True,5274033500,0.0,include_jeonbuk_coop
+NHMAP-58945,무진장축산농협 장수지점,농·축협,전북특별자치도 장수군 장수읍 중동길 10 (장수리),True,5274025000,0.0,include_jeonbuk_coop
+NHMAP-61217,백구농협,농·축협,전북특별자치도 김제시 백구면 번영로 2572 (석담리),True,5221035000,0.0,include_jeonbuk_coop
+NHMAP-61201,백산농협,농·축협,전북특별자치도 김제시 백산면 학당길 26 (하정리),True,5221033000,0.0,include_jeonbuk_coop
+NHMAP-61689,백수농협,농·축협,전남광주통합특별시 영광군 백수읍 백수로10길 3 (천마리),False,1283025300,9996.92,include_border_nh
+NHMAP-61690,백수농협 상하사지점,농·축협,전남광주통합특별시 영광군 백수읍 상사길 11 (상사리),False,1283025300,14504.398,include_border_nh
+NHMAP-61710,백양사농협,농·축협,전남광주통합특별시 장성군 북이면 백양로 22 (사거리),False,1284039000,4301.759,include_border_nh
+NHMAP-61711,백양사농협 북하지점,농·축협,전남광주통합특별시 장성군 북하면 백양로 897 (약수리),False,1284040000,2388.062,include_border_nh
+NHMAP-61062,백운농협,농·축협,전북특별자치도 진안군 백운면 임진로 1309 (백암리),True,5272035000,0.0,include_jeonbuk_coop
+NHMAP-61063,백운농협 성수지점,농·축협,전북특별자치도 진안군 성수면 관진로 777 (외궁리),True,5272036000,0.0,include_jeonbuk_coop
+NHMAP-61190,변산농협,농·축협,전북특별자치도 부안군 변산면 지서로 70-3 (지서리),True,5280036000,0.0,include_jeonbuk_coop
+NHMAP-61191,변산농협 격포지점,농·축협,전북특별자치도 부안군 변산면 격포로 198 (격포리),True,5280036000,0.0,include_jeonbuk_coop
+NHMAP-61195,변산농협 위도지점,농·축협,전북특별자치도 부안군 위도면 위도로 269 (진리),True,5280042000,0.0,include_jeonbuk_coop
+NHMAP-378,보령시청(출),농협은행,충청남도 보령시 성주산로 77 (명천동),False,4418054500,31542.993,outside_predeclared_20km_boundary_buffer
+NHMAP-58859,보령축협,농·축협,충청남도 보령시 주공로 52-1 (명천동),False,4418054500,31784.096,outside_predeclared_20km_boundary_buffer
+NHMAP-58861,보령축협 동대동지점,농·축협,충청남도 보령시 한내로 19 (동대동),False,4418053500,32563.349,outside_predeclared_20km_boundary_buffer
+NHMAP-58809,보은옥천영동축산농협 영동지점,농·축협,충청북도 영동군 영동읍 계산로 62 (계산리),False,4374025000,14826.679,include_border_nh
+NHMAP-58808,보은옥천영동축산농협 옥천지점,농·축협,충청북도 옥천군 옥천읍 금장로 25 (금구리),False,4373025000,26620.474,outside_predeclared_20km_boundary_buffer
+NHMAP-61316,본량농협,농·축협,전남광주통합특별시 광산구 용진로 391 (동호동),False,1233069000,17225.09,include_border_nh
+NHMAP-61042,봉동농협,농·축협,전북특별자치도 완주군 봉동읍 봉동동서로 133 (장기리),True,5271025300,0.0,include_jeonbuk_coop
+NHMAP-61041,봉동농협 둔산지점,농·축협,전북특별자치도 완주군 봉동읍 둔산3로 81 (둔산리),True,5271025300,0.0,include_jeonbuk_coop
+NHMAP-61402,봉산농협,농·축협,전남광주통합특별시 담양군 봉산면 면앙정로 266 (신학리),False,1271031000,9546.669,include_border_nh
+NHMAP-572,봉선동지점,농협은행,전남광주통합특별시 남구 봉선로 173 (봉선2동),False,1227053800,24751.926,outside_predeclared_20km_boundary_buffer
+NHMAP-61065,부귀농협,농·축협,전북특별자치도 진안군 부귀면 부귀로 298 (거석리),True,5272038000,0.0,include_jeonbuk_coop
+NHMAP-61070,부귀농협 정천지점,농·축협,전북특별자치도 진안군 정천면 진용로 1040 (봉학리),True,5272039000,0.0,include_jeonbuk_coop
+NHMAP-60530,부리농협,농·축협,충청남도 금산군 부리면 적벽강로 6 (양곡리),False,4471033000,2925.669,include_border_nh
+NHMAP-444,부안군지부,농협은행,전북특별자치도 부안군 부안읍 석정로 255 (부안읍),True,5280025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-559,부안군청(출),농협은행,전북특별자치도 부안군 부안읍 당산로 91 (부안읍),True,5280025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61183,부안농협,농·축협,전북특별자치도 부안군 부안읍 번영로 140 (서외리),True,5280025000,0.0,include_jeonbuk_coop
+NHMAP-61186,부안농협 동진지점,농·축협,전북특별자치도 부안군 동진면 동진로 113 (봉황리),True,5280032000,0.0,include_jeonbuk_coop
+NHMAP-61185,부안농협 백산지점,농·축협,전북특별자치도 부안군 백산면 백산로 325 (덕신리),True,5280038000,0.0,include_jeonbuk_coop
+NHMAP-61184,부안농협 주산지점,농·축협,전북특별자치도 부안군 주산면 선돌로 379 (갈촌리),True,5280031000,0.0,include_jeonbuk_coop
+NHMAP-61187,부안중앙농협,농·축협,전북특별자치도 부안군 상서면 부안로 1989 부안중앙농협 (가오리),True,5280039000,0.0,include_jeonbuk_coop
+NHMAP-61188,부안중앙농협 행안지점,농·축협,전북특별자치도 부안군 행안면 변산로 150-2 (삼간리),True,5280033000,0.0,include_jeonbuk_coop
+NHMAP-360,부여군지부,농협은행,충청남도 부여군 부여읍 사비로 42 (부여읍),False,4476025000,13955.962,include_border_nh
+NHMAP-391,부여군청(출),농협은행,충청남도 부여군 사비로 33 (부여읍),False,4476025000,13865.786,include_border_nh
+NHMAP-60761,부여농협,농·축협,충청남도 부여군 부여읍 사비로100번길 9 (구아리),False,4476025000,14484.376,include_border_nh
+NHMAP-60763,부여농협 동부지점,농·축협,충청남도 부여군 부여읍 성왕로 324 (쌍북리),False,4476025000,14398.945,include_border_nh
+NHMAP-60764,부여농협 서동지점,농·축협,충청남도 부여군 부여읍 백제문화로 18 (석목리),False,4476025000,14345.039,include_border_nh
+NHMAP-60762,부여농협 서부지점,농·축협,충청남도 부여군 부여읍 성왕로 168 (구교리),False,4476025000,14402.602,include_border_nh
+NHMAP-58854,부여축협,농·축협,충청남도 부여군 부여읍 성왕로 195 (구아리),False,4476025000,14615.721,include_border_nh
+NHMAP-58855,부여축협 금강지점,농·축협,충청남도 부여군 부여읍 중앙로 10 (구아리),False,4476025000,14356.275,include_border_nh
+NHMAP-58856,부여축협 사비지점,농·축협,충청남도 부여군 부여읍 성왕로 258 (쌍북리),False,4476025000,14522.753,include_border_nh
+NHMAP-60713,부적농협,농·축협,충청남도 논산시 부적면 마구평길 24 (마구평리),False,4423035000,10726.37,include_border_nh
+NHMAP-60711,부적농협 신교지점,농·축협,충청남도 논산시 부적면 신교길 41 (신교리),False,4423035000,9334.469,include_border_nh
+NHMAP-60712,부적농협 외성지점,농·축협,충청남도 논산시 부적면 충곡로 2 (외성리),False,4423035000,12668.129,include_border_nh
+NHMAP-61362,북광주농협,농·축협,전남광주통합특별시 북구 하서로 522 (본촌동),False,1230069500,18660.693,include_border_nh
+NHMAP-61364,북광주농협 가마지점,농·축협,전남광주통합특별시 북구 양산택지로51번길 1 (양산동),False,1230069600,19270.111,include_border_nh
+NHMAP-61361,북광주농협 신용동지점,농·축협,전남광주통합특별시 북구 임방울대로 1044 (용두동),False,1230069500,19823.916,include_border_nh
+NHMAP-61363,북광주농협 양산동지점,농·축협,전남광주통합특별시 북구 하서로 342 (양산동),False,1230069600,20086.577,outside_predeclared_20km_boundary_buffer
+NHMAP-61359,북광주농협 연제동지점,농·축협,전남광주통합특별시 북구 양일로 95 (양산동),False,1230069600,20493.234,outside_predeclared_20km_boundary_buffer
+NHMAP-61360,북광주농협 용두동지점,농·축협,전남광주통합특별시 북구 하서로 422 (용두동),False,1230069500,19526.323,include_border_nh
+NHMAP-61358,북광주농협 우치동지점,농·축협,전남광주통합특별시 북구 용전마을길 4 (용전동) 830-3,False,1230069500,16513.596,include_border_nh
+NHMAP-61365,북광주농협 첨단사랑지점,농·축협,전남광주통합특별시 북구 첨단연신로107번길 45-22 (신용동),False,1230069700,20955.907,outside_predeclared_20km_boundary_buffer
+NHMAP-62776,북부농협,농·축협,경상남도 거창군 주상면 당대고개길 6 (도평리),False,4888031000,14511.196,include_border_nh
+NHMAP-62772,북부농협 고제지점,농·축협,경상남도 거창군 고제면 입석1길 7 (농산리),False,4888033000,6456.6,include_border_nh
+NHMAP-62775,북부농협 웅양지점,농·축협,경상남도 거창군 웅양면 웅양로 1436-1 (노현리),False,4888032000,9751.626,include_border_nh
+NHMAP-62773,북부농협 하성지점,농·축협,경상남도 거창군 웅양면 웅양로 2312 (한기리),False,4888032000,5614.682,include_border_nh
+NHMAP-61262,북익산농협,농·축협,전북특별자치도 익산시 함열읍 함열5길 46 (와리),True,5214025000,0.0,include_jeonbuk_coop
+NHMAP-61264,북익산농협 용동지점,농·축협,전북특별자치도 익산시 용동면 용동1길 80-7 (대조리),True,5214044000,0.0,include_jeonbuk_coop
+NHMAP-61263,북익산농협 용안지점,농·축협,전북특별자치도 익산시 용안면 현내로 413 (교동리),True,5214036000,0.0,include_jeonbuk_coop
+NHMAP-61033,북전주농협,농·축협,전북특별자치도 전주시 덕진구 기린대로 1106 (반월동),True,5211365000,0.0,include_jeonbuk_coop
+NHMAP-61037,북전주농협 곰솔지점,농·축협,전북특별자치도 전주시 완산구 안행로 6 (삼천동1가 743-4),True,5211170100,0.0,include_jeonbuk_coop
+NHMAP-61038,북전주농협 법조타운지점,농·축협,전북특별자치도 전주시 덕진구 만성중앙로 52 102호(만성동),True,5211366500,0.0,include_jeonbuk_coop
+NHMAP-61036,북전주농협 서부신시가지지점,농·축협,전북특별자치도 전주시 완산구 서원로 137 (효자동3가),True,5211173000,0.0,include_jeonbuk_coop
+NHMAP-61034,북전주농협 성덕지점,농·축협,전북특별자치도 전주시 덕진구 번영로 213 (성덕동 506-6),True,5211365000,0.0,include_jeonbuk_coop
+NHMAP-61035,북전주농협 호남문지점,농·축협,"전북특별자치도 전주시 덕진구 편운로 10, 1층(여의동2가, 농협(북전주))",True,5211366500,0.0,include_jeonbuk_coop
+NHMAP-62823,사천농협 축동지점,농·축협,경상남도 사천시 축동면 길평길 25 (배춘리),False,4824034000,49287.006,outside_predeclared_20km_boundary_buffer
+NHMAP-60573,산내농협,농·축협,대전광역시 동구 산내로 1325 (낭월동),False,3011074000,20369.74,outside_predeclared_20km_boundary_buffer
+NHMAP-60571,산내농협 대성지점,농·축협,대전광역시 동구 대전로 306 (대성동),False,3011074000,21350.511,outside_predeclared_20km_boundary_buffer
+NHMAP-60572,산내농협 은어송지점,농·축협,대전광역시 동구 동구청로 35 (대성동),False,3011074000,21989.777,outside_predeclared_20km_boundary_buffer
+NHMAP-61429,산동농협,농·축협,전남광주통합특별시 구례군 산동면 원촌길 89 (원촌리),False,1273037000,3143.583,include_border_nh
+NHMAP-62751,산청군농협,농·축협,경상남도 산청군 산청읍 웅석봉로 3 (산청리),False,4886025000,18811.76,include_border_nh
+NHMAP-62749,산청군농협 금서지점,농·축협,경상남도 산청군 금서면 친환경로 2540 (매촌리),False,4886034000,17567.868,include_border_nh
+NHMAP-62742,산청군농협 단성지점,농·축협,경상남도 산청군 단성면 목화로 954 (성내리),False,4886037000,30028.723,outside_predeclared_20km_boundary_buffer
+NHMAP-62738,산청군농협 덕산지점,농·축협,경상남도 산청군 시천면 남명로 185 (사리),False,4886036000,20589.759,outside_predeclared_20km_boundary_buffer
+NHMAP-62744,산청군농협 문대지점,농·축협,경상남도 산청군 신안면 지리산대로 3931 (문대리),False,4886038000,32040.42,outside_predeclared_20km_boundary_buffer
+NHMAP-62739,산청군농협 삼장지점,농·축협,경상남도 산청군 삼장면 덕산대포로 256 (대포리),False,4886035000,19586.636,include_border_nh
+NHMAP-62747,산청군농협 생비량지점,농·축협,경상남도 산청군 생비량면 비량로 46 (도리),False,4886039000,35597.497,outside_predeclared_20km_boundary_buffer
+NHMAP-62743,산청군농협 생초지점,농·축협,경상남도 산청군 생초면 생초로 44 (어서리),False,4886033000,15685.149,include_border_nh
+NHMAP-62740,산청군농협 서부지점,농·축협,경상남도 산청군 단성면 옥단로2074번길 32 (창촌리),False,4886037000,26591.701,outside_predeclared_20km_boundary_buffer
+NHMAP-62750,산청군농협 서하지점,농·축협,경상남도 산청군 금서면 동의보감로 1060 (주상리),False,4886034000,11180.836,include_border_nh
+NHMAP-62746,산청군농협 신등지점,농·축협,경상남도 산청군 신등면 신등가회로 8 (단계리),False,4886040000,31564.274,outside_predeclared_20km_boundary_buffer
+NHMAP-62745,산청군농협 신안지점,농·축협,경상남도 산청군 신안면 원지로 6 (하정리),False,4886038000,30930.369,outside_predeclared_20km_boundary_buffer
+NHMAP-62752,산청군농협 오부지점,농·축협,경상남도 산청군 오부면 오동로 673 (오전리),False,4886032000,20616.916,outside_predeclared_20km_boundary_buffer
+NHMAP-62748,산청군농협 차황지점,농·축협,경상남도 산청군 차황면 친환경로 3609 (신기리),False,4886031000,23415.874,outside_predeclared_20km_boundary_buffer
+NHMAP-62741,산청군농협 호암지점,농·축협,경상남도 산청군 단성면 호암로 243 (입석리),False,4886037000,27056.479,outside_predeclared_20km_boundary_buffer
+NHMAP-731,산청군지부,농협은행,경상남도 산청군 산청읍 중앙로 15 (산청읍),False,4886025000,18737.893,include_border_nh
+NHMAP-238,산청군청(출),농협은행,경상남도 산청군 산청읍 산엔청로 1 (산청읍),False,4886025000,18490.509,include_border_nh
+NHMAP-61706,삼계농협,농·축협,전남광주통합특별시 장성군 삼계면 사창로 66 (사창리),False,1284035000,6953.124,include_border_nh
+NHMAP-61270,삼기농협,농·축협,전북특별자치도 익산시 삼기면 황금로 489 (간촌리),True,5214043000,0.0,include_jeonbuk_coop
+NHMAP-61301,삼도농협,농·축협,전남광주통합특별시 광산구 삼도로 335 (도덕동),False,1233068000,18083.347,include_border_nh
+NHMAP-61302,삼도농협 대산,농·축협,전남광주통합특별시 광산구 노안삼도로 979 (삼도동),False,1233068000,21198.008,outside_predeclared_20km_boundary_buffer
+NHMAP-61039,삼례농협,농·축협,전북특별자치도 완주군 삼례읍 동학로 42 (삼례리),True,5271025000,0.0,include_jeonbuk_coop
+NHMAP-63351,삼례농협 동부지점,농·축협,전북특별자치도 완주군 삼례읍 삼봉1로 5 (수계리),True,5271025000,0.0,include_jeonbuk_coop
+NHMAP-61040,삼례농협 서부지점,농·축협,전북특별자치도 완주군 삼례읍 삼례역로 13 삼례농협서부지점 (삼례리),True,5271025000,0.0,include_jeonbuk_coop
+NHMAP-61707,삼서농협,농·축협,전남광주통합특별시 장성군 삼서면 해삼로 1141 (대곡리),False,1284034000,9382.252,include_border_nh
+NHMAP-839,삼천동지점,농협은행,전북특별자치도 전주시 완산구 용리로 56 (삼천동),True,5211170300,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61028,상관농협,농·축협,전북특별자치도 완주군 상관면 신리로 53 (신리),True,5271032000,0.0,include_jeonbuk_coop
+NHMAP-809,상무금융센터,농협은행,전남광주통합특별시 서구 상무자유로 139 (치평동),False,1224074500,25718.272,outside_predeclared_20km_boundary_buffer
+NHMAP-60719,상월농협,농·축협,충청남도 논산시 상월면 백일헌로 1009 (산성리),False,4423034000,18483.024,include_border_nh
+NHMAP-60718,상월농협 석종지점,농·축협,충청남도 논산시 상월면 선비로 1448 (석종리),False,4423034000,20999.215,outside_predeclared_20km_boundary_buffer
+NHMAP-61159,샘골농협,농·축협,전북특별자치도 정읍시 정우면 정신로 616 (초강리),True,5218038000,0.0,include_jeonbuk_coop
+NHMAP-61144,샘골농협 북면지점,농·축협,전북특별자치도 정읍시 북면 정읍북로 576-9 (한교리),True,5218031000,0.0,include_jeonbuk_coop
+NHMAP-61152,샘골농협 이평지점,농·축협,전북특별자치도 정읍시 이평면 말목장터로 495 (두지리),True,5218037000,0.0,include_jeonbuk_coop
+NHMAP-61355,서광주농협,농·축협,전남광주통합특별시 서구 죽봉대로 107 (광천동),False,1224073000,22772.13,outside_predeclared_20km_boundary_buffer
+NHMAP-61341,서광주농협 기아자동차지점,농·축협,전남광주통합특별시 서구 화운로 277 기아자동차 스포츠문화센터1층 (내방동),False,1224073000,23015.5,outside_predeclared_20km_boundary_buffer
+NHMAP-61345,서광주농협 동림지점,농·축협,전남광주통합특별시 북구 북문대로 249 (동림동),False,1230061500,22027.013,outside_predeclared_20km_boundary_buffer
+NHMAP-61342,서광주농협 동림하나로지점,농·축협,"전남광주통합특별시 북구 동운로 127, 2층 (동림동)",False,1230061500,22921.397,outside_predeclared_20km_boundary_buffer
+NHMAP-61348,서광주농협 동운지점,농·축협,전남광주통합특별시 북구 서암대로 33 (운암동),False,1230060200,21589.005,outside_predeclared_20km_boundary_buffer
+NHMAP-61344,서광주농협 버들지점,농·축협,전남광주통합특별시 서구 상무버들로 35 103호 (유촌동),False,1224074000,24116.022,outside_predeclared_20km_boundary_buffer
+NHMAP-61343,서광주농협 빛고을로지점,농·축협,전남광주통합특별시 서구 하남대로 702 메디플러스-2빌딩 (동천동),False,1224084000,22908.389,outside_predeclared_20km_boundary_buffer
+NHMAP-61353,서광주농협 상무동지점,농·축협,전남광주통합특별시 서구 월드컵4강로 178 (내방동),False,1224076000,24470.831,outside_predeclared_20km_boundary_buffer
+NHMAP-61347,서광주농협 쌍촌지점,농·축협,전남광주통합특별시 서구 월드컵4강로 239 (쌍촌동 275-4),False,1224075100,24071.429,outside_predeclared_20km_boundary_buffer
+NHMAP-61349,서광주농협 양동센트럴지점,농·축협,전남광주통합특별시 서구 월산로 167 (농성동),False,1224065000,22987.507,outside_predeclared_20km_boundary_buffer
+NHMAP-61350,서광주농협 용산지점,농·축협,전남광주통합특별시 북구 북문대로 150 (운암동),False,1230060300,21834.75,outside_predeclared_20km_boundary_buffer
+NHMAP-61340,서광주농협 운암벽산지점,농·축협,"전남광주통합특별시 북구 서강로54번길 50 , 201동 상가110호(운암동, 벽산 블루밍 메가씨티)",False,1230060100,22264.762,outside_predeclared_20km_boundary_buffer
+NHMAP-61354,서광주농협 운암지점,농·축협,전남광주통합특별시 북구 북문대로 113 (운암동),False,1230060100,21925.4,outside_predeclared_20km_boundary_buffer
+NHMAP-61357,서광주농협 운천지점,농·축협,전남광주통합특별시 서구 치평로 20 (치평동) 타워팰리스빌딩 1층,False,1224074500,26026.264,outside_predeclared_20km_boundary_buffer
+NHMAP-61351,서광주농협 유덕지점,농·축협,전남광주통합특별시 서구 유덕로 11 (유촌동),False,1224074000,24520.021,outside_predeclared_20km_boundary_buffer
+NHMAP-61352,서광주농협 유동지점,농·축협,전남광주통합특별시 북구 경열로 208 (유동),False,1230055500,21884.586,outside_predeclared_20km_boundary_buffer
+NHMAP-61346,서광주농협 치평지점,농·축협,전남광주통합특별시 서구 상무중앙로 103 (치평동),False,1224074500,25344.093,outside_predeclared_20km_boundary_buffer
+NHMAP-61356,서광주농협 화정지점,농·축협,전남광주통합특별시 서구 염화로 81 (화정동),False,1224079000,25095.227,outside_predeclared_20km_boundary_buffer
+NHMAP-61230,서군산농협,농·축협,전북특별자치도 군산시 공항로 422 (산북동),True,5213072000,0.0,include_jeonbuk_coop
+NHMAP-61231,서군산농협 산북지점,농·축협,전북특별자치도 군산시 동아로 148 (산북동),True,5213072000,0.0,include_jeonbuk_coop
+NHMAP-60555,서대전농협,농·축협,대전광역시 중구 계백로 1573 (유천동),False,3014070000,21433.775,outside_predeclared_20km_boundary_buffer
+NHMAP-60559,서대전농협 도마동지점,농·축협,대전광역시 서구 도산로 85 (도마동),False,3017053000,20884.364,outside_predeclared_20km_boundary_buffer
+NHMAP-60556,서대전농협 문화동지점,농·축협,대전광역시 중구 당디로6번길 86 (문화동),False,3014073000,20373.719,outside_predeclared_20km_boundary_buffer
+NHMAP-60633,서대전농협 버드내지점,농·축협,대전광역시 중구 태평로 15 (태평동),False,3014069000,21328.183,outside_predeclared_20km_boundary_buffer
+NHMAP-60551,서대전농협 복수동지점,농·축협,대전광역시 서구 복수서로 50 복수동 목화아파트 B상가 204호 (복수동),False,3017051000,20126.222,outside_predeclared_20km_boundary_buffer
+NHMAP-60552,서대전농협 북부지점,농·축협,대전광역시 중구 평촌로 84 (유천동),False,3014071000,21865.102,outside_predeclared_20km_boundary_buffer
+NHMAP-60634,서대전농협 사정동지점,농·축협,대전광역시 중구 대둔산로 285 (사정동),False,3014074000,18710.533,include_border_nh
+NHMAP-60560,서대전농협 산성동지점,농·축협,대전광역시 중구 대둔산로 394 (산성동),False,3014074000,19772.657,include_border_nh
+NHMAP-60635,서대전농협 새문화지점,농·축협,대전광역시 중구 서문로 128 글꽃프라자 B동 1층 (문화동),False,3014072000,21826.051,outside_predeclared_20km_boundary_buffer
+NHMAP-60632,서대전농협 서도마지점,농·축협,"대전광역시 서구 배재로 188 (도마동, 매봉빌딩 1층)",False,3017052000,21822.029,outside_predeclared_20km_boundary_buffer
+NHMAP-60558,서대전농협 용오지점,농·축협,대전광역시 중구 중앙로13번길 71 용두동 (용두동),False,3014065500,22564.489,outside_predeclared_20km_boundary_buffer
+NHMAP-60554,서대전농협 천근지점,농·축협,대전광역시 중구 천근로 39 (문화동),False,3014073000,20725.314,outside_predeclared_20km_boundary_buffer
+NHMAP-60553,서대전농협 초록마을지점,농·축협,대전광역시 서구 복수동로 46 (복수동),False,3017051000,19162.81,include_border_nh
+NHMAP-60557,서대전농협 태평동지점,농·축협,대전광역시 중구 동서대로1235번길 4 (태평동),False,3014068000,22393.532,outside_predeclared_20km_boundary_buffer
+NHMAP-60575,서부농협,농·축협,대전광역시 서구 문정로2번길 137 (탄방동),False,3017055500,23955.301,outside_predeclared_20km_boundary_buffer
+NHMAP-60566,서부농협 계룡로지점,농·축협,"대전광역시 서구 계룡로 629 (탄방동, 농협)",False,3017055500,23674.963,outside_predeclared_20km_boundary_buffer
+NHMAP-60569,서부농협 괴정지점,농·축협,대전광역시 서구 도솔로 325 (괴정동),False,3017056000,23282.822,outside_predeclared_20km_boundary_buffer
+NHMAP-60561,서부농협 내동지점,농·축협,대전광역시 서구 동서대로 1002 (내동),False,3017057500,22662.673,outside_predeclared_20km_boundary_buffer
+NHMAP-60562,서부농협 동산지점,농·축협,대전광역시 서구 갈마로 34 1층 (갈마동),False,3017058100,24431.199,outside_predeclared_20km_boundary_buffer
+NHMAP-60567,서부농협 변동지점,농·축협,대전광역시 서구 도산로 195 (변동),False,3017054000,21976.917,outside_predeclared_20km_boundary_buffer
+NHMAP-60570,서부농협 용문지점,농·축협,대전광역시 서구 도산로 343 (용문동),False,3017055000,23249.371,outside_predeclared_20km_boundary_buffer
+NHMAP-63320,서부농협 하나로지점,농·축협,"대전광역시 서구 문정로2번길 137, 1층 (탄방동)",False,3017055500,23956.712,outside_predeclared_20km_boundary_buffer
+NHMAP-60760,서부여농협,농·축협,충청남도 부여군 홍산면 홍산로 53 (남촌리),False,4476036000,14375.356,include_border_nh
+NHMAP-60753,서부여농협 남면지점,농·축협,충청남도 부여군 남면 남성로 435 (회동리),False,4476038000,11115.095,include_border_nh
+NHMAP-60759,서부여농협 옥산지점,농·축협,충청남도 부여군 옥산면 대백제로 343 (안서리),False,4476037000,15094.098,include_border_nh
+NHMAP-60752,서부여농협 충화지점,농·축협,충청남도 부여군 충화면 팔충로 783 (천당리),False,4476039000,7699.935,include_border_nh
+NHMAP-62174,서상주농협,농·축협,경상북도 상주시 모동면 용호1길 20 (용호리),False,4725038000,32490.297,outside_predeclared_20km_boundary_buffer
+NHMAP-60773,서서천농협,농·축협,충청남도 서천군 비인면 비인로 199-1 (성내리),False,4477040000,11271.922,include_border_nh
+NHMAP-60774,서서천농협 서면지점,농·축협,충청남도 서천군 서면 서인로 754 (신합리),False,4477041000,11608.996,include_border_nh
+NHMAP-61136,서순창농협,농·축협,전북특별자치도 순창군 복흥면 추령로 1151 (정산리),True,5277037000,0.0,include_jeonbuk_coop
+NHMAP-61132,서순창농협 금과지점,농·축협,전북특별자치도 순창군 금과면 금풍로 186 (매우리),True,5277034000,0.0,include_jeonbuk_coop
+NHMAP-334,서신동지점,농협은행,전북특별자치도 전주시 완산구 온고을로 1 (서신동),True,5211168000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61687,서영광농협,농·축협,전남광주통합특별시 영광군 염산면 천년로 23 (봉남리),False,1283036000,17327.827,include_border_nh
+NHMAP-61694,서영광농협 군남지점,농·축협,전남광주통합특별시 영광군 군남면 천년로 856 (포천리),False,1283035000,10135.624,include_border_nh
+NHMAP-61271,서익산농협,농·축협,전북특별자치도 익산시 함라면 함라1길 58 (함열리),True,5214033000,0.0,include_jeonbuk_coop
+NHMAP-61268,서익산농협 웅포지점,농·축협,전북특별자치도 익산시 웅포면 송천로 5 서익산농협 웅포지점 (송천리),True,5214034000,0.0,include_jeonbuk_coop
+NHMAP-662,서진주지점,농협은행,경상남도 진주시 진주성로 65 (봉곡동),False,4817055500,44176.772,outside_predeclared_20km_boundary_buffer
+NHMAP-61305,서창농협,농·축협,전남광주통합특별시 서구 금화로 92 (금호동),False,1224082400,26808.137,outside_predeclared_20km_boundary_buffer
+NHMAP-61308,서창농협 금호지점,농·축협,전남광주통합특별시 서구 운천로 84 (금호동),False,1224082100,26084.795,outside_predeclared_20km_boundary_buffer
+NHMAP-61306,서창농협 마륵지점,농·축협,전남광주통합특별시 서구 마륵복개로 91 DY빌딩 1층 (마륵동),False,1224080000,26159.713,outside_predeclared_20km_boundary_buffer
+NHMAP-61311,서창농협 마재지점,농·축협,"전남광주통합특별시 서구 화개1로79번길 3 (금호동, 신화빌딩)",False,1224082400,27133.384,outside_predeclared_20km_boundary_buffer
+NHMAP-61309,서창농협 매월지점,농·축협,전남광주통합특별시 서구 매월2로 53 22동 101호 (매월동),False,1224080000,28059.187,outside_predeclared_20km_boundary_buffer
+NHMAP-61304,서창농협 벽진지점,농·축협,전남광주통합특별시 서구 풍서우로 303 (벽진동),False,1224080000,26811.406,outside_predeclared_20km_boundary_buffer
+NHMAP-61307,서창농협 서창지점,농·축협,전남광주통합특별시 서구 눌재로 267 (서창동),False,1224080000,28462.538,outside_predeclared_20km_boundary_buffer
+NHMAP-61310,서창농협 신암지점,농·축협,"전남광주통합특별시 서구 풍암2로 10 농협 (1층, 로하스빌딩)",False,1224083000,26114.134,outside_predeclared_20km_boundary_buffer
+NHMAP-61312,서창농협 운리지점,농·축협,전남광주통합특별시 서구 풍암신흥로 25 (풍암동),False,1224083000,27416.307,outside_predeclared_20km_boundary_buffer
+NHMAP-61303,서창농협 컨벤션지점,농·축협,전남광주통합특별시 서구 상무공원로 12 인애빌딩 1층 (치평동),False,1224074500,26163.465,outside_predeclared_20km_boundary_buffer
+NHMAP-363,서천군지부,농협은행,충청남도 서천군 서천읍 서천로 74 (서천읍),False,4477025300,7858.052,include_border_nh
+NHMAP-368,서천군청(출),농협은행,충청남도 서천군 서천읍 서림로19 (서천읍),False,4477025300,7327.311,include_border_nh
+NHMAP-60770,서천농협,농·축협,충청남도 서천군 서천읍 군청로 17 (군사리),False,4477025300,7873.747,include_border_nh
+NHMAP-60780,서천농협 문산지점,농·축협,충청남도 서천군 문산면 신농길 19 (신농리),False,4477037000,11289.582,include_border_nh
+NHMAP-60781,서천농협 시초지점,농·축협,충청남도 서천군 시초면 시초북로 11 (초현리),False,4477036000,10176.097,include_border_nh
+NHMAP-60771,서천농협 종천지점,농·축협,충청남도 서천군 종천면 충서로 450-8 서천농협 종천지점 (종천리),False,4477039000,10337.64,include_border_nh
+NHMAP-58858,서천축협,농·축협,충청남도 서천군 서천읍 서천로 160 (사곡리),False,4477025300,8499.598,include_border_nh
+NHMAP-61414,석곡농협,농·축협,전남광주통합특별시 곡성군 석곡면 강변로 5 (석곡리),False,1272033000,19608.791,include_border_nh
+NHMAP-61415,석곡농협 목사동지점,농·축협,전남광주통합특별시 곡성군 목사동면 주목로 765 (평리),False,1272034000,20140.45,outside_predeclared_20km_boundary_buffer
+NHMAP-61416,석곡농협 죽곡지점,농·축협,전남광주통합특별시 곡성군 죽곡면 오죽로 24 (태평리),False,1272035000,16871.842,include_border_nh
+NHMAP-61172,선운산농협,농·축협,전북특별자치도 고창군 무장면 무장읍성길 34 (무장리),True,5279033000,0.0,include_jeonbuk_coop
+NHMAP-61174,선운산농협 공음지점,농·축협,전북특별자치도 고창군 공음면 공음길 55 (칠암리),True,5279034000,0.0,include_jeonbuk_coop
+NHMAP-61169,선운산농협 선운사,농·축협,전북특별자치도 고창군 아산면 선운사로 158-1 (삼인리),True,5279032000,0.0,include_jeonbuk_coop
+NHMAP-61170,선운산농협 아산지점,농·축협,전북특별자치도 고창군 아산면 녹두로 793 (상갑리),True,5279032000,0.0,include_jeonbuk_coop
+NHMAP-61173,선운산농협 웰파크지점,농·축협,전북특별자치도 고창군 고창읍 석정2로 171 (석정리),True,5279025000,0.0,include_jeonbuk_coop
+NHMAP-61266,성당농협,농·축협,전북특별자치도 익산시 성당면 성당로 195 (장선리),True,5214035000,0.0,include_jeonbuk_coop
+NHMAP-60739,성동농협,농·축협,충청남도 논산시 성동면 성동로 231 (월성리),False,4423031000,5864.103,include_border_nh
+NHMAP-60737,성동농협 동부지점,농·축협,충청남도 논산시 성동면 성동로 581 (정지리),False,4423031000,7846.149,include_border_nh
+NHMAP-60738,성동농협 서부지점,농·축협,충청남도 논산시 성동면 성동로 10 (병촌리),False,4423031000,4460.528,include_border_nh
+NHMAP-60748,세도농협,농·축협,충청남도 부여군 세도면 세도로 7 (간대리),False,4476043000,1719.988,include_border_nh
+NHMAP-60747,세도농협 동부지점,농·축협,충청남도 부여군 세도면 부흥로 913 (귀덕리),False,4476043000,1632.284,include_border_nh
+NHMAP-60755,세도농협 양화지점,농·축협,충청남도 부여군 양화면 입포로53번길 16 (입포리),False,4476040000,522.345,include_border_nh
+NHMAP-60754,세도농협 임천지점,농·축협,충청남도 부여군 임천면 성흥로97번길 5 (군사리),False,4476041000,5301.898,include_border_nh
+NHMAP-61027,소양농협,농·축협,전북특별자치도 완주군 소양면 소양로 230 (황운리),True,5271034000,0.0,include_jeonbuk_coop
+NHMAP-61681,손불농협,농·축협,전남광주통합특별시 함평군 손불면 손불중앙길 76-24 (대전리),False,1282031000,20424.5,outside_predeclared_20km_boundary_buffer
+NHMAP-61289,송정농협,농·축협,전남광주통합특별시 광산구 내상로 3 (송정동),False,1233052500,24077.187,outside_predeclared_20km_boundary_buffer
+NHMAP-61288,송정농협 남부지점,농·축협,전남광주통합특별시 광산구 송도로 160 블루타운 112호 (도산동),False,1233054000,25123.608,outside_predeclared_20km_boundary_buffer
+NHMAP-61287,송정농협 북부지점,농·축협,전남광주통합특별시 광산구 월곡산정로 20-59 2층 (우산동),False,1233058000,22650.196,outside_predeclared_20km_boundary_buffer
+NHMAP-61290,송정농협 선운지점,농·축협,전남광주통합특별시 광산구 선운중앙로 48 (선암동),False,1233056500,22551.96,outside_predeclared_20km_boundary_buffer
+NHMAP-61284,송정농협 역전지점,농·축협,전남광주통합특별시 광산구 광산로 3 (송정동),False,1233052500,24284.519,outside_predeclared_20km_boundary_buffer
+NHMAP-61285,송정농협 우산지점,농·축협,전남광주통합특별시 광산구 우산로96번길 53 (우산동),False,1233058000,23812.674,outside_predeclared_20km_boundary_buffer
+NHMAP-61286,송정농협 원동지점,농·축협,전남광주통합특별시 광산구 송도로 291 (송정동),False,1233051500,24533.4,outside_predeclared_20km_boundary_buffer
+NHMAP-62753,수동농협,농·축협,경상남도 함양군 수동면 수동길 38 (화산리),False,4887034000,12760.584,include_border_nh
+NHMAP-61407,수북농협,농·축협,전남광주통합특별시 담양군 수북면 한수동로 543 (수북리),False,1271040000,10410.949,include_border_nh
+NHMAP-12485,수송동지점,농협은행,전북특별자치도 군산시 문화로 86 (수송동),True,5213069000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-62768,수승대농협,농·축협,경상남도 거창군 위천면 장터길 31 (장기리),False,4888035000,11288.765,include_border_nh
+NHMAP-62769,수승대농협 마리지점,농·축협,경상남도 거창군 마리면 빼재로 19 (말흘리),False,4888036000,16155.827,include_border_nh
+NHMAP-62770,수승대농협 북상지점,농·축협,경상남도 거창군 북상면 송계로 717 수승대농협북상지점 (갈계리),False,4888034000,7894.503,include_border_nh
+NHMAP-12846,수완금융센터,농협은행,전남광주통합특별시 광산구 임방울대로 261 (신가동),False,1233063700,21231.37,outside_predeclared_20km_boundary_buffer
+NHMAP-58950,순정축협,농·축협,전북특별자치도 순창군 순창읍 옥천로 41 (순화리),True,5277025000,0.0,include_jeonbuk_coop
+NHMAP-63333,순정축협 내장산지점,농·축협,전북특별자치도 정읍시 내장산로 16 (송산동),True,5218053500,0.0,include_jeonbuk_coop
+NHMAP-58952,순정축협 정읍지점,농·축협,전북특별자치도 정읍시 명륜길 9 (수성동),True,5218051000,0.0,include_jeonbuk_coop
+NHMAP-435,순창군지부,농협은행,전북특별자치도 순창군 순창읍 순창로 214 (순창읍),True,5277025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-434,순창군청(출),농협은행,전북특별자치도 순창군 경천로 33 (순창읍),True,5277025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61125,순창농협,농·축협,전북특별자치도 순창군 순창읍 순창2길 25 (남계리),True,5277025000,0.0,include_jeonbuk_coop
+NHMAP-61130,순창농협 남계지점,농·축협,전북특별자치도 순창군 순창읍 장류로 388 (남계리),True,5277025000,0.0,include_jeonbuk_coop
+NHMAP-61135,순창농협 쌍치지점,농·축협,전북특별자치도 순창군 쌍치면 쌍계로 22 (쌍계리),True,5277036000,0.0,include_jeonbuk_coop
+NHMAP-61129,순창농협 유등지점,농·축협,전북특별자치도 순창군 유등면 유등로 411 (외이리),True,5277039000,0.0,include_jeonbuk_coop
+NHMAP-61126,순창농협 인계지점,농·축협,전북특별자치도 순창군 인계면 인덕로 224 (도룡리),True,5277031000,0.0,include_jeonbuk_coop
+NHMAP-61128,순창농협 적성지점,농·축협,전북특별자치도 순창군 적성면 적성로 128-12 (고원리),True,5277038000,0.0,include_jeonbuk_coop
+NHMAP-61133,순창농협 팔덕지점,농·축협,전북특별자치도 순창군 팔덕면 강천로 312 (용산리),True,5277035000,0.0,include_jeonbuk_coop
+NHMAP-61131,순창농협 풍산지점,농·축협,전북특별자치도 순창군 풍산면 금풍로 1028 (용내리),True,5277033000,0.0,include_jeonbuk_coop
+NHMAP-61500,순천농협 용림지점,농·축협,전남광주통합특별시 순천시 황전면 섬진강로 210 (선변리),False,1215033000,16750.606,include_border_nh
+NHMAP-61501,순천농협 황전지점,농·축협,전남광주통합특별시 순천시 황전면 괴목길 93 (괴목리),False,1215033000,22554.958,outside_predeclared_20km_boundary_buffer
+NHMAP-61158,신태인농협,농·축협,전북특별자치도 정읍시 신태인읍 정신로 1165 (신태인리),True,5218025000,0.0,include_jeonbuk_coop
+NHMAP-61161,신태인농협 감곡지점,농·축협,전북특별자치도 정읍시 감곡면 원삼1길 13 (방교리),True,5218040000,0.0,include_jeonbuk_coop
+NHMAP-61160,신태인농협 유정지점,농·축협,전북특별자치도 정읍시 감곡면 유정길 14 (유정리),True,5218040000,0.0,include_jeonbuk_coop
+NHMAP-253,쌍촌동지점,농협은행,전남광주통합특별시 서구 상무대로 924 (상무2동),False,1224075200,24956.3,outside_predeclared_20km_boundary_buffer
+NHMAP-840,아중지점,농협은행,전북특별자치도 전주시 덕진구 건산로 240 (인후동1가),True,5211356000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-62765,안의농협,농·축협,경상남도 함양군 안의면 금성길 4-1 (금천리),False,4887036000,16022.036,include_border_nh
+NHMAP-62758,안의농협 서상지점,농·축협,경상남도 함양군 서상면 서상로 304 (대남리),False,4887038000,3670.232,include_border_nh
+NHMAP-62766,안의농협 서하지점,농·축협,경상남도 함양군 서하면 서하송계로 3 (송계리),False,4887037000,5761.98,include_border_nh
+NHMAP-495,양동지점,농협은행,전남광주통합특별시 서구 천변좌로 262 (양2동),False,1224057500,22447.898,outside_predeclared_20km_boundary_buffer
+NHMAP-60733,양촌농협,농·축협,충청남도 논산시 양촌면 황산벌로 424-2 (인천리),False,4423039000,2860.053,include_border_nh
+NHMAP-60732,양촌농협 반곡지점,농·축협,충청남도 논산시 양촌면 황산벌로 1117 (거사리),False,4423039000,8857.964,include_border_nh
+NHMAP-423,어양센트럴지점,농협은행,"전북특별자치도 익산시 하나로 337 123호, 124호, 126호 (어양동)",True,5214065200,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61275,여산농협,농·축협,전북특별자치도 익산시 여산면 가람로 366 (여산리),True,5214039000,0.0,include_jeonbuk_coop
+NHMAP-60742,연무농협,농·축협,충청남도 논산시 연무읍 안심로 94 (마산리),False,4423025300,3562.901,include_border_nh
+NHMAP-60744,연무농협 신촌지점,농·축협,충청남도 논산시 연무읍 안심로 33 (안심리),False,4423025300,3314.042,include_border_nh
+NHMAP-60743,연무농협 황화지점,농·축협,충청남도 논산시 연무읍 황화로 138 (고내리),False,4423025300,1148.752,include_border_nh
+NHMAP-356,연무지점,농협은행,충청남도 논산시 연무읍 안심로 79 (안심리),False,4423025300,3474.516,include_border_nh
+NHMAP-558,영광군지부,농협은행,전남광주통합특별시 영광군 영광읍 중앙로 194 (영광읍),False,1283025000,3868.268,include_border_nh
+NHMAP-546,영광군청(출),농협은행,전남광주통합특별시 영광군 영광읍 중앙로 203 (영광읍),False,1283025000,3755.218,include_border_nh
+NHMAP-61696,영광농협,농·축협,전남광주통합특별시 영광군 영광읍 현암길 9 (백학리),False,1283025000,4046.385,include_border_nh
+NHMAP-61692,영광농협 군서지점,농·축협,전남광주통합특별시 영광군 군서면 군서로 34 (남죽리),False,1283034000,7508.464,include_border_nh
+NHMAP-61695,영광농협 대마지점,농·축협,전남광주통합특별시 영광군 대마면 영장로 263 (월산리),False,1283031000,38.749,include_border_nh
+NHMAP-61697,영광농협 동부지점,농·축협,전남광주통합특별시 영광군 영광읍 중앙로 178 (도동리),False,1283025000,4011.638,include_border_nh
+NHMAP-61693,영광농협 묘량지점,농·축협,전남광주통합특별시 영광군 묘량면 묘량로 301 (영양리),False,1283032000,5459.921,include_border_nh
+NHMAP-61699,영광농협 불갑지점,농·축협,전남광주통합특별시 영광군 불갑면 함영로 2880 (쌍운리),False,1283033000,10988.31,include_border_nh
+NHMAP-61698,영광농협 터미널지점,농·축협,전남광주통합특별시 영광군 영광읍 신남로 177 (단주리),False,1283025000,4369.976,include_border_nh
+NHMAP-59013,영광축산농협,농·축협,전남광주통합특별시 영광군 영광읍 신남로4길 18 (남천리),False,1283025000,4437.76,include_border_nh
+NHMAP-279,영동군지부,농협은행,충청북도 영동군 영동읍 계산로 9 농협중앙회 (영동),False,4374025000,14838.291,include_border_nh
+NHMAP-278,영동군청(출),농협은행,충청북도 영동군 동정로 1 (영동),False,4374025000,15031.194,include_border_nh
+NHMAP-60398,영동농협,농·축협,충청북도 영동군 영동읍 부용동2로 8 (부용리),False,4374025000,14282.867,include_border_nh
+NHMAP-60401,영동농협 계산지점,농·축협,충청북도 영동군 영동읍 영산로 28 (계산리),False,4374025000,14954.236,include_border_nh
+NHMAP-60404,영동농협 북부지점,농·축협,충청북도 영동군 심천면 심천로 92 (심천리),False,4374040000,19579.649,include_border_nh
+NHMAP-60405,영동농협 심천지점,농·축협,충청북도 영동군 심천면 난계로 528 (약목리),False,4374040000,15832.495,include_border_nh
+NHMAP-60402,영동농협 양강지점,농·축협,충청북도 영동군 양강면 학산영동로 854 (괴목리),False,4374036000,10987.998,include_border_nh
+NHMAP-60400,영동농협 역전지점,농·축협,충청북도 영동군 영동읍 계산로 88 (계산리),False,4374025000,14913.762,include_border_nh
+NHMAP-60403,영동농협 용산지점,농·축협,충청북도 영동군 용산면 용산로 337 (구촌리),False,4374031000,24603.272,outside_predeclared_20km_boundary_buffer
+NHMAP-60399,영동농협 중앙지점,농·축협,충청북도 영동군 영동읍 중앙로 25 영동농협 중앙지점 (계산리),False,4374025000,14709.387,include_border_nh
+NHMAP-386,오룡역지점,농협은행,대전광역시 중구 계룡로 800 (오류동),False,3014067000,22704.723,outside_predeclared_20km_boundary_buffer
+NHMAP-61260,오산농협 본점,농·축협,"전북특별자치도 익산시 오산면 오산로 19 (오산리, 오산농협)",True,5214031000,0.0,include_jeonbuk_coop
+NHMAP-61259,오산농협 신지지점,농·축협,전북특별자치도 익산시 오산면 번영로 1560 (신지리),True,5214031000,0.0,include_jeonbuk_coop
+NHMAP-63245,오산농협 행복지점,농·축협,전북특별자치도 익산시 학곤로16길 73 (송학동),True,5214062000,0.0,include_jeonbuk_coop
+NHMAP-61094,오수관촌농협,농·축협,"전북특별자치도 임실군 오수면 오수4길 15 (오수리, 오수관촌농협)",True,5275035500,0.0,include_jeonbuk_coop
+NHMAP-61098,오수관촌농협 관촌지점,농·축협,전북특별자치도 임실군 관촌면 사선로 42 (관촌리),True,5275038000,0.0,include_jeonbuk_coop
+NHMAP-61095,오수관촌농협 삼계지점,농·축협,전북특별자치도 임실군 삼계면 충효로 1296 (삼계리),True,5275037000,0.0,include_jeonbuk_coop
+NHMAP-61101,오수관촌농협 신덕지점,농·축협,전북특별자치도 임실군 신덕면 수지로 92 (수천리),True,5275036000,0.0,include_jeonbuk_coop
+NHMAP-61100,오수관촌농협 신평지점,농·축협,전북특별자치도 임실군 신평면 석등슬치로 365 (원천리),True,5275033000,0.0,include_jeonbuk_coop
+NHMAP-61093,오수관촌농협 운암지점,농·축협,전북특별자치도 임실군 운암면 임운로 1918 (쌍암리),True,5275032000,0.0,include_jeonbuk_coop
+NHMAP-61096,오수관촌농협 지사지점,농·축협,전북특별자치도 임실군 지사면 충효로 2442 (방계리),True,5275041000,0.0,include_jeonbuk_coop
+NHMAP-61099,오수관촌농협 하운암지점,농·축협,전북특별자치도 임실군 운암면 운암1길 8-13 (운암리),True,5275032000,0.0,include_jeonbuk_coop
+NHMAP-61417,옥과농협,농·축협,전남광주통합특별시 곡성군 옥과면 대학로 142 (리문리),False,1272037000,3166.434,include_border_nh
+NHMAP-61419,옥과농협 겸면지점,농·축협,전남광주통합특별시 곡성군 겸면 곡순로 1873 (남양리),False,1272039000,6309.53,include_border_nh
+NHMAP-61420,옥과농협 동부,농·축협,전남광주통합특별시 곡성군 겸면 곡순로 1635 (송강리),False,1272039000,7892.268,include_border_nh
+NHMAP-61421,옥과농협 오산지점,농·축협,전남광주통합특별시 곡성군 오산면 오산로 601 (봉동리),False,1272040000,6922.036,include_border_nh
+NHMAP-65765,옥과농협로컬간이지점,농·축협,전남광주통합특별시 곡성군 옥과면 리문3길 12 (옥과리),False,1272037000,3287.894,include_border_nh
+NHMAP-61232,옥구농협,농·축협,전북특별자치도 군산시 옥구읍 옥구로 37 (선제리),True,5213025000,0.0,include_jeonbuk_coop
+NHMAP-61233,옥구농협 옥서지점,농·축협,전북특별자치도 군산시 옥서면 옥구저수지로 213 (옥봉리),True,5213040000,0.0,include_jeonbuk_coop
+NHMAP-61234,옥산농협,농·축협,전북특별자치도 군산시 옥산면 옥산로 248 (옥산리),True,5213031000,0.0,include_jeonbuk_coop
+NHMAP-61235,옥산농협 당북지점,농·축협,전북특별자치도 군산시 옥산면 월명로 101-1 (당북리),True,5213031000,0.0,include_jeonbuk_coop
+NHMAP-62736,옥종농협,농·축협,경상남도 하동군 옥종면 주포중앙길 36 (청룡리),False,4885041000,29069.732,outside_predeclared_20km_boundary_buffer
+NHMAP-62737,옥종농협 북천지점,농·축협,경상남도 하동군 북천면 경서대로 2463 (옥정리),False,4885039000,34626.731,outside_predeclared_20km_boundary_buffer
+NHMAP-277,옥천군지부,농협은행,충청북도 옥천군 옥천읍 삼양로 92 (옥천읍),False,4373025000,26673.932,outside_predeclared_20km_boundary_buffer
+NHMAP-287,옥천군청(출),농협은행,충청북도 옥천군 옥천읍 중앙로 99 (옥천읍),False,4373025000,26986.745,outside_predeclared_20km_boundary_buffer
+NHMAP-60388,옥천농협,농·축협,충청북도 옥천군 옥천읍 삼금로 21 (금구리),False,4373025000,26474.747,outside_predeclared_20km_boundary_buffer
+NHMAP-60390,옥천농협 군북지점,농·축협,충청북도 옥천군 군북면 이백2길 7 (이백리),False,4373038000,28159.28,outside_predeclared_20km_boundary_buffer
+NHMAP-60397,옥천농협 군서지점,농·축협,충청북도 옥천군 군서면 성왕로 497 (동평리),False,4373037000,23483.409,outside_predeclared_20km_boundary_buffer
+NHMAP-60389,옥천농협 동이지점,농·축협,충청북도 옥천군 동이면 평산4길 20 (평산리),False,4373031000,23787.45,outside_predeclared_20km_boundary_buffer
+NHMAP-63307,완주군지부,농협은행,전북특별자치도 완주군 용진읍 운곡2로 3 (용진읍),True,5271025600,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-14041,완주군청(출),농협은행,전북특별자치도 완주군 용진읍 지암로 61 완주군청 (운곡리),True,5271025600,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61273,왕궁농협,농·축협,전북특별자치도 익산시 왕궁면 왕궁로 531 (흥암리),True,5214041000,0.0,include_jeonbuk_coop
+NHMAP-61274,왕궁농협 왕남지점,농·축협,전북특별자치도 익산시 왕궁면 왕궁로 153-1 (온수리),True,5214041000,0.0,include_jeonbuk_coop
+NHMAP-61216,용지농협,농·축협,전북특별자치도 김제시 용지면 황토로 755 (구암리),True,5221034000,0.0,include_jeonbuk_coop
+NHMAP-61026,용진농협,농·축협,전북특별자치도 완주군 용진읍 완주로 187 (상운리),True,5271025600,0.0,include_jeonbuk_coop
+NHMAP-61119,운봉농협,농·축협,전북특별자치도 남원시 운봉읍 운봉로 679 (서천리),True,5219025000,0.0,include_jeonbuk_coop
+NHMAP-859,운암동지점,농협은행,전남광주통합특별시 북구 북문대로 27 (운암동),False,1230060200,21871.012,outside_predeclared_20km_boundary_buffer
+NHMAP-61046,운주농협,농·축협,전북특별자치도 완주군 운주면 운주로 133 (장선리),True,5271038000,0.0,include_jeonbuk_coop
+NHMAP-61047,운주농협 경천지점,농·축협,전북특별자치도 완주군 경천면 대둔산로 499 (용복리),True,5271041000,0.0,include_jeonbuk_coop
+NHMAP-60796,웅천농협,농·축협,충청남도 보령시 웅천읍 장터중앙길 138 (대창리),False,4418025000,21157.089,outside_predeclared_20km_boundary_buffer
+NHMAP-60800,웅천농협 내평지점,농·축협,충청남도 보령시 미산면 내평봉성길 4 (내평리),False,4418039000,20545.094,outside_predeclared_20km_boundary_buffer
+NHMAP-60798,웅천농협 도화담지점,농·축협,충청남도 보령시 미산면 만수로 1136 (도화담리),False,4418039000,25593.376,outside_predeclared_20km_boundary_buffer
+NHMAP-60799,웅천농협 성주지점,농·축협,충청남도 보령시 성주면 화장골길 29 (성주리),False,4418040000,30451.73,outside_predeclared_20km_boundary_buffer
+NHMAP-543,월산동지점,농협은행,전남광주통합특별시 남구 대남대로 365 (월산4동),False,1227063000,23946.675,outside_predeclared_20km_boundary_buffer
+NHMAP-61686,월야농협,농·축협,전남광주통합특별시 함평군 월야면 밀재로 1516 (월야리),False,1282038000,14028.786,include_border_nh
+NHMAP-60613,유성농협 상대동지점,농·축협,대전광역시 유성구 도안대로 511-8 (상대동),False,3020052700,23897.7,outside_predeclared_20km_boundary_buffer
+NHMAP-60604,유성농협 원신흥동지점,농·축협,대전광역시 유성구 원신흥남로12번길 42 (202),False,3020061000,22492.752,outside_predeclared_20km_boundary_buffer
+NHMAP-347,유천동지점,농협은행,대전광역시 중구 계백로 1619 (유천동),False,3014071000,21654.299,outside_predeclared_20km_boundary_buffer
+NHMAP-61031,이서농협,농·축협,전북특별자치도 완주군 이서면 이서로 60 (상개리),True,5271033000,0.0,include_jeonbuk_coop
+NHMAP-61032,이서농협 중동지점,농·축협,전북특별자치도 전주시 덕진구 오공로 37 (중동),True,5211367000,0.0,include_jeonbuk_coop
+NHMAP-60396,이원농협,농·축협,충청북도 옥천군 이원면 신흥길 1 (강청리),False,4373036000,19810.109,include_border_nh
+NHMAP-58962,익산군산축협,농·축협,전북특별자치도 익산시 인북로 288 (남중동),True,5214059500,0.0,include_jeonbuk_coop
+NHMAP-65761,익산군산축협 구암지점,농·축협,전북특별자치도 군산시 구암3.1로 209-1 (구암동),True,5213067000,0.0,include_jeonbuk_coop
+NHMAP-58960,익산군산축협 군산지점,농·축협,전북특별자치도 군산시 삼학8길 18 (삼학동),True,5213056000,0.0,include_jeonbuk_coop
+NHMAP-58961,익산군산축협 동부지점,농·축협,전북특별자치도 익산시 무왕로26길 19 101호 (부송동),True,5214069000,0.0,include_jeonbuk_coop
+NHMAP-58965,익산군산축협 서부지점,농·축협,전북특별자치도 익산시 배산로16길 24 (모현동1가),True,5214061000,0.0,include_jeonbuk_coop
+NHMAP-59385,익산군산축협 수송지점,농·축협,전북특별자치도 군산시 월명로 218 (수송동),True,5213069000,0.0,include_jeonbuk_coop
+NHMAP-58964,익산군산축협 하나로지점,농·축협,전북특별자치도 익산시 하나로 487 (영등동),True,5214064700,0.0,include_jeonbuk_coop
+NHMAP-58963,익산군산축협 함열제일지점,농·축협,전북특별자치도 익산시 함열읍 함열6길 2 (와리),True,5214025000,0.0,include_jeonbuk_coop
+NHMAP-61255,익산농협,농·축협,전북특별자치도 익산시 평동로 698 (인화동2가),True,5214056000,0.0,include_jeonbuk_coop
+NHMAP-61257,익산농협 남중지점,농·축협,전북특별자치도 익산시 인북로 205 (남중동),True,5214059500,0.0,include_jeonbuk_coop
+NHMAP-65565,익산농협 동산제일지점,농·축협,전북특별자치도 익산시 동천로7길 35 (동산동),True,5214057000,0.0,include_jeonbuk_coop
+NHMAP-61261,익산농협 동산지점,농·축협,전북특별자치도 익산시 평동로 740 (동산동),True,5214057000,0.0,include_jeonbuk_coop
+NHMAP-61251,익산농협 동이리지점,농·축협,전북특별자치도 익산시 평동로 667 (인화동2가),True,5214056000,0.0,include_jeonbuk_coop
+NHMAP-61256,익산농협 모현지점,농·축협,전북특별자치도 익산시 고현로 119 (모현동1가),True,5214061000,0.0,include_jeonbuk_coop
+NHMAP-61248,익산농협 배산지점,농·축협,"전북특별자치도 익산시 선화로3길 31-13 (모현동1가, 금송빌딩), 101호",True,5214061000,0.0,include_jeonbuk_coop
+NHMAP-61258,익산농협 부송지점,농·축협,전북특별자치도 익산시 하나로 448 익산농협 부송지점 (어양동),True,5214065200,0.0,include_jeonbuk_coop
+NHMAP-61253,익산농협 북일지점,농·축협,전북특별자치도 익산시 무왕로 862 (신동),True,5214065600,0.0,include_jeonbuk_coop
+NHMAP-61250,익산농협 송학지점,농·축협,전북특별자치도 익산시 배산로 47 (송학동),True,5214062000,0.0,include_jeonbuk_coop
+NHMAP-61249,익산농협 신동지점,농·축협,전북특별자치도 익산시 인북로 345 1층 (신동),True,5214065600,0.0,include_jeonbuk_coop
+NHMAP-63136,익산농협 영등지점,농·축협,"전북특별자치도 익산시 약촌로 193 (영등동, 익산농협영등지점)",True,5214064600,0.0,include_jeonbuk_coop
+NHMAP-61277,익산농협 오성지점,농·축협,전북특별자치도 익산시 춘포면 천서길 207 (천서리),True,5214042000,0.0,include_jeonbuk_coop
+NHMAP-61254,익산농협 창인지점,농·축협,전북특별자치도 익산시 익산대로20길 25 (창인동1가),True,5214052000,0.0,include_jeonbuk_coop
+NHMAP-61276,익산농협 춘포지점,농·축협,전북특별자치도 익산시 춘포면 춘포2길 23 (춘포리),True,5214042000,0.0,include_jeonbuk_coop
+NHMAP-61252,익산농협 팔봉지점,농·축협,전북특별자치도 익산시 무왕로 1400 (팔봉동),True,5214067000,0.0,include_jeonbuk_coop
+NHMAP-63353,익산농협 평화지점,농·축협,전북특별자치도 익산시 평동로4길 6-11 (목천동),True,5214053000,0.0,include_jeonbuk_coop
+NHMAP-311,익산시지부,농협은행,"전북특별자치도 익산시 무왕로 1069, 1층",True,5214064700,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-299,익산시청(출),농협은행,전북특별자치도 익산시 인북로32길 1 (남중동),True,5214059500,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61278,익산원예농협,농·축협,전북특별자치도 익산시 선화로6길 29 (모현동1가),True,5214061000,0.0,include_jeonbuk_coop
+NHMAP-61282,익산원예농협 동부오거리지점,농·축협,전북특별자치도 익산시 고봉로 166-1 (영등동 547-36),True,5214064600,0.0,include_jeonbuk_coop
+NHMAP-61281,익산원예농협 동산동지점,농·축협,전북특별자치도 익산시 서동로 106 (동산동),True,5214057000,0.0,include_jeonbuk_coop
+NHMAP-61280,익산원예농협 부송제일지점,농·축협,전북특별자치도 익산시 부송로 105 (부송동),True,5214069000,0.0,include_jeonbuk_coop
+NHMAP-61279,익산원예농협 영등제일지점,농·축협,전북특별자치도 익산시 고봉로30길 66 (영등동),True,5214064600,0.0,include_jeonbuk_coop
+NHMAP-61283,익산원예농협 인화동지점,농·축협,전북특별자치도 익산시 평동로 649 (인화동1가),True,5214056000,0.0,include_jeonbuk_coop
+NHMAP-452,익산중앙지점,농협은행,전북특별자치도 익산시 인북로3길 24 (중앙동3가),True,5214052000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-15746,인후동지점,농협은행,전북특별자치도 전주시 덕진구 백제대로 751 뱅크빌딩1층 (인후동2가),True,5211355000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-490,일곡동지점,농협은행,전남광주통합특별시 북구 설죽로 510 (일곡동),False,1230066900,18446.05,include_border_nh
+NHMAP-61320,임곡농협,농·축협,전남광주통합특별시 광산구 고봉로 807 (임곡동),False,1233065000,14196.042,include_border_nh
+NHMAP-63138,임곡농협 산단행복지점,농·축협,"전남광주통합특별시 광산구 임곡로 413 (고룡동), 105호",False,1233065000,17236.537,include_border_nh
+NHMAP-498,임동지점,농협은행,전남광주통합특별시 북구 서림로 99 (임동),False,1230057000,21927.12,outside_predeclared_20km_boundary_buffer
+NHMAP-431,임실군지부,농협은행,전북특별자치도 임실군 봉황로 135 (임실읍),True,5275025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-432,임실군청(출),농협은행,전북특별자치도 임실군 수정로 30 (임실읍),True,5275025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61089,임실농협,농·축협,전북특별자치도 임실군 임실읍 호국로 1721 (이도리),True,5275025000,0.0,include_jeonbuk_coop
+NHMAP-61097,임실농협 강진덕치지점,농·축협,전북특별자치도 임실군 강진면 호국로 39 (갈담리),True,5275039000,0.0,include_jeonbuk_coop
+NHMAP-61091,임실농협 성수지점,농·축협,전북특별자치도 임실군 성수면 임진로 222 (양지리),True,5275034000,0.0,include_jeonbuk_coop
+NHMAP-61092,임실농협 청웅지점,농·축협,전북특별자치도 임실군 청웅면 구고6길 66 (구고리),True,5275031000,0.0,include_jeonbuk_coop
+NHMAP-61090,임실농협 터미널지점,농·축협,전북특별자치도 임실군 임실읍 운수로 22 임실농협 터미널지점 (이도리),True,5275025000,0.0,include_jeonbuk_coop
+NHMAP-58968,임실축협,농·축협,전북특별자치도 임실군 임실읍 운수로 6 (이도리),True,5275025000,0.0,include_jeonbuk_coop
+NHMAP-58970,임실축협 관촌지점,농·축협,전북특별자치도 임실군 관촌면 사선로 36 (관촌리),True,5275038000,0.0,include_jeonbuk_coop
+NHMAP-58969,임실축협 오수지점,농·축협,전북특별자치도 임실군 오수면 오수로 152-1 (오수리),True,5275035500,0.0,include_jeonbuk_coop
+NHMAP-59300,임실치즈농협,농·축협,전북특별자치도 임실군 임실읍 봉황로 329 (갈마리),True,5275025000,0.0,include_jeonbuk_coop
+NHMAP-59301,임실치즈농협 미르지점,농·축협,전북특별자치도 전주시 완산구 백제대로 100 (효자동1가),True,5211171100,0.0,include_jeonbuk_coop
+NHMAP-65577,임실치즈농협 에코그린지점,농·축협,전북특별자치도 전주시 덕진구 백석남로 121 (송천동2가),True,5211364300,0.0,include_jeonbuk_coop
+NHMAP-59356,임실치즈농협 전주온고을지점,농·축협,전북특별자치도 전주시 덕진구 솔내로 131 (송천동1가),True,5211364100,0.0,include_jeonbuk_coop
+NHMAP-61418,입면농협,농·축협,전남광주통합특별시 곡성군 입면 입면로 683 (매월리),False,1272038000,1860.683,include_border_nh
+NHMAP-61085,장계농협,농·축협,전북특별자치도 장수군 장계면 한들로 114 (장계리),True,5274033500,0.0,include_jeonbuk_coop
+NHMAP-61087,장계농협 계남지점,농·축협,전북특별자치도 장수군 계남면 장수로 3092 (화음리),True,5274035000,0.0,include_jeonbuk_coop
+NHMAP-61088,장계농협 계북지점,농·축협,전북특별자치도 장수군 계북면 장무로 978 (어전리),True,5274036000,0.0,include_jeonbuk_coop
+NHMAP-61086,장계농협 천천지점,농·축협,전북특별자치도 장수군 천천면 송탄로 35 (춘송리),True,5274034000,0.0,include_jeonbuk_coop
+NHMAP-560,장성군지부,농협은행,전남광주통합특별시 장성군 장성읍 영천로 144 (장성읍),False,1284025000,10400.237,include_border_nh
+NHMAP-527,장성군청(출),농협은행,전남광주통합특별시 장성군 영천로 200 (장성읍),False,1284025000,9178.476,include_border_nh
+NHMAP-61701,장성농협,농·축협,전남광주통합특별시 장성군 장성읍 영천로 183 (영천리),False,1284025000,9116.22,include_border_nh
+NHMAP-61709,장성농협 북일지점,농·축협,전남광주통합특별시 장성군 북일면 신흥로 394 (신흥리),False,1284038000,6745.506,include_border_nh
+NHMAP-61702,장성농협 서삼지점,농·축협,전남광주통합특별시 장성군 서삼면 축령로 372 (장산리),False,1284037000,5438.112,include_border_nh
+NHMAP-61700,장성농협 장북,농·축협,전남광주통합특별시 장성군 장성읍 단풍로 504 (야은리),False,1284025000,8643.775,include_border_nh
+NHMAP-59019,장성축산농협,농·축협,전남광주통합특별시 장성군 장성읍 청운길 9 (영천리),False,1284025000,9067.661,include_border_nh
+NHMAP-429,장수군지부,농협은행,전북특별자치도 장수군 장수읍 호비로 9 (농협협동),True,5274025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-12479,장수군청(출),농협은행,전북특별자치도 장수군 호비로 10 (장수읍),True,5274025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61081,장수농협,농·축협,전북특별자치도 장수군 장수읍 장천로 164 (장수리),True,5274025000,0.0,include_jeonbuk_coop
+NHMAP-61084,장수농협 번암지점,농·축협,전북특별자치도 장수군 번암면 장수로 482 (노단리),True,5274032000,0.0,include_jeonbuk_coop
+NHMAP-61083,장수농협 북부지점,농·축협,전북특별자치도 장수군 장수읍 장천로 201 (장수리),True,5274025000,0.0,include_jeonbuk_coop
+NHMAP-61082,장수농협 산서지점,농·축협,전북특별자치도 장수군 산서면 비행로 38 (동화리),True,5274031000,0.0,include_jeonbuk_coop
+NHMAP-60779,장항농협,농·축협,충청남도 서천군 장항읍 장항로139번길 3 (신창리),False,4477025000,1329.479,include_border_nh
+NHMAP-365,장항지점,농협은행,충청남도 서천군 장항읍 장항로 177-2 농협중앙회장항지점 (장항읍),False,4477025000,1263.539,include_border_nh
+NHMAP-59037,전남낙농농협 광주지점,농·축협,"전남광주통합특별시 남구 서문대로 811 (주월동, 삼육빌딩), 1층",False,1227069000,24668.035,outside_predeclared_20km_boundary_buffer
+NHMAP-59043,전남낙농농협 운암산지점,농·축협,전남광주통합특별시 북구 동배마을길27번길 11 (동림동),False,1230061500,22931.297,outside_predeclared_20km_boundary_buffer
+NHMAP-416,전북영업부,농협은행,전북특별자치도 전주시 완산구 우전로 290 (효자동),True,5211173000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61071,전북인삼농협,농·축협,전북특별자치도 진안군 진안읍 진무로 1021 (군하리),True,5272025000,0.0,include_jeonbuk_coop
+NHMAP-61072,전북인삼농협 전주지점,농·축협,전북특별자치도 전주시 완산구 서원로 64 (효자동2가),True,5211171400,0.0,include_jeonbuk_coop
+NHMAP-58974,전북지리산낙농농협,농·축협,전북특별자치도 남원시 의총로 28 (금동),True,5219055000,0.0,include_jeonbuk_coop
+NHMAP-59365,전북지리산낙농농협 남전주지점,농·축협,전북특별자치도 전주시 완산구 거마평로 12 (삼천동1가),True,5211170200,0.0,include_jeonbuk_coop
+NHMAP-58971,전북지리산낙농농협 서전주지점,농·축협,"전북특별자치도 전주시 완산구 유연로 289 (서신동), 1층",True,5211168000,0.0,include_jeonbuk_coop
+NHMAP-58977,전북지리산낙농농협 전주지점,농·축협,전북특별자치도 전주시 덕진구 솔내로 188 (송천동2가),True,5211364100,0.0,include_jeonbuk_coop
+NHMAP-422,전북특별자치도교육청(출),농협은행,전북특별자치도 전주시 완산구 홍산로 111 (효자4동),True,5211171400,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-12059,전북특별자치도청(출),농협은행,전북특별자치도 전주시 완산구 효자로 225 (효자5동),True,5211173000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-14756,전북혁신도시지점,농협은행,전북특별자치도 완주군 이서면 안전로 163 (이서면),True,5211366500,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-58936,전주김제완주축협,농·축협,전북특별자치도 전주시 덕진구 동부대로 769 (호성동1가),True,5211361100,0.0,include_jeonbuk_coop
+NHMAP-58958,전주김제완주축협 김제제일지점,농·축협,전북특별자치도 김제시 남북로 218 (요촌동),True,5221051000,0.0,include_jeonbuk_coop
+NHMAP-63332,전주김제완주축협 김제지점,농·축협,전북특별자치도 김제시 콩쥐팥쥐로 35 (검산동),True,5221054000,0.0,include_jeonbuk_coop
+NHMAP-58939,전주김제완주축협 만성지점,농·축협,전북특별자치도 전주시 덕진구 만성북로 57 (만성동),True,5211366500,0.0,include_jeonbuk_coop
+NHMAP-58940,전주김제완주축협 안행지점,농·축협,전북특별자치도 전주시 완산구 효자천변2길 7 (효자동1가),True,5211171300,0.0,include_jeonbuk_coop
+NHMAP-58946,전주김제완주축협 진북지점,농·축협,전북특별자치도 전주시 덕진구 태진로 77 노블레스웨딩홀내 농협 진북지점 (진북동),True,5211352500,0.0,include_jeonbuk_coop
+NHMAP-58937,전주김제완주축협 하가지점,농·축협,전북특별자치도 전주시 덕진구 가리내로 254 (덕진동2가),True,5211357000,0.0,include_jeonbuk_coop
+NHMAP-58959,전주김제완주축협 학산지점,농·축협,전북특별자치도 전주시 완산구 평화로 138 . (평화동2가),True,5211169200,0.0,include_jeonbuk_coop
+NHMAP-58938,전주김제완주축협 효천지점,농·축협,전북특별자치도 전주시 완산구 장승배기로 84 (삼천동1가),True,5211169200,0.0,include_jeonbuk_coop
+NHMAP-61019,전주농협,농·축협,전북특별자치도 전주시 완산구 기린대로 232 (서노송동),True,5211160500,0.0,include_jeonbuk_coop
+NHMAP-61017,전주농협 기린봉지점,농·축협,전북특별자치도 전주시 덕진구 아중로 153 (인후동1가),True,5211356000,0.0,include_jeonbuk_coop
+NHMAP-61012,전주농협 덕진지점,농·축협,전북특별자치도 전주시 덕진구 기린대로 479 (덕진동1가),True,5211357000,0.0,include_jeonbuk_coop
+NHMAP-61007,전주농협 마중지점,농·축협,전북특별자치도 전주시 덕진구 태진로 125-30 휴엔하임아파트 1층 상가 (금암동),True,5211357500,0.0,include_jeonbuk_coop
+NHMAP-61013,전주농협 모래내지점,농·축협,전북특별자치도 전주시 덕진구 안덕원로 152 (인후동2가),True,5211355000,0.0,include_jeonbuk_coop
+NHMAP-61024,전주농협 모악공판장지점,농·축협,전북특별자치도 전주시 완산구 천잠로 22 전주농협공판장2층 (삼천동2가),True,5211170300,0.0,include_jeonbuk_coop
+NHMAP-61009,전주농협 문학지점,농·축협,전북특별자치도 전주시 완산구 우전로 250 (효자동2가),True,5211173000,0.0,include_jeonbuk_coop
+NHMAP-61015,전주농협 서부지점,농·축협,전북특별자치도 전주시 완산구 용머리로 63 (효자동1가),True,5211171200,0.0,include_jeonbuk_coop
+NHMAP-61006,전주농협 서신파크지점,농·축협,전북특별자치도 전주시 완산구 전룡로 126 (서신동),True,5211168000,0.0,include_jeonbuk_coop
+NHMAP-61010,전주농협 서원로지점,농·축협,전북특별자치도 전주시 완산구 서원로 310 (중화산동2가),True,5211167100,0.0,include_jeonbuk_coop
+NHMAP-61021,전주농협 송천지점,농·축협,전북특별자치도 전주시 덕진구 송천중앙로 122 (송천동1가),True,5211364100,0.0,include_jeonbuk_coop
+NHMAP-61025,전주농협 신성지점,농·축협,전북특별자치도 전주시 완산구 모악로 4679 (평화동2가),True,5211169200,0.0,include_jeonbuk_coop
+NHMAP-63308,전주농협 에코행복지점,농·축협,전북특별자치도 전주시 덕진구 세병서로 22 (송천동2가),True,5211364300,0.0,include_jeonbuk_coop
+NHMAP-61016,전주농협 완산지점,농·축협,전북특별자치도 전주시 완산구 용머리로 201 (서완산동2가),True,5211163500,0.0,include_jeonbuk_coop
+NHMAP-61011,전주농협 우림지점,농·축협,전북특별자치도 전주시 완산구 호암로 61 (효자동2가),True,5211171400,0.0,include_jeonbuk_coop
+NHMAP-61023,전주농협 장승로지점,농·축협,전북특별자치도 전주시 완산구 장승배기로 261 (평화동1가),True,5211169100,0.0,include_jeonbuk_coop
+NHMAP-61020,전주농협 평화지점,농·축협,전북특별자치도 전주시 완산구 장승배기로 170 (평화동1가),True,5211169200,0.0,include_jeonbuk_coop
+NHMAP-61014,전주농협 풍남문지점,농·축협,전북특별자치도 전주시 완산구 풍남문2길 32 (전동),True,5211153000,0.0,include_jeonbuk_coop
+NHMAP-61022,전주농협 호성지점,농·축협,전북특별자치도 전주시 덕진구 소리로 185 농협호성지점 (호성동1가),True,5211362000,0.0,include_jeonbuk_coop
+NHMAP-61008,전주농협 홍산지점,농·축협,전북특별자치도 전주시 완산구 홍산로 275 (효자동2가),True,5211173000,0.0,include_jeonbuk_coop
+NHMAP-61018,전주농협 화산로지점,농·축협,전북특별자치도 전주시 완산구 백제대로 250 (중화산동2가),True,5211167100,0.0,include_jeonbuk_coop
+NHMAP-63042,전주법원(출),농협은행,전북특별자치도 전주시 덕진구 가인로 33 (만성동),True,5211366500,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-418,전주송천센트럴지점,농협은행,전북특별자치도 전주시 덕진구 송천로 1 (송천동1가),True,5211364200,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-413,전주시지부,농협은행,전북특별자치도 전주시 완산구 팔달로 277 (서노송동),True,5211160500,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-12438,전주시청(출),농협은행,전북특별자치도 전주시 완산구 노송광장로 10 (서노송동),True,5211160500,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-12848,전주에코시티지점,농협은행,전북특별자치도 전주시 덕진구 세병로 30 (송천동2가),True,5211364300,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61055,전주원예농협,농·축협,전북특별자치도 전주시 덕진구 동부대로 1183 (송천동2가),True,5211364200,0.0,include_jeonbuk_coop
+NHMAP-61052,전주원예농협 백제로지점,농·축협,전북특별자치도 전주시 덕진구 백제대로 662 (금암동),True,5211357500,0.0,include_jeonbuk_coop
+NHMAP-61051,전주원예농협 삼천삼익지점,농·축협,전북특별자치도 전주시 완산구 용리로 134 전주원예농협 삼천삼익지점 (삼천동1가),True,5211170200,0.0,include_jeonbuk_coop
+NHMAP-61056,전주원예농협 서곡지점,농·축협,전북특별자치도 전주시 완산구 세내로 554 (효자동3가),True,5211173000,0.0,include_jeonbuk_coop
+NHMAP-61050,전주원예농협 서신제일지점,농·축협,전북특별자치도 전주시 완산구 서신로 108 (서신동),True,5211168000,0.0,include_jeonbuk_coop
+NHMAP-61057,전주원예농협 솔내지점,농·축협,전북특별자치도 전주시 덕진구 시천로 54 (송천동1가),True,5211364200,0.0,include_jeonbuk_coop
+NHMAP-61049,전주원예농협 송천에코지점,농·축협,전북특별자치도 전주시 덕진구 세병로 170-3 (송천동2가),True,5211364300,0.0,include_jeonbuk_coop
+NHMAP-61053,전주원예농협 역전지점,농·축협,전북특별자치도 전주시 덕진구 백제대로 827 (우아동3가),True,5211361100,0.0,include_jeonbuk_coop
+NHMAP-61058,전주원예농협 호암지점,농·축협,전북특별자치도 전주시 완산구 우전2길 68 (효자동2가),True,5211171400,0.0,include_jeonbuk_coop
+NHMAP-61054,전주원예농협 효자제일지점,농·축협,전북특별자치도 전주시 완산구 서원로 224 (효자동1가),True,5211171200,0.0,include_jeonbuk_coop
+NHMAP-61059,전주원예농협 효천중앙지점,농·축협,전북특별자치도 전주시 완산구 효천중앙로 55 (효자동2가),True,5211171400,0.0,include_jeonbuk_coop
+NHMAP-420,전주한옥마을지점,농협은행,전북특별자치도 전주시 완산구 충경로 102 (풍남동1가),True,5211153000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-12608,정부광주지방합동청사(출),농협은행,전남광주통합특별시 북구 첨단과기로208번길 43 정부전남광주통합특별시지방합동청사 (오룡동),False,1230069500,19564.718,include_border_nh
+NHMAP-60808,정산농협 장평지점,농·축협,충청남도 청양군 장평면 닭우리고개길 30-7 (분향리),False,4479036000,21251.706,outside_predeclared_20km_boundary_buffer
+NHMAP-61142,정읍농협,농·축협,전북특별자치도 정읍시 명덕로 25 (연지동),True,5218057000,0.0,include_jeonbuk_coop
+NHMAP-61141,정읍농협 교암지점,농·축협,전북특별자치도 정읍시 구계교암길 44 (교암동),True,5218059500,0.0,include_jeonbuk_coop
+NHMAP-61137,정읍농협 내장지점,농·축협,전북특별자치도 정읍시 내장산로 280 (금붕동),True,5218053500,0.0,include_jeonbuk_coop
+NHMAP-61147,정읍농협 덕천지점,농·축협,전북특별자치도 정읍시 덕천면 황토현로 814 (우덕리),True,5218036000,0.0,include_jeonbuk_coop
+NHMAP-61140,정읍농협 상동지점,농·축협,전북특별자치도 정읍시 충정로 58 (상동),True,5218053500,0.0,include_jeonbuk_coop
+NHMAP-61148,정읍농협 수성지점,농·축협,전북특별자치도 정읍시 수성2로 44 (수성동),True,5218051000,0.0,include_jeonbuk_coop
+NHMAP-61138,정읍농협 시기지점,농·축협,전북특별자치도 정읍시 우암로 16-8 (시기동),True,5218054500,0.0,include_jeonbuk_coop
+NHMAP-61139,정읍농협 정일지점,농·축협,"전북특별자치도 정읍시 충정로 531-8 (공평동, 농소동주민센터 1층)",True,5218058000,0.0,include_jeonbuk_coop
+NHMAP-61143,정읍농협 중앙지점,농·축협,전북특별자치도 정읍시 남북로 34 (수성동),True,5218051000,0.0,include_jeonbuk_coop
+NHMAP-61149,정읍농협 충정로지점,농·축협,전북특별자치도 정읍시 충정로 99 (상동),True,5218053500,0.0,include_jeonbuk_coop
+NHMAP-437,정읍시지부,농협은행,전북특별자치도 정읍시 중앙로 62 농협 중앙회 (연지동),True,5218057000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-440,정읍시청(출),농협은행,전북특별자치도 정읍시 충정로 234 (수성동),True,5218051000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61162,정읍원예농협,농·축협,전북특별자치도 정읍시 시기1길 3 (시기동),True,5218056500,0.0,include_jeonbuk_coop
+NHMAP-61163,정읍원예농협 제일지점,농·축협,전북특별자치도 정읍시 중앙로 145-7 (수성동),True,5218051000,0.0,include_jeonbuk_coop
+NHMAP-63140,정읍원예농협 학산로지점,농·축협,"전북특별자치도 정읍시 학산로 89-12 (상동), 2층 은행",True,5218053500,0.0,include_jeonbuk_coop
+NHMAP-63045,정읍지원(출),농협은행,전북특별자치도 정읍시 수성6로 29 (수성동),True,5218051000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-62110,조마농협,농·축협,경상북도 김천시 조마면 강곡1길 43-18 (강곡리),False,4715040000,19404.474,include_border_nh
+NHMAP-60797,주산농협,농·축협,충청남도 보령시 주산면 충서로 408 (금암리),False,4418038000,18224.243,include_border_nh
+NHMAP-666,주월동지점,농협은행,전남광주통합특별시 남구 회재로 1251 (주월동),False,1227069000,24458.357,outside_predeclared_20km_boundary_buffer
+NHMAP-415,중화산동지점,농협은행,전북특별자치도 전주시 완산구 효자로 280 (중화산동2가),True,5211167200,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-62764,지곡농협,농·축협,경상남도 함양군 지곡면 지곡창촌길 5 (창평리),False,4887035000,13579.623,include_border_nh
+NHMAP-61122,지리산농협,농·축협,전북특별자치도 남원시 인월면 인월로 100 (인월리),True,5219047000,0.0,include_jeonbuk_coop
+NHMAP-61121,지리산농협 산내지점,농·축협,전북특별자치도 남원시 산내면 지리산로 1594 (대정리),True,5219046000,0.0,include_jeonbuk_coop
+NHMAP-61120,지리산농협 아영지점,농·축협,전북특별자치도 남원시 아영면 아백로 372 (청계리),True,5219045000,0.0,include_jeonbuk_coop
+NHMAP-62762,지리산마천농협,농·축협,경상남도 함양군 마천면 천왕봉로 1172 (가흥리),False,4887031000,1839.031,include_border_nh
+NHMAP-62726,지리산청학농협,농·축협,경상남도 하동군 횡천면 문화1길 5 (횡천리),False,4885034000,29881.113,outside_predeclared_20km_boundary_buffer
+NHMAP-62727,지리산청학농협 삼개리지점,농·축협,경상남도 하동군 옥종면 돌고지로 1113 (회신리),False,4885041000,25164.404,outside_predeclared_20km_boundary_buffer
+NHMAP-62728,지리산청학농협 청암지점,농·축협,경상남도 하동군 청암면 청학로 650 (평촌리),False,4885040000,25447.313,outside_predeclared_20km_boundary_buffer
+NHMAP-502,지산동지점,농협은행,전남광주통합특별시 동구 지산로 73-1 (지산동),False,1221062000,21299.22,outside_predeclared_20km_boundary_buffer
+NHMAP-62113,직지농협,농·축협,경상북도 김천시 봉산면 황악로 1736 (덕천리),False,4715037000,18869.534,include_border_nh
+NHMAP-62114,직지농협 대룡지점,농·축협,경상북도 김천시 대항면 대룡로 6 (대룡리),False,4715038000,19813.525,include_border_nh
+NHMAP-62116,직지농협 대항지점,농·축협,경상북도 김천시 대항면 대성향천길 1612-2 (향천리),False,4715038000,17224.884,include_border_nh
+NHMAP-62112,직지농협 봉계지점,농·축협,경상북도 김천시 봉산면 봉계1길 6-2 (신리),False,4715037000,21557.316,outside_predeclared_20km_boundary_buffer
+NHMAP-61208,진봉농협,농·축협,전북특별자치도 김제시 진봉면 진봉로 495 (고사리),True,5221041000,0.0,include_jeonbuk_coop
+NHMAP-60537,진산농협,농·축협,충청남도 금산군 진산면 읍내로 55 (읍내리),False,4471037000,3077.657,include_border_nh
+NHMAP-425,진안군지부,농협은행,전북특별자치도 진안군 진안읍 중앙로 70 (진안읍),True,5272025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-12334,진안군청(출),농협은행,전북특별자치도 진안군 중앙로 67 (진안읍),True,5272025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61060,진안농협,농·축협,전북특별자치도 진안군 진안읍 진무로 1150 (군상리),True,5272025000,0.0,include_jeonbuk_coop
+NHMAP-61061,진안농협 군상,농·축협,전북특별자치도 진안군 진안읍 진무로 1099 (군상리),True,5272025000,0.0,include_jeonbuk_coop
+NHMAP-61068,진안농협 동향지점,농·축협,전북특별자치도 진안군 동향면 진성로 1612 (대량리),True,5272033000,0.0,include_jeonbuk_coop
+NHMAP-61064,진안농협 마령지점,농·축협,전북특별자치도 진안군 마령면 임진로 2110 (평지리),True,5272037000,0.0,include_jeonbuk_coop
+NHMAP-61069,진안농협 안천지점,농·축협,전북특별자치도 진안군 안천면 진무로 3022 (노성리),True,5272032000,0.0,include_jeonbuk_coop
+NHMAP-61066,진안농협 용담,농·축협,전북특별자치도 진안군 용담면 대송로 17 (송풍리),True,5272031000,0.0,include_jeonbuk_coop
+NHMAP-61067,진안농협 주천지점,농·축협,전북특별자치도 진안군 주천면 동상주천로 2211 (주양리),True,5272040000,0.0,include_jeonbuk_coop
+NHMAP-61704,진원농협,농·축협,전남광주통합특별시 장성군 진원면 노사로 503 (선적리),False,1284031000,14484.152,include_border_nh
+NHMAP-62274,진주남부농협 내동지점,농·축협,경상남도 진주시 내동면 순환로 400-6 (독산리),False,4817031000,44929.792,outside_predeclared_20km_boundary_buffer
+NHMAP-62306,진주동부농협 강남지점,농·축협,경상남도 진주시 망경로 292 (망경동),False,4817051500,45323.226,outside_predeclared_20km_boundary_buffer
+NHMAP-62305,진주동부농협 천전지점,농·축협,"경상남도 진주시 진주대로891번길 56 (강남동, 진주강남동일동미라주) 401동 104호",False,4817051500,45591.045,outside_predeclared_20km_boundary_buffer
+NHMAP-62316,진주북부농협,농·축협,경상남도 진주시 명석면 나불로 315 (우수리),False,4817044000,40085.314,outside_predeclared_20km_boundary_buffer
+NHMAP-62317,진주북부농협 대평지점,농·축협,경상남도 진주시 대평면 한들길 48 (대평리),False,4817045000,32850.266,outside_predeclared_20km_boundary_buffer
+NHMAP-63361,진주북부농협 판문지점,농·축협,경상남도 진주시 진양호로28번길 16 (평거동),False,4817073000,42680.296,outside_predeclared_20km_boundary_buffer
+NHMAP-62303,진주서부농협,농·축협,경상남도 진주시 진주성로 77 (봉곡동),False,4817055500,44104.969,outside_predeclared_20km_boundary_buffer
+NHMAP-62304,진주서부농협 남가람지점,농·축협,경상남도 진주시 신안로54번길 15-4 (신안동),False,4817071500,44325.357,outside_predeclared_20km_boundary_buffer
+NHMAP-62315,진주서부농협 대안동지점,농·축협,경상남도 진주시 진주대로1069번길 10 (대안동),False,4817056500,44733.865,outside_predeclared_20km_boundary_buffer
+NHMAP-62298,진주서부농협 상봉지점,농·축협,경상남도 진주시 창렬로69번길 4 (상봉동),False,4817059500,43562.567,outside_predeclared_20km_boundary_buffer
+NHMAP-62296,진주서부농협 수정지점,농·축협,경상남도 진주시 촉석로226번길 3 (수정동),False,4817056500,45016.258,outside_predeclared_20km_boundary_buffer
+NHMAP-62297,진주서부농협 신안지점,농·축협,경상남도 진주시 신안로 104-1 (신안동),False,4817071500,44039.939,outside_predeclared_20km_boundary_buffer
+NHMAP-62302,진주서부농협 운동장지점,농·축협,경상남도 진주시 숙호산로 88 (신안동),False,4817071500,43533.076,outside_predeclared_20km_boundary_buffer
+NHMAP-62299,진주서부농협 이현지점,농·축협,경상남도 진주시 평거로 285-1 (이현동),False,4817072000,43039.737,outside_predeclared_20km_boundary_buffer
+NHMAP-62295,진주서부농협 중앙로지점,농·축협,경상남도 진주시 진양호로 533 (대안동),False,4817056500,44881.721,outside_predeclared_20km_boundary_buffer
+NHMAP-62301,진주서부농협 진양호지점,농·축협,경상남도 진주시 순환로553번길 7 (평거동),False,4817071000,43673.19,outside_predeclared_20km_boundary_buffer
+NHMAP-62300,진주서부농협 평거지점,농·축협,경상남도 진주시 진양호로 125 (평거동),False,4817073000,43375.219,outside_predeclared_20km_boundary_buffer
+NHMAP-62265,진주수곡농협,농·축협,경상남도 진주시 수곡면 옥수로 645 (대천리),False,4817046000,31846.039,outside_predeclared_20km_boundary_buffer
+NHMAP-62267,진주수곡농협 신평거지점,농·축협,경상남도 진주시 남강로309번길 20 더테라스빌딩 1층 (평거동),False,4817071000,44089.776,outside_predeclared_20km_boundary_buffer
+NHMAP-62266,진주수곡농협 원당지점,농·축협,경상남도 진주시 수곡면 곤수로 549 (원내리),False,4817046000,35416.054,outside_predeclared_20km_boundary_buffer
+NHMAP-113,진주신평지점,농협은행,경상남도 진주시 진양호로 340 (신안동),False,4817071500,43944.995,outside_predeclared_20km_boundary_buffer
+NHMAP-62320,진주원예농협 옥봉지점,농·축협,경상남도 진주시 남강로 723 (옥봉동),False,4817056500,45542.56,outside_predeclared_20km_boundary_buffer
+NHMAP-62321,진주원예농협 평거지점,농·축협,경상남도 진주시 새들말로 24 (평거동),False,4817073000,43799.431,outside_predeclared_20km_boundary_buffer
+NHMAP-62284,진주중부농협,농·축협,경상남도 진주시 집현면 진산로 699 (봉강리),False,4817042000,43279.796,outside_predeclared_20km_boundary_buffer
+NHMAP-661,진주중앙지점,농협은행,경상남도 진주시 진주대로 1033 (동성동),False,4817056500,45004.367,outside_predeclared_20km_boundary_buffer
+NHMAP-671,진주지원(출),농협은행,경상남도 진주시 진양호로 303 (신안동),False,4817071000,43746.559,outside_predeclared_20km_boundary_buffer
+NHMAP-59285,진주축산농협 강남지점,농·축협,경상남도 진주시 진주대로 857 (주약동),False,4817051500,46195.508,outside_predeclared_20km_boundary_buffer
+NHMAP-59258,진주축산농협 너우니지점,농·축협,경상남도 진주시 진양호로84번길 10 (평거동),False,4817073000,43118.939,outside_predeclared_20km_boundary_buffer
+NHMAP-59257,진주축산농협 들말지점,농·축협,경상남도 진주시 평거로13번길 35 (평거동),False,4817071000,43867.808,outside_predeclared_20km_boundary_buffer
+NHMAP-59192,진주축산농협 이현지점,농·축협,경상남도 진주시 신안로 165 (이현동),False,4817072000,43427.393,outside_predeclared_20km_boundary_buffer
+NHMAP-59189,진주축산농협 평거지점,농·축협,경상남도 진주시 진양호로 330 (신안동),False,4817071500,43923.083,outside_predeclared_20km_boundary_buffer
+NHMAP-61403,창평농협,농·축협,전남광주통합특별시 담양군 창평면 의병로 128 (창평리),False,1271034000,9302.649,include_border_nh
+NHMAP-61405,창평농협 대덕지점,농·축협,전남광주통합특별시 담양군 대덕면 대조동1길 2 (매산리),False,1271035000,7256.491,include_border_nh
+NHMAP-15475,첨단산단지점,농협은행,전남광주통합특별시 북구 첨단연신로 108번길 22 (신용동),False,1230069700,20544.447,outside_predeclared_20km_boundary_buffer
+NHMAP-221,첨단지점,농협은행,"전남광주통합특별시 광산구 첨단중앙로 136, 1층 (월계동)",False,1233062600,19978.572,include_border_nh
+NHMAP-60395,청산농협,농·축협,충청북도 옥천군 청산면 지전길 27 (지전리),False,4373035000,32652.386,outside_predeclared_20km_boundary_buffer
+NHMAP-60393,청산농협 청성지점,농·축협,충청북도 옥천군 청성면 산계3길 3 (산계리),False,4373034000,29780.474,outside_predeclared_20km_boundary_buffer
+NHMAP-59320,청양축협 장평간이지점,농·축협,충청남도 청양군 장평면 닭우리고개길 31-1 (중추리),False,4479036000,21315.879,outside_predeclared_20km_boundary_buffer
+NHMAP-60410,추풍령농협,농·축협,충청북도 영동군 추풍령면 추풍령로 481 (추풍령리),False,4374033500,23319.929,outside_predeclared_20km_boundary_buffer
+NHMAP-61116,춘향골농협,농·축협,전북특별자치도 남원시 금지면 금지순환길 917-31 (옹정리),True,5219035000,0.0,include_jeonbuk_coop
+NHMAP-61112,춘향골농협 대강지점,농·축협,전북특별자치도 남원시 대강면 섬진로 816 (사석리),True,5219036000,0.0,include_jeonbuk_coop
+NHMAP-61108,춘향골농협 송동지점,농·축협,전북특별자치도 남원시 송동면 송기길 73 (신평리),True,5219033000,0.0,include_jeonbuk_coop
+NHMAP-61118,춘향골농협 수지지점,농·축협,전북특별자치도 남원시 수지면 고주로 614 (호곡리),True,5219032000,0.0,include_jeonbuk_coop
+NHMAP-61109,춘향골농협 신월지점,농·축협,전북특별자치도 남원시 금지면 요천로 207 (신월리),True,5219035000,0.0,include_jeonbuk_coop
+NHMAP-61110,춘향골농협 주생지점,농·축협,전북특별자치도 남원시 주생면 영천길 6 (제천리),True,5219034000,0.0,include_jeonbuk_coop
+NHMAP-60413,충북인삼농협 영동지점,농·축협,충청북도 영동군 영동읍 구교로 28 (계산리),False,4374025000,15060.504,include_border_nh
+NHMAP-61154,칠보농협,농·축협,전북특별자치도 정읍시 칠보면 칠보중앙로 90 (시산리),True,5218042000,0.0,include_jeonbuk_coop
+NHMAP-61153,칠보농협 산내지점,농·축협,전북특별자치도 정읍시 산내면 능교1길 22 (능교리),True,5218043000,0.0,include_jeonbuk_coop
+NHMAP-61155,칠보농협 산외지점,농·축협,전북특별자치도 정읍시 산외면 산외로 443 (평사리),True,5218044000,0.0,include_jeonbuk_coop
+NHMAP-61157,칠보농협 옹동지점,농·축협,전북특별자치도 정읍시 옹동면 옹지동촌로 209 (칠석리),True,5218041000,0.0,include_jeonbuk_coop
+NHMAP-399,탄방동지점,농협은행,대전광역시 서구 문정로48번길 20 (탄방동),False,3017055500,24235.318,outside_predeclared_20km_boundary_buffer
+NHMAP-60680,탄천농협,농·축협,충청남도 공주시 탄천면 통산로 197 (삼각리),False,4415032000,20233.784,outside_predeclared_20km_boundary_buffer
+NHMAP-61156,태인농협,농·축협,전북특별자치도 정읍시 태인면 태인로 31 (태성리),True,5218039000,0.0,include_jeonbuk_coop
+NHMAP-60772,판교농협,농·축협,충청남도 서천군 판교면 종판로 895 (현암리),False,4477038000,15400.281,include_border_nh
+NHMAP-61298,평동농협,농·축협,전남광주통합특별시 광산구 평동로800번길 16 (옥동218-1),False,1233067000,24117.917,outside_predeclared_20km_boundary_buffer
+NHMAP-61299,평동농협 동부지점,농·축협,전남광주통합특별시 광산구 송촌길79번길 1 (장록동),False,1233067000,23797.708,outside_predeclared_20km_boundary_buffer
+NHMAP-61300,평동농협 명화지점,농·축협,전남광주통합특별시 광산구 평동로 420 (명화동 226-3),False,1233067000,22973.618,outside_predeclared_20km_boundary_buffer
+NHMAP-814,풍암동지점,농협은행,전남광주통합특별시 서구 풍암1로21번길 7 (풍암동),False,1224083000,26259.741,outside_predeclared_20km_boundary_buffer
+NHMAP-505,풍향동지점,농협은행,전남광주통합특별시 북구 동문대로 26 (풍향동),False,1230063500,20334.851,outside_predeclared_20km_boundary_buffer
+NHMAP-61332,하남농협,농·축협,전남광주통합특별시 광산구 사암로 280 (월곡동),False,1233060000,22366.302,outside_predeclared_20km_boundary_buffer
+NHMAP-61333,하남농협 마항지점,농·축협,전남광주통합특별시 광산구 용아로379번길 46 (하남동),False,1233064000,21304.282,outside_predeclared_20km_boundary_buffer
+NHMAP-61337,하남농협 목련지점,농·축협,전남광주통합특별시 광산구 풍영로 37 (월곡동),False,1233061000,21862.964,outside_predeclared_20km_boundary_buffer
+NHMAP-61338,하남농협 산정지점,농·축협,전남광주통합특별시 광산구 목련로 58 하남농협 산정지점 (산정동),False,1233061000,21871.332,outside_predeclared_20km_boundary_buffer
+NHMAP-61339,하남농협 성덕지점,농·축협,전남광주통합특별시 광산구 장신로 77 (장덕동),False,1233063700,20651.47,outside_predeclared_20km_boundary_buffer
+NHMAP-61393,하남농협 신완지점,농·축협,전남광주통합특별시 광산구 풍영로 261 (장덕동),False,1233063700,20174.124,outside_predeclared_20km_boundary_buffer
+NHMAP-61336,하남농협 안청지점,농·축협,전남광주통합특별시 광산구 임곡로 649 (안청동),False,1233064000,17407.845,include_border_nh
+NHMAP-61334,하남농협 월곡지점,농·축협,전남광주통합특별시 광산구 월곡산정로 96-21 (월곡동),False,1233060000,22976.961,outside_predeclared_20km_boundary_buffer
+NHMAP-61335,하남농협 장덕지점,농·축협,전남광주통합특별시 광산구 하남산단4번로 176 (장덕동),False,1233064000,20269.433,outside_predeclared_20km_boundary_buffer
+NHMAP-61392,하남농협 흑석지점,농·축협,전남광주통합특별시 광산구 풍영로101번길 52 (흑석동),False,1233063700,21085.765,outside_predeclared_20km_boundary_buffer
+NHMAP-61189,하서농협,농·축협,전북특별자치도 부안군 하서면 하서길 49 (언독리),True,5280040000,0.0,include_jeonbuk_coop
+NHMAP-60407,학산농협,농·축협,충청북도 영동군 학산면 서산로 58 (서산리),False,4374038000,3961.779,include_border_nh
+NHMAP-60408,학산농협 양산지점,농·축협,충청북도 영동군 양산면 금강로 1510 (가곡리),False,4374039000,6653.87,include_border_nh
+NHMAP-60406,학산농협 용화지점,농·축협,충청북도 영동군 용화면 용화양강로 15 (용화리),False,4374037000,175.517,include_border_nh
+NHMAP-58972,한국양봉농협 전북지점,농·축협,전북특별자치도 전주시 완산구 당산로 36 한국양봉농협 전북지점 (서신동),True,5211168000,0.0,include_jeonbuk_coop
+NHMAP-60775,한산농협,농·축협,충청남도 서천군 한산면 한산모시길 32-14 (지현리),False,4477034000,4759.743,include_border_nh
+NHMAP-733,함양군지부,농협은행,경상남도 함양군 함양읍 함양로 1141 (함양읍),False,4887025000,7394.138,include_border_nh
+NHMAP-681,함양군청(출),농협은행,경상남도 함양군 고운로 35 (함양읍),False,4887025000,7181.24,include_border_nh
+NHMAP-62756,함양농협,농·축협,경상남도 함양군 함양읍 한들로 121 (용평리),False,4887025000,7610.133,include_border_nh
+NHMAP-62755,함양농협 교산지점,농·축협,경상남도 함양군 함양읍 고운로 93 (교산리),False,4887025000,7768.703,include_border_nh
+NHMAP-62760,함양농협 백전지점,농·축협,경상남도 함양군 백전면 구산대안로 8 (평정리),False,4887039000,1939.208,include_border_nh
+NHMAP-62759,함양농협 병곡지점,농·축협,경상남도 함양군 병곡면 함양남서로 1738 (송평리),False,4887040000,4551.306,include_border_nh
+NHMAP-62754,함양농협 용평지점,농·축협,경상남도 함양군 함양읍 함양로 1119-1 (용평리),False,4887025000,7266.94,include_border_nh
+NHMAP-62763,함양농협 유림지점,농·축협,경상남도 함양군 유림면 화촌장항로 5 (화촌리),False,4887033000,11139.548,include_border_nh
+NHMAP-62757,함양농협 진고개지점,농·축협,경상남도 함양군 함양읍 함양로 1233 (교산리),False,4887025000,7997.613,include_border_nh
+NHMAP-62761,함양농협 휴천지점,농·축협,경상남도 함양군 휴천면 휴천로 492 (목현리),False,4887032000,8056.375,include_border_nh
+NHMAP-59217,함양산청축협,농·축협,경상남도 함양군 함양읍 용평중앙길 7-9 (용평리),False,4887025000,7331.479,include_border_nh
+NHMAP-59150,함양산청축협 산청지점,농·축협,경상남도 산청군 산청읍 중앙로 21 (산청리),False,4886025000,18811.826,include_border_nh
+NHMAP-59218,함양산청축협 안의지점,농·축협,경상남도 함양군 안의면 광풍로 133 (금천리),False,4887036000,16037.422,include_border_nh
+NHMAP-59151,함양산청축협 원지지점,농·축협,경상남도 산청군 신안면 원지강변로63번길 7 (하정리),False,4886038000,30766.322,outside_predeclared_20km_boundary_buffer
+NHMAP-454,함열(출),농협은행,전북특별자치도 익산시 함열읍 함열중앙로 21 (함열읍),True,5214025000,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61682,함평농협 신광지점,농·축협,전남광주통합특별시 함평군 신광면 신광중앙길 108 (월암리),False,1282032000,17014.105,include_border_nh
+NHMAP-62790,합천농협 봉산지점,농·축협,경상남도 합천군 봉산면 서부로 4308 (김봉리),False,4889031000,32389.393,outside_predeclared_20km_boundary_buffer
+NHMAP-62800,합천새남부농협 가회지점,농·축협,경상남도 합천군 가회면 황매산로 30 (덕촌리),False,4889044000,32844.361,outside_predeclared_20km_boundary_buffer
+NHMAP-62788,합천호농협 대병지점,농·축협,경상남도 합천군 대병면 신성동길 26 (회양리),False,4889045000,32085.377,outside_predeclared_20km_boundary_buffer
+NHMAP-61180,해리농협,농·축협,"전북특별자치도 고창군 해리면 해리중앙로 72 (하련리, 해리농협)",True,5279036000,0.0,include_jeonbuk_coop
+NHMAP-61181,해리농협 상하지점,농·축협,"전북특별자치도 고창군 상하면 선운대로 786 (하장리, 명신종합농기계)",True,5279035000,0.0,include_jeonbuk_coop
+NHMAP-61182,해리농협 심원지점,농·축협,전북특별자치도 고창군 심원면 심원로 201 (월산리),True,5279039000,0.0,include_jeonbuk_coop
+NHMAP-62806,해인사농협 해인지점,농·축협,경상남도 합천군 가야면 가야산로 1812 (치인리),False,4889033000,22625.511,outside_predeclared_20km_boundary_buffer
+NHMAP-863,홍도동지점,농협은행,대전광역시 동구 동서대로 1605 (홍도동),False,3011067000,25342.7,outside_predeclared_20km_boundary_buffer
+NHMAP-62721,화개악양농협,농·축협,경상남도 하동군 화개면 화개로 26-1 (탑리),False,4885031000,13602.357,include_border_nh
+NHMAP-62722,화개악양농협 악양지점,농·축협,경상남도 하동군 악양면 악양서로 347 (정서리),False,4885032000,19745.392,include_border_nh
+NHMAP-61045,화산농협,농·축협,전북특별자치도 완주군 화산면 화산로 840 (화평리),True,5271039000,0.0,include_jeonbuk_coop
+NHMAP-61564,화순농협 이서지점,농·축협,전남광주통합특별시 화순군 이서면 규남로 244 (야사리),False,1276038000,21128.611,outside_predeclared_20km_boundary_buffer
+NHMAP-516,화정동지점,농협은행,전남광주통합특별시 서구 화정로 116 (쌍촌동),False,1224075200,25053.102,outside_predeclared_20km_boundary_buffer
+NHMAP-60409,황간농협,농·축협,충청북도 영동군 황간면 황간로 34 (남성리),False,4374032000,21618.55,outside_predeclared_20km_boundary_buffer
+NHMAP-60411,황간농협 매곡지점,농·축협,충청북도 영동군 매곡면 민주지산로 3597 (노천리),False,4374034000,18299.202,include_border_nh
+NHMAP-60412,황간농협 상촌지점,농·축협,충청북도 영동군 상촌면 민주지산로 2989 (임산리),False,4374035000,13077.77,include_border_nh
+NHMAP-61269,황등농협,농·축협,전북특별자치도 익산시 황등면 황등로 124 (황등리),True,5214032000,0.0,include_jeonbuk_coop
+NHMAP-61703,황룡농협,농·축협,전남광주통합특별시 장성군 황룡면 뱃나드리로 165 (월평리),False,1284036000,9302.033,include_border_nh
+NHMAP-61708,황룡농협 동화지점,농·축협,전남광주통합특별시 장성군 동화면 삼동로 715 (구림리),False,1284033000,8093.594,include_border_nh
+NHMAP-61150,황토현농협,농·축협,전북특별자치도 정읍시 고부면 영주로 557 (남복리),True,5218034000,0.0,include_jeonbuk_coop
+NHMAP-61146,황토현농협 소성지점,농·축협,전북특별자치도 정읍시 소성면 보화1길 119 (보화리),True,5218033000,0.0,include_jeonbuk_coop
+NHMAP-61151,황토현농협 영원지점,농·축협,전북특별자치도 정읍시 영원면 영원로 1058 (은선리),True,5218035000,0.0,include_jeonbuk_coop
+NHMAP-61145,황토현농협 입암지점,농·축협,전북특별자치도 정읍시 입암면 정읍남로 511 (단곡리),True,5218032000,0.0,include_jeonbuk_coop
+NHMAP-61243,회현농협,농·축협,전북특별자치도 군산시 회현면 광지산길 4 (대정리),True,5213032000,0.0,include_jeonbuk_coop
+NHMAP-263,효자동지점,농협은행,전북특별자치도 전주시 완산구 백제대로 141 (효자2동),True,5211171200,0.0,existing_jeonbuk_nh_bank_category_retained_from_submission
+NHMAP-61175,흥덕농협,농·축협,전북특별자치도 고창군 흥덕면 흥덕초등길 3 (흥덕리),True,5279040000,0.0,include_jeonbuk_coop
+NHMAP-61176,흥덕농협 성내지점,농·축협,전북특별자치도 고창군 성내면 시기1길 57 (양계리),True,5279041000,0.0,include_jeonbuk_coop
+NHMAP-61177,흥덕농협 신림지점,농·축협,전북특별자치도 고창군 신림면 신림로 152 (무림리),True,5279042000,0.0,include_jeonbuk_coop

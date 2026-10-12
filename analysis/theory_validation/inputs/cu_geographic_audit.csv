@@ -1,0 +1,191 @@
+﻿outlet_id,name,addr,inside_jeonbuk,boundary_distance_m,decision
+CUOFF-06164-01,구봉신용협동조합 본점,대전광역시 서구 구봉로 133(관저동) 201호,False,18430.944,include_border_cu
+CUOFF-06164-03,구봉신용협동조합 지점,대전광역시 서구 구봉로 133(관저동) 107호,False,18430.944,include_border_cu
+CUOFF-06164-04,구봉신용협동조합 지점,대전광역시 서구 원도안로 16(도안동) 105호,False,19451.799,include_border_cu
+CUOFF-06164-05,구봉신용협동조합 지점,대전광역시 서구 관저북로 71(관저동) 103호,False,19710.059,include_border_cu
+CUOFF-06204-03,구즉신용협동조합 지점,대전광역시 유성구 도안대로 512-16(봉명동) 1층,False,23867.839,outside_predeclared_20km_boundary_buffer
+CUOFF-06071-01,남대전신용협동조합 본점,대전광역시 중구 보문로 57(부사동),False,22007.328,outside_predeclared_20km_boundary_buffer
+CUOFF-06165-01,대사신용협동조합 본점,"대전광역시 중구 계룡로 923(문화동,하우스토리1차) 105호",False,22190.402,outside_predeclared_20km_boundary_buffer
+CUOFF-06066-01,대전다온신용협동조합 본점,대전광역시 동구 충무로 196(인동) 대전다온신용협동조합,False,22979.404,outside_predeclared_20km_boundary_buffer
+CUOFF-06010-01,대전대흥신용협동조합 본점,대전광역시 중구 대흥로121번길 1(대흥동) 1층 대전대흥신협,False,22807.552,outside_predeclared_20km_boundary_buffer
+CUOFF-06082-01,대전동부신용협동조합 본점,대전광역시 동구 계족로 342-1(성남동),False,25097.845,outside_predeclared_20km_boundary_buffer
+CUOFF-06082-02,대전동부신용협동조합 지점,대전광역시 동구 동서대로 1671(용전동) 1층,False,25748.661,outside_predeclared_20km_boundary_buffer
+CUOFF-06025-01,대전드림신용협동조합 본점,대전광역시 서구 괴정로 72(괴정동) 케이티서대전지사 1층,False,23554.961,outside_predeclared_20km_boundary_buffer
+CUOFF-06080-01,대전삼성신용협동조합 본점,"대전광역시 동구 대전로 917(삼성동) 동제빌딩 1층,삼성동",False,24555.833,outside_predeclared_20km_boundary_buffer
+CUOFF-06200-01,대전서부신용협동조합 본점,대전광역시 서구 계룡로629번길 62(탄방동) 109호,False,23880.433,outside_predeclared_20km_boundary_buffer
+CUOFF-06206-01,대전온누리신용협동조합 본점,대전광역시 서구 신갈마로 116(갈마동) 대전온누리신협,False,23840.759,outside_predeclared_20km_boundary_buffer
+CUOFF-06206-02,대전온누리신용협동조합 지점,"대전광역시 서구 갈마로 262(내동,맑은아침 아파트) 맑은아침@상가103호 대전온누리신협",False,22666.854,outside_predeclared_20km_boundary_buffer
+CUOFF-06206-03,대전온누리신용협동조합 지점,대전광역시 서구 신갈마로 116(갈마동) 1층 대전온누리신협,False,23840.759,outside_predeclared_20km_boundary_buffer
+CUOFF-06101-01,대전우리신용협동조합 본점,대전광역시 대덕구 오정로 1(오정동) 1층,False,25119.064,outside_predeclared_20km_boundary_buffer
+CUOFF-06101-03,대전우리신용협동조합 지점,대전광역시 대덕구 한남로113번길 14(오정동) 1층,False,25216.066,outside_predeclared_20km_boundary_buffer
+CUOFF-06081-05,대전유성신용협동조합 지점,대전광역시 유성구 월드컵대로316번길 29(상대동) 대전유성신협 상대지점,False,23984.501,outside_predeclared_20km_boundary_buffer
+CUOFF-06032-02,대전중앙신용협동조합 지점,"대전광역시 서구 가장로 107(가장동,삼성래미안아파트) 117호,118호",False,23031.593,outside_predeclared_20km_boundary_buffer
+CUOFF-06161-01,대전푸른신용협동조합 본점,대전광역시 서구 도산로 127(도마동) 1층,False,21289.404,outside_predeclared_20km_boundary_buffer
+CUOFF-06161-02,대전푸른신용협동조합 지점,대전광역시 서구 도솔로 367(괴정동) 1층,False,23622.348,outside_predeclared_20km_boundary_buffer
+CUOFF-06140-01,대전한일신용협동조합 본점,대전광역시 동구 우암로 237(가양동),False,25475.535,outside_predeclared_20km_boundary_buffer
+CUOFF-06140-02,대전한일신용협동조합 지점,"대전광역시 동구 옥천로 169(판암동) L124, 125, 126",False,23393.445,outside_predeclared_20km_boundary_buffer
+CUOFF-06003-01,대전행복신용협동조합 본점,대전광역시 중구 동서대로 1383(목동) (목동) 대전행복신협,False,23332.984,outside_predeclared_20km_boundary_buffer
+CUOFF-06003-02,대전행복신용협동조합 지점,대전광역시 중구 수침로55번길 36(태평동) (태평동) 대전행복신협 태평지점,False,22285.133,outside_predeclared_20km_boundary_buffer
+CUOFF-06003-03,대전행복신용협동조합 지점,대전광역시 중구 목중로 58(중촌동) (중촌동) 대전행복신협 중촌지점,False,23905.083,outside_predeclared_20km_boundary_buffer
+CUOFF-06139-01,대청신용협동조합 본점,대전광역시 중구 보문로162번길 90(대사동) 대청신협(대사동본점),False,22510.434,outside_predeclared_20km_boundary_buffer
+CUOFF-06016-01,문창신용협동조합 본점,대전광역시 중구 보문로 24-1(문창동) 문창신용협동조합,False,22283.923,outside_predeclared_20km_boundary_buffer
+CUOFF-06016-03,문창신용협동조합 지점,대전광역시 동구 은어송로 47(가오동) 문창신용협동조합가오지점,False,22078.972,outside_predeclared_20km_boundary_buffer
+CUOFF-06016-04,문창신용협동조합 지점,대전광역시 동구 계족로 94(신흥동) 문창신용협동조합 신흥지점,False,23386.523,outside_predeclared_20km_boundary_buffer
+CUOFF-06011-01,새울신용협동조합 본점,대전광역시 동구 용운로 69(용운동),False,24000.109,outside_predeclared_20km_boundary_buffer
+CUOFF-06011-02,새울신용협동조합 지점,대전광역시 동구 새울로 104(용운동),False,24517.542,outside_predeclared_20km_boundary_buffer
+CUOFF-06126-01,선화신용협동조합 본점,"대전광역시 중구 대종로 583(선화동,선호아파트) 101동 104호",False,23688.146,outside_predeclared_20km_boundary_buffer
+CUOFF-06069-01,유천신용협동조합 본점,대전광역시 중구 계백로 1626(유천동),False,21619.906,outside_predeclared_20km_boundary_buffer
+CUOFF-06069-02,유천신용협동조합 지점,대전광역시 중구 태평로 14(유천동),False,21372.896,outside_predeclared_20km_boundary_buffer
+CUOFF-06069-03,유천신용협동조합 지점,대전광역시 중구 천근로15번길 4(문화동),False,20752.008,outside_predeclared_20km_boundary_buffer
+CUOFF-06100-01,점진신용협동조합 본점,대전광역시 동구 중앙로200번길 47(원동),False,23573.914,outside_predeclared_20km_boundary_buffer
+CUOFF-06054-01,중도신용협동조합 본점,대전광역시 중구 보문산로 61(산성동),False,19851.548,include_border_cu
+CUOFF-06054-02,중도신용협동조합 지점,대전광역시 중구 목척8길 25(은행동),False,23448.7,outside_predeclared_20km_boundary_buffer
+CUOFF-06133-01,충절로신용협동조합 본점,대전광역시 중구 대종로 230(석교동) (석교동),False,21963.239,outside_predeclared_20km_boundary_buffer
+CUOFF-06133-02,충절로신용협동조합 지점,"대전광역시 동구 안샘로 11(천동,리더스시티4BL) 충절로신협 천동지점",False,22909.669,outside_predeclared_20km_boundary_buffer
+CUOFF-06198-02,한남신용협동조합 지점,대전광역시 유성구 동서대로656번길 16-32(용계동) A018호,False,22309.898,outside_predeclared_20km_boundary_buffer
+CUOFF-06005-01,한밭신용협동조합 본점,대전광역시 동구 동대전로 127(대동) 한밭신협본점,False,24493.552,outside_predeclared_20km_boundary_buffer
+CUOFF-06005-02,한밭신용협동조합 지점,대전광역시 동구 동대전로 61(대동) 한밭신협대동지점,False,23885.397,outside_predeclared_20km_boundary_buffer
+CUOFF-06083-01,한우리신용협동조합 본점,대전광역시 서구 대덕대로 182(둔산동) 1층 한우리신협,False,24519.861,outside_predeclared_20km_boundary_buffer
+CUOFF-06083-03,한우리신용협동조합 지점,대전광역시 중구 대종로 485(대흥동) 1층 한우리신협,False,23247.569,outside_predeclared_20km_boundary_buffer
+CUOFF-06083-05,한우리신용협동조합 지점,대전광역시 서구 도산로 369(용문동),False,23458.274,outside_predeclared_20km_boundary_buffer
+CUOFF-06083-06,한우리신용협동조합 지점,대전광역시 서구 계백로 1461(도마동),False,20824.618,outside_predeclared_20km_boundary_buffer
+CUOFF-10107-01,거창신용협동조합 본점,"경상남도 거창군 거창읍중앙로 119-2 (중앙리, 거창신협)",False,20466.249,outside_predeclared_20km_boundary_buffer
+CUOFF-10107-02,거창신용협동조합 지점,경상남도 거창군 거창읍거열로 84 거창신협상림지점,False,20006.501,outside_predeclared_20km_boundary_buffer
+CUOFF-10033-04,새진주신용협동조합 지점,경상남도 진주시 진주성로 52(봉곡동),False,44294.953,outside_predeclared_20km_boundary_buffer
+CUOFF-10033-05,새진주신용협동조합 지점,경상남도 진주시 진양호로 149(평거동),False,43508.38,outside_predeclared_20km_boundary_buffer
+CUOFF-10036-01,진주행복신용협동조합 본점,경상남도 진주시 촉석로211번길 8-1(수정동) 진주행복신협,False,44851.969,outside_predeclared_20km_boundary_buffer
+CUOFF-10036-02,진주행복신용협동조합 지점,경상남도 진주시 진주대로816번길 3(주약동) 102호,False,46524.927,outside_predeclared_20km_boundary_buffer
+CUOFF-10152-02,하동신용협동조합 지점,경상남도 하동군 화개면쌍계로 34 하동신협 화개지점,False,13731.831,include_border_cu
+CUOFF-10024-01,함양신용협동조합 본점,경상남도 함양군 함양읍고운로 60-1 함양신협,False,7458.833,include_border_cu
+CUOFF-05048-01,영동중앙신용협동조합 본점,충청북도 영동군 영동읍중앙로 29 영동중앙신협,False,14745.609,include_border_cu
+CUOFF-05048-02,영동중앙신용협동조합 지점,충청북도 영동군 학산면서산로 54 영동중앙신협 학산지소,False,3904.339,include_border_cu
+CUOFF-05006-01,옥천신용협동조합 본점,충청북도 옥천군 옥천읍삼금로 33 옥천신협,False,26524.366,outside_predeclared_20km_boundary_buffer
+CUOFF-05086-01,용산신용협동조합 본점,충청북도 영동군 용산면용산로 327-1 용산신협,False,24499.7,outside_predeclared_20km_boundary_buffer
+CUOFF-05134-01,이원신용협동조합 본점,충청북도 옥천군 이원면신흥길 5-2 1층 이원신용협동조합,False,19781.012,include_border_cu
+CUOFF-05032-01,청산신용협동조합 본점,충청북도 옥천군 청산면지전길 39 청산신용협동조합,False,32712.746,outside_predeclared_20km_boundary_buffer
+CUOFF-05071-01,향수신용협동조합 본점,충청북도 옥천군 옥천읍중앙로 65 향수신협,False,26634.73,outside_predeclared_20km_boundary_buffer
+CUOFF-05040-01,황간신용협동조합 본점,충청북도 영동군 황간면남성2길 6 황간신협,False,21529.771,outside_predeclared_20km_boundary_buffer
+CUOFF-06183-01,금산비단신용협동조합 본점,충청남도 금산군 금산읍금산로 1487 금산비단신협,False,8190.341,include_border_cu
+CUOFF-06017-01,금산신용협동조합 본점,충청남도 금산군 금산읍비범로 11,False,7889.926,include_border_cu
+CUOFF-06162-01,금산중앙신용협동조합 본점,충청남도 금산군 금산읍인삼로 101 금산중앙신협,False,7665.116,include_border_cu
+CUOFF-06053-01,대천신용협동조합 본점,충청남도 보령시 한내로 11(동대동) 대천신협,False,32580.798,outside_predeclared_20km_boundary_buffer
+CUOFF-06053-02,대천신용협동조합 지점,충청남도 보령시 해수욕장6길 104(신흑동),False,25606.253,outside_predeclared_20km_boundary_buffer
+CUOFF-06143-01,부여신용협동조합 본점,충청남도 부여군 부여읍부장대로 64 부여신협,False,14380.614,include_border_cu
+CUOFF-06189-01,비인신용협동조합 본점,충청남도 서천군 비인면비인로 165 비인중학교 근처,False,11182.854,include_border_cu
+CUOFF-06052-01,서천신용협동조합 본점,충청남도 서천군 서천읍서천로 96 서천신협,False,8052.773,include_border_cu
+CUOFF-06052-02,서천신용협동조합 지점,충청남도 서천군 장항읍장항로 180 신협 장항지점,False,1207.899,include_border_cu
+CUOFF-06038-01,연무신용협동조합 본점,충청남도 논산시 연무읍안심로 102,False,3573.375,include_border_cu
+CUOFF-06038-02,연무신용협동조합 지점,충청남도 계룡시 두마면농소로 32 101호,False,15845.589,include_border_cu
+CUOFF-06122-01,진산신용협동조합 본점,충청남도 금산군 진산면읍내로 65 읍내리 554-8,False,3179.779,include_border_cu
+CUOFF-06148-01,참우리신용협동조합 본점,충청남도 부여군 구룡면성충로 1448 참우리신협 본점,False,14225.582,include_border_cu
+CUOFF-06148-02,참우리신용협동조합 지점,충청남도 부여군 홍산면홍산로 39 참우리신협 지점,False,14301.198,include_border_cu
+CUOFF-06121-01,추부신용협동조합 본점,충청남도 금산군 추부면마전로 46 추부신협,False,13349.939,include_border_cu
+CUOFF-06157-01,한산신용협동조합 본점,충청남도 서천군 한산면한산모시길 42,False,4888.789,include_border_cu
+CUOFF-06015-01,화지산신용협동조합 본점,충청남도 논산시 중앙로410번길 3(취암동),False,7356.717,include_border_cu
+CUOFF-06015-02,화지산신용협동조합 지점,충청남도 논산시 중앙로491번길 3(화지동),False,7649.083,include_border_cu
+CUOFF-06015-04,화지산신용협동조합 지점,충청남도 계룡시 엄사면번영로 26,False,18871.944,include_border_cu
+CUOFF-06015-06,화지산신용협동조합 지점,충청남도 논산시 대학로 73(내동),False,6509.078,include_border_cu
+CUOFF-08041-01,계림신용협동조합 본점,전남광주통합특별시 동구 동계로 79(계림동),False,20947.134,outside_predeclared_20km_boundary_buffer
+CUOFF-08112-01,광주동부신용협동조합 본점,전남광주통합특별시 동구 남문로 680(학동) (학동),False,23297.318,outside_predeclared_20km_boundary_buffer
+CUOFF-08112-02,광주동부신용협동조합 지점,전남광주통합특별시 동구 의재로 58(학동),False,23045.795,outside_predeclared_20km_boundary_buffer
+CUOFF-08171-01,광주문화신용협동조합 본점,전남광주통합특별시 북구 첨단연신로91번길 20-4(신용동),False,20820.211,outside_predeclared_20km_boundary_buffer
+CUOFF-08171-02,광주문화신용협동조합 지점,전남광주통합특별시 북구 양산로 55(양산동),False,19257.584,include_border_cu
+CUOFF-08171-03,광주문화신용협동조합 지점,전남광주통합특별시 북구 북문대로 89(운암동),False,21915.793,outside_predeclared_20km_boundary_buffer
+CUOFF-08171-05,광주문화신용협동조합 지점,전남광주통합특별시 북구 설죽로315번길 1(매곡동),False,19801.484,include_border_cu
+CUOFF-08171-06,광주문화신용협동조합 지점,전남광주통합특별시 북구 첨단연신로91번길 20-4(신용동),False,20820.211,outside_predeclared_20km_boundary_buffer
+CUOFF-08171-07,광주문화신용협동조합 지점,전남광주통합특별시 북구 문산로 38(문흥동),False,18550.215,include_border_cu
+CUOFF-08171-08,광주문화신용협동조합 지점,전남광주통합특별시 북구 북문대로 239(동림동),False,21977.761,outside_predeclared_20km_boundary_buffer
+CUOFF-08171-09,광주문화신용협동조합 지점,전남광주통합특별시 북구 동문대로 187(두암동),False,18768.975,include_border_cu
+CUOFF-08171-10,광주문화신용협동조합 지점,"전남광주통합특별시 북구 동문대로249번길 12(각화동,더샵 광주 포레스트)",False,18236.253,include_border_cu
+CUOFF-08179-01,광주미래신용협동조합 본점,전남광주통합특별시 북구 북문대로 153(운암동),False,21889.732,outside_predeclared_20km_boundary_buffer
+CUOFF-08179-02,광주미래신용협동조합 지점,전남광주통합특별시 서구 하남대로 676(동천동),False,23092.643,outside_predeclared_20km_boundary_buffer
+CUOFF-08135-01,광주서부신용협동조합 본점,전남광주통합특별시 서구 상무중앙로 71(치평동) 108호,False,25642.438,outside_predeclared_20km_boundary_buffer
+CUOFF-08095-01,광주신안신용협동조합 본점,전남광주통합특별시 북구 서암대로 112(신안동),False,21325.887,outside_predeclared_20km_boundary_buffer
+CUOFF-08095-03,광주신안신용협동조합 지점,전남광주통합특별시 북구 비엔날레로 80(용봉동) 엠타워상가 105호,False,20993.345,outside_predeclared_20km_boundary_buffer
+CUOFF-08092-01,광주신우신용협동조합 본점,전남광주통합특별시 남구 군분로 110(월산동) 광주신우신협,False,24124.018,outside_predeclared_20km_boundary_buffer
+CUOFF-08092-02,광주신우신용협동조합 지점,전남광주통합특별시 서구 염화로65번길 2(화정동) 1층,False,25230.645,outside_predeclared_20km_boundary_buffer
+CUOFF-08092-03,광주신우신용협동조합 지점,전남광주통합특별시 서구 상무대로 918(쌍촌동) 1층,False,25011.709,outside_predeclared_20km_boundary_buffer
+CUOFF-08092-04,광주신우신용협동조합 지점,전남광주통합특별시 서구 상무중앙로 96(치평동) 101호,False,25475.39,outside_predeclared_20km_boundary_buffer
+CUOFF-08092-05,광주신우신용협동조합 지점,"전남광주통합특별시 남구 봉선로25번길 1(봉선동,한국아델리움57 펜트윈) 101~4호",False,24502.434,outside_predeclared_20km_boundary_buffer
+CUOFF-08172-01,광주어룡신용협동조합 본점,전남광주통합특별시 광산구 송정로 15(송정동) 광주어룡신협,False,24379.097,outside_predeclared_20km_boundary_buffer
+CUOFF-08172-02,광주어룡신용협동조합 지점,전남광주통합특별시 광산구 소촌로 85(소촌동) 광주어룡신협 소촌지점,False,22998.427,outside_predeclared_20km_boundary_buffer
+CUOFF-08172-03,광주어룡신용협동조합 지점,전남광주통합특별시 광산구 임방울대로 506(수완동),False,19545.89,include_border_cu
+CUOFF-08172-04,광주어룡신용협동조합 지점,"전남광주통합특별시 광산구 하남대로 71(하남동) 1층, 2층",False,20930.255,outside_predeclared_20km_boundary_buffer
+CUOFF-08172-05,광주어룡신용협동조합 지점,전남광주통합특별시 광산구 임방울대로165번길 69-16(운남동) 천지연 사우나 부근,False,21946.624,outside_predeclared_20km_boundary_buffer
+CUOFF-08008-02,광주와이신용협동조합 본점,전남광주통합특별시 서구 마륵복개로 91(마륵동),False,26238.205,outside_predeclared_20km_boundary_buffer
+CUOFF-08008-04,광주와이신용협동조합 지점,전남광주통합특별시 서구 금화로 50(금호동),False,27109.725,outside_predeclared_20km_boundary_buffer
+CUOFF-08116-01,광주우리신용협동조합 본점,"전남광주통합특별시 서구 상일로 38(쌍촌동) , 1층",False,24292.878,outside_predeclared_20km_boundary_buffer
+CUOFF-08070-01,광주원광신용협동조합 본점,전남광주통합특별시 서구 운천로 26-1(금호동),False,26512.282,outside_predeclared_20km_boundary_buffer
+CUOFF-08070-03,광주원광신용협동조합 지점,전남광주통합특별시 서구 풍암2로 67(풍암동),False,26409.952,outside_predeclared_20km_boundary_buffer
+CUOFF-08070-04,광주원광신용협동조합 지점,전남광주통합특별시 동구 예술길 26(궁동),False,22028.105,outside_predeclared_20km_boundary_buffer
+CUOFF-08070-05,광주원광신용협동조합 지점,전남광주통합특별시 서구 상무대로 1077(화정동) 1층,False,23818.816,outside_predeclared_20km_boundary_buffer
+CUOFF-08075-01,광주웨슬리신용협동조합 본점,전남광주통합특별시 남구 대남대로 151(봉선동) . 광주웨슬리신협 2층,False,24024.098,outside_predeclared_20km_boundary_buffer
+CUOFF-08075-02,광주웨슬리신용협동조합 지점,전남광주통합특별시 남구 서문대로 659(진월동) 웨슬리신협빌딩 101호,False,25954.956,outside_predeclared_20km_boundary_buffer
+CUOFF-08075-03,광주웨슬리신용협동조합 지점,전남광주통합특별시 서구 금화로 88(금호동) . 국승빌딩 1층 105호.106호,False,26847.175,outside_predeclared_20km_boundary_buffer
+CUOFF-08075-04,광주웨슬리신용협동조합 지점,전남광주통합특별시 남구 대남대로 151(봉선동) 광주웨슬리신협 1층,False,24024.098,outside_predeclared_20km_boundary_buffer
+CUOFF-08015-01,광주중부신용협동조합 본점,전남광주통합특별시 서구 죽봉대로 132(광천동) 광주중부신협,False,22506.075,outside_predeclared_20km_boundary_buffer
+CUOFF-08015-03,광주중부신용협동조합 지점,전남광주통합특별시 서구 치평로 124(치평동) 케이원오피스타운 114호,False,25150.657,outside_predeclared_20km_boundary_buffer
+CUOFF-08015-05,광주중부신용협동조합 지점,전남광주통합특별시 서구 내방로 392(농성동) 1층 광주중부신협,False,23204.964,outside_predeclared_20km_boundary_buffer
+CUOFF-08035-01,광주중앙신용협동조합 본점,전남광주통합특별시 북구 향토문화로 3(우산동) 광주중앙신협 본점,False,20457.055,outside_predeclared_20km_boundary_buffer
+CUOFF-08035-04,광주중앙신용협동조합 지점,전남광주통합특별시 북구 서하로 125(매곡동) 광주중앙신협 북부지점,False,20048.168,outside_predeclared_20km_boundary_buffer
+CUOFF-08035-07,광주중앙신용협동조합 지점,전남광주통합특별시 담양군 담양읍지침6길 12 광주중앙신협 담양지점,False,5385.069,include_border_cu
+CUOFF-08035-08,광주중앙신용협동조합 지점,전남광주통합특별시 동구 제봉로 208(대인동) 광주중앙신협 중앙지점,False,21769.69,outside_predeclared_20km_boundary_buffer
+CUOFF-08119-01,광주충장신용협동조합 본점,전남광주통합특별시 동구 충장로46번길 7(충장로4가),False,22288.113,outside_predeclared_20km_boundary_buffer
+CUOFF-08119-02,광주충장신용협동조합 지점,전남광주통합특별시 동구 무등로375번길 25(계림동) 계림동 1085 1층,False,20519.417,outside_predeclared_20km_boundary_buffer
+CUOFF-08141-01,광주하남신용협동조합 본점,전남광주통합특별시 광산구 하남산단3번로 133-8(장덕동) 1층,False,20306.742,outside_predeclared_20km_boundary_buffer
+CUOFF-08141-03,광주하남신용협동조합 지점,전남광주통합특별시 광산구 장신로147번길 6-2(수완동) 101호,False,21070.614,outside_predeclared_20km_boundary_buffer
+CUOFF-08071-01,남광주신용협동조합 본점,전남광주통합특별시 남구 중앙로 52(서동) 남광주신협,False,23318.771,outside_predeclared_20km_boundary_buffer
+CUOFF-08071-02,남광주신용협동조합 지점,전남광주통합특별시 남구 서문대로 691(진월동) 1층 남광주신협 진월지점,False,25691.819,outside_predeclared_20km_boundary_buffer
+CUOFF-08071-04,남광주신용협동조합 지점,"전남광주통합특별시 남구 봉선로 103(봉선동,봉선동 한국아델리움57 디오브) 봉선지점",False,24910.51,outside_predeclared_20km_boundary_buffer
+CUOFF-08071-05,남광주신용협동조합 지점,전남광주통합특별시 남구 서문대로 735(진월동) 진월푸른길지점,False,25373.366,outside_predeclared_20km_boundary_buffer
+CUOFF-08165-01,담양한빛신용협동조합 본점,전남광주통합특별시 담양군 대전면추성1로 196,False,13760.669,include_border_cu
+CUOFF-08165-02,담양한빛신용협동조합 지점,전남광주통합특별시 담양군 담양읍지침3길 17,False,5306.039,include_border_cu
+CUOFF-08108-01,동광주신용협동조합 본점,"전남광주통합특별시 동구 남문로 589(용산동,무등산골드클래스2차) 402동(상가) 101,102-1호",False,23930.494,outside_predeclared_20km_boundary_buffer
+CUOFF-08106-01,두암신용협동조합 본점,전남광주통합특별시 북구 서방로 101(두암동),False,19809.369,include_border_cu
+CUOFF-08106-02,두암신용협동조합 지점,전남광주통합특별시 북구 밤실로 210(두암동),False,19826.242,include_border_cu
+CUOFF-08106-04,두암신용협동조합 지점,전남광주통합특별시 북구 첨단연신로 101(신용동),False,20674.528,outside_predeclared_20km_boundary_buffer
+CUOFF-08106-05,두암신용협동조합 지점,전남광주통합특별시 북구 동문대로 230(각화동),False,18360.611,include_border_cu
+CUOFF-08106-06,두암신용협동조합 지점,전남광주통합특별시 북구 동문대로 1(우산동),False,20564.847,outside_predeclared_20km_boundary_buffer
+CUOFF-08009-01,방림신용협동조합 본점,전남광주통합특별시 남구 큰방림길 7(방림동),False,23372.822,outside_predeclared_20km_boundary_buffer
+CUOFF-08009-02,방림신용협동조합 지점,전남광주통합특별시 동구 남문로 714(학동),False,23088.654,outside_predeclared_20km_boundary_buffer
+CUOFF-08009-04,방림신용협동조합 지점,전남광주통합특별시 남구 양림로 74(양림동),False,23241.186,outside_predeclared_20km_boundary_buffer
+CUOFF-08009-05,방림신용협동조합 지점,전남광주통합특별시 남구 봉선1로 82(봉선동),False,24312.018,outside_predeclared_20km_boundary_buffer
+CUOFF-08009-06,방림신용협동조합 지점,전남광주통합특별시 남구 봉선로 176(봉선동) 104호105호106호109호,False,24793.0,outside_predeclared_20km_boundary_buffer
+CUOFF-08009-07,방림신용협동조합 지점,"전남광주통합특별시 남구 대남대로223번길 10(주월동,양우 내안애 프레스티지) 상가동111동104호",False,24512.385,outside_predeclared_20km_boundary_buffer
+CUOFF-08140-01,북광주신용협동조합 본점,전남광주통합특별시 북구 설죽로 497(일곡동) 1층,False,18557.461,include_border_cu
+CUOFF-08022-01,북동신용협동조합 본점,전남광주통합특별시 북구 금재로36번길 64(북동) 북동236-2,False,21945.547,outside_predeclared_20km_boundary_buffer
+CUOFF-08022-02,북동신용협동조합 지점,전남광주통합특별시 서구 상무중앙로 35(치평동) 1층,False,25944.08,outside_predeclared_20km_boundary_buffer
+CUOFF-08022-04,북동신용협동조합 지점,전남광주통합특별시 서구 내방로 247(쌍촌동) 상가 110호,False,24087.352,outside_predeclared_20km_boundary_buffer
+CUOFF-08186-01,비아신용협동조합 본점,전남광주통합특별시 광산구 월계로 122(월계동) 1층,False,19732.989,include_border_cu
+CUOFF-08186-02,비아신용협동조합 지점,전남광주통합특별시 광산구 풍영로 214(장덕동) 1층,False,20535.765,outside_predeclared_20km_boundary_buffer
+CUOFF-08186-03,비아신용협동조합 지점,전남광주통합특별시 광산구 수등로 245(신가동) 1층,False,22059.607,outside_predeclared_20km_boundary_buffer
+CUOFF-08186-04,비아신용협동조합 지점,전남광주통합특별시 광산구 첨단강변로 97(쌍암동) 1층,False,20396.038,outside_predeclared_20km_boundary_buffer
+CUOFF-08091-01,빛고을신용협동조합 본점,전남광주통합특별시 동구 서석로 23-17(불로동) 빛고을신협,False,22480.983,outside_predeclared_20km_boundary_buffer
+CUOFF-08029-01,샘신용협동조합 본점,전남광주통합특별시 남구 봉선2로 51(봉선동),False,24602.688,outside_predeclared_20km_boundary_buffer
+CUOFF-08029-02,샘신용협동조합 지점,전남광주통합특별시 남구 용대로 189(방림동),False,23649.624,outside_predeclared_20km_boundary_buffer
+CUOFF-08077-01,서광신용협동조합 본점,전남광주통합특별시 북구 태봉로 41(임동),False,21706.038,outside_predeclared_20km_boundary_buffer
+CUOFF-08076-01,양동행복신용협동조합 본점,전남광주통합특별시 서구 천변좌로 238(양동),False,22430.819,outside_predeclared_20km_boundary_buffer
+CUOFF-08076-02,양동행복신용협동조합 지점,전남광주통합특별시 서구 화정로 255(농성동),False,23973.419,outside_predeclared_20km_boundary_buffer
+CUOFF-08076-03,양동행복신용협동조합 지점,"전남광주통합특별시 북구 유동길 46(임동) 임동,금남로중흥S클래스$두산위브더제니스상가203동2-110호",False,22098.252,outside_predeclared_20km_boundary_buffer
+CUOFF-08023-01,영광굴비골신용협동조합 본점,전남광주통합특별시 영광군 법성면굴비로 27,False,4010.38,include_border_cu
+CUOFF-08023-02,영광굴비골신용협동조합 지점,전남광주통합특별시 영광군 군남면군불로 55-1,False,10439.929,include_border_cu
+CUOFF-08078-01,영광함평신용협동조합 본점,전남광주통합특별시 영광군 영광읍신남로 168,False,4496.989,include_border_cu
+CUOFF-08078-03,영광함평신용협동조합 지점,전남광주통합특별시 함평군 해보면밀재로 1277,False,13345.774,include_border_cu
+CUOFF-08078-04,영광함평신용협동조합 지점,전남광주통합특별시 영광군 영광읍신남로 183-2,False,4356.392,include_border_cu
+CUOFF-07051-07,온누리신용협동조합 지점,전남광주통합특별시 곡성군 곡성읍중앙로 111-1 온누리신협 곡성지점,False,2625.338,include_border_cu
+CUOFF-08173-01,우산신용협동조합 본점,전남광주통합특별시 광산구 임방울대로 328(수완동) 2층 수완본점,False,21115.74,outside_predeclared_20km_boundary_buffer
+CUOFF-08173-02,우산신용협동조합 지점,전남광주통합특별시 광산구 신창로 76(신창동) 1층,False,21527.837,outside_predeclared_20km_boundary_buffer
+CUOFF-08173-04,우산신용협동조합 지점,전남광주통합특별시 광산구 하남대로 285(신가동) 1층 우산신협,False,22077.646,outside_predeclared_20km_boundary_buffer
+CUOFF-08173-05,우산신용협동조합 지점,전남광주통합특별시 광산구 사암로 209(우산동) 1층,False,22875.717,outside_predeclared_20km_boundary_buffer
+CUOFF-08173-06,우산신용협동조합 지점,전남광주통합특별시 광산구 선운로20번길 55-1(선암동) 1F,False,22622.057,outside_predeclared_20km_boundary_buffer
+CUOFF-08014-01,입하신용협동조합 본점,전남광주통합특별시 남구 송암로24번길 4(송하동) 입하신협 본점,False,27821.629,outside_predeclared_20km_boundary_buffer
+CUOFF-08014-02,입하신용협동조합 지점,전남광주통합특별시 남구 효천2로 26(임암동) 입하신협 효천지점,False,28718.572,outside_predeclared_20km_boundary_buffer
+CUOFF-08149-01,장성신용협동조합 본점,전남광주통합특별시 장성군 북이면백양로 8-1,False,4171.761,include_border_cu
+CUOFF-08149-02,장성신용협동조합 지점,전남광주통합특별시 장성군 장성읍영천로 172,False,9161.835,include_border_cu
+CUOFF-08149-03,장성신용협동조합 지점,"전남광주통합특별시 광산구 첨단중앙로152번길 6-8(쌍암동,광주첨단 LH 1단지) 108호",False,19556.443,include_border_cu
+CUOFF-08153-01,장성우리신용협동조합 본점,전남광주통합특별시 장성군 삼계면사창로 63-3,False,7015.752,include_border_cu
+CUOFF-08153-02,장성우리신용협동조합 지점,전남광주통합특별시 장성군 장성읍영천로 158-3,False,9196.139,include_border_cu
+CUOFF-08080-01,중흥신용협동조합 본점,전남광주통합특별시 북구 우치로 35(중흥동),False,20480.794,outside_predeclared_20km_boundary_buffer
+CUOFF-08080-02,중흥신용협동조합 지점,전남광주통합특별시 북구 하서로 403(양산동) 1층,False,19690.623,include_border_cu
+CUOFF-08129-01,해제신용협동조합 본점,전남광주통합특별시 무안군 해제면봉대로 43,False,30414.723,outside_predeclared_20km_boundary_buffer
+CUOFF-08142-01,화정신용협동조합 본점,전남광주통합특별시 서구 월드컵4강로 48-1(화정동),False,25029.326,outside_predeclared_20km_boundary_buffer

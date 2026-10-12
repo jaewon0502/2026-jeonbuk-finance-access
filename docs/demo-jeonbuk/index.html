@@ -141,6 +141,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
 .ops-cell .lbl{font-size:15px}
 .ops-cell .val{font-size:24px;font-weight:500}
 .ops-cell .val span{font-size:12px;font-weight:400}
+.ops-cell .val span[id]{font-size:inherit;font-weight:inherit}
 .ops-cell .sub{font-size:15px}
 .source-bar{display:flex;align-items:center;gap:18px;margin-top:14px;min-height:42px;padding:0 16px;background:rgba(140,140,140,.1);border:.7px solid var(--line);border-radius:12px;box-shadow:var(--shadow);font-size:16px}
 .source-bar b{font-size:17px;font-weight:500}
@@ -165,6 +166,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
 .ghost-btn,.primary-btn{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 14px;border-radius:8px;font-size:14px;font-weight:650;cursor:pointer}
 .ghost-btn{border:.7px solid var(--line);background:#fff;color:#111;box-shadow:var(--shadow)}
 .primary-btn{border:0;background:var(--blue);color:#fff}
+.ghost-btn:disabled,.primary-btn:disabled{opacity:.55;cursor:not-allowed}
 .encoding-note{width:100%;color:rgba(0,0,0,.5);font-size:12px}
 .analysis-map-wrap{position:relative;padding:12px}
 .view-analysis .mapbox,.view-analysis #map{min-height:590px;height:590px;border-radius:8px}
@@ -267,13 +269,49 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
 .attribution{position:absolute;right:8px;bottom:7px;background:rgba(255,255,255,.84);padding:2px 5px;border-radius:4px;color:#526574;font-size:8.5px}
 #overview-map-slot .attribution{display:none}
 .noscript{padding:20px;background:#fae2e2;color:#8c2626;text-align:center}
+.load-error{margin:24px auto;padding:20px;max-width:760px;background:#fae2e2;color:#8c2626;border-radius:12px}
+.load-error[hidden]{display:none}
+.snapshot-bar{display:flex;flex-wrap:wrap;gap:6px 20px;padding:10px 14px;margin-bottom:16px;border:1px solid var(--line);border-radius:8px;background:#eef4f8;font-size:13px;color:#405465}
+.reference-panel{margin-top:18px;margin-bottom:18px}
+.reference-panel h2,.itinerary-panel h2{font-size:20px;margin:0 0 8px}
+.reference-panel p,.itinerary-panel>p{margin:6px 0 14px;font-size:13px;color:#526574}
+.reference-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.reference-head a{font-size:13px;color:#1458bd}
+.evidence-takeaway{padding:12px 14px;background:#eef5ff;border-radius:8px;font-size:15px;margin-top:12px}
+.evidence-takeaway strong{color:#1458bd}
+.validation-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0 0}
+.validation-list div{border-left:3px solid #9ebde5;padding-left:12px}
+.validation-list dt{font-weight:650;font-size:14px}
+.validation-list dd{margin:4px 0 0;color:#526574;font-size:12px}
+.input-status,.applied-summary{margin:12px 0 0;padding:10px 12px;border-radius:8px;font-size:13px;background:#eef4f8;color:#405465}
+.input-status.is-dirty{background:#fff0dc;color:#7a4a12;border:1px solid #edb563}
+.applied-summary{margin:0 0 14px;line-height:1.7}
+.applied-summary b{color:#153e65}
+.itinerary-panel{margin-top:16px}
+.itinerary-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.route-detail{border:1px solid var(--line);border-radius:8px;margin:10px 0;background:#fff}
+.route-detail summary{padding:12px;cursor:pointer;font-size:14px;font-weight:600}
+.route-detail[open] summary{border-bottom:1px solid var(--line);background:#f8fafc}
+.route-detail .route-meta{padding:0 12px;color:#526574;font-size:12px}
+.route-detail table,.unvisited-table{border-collapse:collapse;width:100%;font-size:13px;text-align:left}
+.route-detail th,.route-detail td,.unvisited-table th,.unvisited-table td{padding:9px 12px;border-bottom:1px solid #e5eaf0;text-align:left}
+.route-detail th,.unvisited-table th{background:#f8fafc;font-weight:600}
+.route-detail table{min-width:520px}
+.unvisited-table{min-width:500px}
+.empty-note{padding:14px;background:#f8fafc;color:#526574;border-radius:8px;font-size:13px}
+.outlet-type-key{width:13px;height:13px;border-radius:50%;display:inline-block;flex:none}
+.source-bar{flex-wrap:wrap;padding:12px 16px;gap:8px 16px;font-size:13px}
+.source-bar>span+span{padding-left:0;border:0}
 @media(max-width:1200px){.metric-row{grid-template-columns:repeat(3,1fr);gap:12px}.overview-grid,.control-grid,.compare-cards,.zone-split,.status-grid{grid-template-columns:minmax(0,1fr)}.ops-strip{grid-template-columns:repeat(3,1fr)}.ops-cell:nth-child(3){border-right:0}.app-header{flex-wrap:wrap;padding:10px 16px;min-height:0}.top-nav{order:3;width:100%}.page-title{font-size:28px}.filter-actions,.run{margin-left:0}.detail{position:static;width:auto;margin:12px 12px 0}.zone-legend{margin-left:0}}
-@media(max-width:900px){.metric-row{grid-template-columns:repeat(2,1fr)}.ops-strip{grid-template-columns:1fr}.ops-cell{border-right:0;border-bottom:.57px solid #d9d9d9}.ops-cell:last-child{border-bottom:0}.head-actions{padding-top:0}}
+@media(max-width:900px){.metric-row{grid-template-columns:repeat(2,1fr)}.ops-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.ops-cell,.ops-cell:nth-child(3){border-right:.57px solid #d9d9d9;border-bottom:.57px solid #d9d9d9}.ops-cell:nth-child(even){border-right:0}.ops-cell:nth-last-child(-n+2){border-bottom:0}.head-actions{padding-top:0}}
 @media(max-width:540px){.metric-card .kpi-value b{font-size:24px}.control-grid{grid-template-columns:1fr}#map,.view-analysis #map{height:auto;aspect-ratio:720/520}.mapbox,.view-analysis .mapbox{min-height:0}.legend{position:static;max-width:none}.map-legend-panel{position:static;width:auto;margin:0 0 8px}.overview-head{flex-wrap:wrap}.head-actions{flex-wrap:wrap;padding-top:0}}
+@media(max-width:900px){.validation-list{grid-template-columns:1fr}.control-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.control-grid .wide{grid-column:1/-1}}
+@media(max-width:540px){.page{width:calc(100% - 24px)}.brand{gap:6px;flex-wrap:wrap}.brand-name{font-size:13px}.top-nav button{padding:10px 8px;font-size:13px}.header-actions a{font-size:14px}.page-sub{font-size:15px}.metric-card{padding:12px}.metric-card .lbl{font-size:14px}.kpi-top{gap:8px}.kpi-sub{font-size:12px}.filter-actions{flex-wrap:wrap}.control-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.control-grid .field label{white-space:normal}.reference-panel .scenario-table{min-width:600px}}
 </style>
 </head>
 <body>
 <noscript><div class="noscript">시나리오 계산을 사용하려면 JavaScript를 활성화하세요.</div></noscript>
+<div class="load-error" id="load-error" role="alert" hidden></div>
 <header class="app-header">
   <a class="brand" href="#overview">
     <span class="ico ico-29"><img src="assets/icon-finance.svg" alt="" width="29" height="29"></span>
@@ -286,7 +324,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
     <button type="button" data-view="scenario">운영 시나리오</button>
   </nav>
   <div class="header-actions">
-    <a href="methodology.html"><span class="ico ico-24"><img src="assets/icon-info-filled.svg" alt="" width="24" height="24"></span>사용 가이드</a>
+    <a href="methodology.html"><span class="ico ico-24"><img src="assets/icon-info-filled.svg" alt="" width="24" height="24"></span>방법과 근거</a>
   </div>
 </header>
 
@@ -298,9 +336,11 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
           <h1 class="page-title">종합 대시보드</h1>
           <span class="demo-badge" title="시범 산출물입니다. 현장 운영·실시간 관제가 아닙니다.">시범 · 비운영</span>
         </div>
-        <p class="page-sub">전북 14개 시·군 금융 접근성 시범 현황입니다. 실시간 운영 콘솔이 아닙니다.</p>
+        <p class="page-sub">보완한 금융접점과 도로망으로 다시 계산한 전북 전체 결과입니다.</p>
       </div>
     </div>
+
+    <div class="snapshot-bar" id="snapshot-summary" aria-label="분석 자료 기준">보완 분석 자료를 불러오는 중입니다.</div>
 
     <div class="metric-row">
       <article class="metric-card">
@@ -320,10 +360,10 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
             <img class="bg" src="assets/ellipse-kpi.svg" alt="" width="40" height="40">
             <img class="fg" src="assets/icon-bank.svg" alt="" width="30" height="30">
           </span>
-          <div class="lbl">금융 접점 수</div>
+          <div class="lbl">분석 금융접점</div>
         </div>
-        <div class="kpi-value"><b id="m-outlet">643</b><span>곳</span></div>
-        <div class="kpi-sub">분석가용 · 검증 목록 <span id="m-outlet-listed">681</span>곳</div>
+        <div class="kpi-value"><b id="m-outlet">…</b><span>곳</span></div>
+        <div class="kpi-sub">경계 밖 일부 포함 · 목록 <span id="m-outlet-listed">…</span>곳</div>
       </article>
       <article class="metric-card">
         <div class="kpi-top">
@@ -344,8 +384,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
           </span>
           <div class="lbl">대표점 기준 3km 초과</div>
         </div>
-        <div class="kpi-value"><b id="m-over3">71</b><span>개 행정동</span></div>
-        <div class="kpi-sub">(전체의 <span id="m-over3-pct">29.2%</span>)</div>
+        <div class="kpi-value"><b id="m-over3">…</b><span>개 행정동</span></div>
+        <div class="kpi-sub">품질유보 포함 · 전체의 <span id="m-over3-pct">…</span></div>
       </article>
       <article class="metric-card alert-5">
         <div class="kpi-top">
@@ -355,8 +395,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
           </span>
           <div class="lbl">대표점 기준 5km 초과</div>
         </div>
-        <div class="kpi-value"><b id="m-over5">27</b><span>개 행정동</span></div>
-        <div class="kpi-sub">(전체의 <span id="m-over5-pct">11.1%</span>)</div>
+        <div class="kpi-value"><b id="m-over5">…</b><span>개 행정동</span></div>
+        <div class="kpi-sub">전체의 <span id="m-over5-pct">…</span></div>
       </article>
     </div>
 
@@ -386,7 +426,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
                 <li><label class="outlet-type-toggle"><input type="checkbox" name="outlet-type" value="새마을금고" checked disabled><span class="ico ico-14"><img src="assets/circle-type-kfcc.svg" alt="" width="14" height="14"></span>새마을금고</label></li>
                 <li><label class="outlet-type-toggle"><input type="checkbox" name="outlet-type" value="신협" checked disabled><span class="ico ico-11"><img src="assets/circle-type-cu.svg" alt="" width="11" height="11"></span>신협</label></li>
               </ul>
-              <p class="outlet-legend-note">기본은 도로거리 색이고, 접점은 켜서 겹쳐 봅니다.</p>
+              <p class="outlet-legend-note">분석에 쓴 접점만 표시합니다. 지도 밖의 도 경계 인접 접점도 거리 계산에는 포함됩니다.</p>
             </aside>
             <div class="map-controls" aria-label="지도 확대 축소">
               <button id="zoom-in" type="button" aria-label="지도 확대"><span class="ico ico-24"><img src="assets/icon-add.svg" alt="" width="24" height="24"></span></button>
@@ -394,7 +434,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
             </div>
             <div class="dist-toggle" id="dist-toggle" role="group" aria-label="거리 기준 선택" hidden>
               <button type="button" data-mode="line" aria-pressed="false">직선 거리</button>
-              <button type="button" data-mode="road" aria-pressed="true">실제 도로 거리</button>
+              <button type="button" data-mode="road" aria-pressed="true">OSM 도로거리</button>
             </div>
             <button class="map-cta" id="to-analysis" type="button">상세 분석 보기  →</button>
             <div class="legend" id="legend"></div>
@@ -408,45 +448,55 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
           <div class="diag-card weak">
             <span class="ico ico-27"><img src="assets/icon-caution.svg" alt="" width="27" height="27"></span>
             <div><h3>접근 취약</h3><p>대표점 기준 5km 초과</p></div>
-            <div class="diag-count"><b><span id="m-weak">27</span><span>개 행정동</span></b><small>전체의 <span id="m-weak-pct">11.1%</span></small></div>
+            <div class="diag-count"><b><span id="m-weak">…</span><span>개 행정동</span></b><small>전체의 <span id="m-weak-pct">…</span></small></div>
           </div>
           <div class="diag-card watch">
             <span class="ico ico-27"><img src="assets/icon-caution-2.svg" alt="" width="27" height="27"></span>
             <div><h3>접근 주의</h3><p>대표점 기준 3 ~ 5km</p></div>
-            <div class="diag-count"><b><span id="m-watch">44</span><span>개 행정동</span></b><small>전체의 <span id="m-watch-pct">18.1%</span></small></div>
+            <div class="diag-count"><b><span id="m-watch">…</span><span>개 행정동</span></b><small>전체의 <span id="m-watch-pct">…</span></small></div>
           </div>
           <div class="diag-card ok">
             <span class="ico ico-27"><img src="assets/icon-check.svg" alt="" width="27" height="27"></span>
             <div><h3>상대적 양호</h3><p>대표점 기준 3km 이내</p></div>
-            <div class="diag-count"><b><span id="m-ok">172</span><span>개 행정동</span></b><small>전체의 <span id="m-ok-pct">70.8%</span></small></div>
+            <div class="diag-count"><b><span id="m-ok">…</span><span>개 행정동</span></b><small>전체의 <span id="m-ok-pct">…</span></small></div>
           </div>
         </div>
         <div class="diag-note">
           <span class="ico ico-24"><img src="assets/icon-info-outlined.svg" alt="" width="21" height="24"></span>
-          <span>행정동 대표점과 최근점 금융 접점 간 도로거리를 기준으로 산출합니다.<br>주민 개인의 실제 이동거리를 의미하지 않습니다.</span>
+          <span>행정동 대표점과 최근접 금융접점 간 도로거리입니다.<br>주민 개인의 실제 이동거리를 의미하지 않습니다.</span>
         </div>
       </aside>
     </div>
 
     <div class="panel ops-panel">
-      <h2>기본 운영안 요약 <small>(경로대상)</small></h2>
-      <p class="ops-scope">진단은 대표점 도로거리이고, 운영안은 품질유보 2곳을 제외한 경로대상입니다. 취약 27곳을 모두 방문한다는 뜻이 아닙니다.</p>
+      <h2>보고서 기본조건 <small>전북 전체 · 고정 결과</small></h2>
+      <p class="ops-scope" id="report-scope"></p><p class="ops-scope" id="report-parameters"></p>
       <div class="ops-strip">
-        <div class="ops-cell"><div class="lbl">전체 방문 대상 행정동</div><div class="val"><span id="ops-targets">69</span><span>개</span></div></div>
-        <div class="ops-cell"><div class="lbl">방문 가능 행정동 (기본안)</div><div class="val"><span id="ops-covered">57</span><span>개</span></div><div class="sub">(<span id="ops-covered-pct">83</span>%)</div></div>
-        <div class="ops-cell"><div class="lbl">P1 방문 (경로대상)</div><div class="val"><span id="ops-p1">26 / 26</span><span>개</span></div><div class="sub">(<span id="ops-p1-pct">100</span>%)</div></div>
-        <div class="ops-cell"><div class="lbl">P2 방문 (경로대상)</div><div class="val"><span id="ops-p2">31 / 43</span><span>개</span></div><div class="sub">(<span id="ops-p2-pct">72</span>%)</div></div>
+        <div class="ops-cell"><div class="lbl">경로대상 행정동</div><div class="val"><span id="ops-targets">…</span><span>개</span></div></div>
+        <div class="ops-cell"><div class="lbl">모형 내 방문 행정동</div><div class="val"><span id="ops-covered">…</span><span>개</span></div><div class="sub">(<span id="ops-covered-pct">…</span>%)</div></div>
+        <div class="ops-cell"><div class="lbl">P1 방문 (경로대상)</div><div class="val"><span id="ops-p1">…</span><span>개</span></div><div class="sub">(<span id="ops-p1-pct">100</span>%)</div></div>
+        <div class="ops-cell"><div class="lbl">P2 방문 (경로대상)</div><div class="val"><span id="ops-p2">…</span><span>개</span></div><div class="sub">(<span id="ops-p2-pct">…</span>%)</div></div>
         <div class="ops-cell"><div class="lbl">총 경로일</div><div class="val"><span id="ops-days">15</span><span>경로일</span></div></div>
-        <div class="ops-cell"><div class="lbl">이동거리 (추정)</div><div class="val"><span id="ops-km">1,056</span><span> km</span></div><div class="sub">(<span id="ops-time">26시간 23분</span> · <span id="ops-speed">40</span>km/h 가정)</div></div>
+        <div class="ops-cell"><div class="lbl">모형 이동거리</div><div class="val"><span id="ops-km">…</span><span> km</span></div><div class="sub">(<span id="ops-time">…</span> · <span id="ops-speed">40</span>km/h 가정)</div></div>
       </div>
     </div>
+
+    <section class="panel reference-panel" aria-labelledby="report-comparison-title">
+      <div class="reference-head"><h2 id="report-comparison-title">같은 조건에서 방법을 비교한 결과</h2><a href="methodology.html">계산 방법과 한계 보기</a></div>
+      <p>차량·운영일·시군별 경로일 배정은 같습니다. 방문 수뿐 아니라 방문한 대상이 같은지도 구분합니다.</p>
+      <div class="compare"><table class="scenario-table" id="report-comparison" aria-label="보고서 기본조건 방법 비교"></table></div>
+      <div class="evidence-takeaway" id="report-takeaway"></div>
+      <dl class="validation-list" id="report-validation"></dl>
+    </section>
 
     <div class="source-bar">
       <span class="ico ico-24"><img src="assets/icon-barchart.svg" alt="" width="24" height="24"></span>
       <b>데이터 기준</b>
       <span>행정동: <span id="src-admin-date">2026. 07</span> 기준 (<span id="src-admin-count">243</span>개)</span>
-      <span>금융 접점: 분석가용 <span id="src-outlet-count">643</span>곳 (검증 목록 전체 <span id="src-outlet-listed">681</span>곳) · 원천 기준 <span id="src-outlet-date">2025. 03</span>~ · 수집 <span id="src-outlet-retrieved">2026. 08</span></span>
+      <span>금융 접점: 분석가용 <span id="src-outlet-count">…</span>곳 (공개 목록 전체 <span id="src-outlet-listed">…</span>곳) · <span id="src-outlet-date">원천별 기준일 상이</span> · 보완 수집 <span id="src-outlet-retrieved">…</span></span>
+      <span id="source-outlet-note"></span>
       <span>65세 이상 인구: <span id="src-senior-date">2026. 06</span> 기준</span>
+      <span id="source-quality"></span>
     </div>
   </section>
 
@@ -454,7 +504,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
     <div class="overview-head">
       <div>
         <h1 class="page-title">금융 접근성 분석</h1>
-        <p class="page-sub">행정동별 금융 접점까지 실제 도로거리를 확인하고 접근 취약 지역을 식별합니다.</p>
+        <p class="page-sub">행정동 대표점의 도로거리와 현재 선택한 운영안의 방문 여부를 함께 확인합니다.</p>
       </div>
     </div>
     <div class="panel filter-panel">
@@ -464,7 +514,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
           <div class="zone-combo-panel" id="zone-filter-panel" hidden role="group" aria-labelledby="zone-filter-label"></div>
         </div>
       </div>
-      <div class="field"><label for="metric-filter">점 색상</label><select id="metric-filter"><option value="priority">정책 우선순위</option><option value="distance" selected>도로거리 구간</option><option value="typology">취약유형</option></select></div>
+      <div class="field"><label for="metric-filter">점 색상</label><select id="metric-filter"><option value="priority">정책 우선순위</option><option value="distance" selected>도로거리 구간</option></select></div>
       <div class="field"><label for="size-filter">점 크기</label><select id="size-filter"><option value="elderly_population">65세 이상 인구</option><option value="elderly_ratio">고령인구 비율</option><option value="road_distance">도로거리</option><option value="fixed">동일 크기</option></select></div>
       <div class="field"><label for="route-day-filter">경로 표시점</label><select id="route-day-filter"><option value="all">운영주기 전체</option></select></div>
       <div class="filter-checks" aria-label="지도 레이어">
@@ -475,7 +525,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
       </div>
       <div class="filter-actions">
         <button class="ghost-btn" id="reset-filters" type="button"><span class="ico ico-20"><img src="assets/icon-refresh.svg" alt="" width="20" height="20"></span>필터 초기화</button>
-        <button class="primary-btn" id="download-access" type="button">데이터 다운로드</button>
+        <button class="primary-btn" id="download-access" type="button">접근성 CSV 다운로드</button>
       </div>
       <span class="encoding-note" id="encoding-note"></span>
     </div>
@@ -486,16 +536,17 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
     <div class="map-caption"><span id="route-summary" class="route-summary"></span><span>휠·버튼으로 확대, 드래그로 이동</span></div>
     <div class="panel table-panel">
       <div class="table-head">
-        <h2>행정동별 접근성 현황</h2>
+        <h2>선택 시군의 행정동별 접근성</h2>
         <span class="table-count">총 <span id="access-count">0</span>건</span>
-        <button class="ghost-btn" id="download-table" type="button">엑셀 다운로드</button>
+        <button class="ghost-btn" id="download-table" type="button">CSV 다운로드</button>
       </div>
+      <p class="scenario-note">취약유형 군집은 보완 자료로 다시 적합하지 않아 현재 표에서 제외했습니다. 이전 분석의 범위는 <a href="methodology.html">방법과 근거</a>에서 확인할 수 있습니다.</p>
       <div class="access-table-wrap">
         <table class="access-table" id="access-table">
           <thead>
             <tr>
-              <th>순위</th><th>시·군</th><th>행정동</th><th>도로거리</th><th>3km 내 접점</th>
-              <th>65세 이상 인구</th><th>65세 이상 비율</th><th>취약유형</th><th>우선순위</th><th>운영주기 내 방문</th><th>비고</th>
+              <th>순위</th><th>시·군</th><th>행정동</th><th>도로거리</th><th>직선거리 3km 내 접점</th>
+              <th>65세 이상 인구</th><th>65세 이상 비율</th><th>우선순위</th><th>운영주기 내 방문</th><th>비고</th>
             </tr>
           </thead>
           <tbody id="access-rows"></tbody>
@@ -524,12 +575,12 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
         <div class="field"><label for="vehicle-count">차량 수</label>
           <div class="stepper"><button type="button" data-step-for="vehicle-count" data-step="-1" aria-label="차량 수 감소"><span class="ico ico-20"><img src="assets/icon-remove.svg" alt="" width="20" height="20"></span></button><input id="vehicle-count" name="vehicle_count" type="number" required><button type="button" data-step-for="vehicle-count" data-step="1" aria-label="차량 수 증가"><span class="ico ico-20"><img src="assets/icon-add.svg" alt="" width="20" height="20"></span></button></div>
         </div>
-        <div class="field"><label for="operating-days">주간 운영일</label>
+        <div class="field"><label for="operating-days">주기 내 운영일</label>
           <div class="stepper"><button type="button" data-step-for="operating-days" data-step="-1" aria-label="운영일 감소"><span class="ico ico-20"><img src="assets/icon-remove.svg" alt="" width="20" height="20"></span></button><input id="operating-days" name="operating_days_per_cycle" type="number" required><button type="button" data-step-for="operating-days" data-step="1" aria-label="운영일 증가"><span class="ico ico-20"><img src="assets/icon-add.svg" alt="" width="20" height="20"></span></button></div>
         </div>
         <div class="field"><label for="operating-start">운영 시작</label><input id="operating-start" name="operating_start" type="time" required></div>
         <div class="field"><label for="operating-end">운영 종료</label><input id="operating-end" name="operating_end" type="time" required></div>
-        <div class="field"><label for="service-minutes">장소당 서비스</label>
+        <div class="field"><label for="service-minutes">장소당 서비스시간 (분)</label>
           <div class="stepper"><button type="button" data-step-for="service-minutes" data-step="-1" aria-label="서비스 시간 감소"><span class="ico ico-20"><img src="assets/icon-remove.svg" alt="" width="20" height="20"></span></button><input id="service-minutes" name="service_minutes" type="number" required><button type="button" data-step-for="service-minutes" data-step="1" aria-label="서비스 시간 증가"><span class="ico ico-20"><img src="assets/icon-add.svg" alt="" width="20" height="20"></span></button></div>
         </div>
         <div class="field"><label for="max-stops">1일 최대 방문</label>
@@ -545,11 +596,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
         <button class="run" type="submit" id="run-button">새 시나리오 계산</button>
         <button class="ghost-btn" type="button" id="reset-inputs"><span class="ico ico-20"><img src="assets/icon-refresh.svg" alt="" width="20" height="20"></span>입력 초기화</button>
       </div>
-      <p class="hint">시·군을 고르면 그 범위의 경로대상만 다시 배정합니다. 일부 시·군 결과는 전북 전체 기본안을 대체하지 않습니다.</p>
+      <p class="hint">선택한 시·군 안에서 경로일 배정과 방문 순서를 다시 계산합니다. 보고서의 고정 비교 결과는 종합 대시보드에서 확인할 수 있습니다.</p>
+      <p class="input-status" id="input-status" role="status" aria-live="polite"></p>
       <div class="error" id="form-error" role="alert"></div>
     </form>
     <div class="panel compare-panel">
-      <h2>시나리오 비교 결과</h2>
+      <h2>선택 범위의 운영조건 비교</h2>
+      <div class="applied-summary" id="applied-summary"></div>
       <div class="compare-cards" id="coverage-bars"></div>
       <div class="compare"><table class="scenario-table" id="scenario-table"></table></div>
       <p class="scenario-note" id="scenario-note"></p>
@@ -563,6 +616,14 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
       <div class="zone-split" id="zone-list"></div>
       <div class="zone-total" id="zone-total"></div>
     </div>
+    <section class="panel itinerary-panel" aria-labelledby="itinerary-title">
+      <div class="itinerary-head"><h2 id="itinerary-title">현재 운영안의 방문 일정</h2><button type="button" class="ghost-btn" id="download-itinerary">일정 CSV 다운로드</button></div>
+      <p>시군별 출발 후보를 기준으로 계산한 일정입니다. 장소 사용과 실제 업무시간은 아직 확정되지 않았습니다.</p>
+      <div id="route-itineraries"></div>
+      <h3 id="unvisited-title">이번 주기 미방문 대상</h3>
+      <div class="compare" id="unvisited-list"></div>
+      <p>다음 주기에 자동으로 우선 배정되는 기능은 없습니다. 반복 미방문을 막으려면 최근 방문일과 이월 대상을 따로 관리해야 합니다.</p>
+    </section>
     <div class="panel ops-status">
       <h2>운영 상태 및 주요 확인사항</h2>
       <div class="status-grid">
@@ -574,9 +635,9 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
         </ul>
         <ul class="note-list">
           <li><span>시간창 출처</span><span class="status-chip chip-warn">운영 가정값</span></li>
-          <li><span>품질유보 대상</span><span class="status-chip chip-mute" id="deferred-chip">2개</span></li>
-          <li><span>status</span><span class="status-chip chip-info" id="status-chip">demonstration_not_operational</span></li>
-          <li><span>operational_ready</span><span class="status-chip chip-bad" id="ready-chip">false</span></li>
+          <li><span>전북 3km 초과 중 품질유보</span><span class="status-chip chip-mute" id="deferred-chip">…</span></li>
+          <li><span>결과의 용도</span><span class="status-chip chip-info" id="status-chip">시연용</span></li>
+          <li><span>현장 운영 확정</span><span class="status-chip chip-bad" id="ready-chip">미확정</span></li>
         </ul>
       </div>
     </div>
@@ -599,9 +660,9 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
 </main>
 <span id="m-threshold" hidden></span>
 <span id="m-target" hidden></span>
-<script src="data.js"></script>
-<script src="map-data.js"></script>
-<script src="scenario-engine.js"></script>
-<script src="app.js?v=p28"></script>
+<script src="data.js?v=report-20261012"></script>
+<script src="map-data.js?v=report-20261012"></script>
+<script src="scenario-engine.js?v=report-20261012"></script>
+<script src="app.js?v=report-20261012"></script>
 </body>
 </html>

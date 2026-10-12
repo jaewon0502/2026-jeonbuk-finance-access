@@ -1,0 +1,675 @@
+{
+  "source_results": "comparison_results.json",
+  "scenario_sha256": "23cdebeb02ce8aeaf6d07b2ba64f7fe0d076563f850fba8298b6e5d5406bed90",
+  "fixed_reference_allocation": {
+    "고창군": 1,
+    "군산시": 1,
+    "김제시": 1,
+    "남원시": 1,
+    "무주군": 1,
+    "부안군": 1,
+    "순창군": 1,
+    "완주군": 2,
+    "익산시": 1,
+    "임실군": 1,
+    "장수군": 1,
+    "전주시": 1,
+    "정읍시": 1,
+    "진안군": 1
+  },
+  "primary": [
+    {
+      "cap": 3,
+      "method": "nearest",
+      "allocation": "target_count_reference",
+      "coverage": {
+        "P1": 15,
+        "P2": 28
+      },
+      "covered": 43,
+      "target_count": 54,
+      "covered_percent": 79.63,
+      "distance_km": 808.964,
+      "travel_plus_wait_minutes": 1213.447,
+      "wait_minutes": 0.0,
+      "maximum_route_minutes": 282.145,
+      "allocated_days": 15,
+      "used_days": 15,
+      "unvisited": [
+        {
+          "target_id": "5279038000",
+          "priority": "P1",
+          "zone": "고창군",
+          "name": "대산면"
+        },
+        {
+          "target_id": "5219046000",
+          "priority": "P1",
+          "zone": "남원시",
+          "name": "산내면"
+        },
+        {
+          "target_id": "5280037000",
+          "priority": "P2",
+          "zone": "부안군",
+          "name": "진서면"
+        },
+        {
+          "target_id": "5280041000",
+          "priority": "P1",
+          "zone": "부안군",
+          "name": "줄포면"
+        },
+        {
+          "target_id": "5271038000",
+          "priority": "P1",
+          "zone": "완주군",
+          "name": "운주면"
+        },
+        {
+          "target_id": "5275039000",
+          "priority": "P2",
+          "zone": "임실군",
+          "name": "강진면"
+        },
+        {
+          "target_id": "5211365000",
+          "priority": "P1",
+          "zone": "전주시",
+          "name": "조촌동"
+        },
+        {
+          "target_id": "5272025000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "진안읍"
+        },
+        {
+          "target_id": "5272034000",
+          "priority": "P1",
+          "zone": "진안군",
+          "name": "상전면"
+        },
+        {
+          "target_id": "5272035000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "백운면"
+        },
+        {
+          "target_id": "5272037000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "마령면"
+        }
+      ],
+      "runtime_selected_solves_seconds": 0.00111,
+      "runtime_all_outcomes_seconds": 0.005419,
+      "violations": 0
+    },
+    {
+      "cap": 3,
+      "method": "priority_nearest",
+      "allocation": "target_count_reference",
+      "coverage": {
+        "P1": 21,
+        "P2": 22
+      },
+      "covered": 43,
+      "target_count": 54,
+      "covered_percent": 79.63,
+      "distance_km": 1037.833,
+      "travel_plus_wait_minutes": 1556.748,
+      "wait_minutes": 0.0,
+      "maximum_route_minutes": 330.06,
+      "allocated_days": 15,
+      "used_days": 15,
+      "unvisited": [
+        {
+          "target_id": "5279043000",
+          "priority": "P2",
+          "zone": "고창군",
+          "name": "부안면"
+        },
+        {
+          "target_id": "5219038000",
+          "priority": "P2",
+          "zone": "남원시",
+          "name": "사매면"
+        },
+        {
+          "target_id": "5280034000",
+          "priority": "P2",
+          "zone": "부안군",
+          "name": "계화면"
+        },
+        {
+          "target_id": "5280040000",
+          "priority": "P2",
+          "zone": "부안군",
+          "name": "하서면"
+        },
+        {
+          "target_id": "5271035000",
+          "priority": "P2",
+          "zone": "완주군",
+          "name": "구이면"
+        },
+        {
+          "target_id": "5275038000",
+          "priority": "P2",
+          "zone": "임실군",
+          "name": "관촌면"
+        },
+        {
+          "target_id": "5211170300",
+          "priority": "P2",
+          "zone": "전주시",
+          "name": "삼천3동"
+        },
+        {
+          "target_id": "5272025000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "진안읍"
+        },
+        {
+          "target_id": "5272035000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "백운면"
+        },
+        {
+          "target_id": "5272037000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "마령면"
+        },
+        {
+          "target_id": "5272039000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "정천면"
+        }
+      ],
+      "runtime_selected_solves_seconds": 0.001729,
+      "runtime_all_outcomes_seconds": 0.009248,
+      "violations": 0
+    },
+    {
+      "cap": 3,
+      "method": "exact_dp",
+      "allocation": "target_count_reference",
+      "coverage": {
+        "P1": 21,
+        "P2": 22
+      },
+      "covered": 43,
+      "target_count": 54,
+      "covered_percent": 79.63,
+      "distance_km": 917.731,
+      "travel_plus_wait_minutes": 1376.591,
+      "wait_minutes": 0.0,
+      "maximum_route_minutes": 282.043,
+      "allocated_days": 15,
+      "used_days": 15,
+      "unvisited": [
+        {
+          "target_id": "5279043000",
+          "priority": "P2",
+          "zone": "고창군",
+          "name": "부안면"
+        },
+        {
+          "target_id": "5219038000",
+          "priority": "P2",
+          "zone": "남원시",
+          "name": "사매면"
+        },
+        {
+          "target_id": "5280034000",
+          "priority": "P2",
+          "zone": "부안군",
+          "name": "계화면"
+        },
+        {
+          "target_id": "5280037000",
+          "priority": "P2",
+          "zone": "부안군",
+          "name": "진서면"
+        },
+        {
+          "target_id": "5271035000",
+          "priority": "P2",
+          "zone": "완주군",
+          "name": "구이면"
+        },
+        {
+          "target_id": "5275039000",
+          "priority": "P2",
+          "zone": "임실군",
+          "name": "강진면"
+        },
+        {
+          "target_id": "5211170300",
+          "priority": "P2",
+          "zone": "전주시",
+          "name": "삼천3동"
+        },
+        {
+          "target_id": "5272025000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "진안읍"
+        },
+        {
+          "target_id": "5272035000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "백운면"
+        },
+        {
+          "target_id": "5272037000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "마령면"
+        },
+        {
+          "target_id": "5272039000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "정천면"
+        }
+      ],
+      "runtime_selected_solves_seconds": 0.023428,
+      "runtime_all_outcomes_seconds": 0.827498,
+      "violations": 0
+    },
+    {
+      "cap": 4,
+      "method": "nearest",
+      "allocation": "target_count_reference",
+      "coverage": {
+        "P1": 21,
+        "P2": 29
+      },
+      "covered": 50,
+      "target_count": 54,
+      "covered_percent": 92.593,
+      "distance_km": 1078.751,
+      "travel_plus_wait_minutes": 1618.126,
+      "wait_minutes": 0.0,
+      "maximum_route_minutes": 325.403,
+      "allocated_days": 15,
+      "used_days": 15,
+      "unvisited": [
+        {
+          "target_id": "5280037000",
+          "priority": "P2",
+          "zone": "부안군",
+          "name": "진서면"
+        },
+        {
+          "target_id": "5272025000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "진안읍"
+        },
+        {
+          "target_id": "5272035000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "백운면"
+        },
+        {
+          "target_id": "5272037000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "마령면"
+        }
+      ],
+      "runtime_selected_solves_seconds": 0.001069,
+      "runtime_all_outcomes_seconds": 0.005352,
+      "violations": 0
+    },
+    {
+      "cap": 4,
+      "method": "priority_nearest",
+      "allocation": "target_count_reference",
+      "coverage": {
+        "P1": 21,
+        "P2": 29
+      },
+      "covered": 50,
+      "target_count": 54,
+      "covered_percent": 92.593,
+      "distance_km": 1103.95,
+      "travel_plus_wait_minutes": 1655.922,
+      "wait_minutes": 0.0,
+      "maximum_route_minutes": 379.971,
+      "allocated_days": 15,
+      "used_days": 15,
+      "unvisited": [
+        {
+          "target_id": "5280034000",
+          "priority": "P2",
+          "zone": "부안군",
+          "name": "계화면"
+        },
+        {
+          "target_id": "5272025000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "진안읍"
+        },
+        {
+          "target_id": "5272035000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "백운면"
+        },
+        {
+          "target_id": "5272037000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "마령면"
+        }
+      ],
+      "runtime_selected_solves_seconds": 0.0018,
+      "runtime_all_outcomes_seconds": 0.009289,
+      "violations": 0
+    },
+    {
+      "cap": 4,
+      "method": "exact_dp",
+      "allocation": "target_count_reference",
+      "coverage": {
+        "P1": 21,
+        "P2": 29
+      },
+      "covered": 50,
+      "target_count": 54,
+      "covered_percent": 92.593,
+      "distance_km": 1003.716,
+      "travel_plus_wait_minutes": 1505.569,
+      "wait_minutes": 0.0,
+      "maximum_route_minutes": 309.946,
+      "allocated_days": 15,
+      "used_days": 15,
+      "unvisited": [
+        {
+          "target_id": "5280034000",
+          "priority": "P2",
+          "zone": "부안군",
+          "name": "계화면"
+        },
+        {
+          "target_id": "5272025000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "진안읍"
+        },
+        {
+          "target_id": "5272035000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "백운면"
+        },
+        {
+          "target_id": "5272037000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "마령면"
+        }
+      ],
+      "runtime_selected_solves_seconds": 0.038362,
+      "runtime_all_outcomes_seconds": 1.067521,
+      "violations": 0
+    },
+    {
+      "cap": 5,
+      "method": "nearest",
+      "allocation": "target_count_reference",
+      "coverage": {
+        "P1": 21,
+        "P2": 31
+      },
+      "covered": 52,
+      "target_count": 54,
+      "covered_percent": 96.296,
+      "distance_km": 1111.755,
+      "travel_plus_wait_minutes": 1667.63,
+      "wait_minutes": 0.0,
+      "maximum_route_minutes": 370.257,
+      "allocated_days": 15,
+      "used_days": 15,
+      "unvisited": [
+        {
+          "target_id": "5272035000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "백운면"
+        },
+        {
+          "target_id": "5272037000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "마령면"
+        }
+      ],
+      "runtime_selected_solves_seconds": 0.001103,
+      "runtime_all_outcomes_seconds": 0.00534,
+      "violations": 0
+    },
+    {
+      "cap": 5,
+      "method": "priority_nearest",
+      "allocation": "target_count_reference",
+      "coverage": {
+        "P1": 21,
+        "P2": 31
+      },
+      "covered": 52,
+      "target_count": 54,
+      "covered_percent": 96.296,
+      "distance_km": 1140.063,
+      "travel_plus_wait_minutes": 1710.093,
+      "wait_minutes": 0.0,
+      "maximum_route_minutes": 430.154,
+      "allocated_days": 15,
+      "used_days": 15,
+      "unvisited": [
+        {
+          "target_id": "5272035000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "백운면"
+        },
+        {
+          "target_id": "5272037000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "마령면"
+        }
+      ],
+      "runtime_selected_solves_seconds": 0.001864,
+      "runtime_all_outcomes_seconds": 0.009383,
+      "violations": 0
+    },
+    {
+      "cap": 5,
+      "method": "exact_dp",
+      "allocation": "target_count_reference",
+      "coverage": {
+        "P1": 21,
+        "P2": 31
+      },
+      "covered": 52,
+      "target_count": 54,
+      "covered_percent": 96.296,
+      "distance_km": 1028.437,
+      "travel_plus_wait_minutes": 1542.649,
+      "wait_minutes": 0.0,
+      "maximum_route_minutes": 346.957,
+      "allocated_days": 15,
+      "used_days": 15,
+      "unvisited": [
+        {
+          "target_id": "5272035000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "백운면"
+        },
+        {
+          "target_id": "5272037000",
+          "priority": "P2",
+          "zone": "진안군",
+          "name": "마령면"
+        }
+      ],
+      "runtime_selected_solves_seconds": 0.048026,
+      "runtime_all_outcomes_seconds": 1.16397,
+      "violations": 0
+    }
+  ],
+  "dp_contrasts": [
+    {
+      "cap": 3,
+      "dp_vs": "nearest",
+      "same_tier_coverage": false,
+      "distance_saved_km": -108.767,
+      "distance_saved_percent": -13.445,
+      "travel_plus_wait_saved_minutes": -163.144
+    },
+    {
+      "cap": 3,
+      "dp_vs": "priority_nearest",
+      "same_tier_coverage": true,
+      "distance_saved_km": 120.102,
+      "distance_saved_percent": 11.572,
+      "travel_plus_wait_saved_minutes": 180.157
+    },
+    {
+      "cap": 4,
+      "dp_vs": "nearest",
+      "same_tier_coverage": true,
+      "distance_saved_km": 75.035,
+      "distance_saved_percent": 6.956,
+      "travel_plus_wait_saved_minutes": 112.557
+    },
+    {
+      "cap": 4,
+      "dp_vs": "priority_nearest",
+      "same_tier_coverage": true,
+      "distance_saved_km": 100.234,
+      "distance_saved_percent": 9.08,
+      "travel_plus_wait_saved_minutes": 150.353
+    },
+    {
+      "cap": 5,
+      "dp_vs": "nearest",
+      "same_tier_coverage": true,
+      "distance_saved_km": 83.318,
+      "distance_saved_percent": 7.494,
+      "travel_plus_wait_saved_minutes": 124.981
+    },
+    {
+      "cap": 5,
+      "dp_vs": "priority_nearest",
+      "same_tier_coverage": true,
+      "distance_saved_km": 111.626,
+      "distance_saved_percent": 9.791,
+      "travel_plus_wait_saved_minutes": 167.444
+    }
+  ],
+  "allocation_effect": [
+    {
+      "cap": 3,
+      "method": "priority_nearest",
+      "same_tier_coverage": true,
+      "reference_km": 1037.833,
+      "optimized_allocation_km": 1023.142,
+      "distance_saved_km": 14.691,
+      "reference_max_route_minutes": 330.06,
+      "optimized_max_route_minutes": 330.06,
+      "changed_zone_allocations": {
+        "완주군": 1,
+        "진안군": 2
+      }
+    },
+    {
+      "cap": 3,
+      "method": "exact_dp",
+      "same_tier_coverage": true,
+      "reference_km": 917.731,
+      "optimized_allocation_km": 912.448,
+      "distance_saved_km": 5.283,
+      "reference_max_route_minutes": 282.043,
+      "optimized_max_route_minutes": 300.329,
+      "changed_zone_allocations": {
+        "완주군": 1,
+        "진안군": 2
+      }
+    },
+    {
+      "cap": 4,
+      "method": "priority_nearest",
+      "same_tier_coverage": true,
+      "reference_km": 1103.95,
+      "optimized_allocation_km": 1103.95,
+      "distance_saved_km": 0.0,
+      "reference_max_route_minutes": 379.971,
+      "optimized_max_route_minutes": 379.971,
+      "changed_zone_allocations": {}
+    },
+    {
+      "cap": 4,
+      "method": "exact_dp",
+      "same_tier_coverage": true,
+      "reference_km": 1003.716,
+      "optimized_allocation_km": 1003.716,
+      "distance_saved_km": 0.0,
+      "reference_max_route_minutes": 309.946,
+      "optimized_max_route_minutes": 309.946,
+      "changed_zone_allocations": {}
+    },
+    {
+      "cap": 5,
+      "method": "priority_nearest",
+      "same_tier_coverage": true,
+      "reference_km": 1140.063,
+      "optimized_allocation_km": 1140.063,
+      "distance_saved_km": 0.0,
+      "reference_max_route_minutes": 430.154,
+      "optimized_max_route_minutes": 430.154,
+      "changed_zone_allocations": {}
+    },
+    {
+      "cap": 5,
+      "method": "exact_dp",
+      "same_tier_coverage": true,
+      "reference_km": 1028.437,
+      "optimized_allocation_km": 1023.234,
+      "distance_saved_km": 5.203,
+      "reference_max_route_minutes": 346.957,
+      "optimized_max_route_minutes": 400.03,
+      "changed_zone_allocations": {
+        "완주군": 1,
+        "진안군": 2
+      }
+    }
+  ],
+  "verification": {
+    "unit_tests_passed": 13,
+    "comparison_count": 21,
+    "route_replay_violations": 0,
+    "cap4_saved_scenario_parity": true
+  },
+  "interpretation": {
+    "cap4": "All methods cover equal tier counts: 21 P1 and 29 P2. Priority nearest and DP visit identical target sets; nearest differs by one P2 target. The observed benefit of DP is reduced travel, not increased priority coverage.",
+    "cap3": "Priority-aware methods cover all 21 P1 targets while nearest covers 15. The lower nearest distance is not an equal-priority comparison.",
+    "allocation": "Allocation adds no benefit at cap 4. At cap 3 and cap 5 small distance gains can accompany a longer maximum route because travel plus waiting precedes maximum route time in the objective.",
+    "runtime": "Single local wall-clock measurement, not a statistical speed comparison. Selected solver calls exclude allocation, validation and I/O overhead.",
+    "scope": "Validated finite scenario and stated model constraints only. No general optimality proof, resident-benefit measurement or field-readiness claim."
+  }
+}
