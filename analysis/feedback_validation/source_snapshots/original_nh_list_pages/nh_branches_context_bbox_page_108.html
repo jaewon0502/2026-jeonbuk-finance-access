@@ -1,0 +1,830 @@
+<div class="result_header">
+	<div id="result_cnt">
+		<p>총 <span>1018</span> 건이 검색되었습니다. </p>
+	</div>
+	<!-- 좌측 검색범위와 상단탭이 같이 있어서 경우의 수를 따져야 함 -->
+	<!-- 결과 탭 (영업점) -->
+	<div class="result_tab" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(5);" class="" title="탄력점포">탄력점포</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="NH All100 종합자산관리센터">NH All100<br>종합자산관리센터</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab2" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="로얄라운지">로얄라운지</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(3);" class="" title="로또당첨금 지급점">로또당첨금<br>지급점</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(4);" class="" title="대여금고 취급점포">대여금고<br>취급점포</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab3" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(6, 1);" class="" title="장애인 편의시설">장애인 편의시설</a>
+			</li>
+			<li>
+				<div id="disabled_chkbox" style="display: none">
+					<input type="checkbox" name="disabled_slope" id="disabled_slope" value="1" checked>
+					<label for="disabled_slope" style="margin-right: 32px;">경사로</label>
+					<input type="checkbox" name="disabled_lift" id="disabled_lift" value="1" checked>
+					<label for="disabled_lift">장애인승강기</label>
+					<input type="checkbox" name="disabled_toilet" id="disabled_toilet" value="1" checked>
+					<label for="disabled_toilet">장애인화장실</label>
+					<br>
+					<input type="checkbox" name="disabled_bell" id="disabled_bell" value="1" checked>
+					<label for="disabled_bell">도움(벨)안내</label>
+					<input type="checkbox" name="disabled_parking" id="disabled_parking" value="1" checked>
+					<label for="disabled_parking">장애인주차장</label>
+					<input type="checkbox" name="disabled_video" id="disabled_video" value="1" checked>
+					<label for="disabled_video">화상수어상담</label>
+					<script>
+						$('input[name^="disabled_"]').click(function () {
+							changeListTab(6, 1);
+						});
+					</script>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- end of 결과 탭 (영업점) -->
+
+	<!-- 결과 탭 (ATM) -->
+	<div class="result_tab ATM" style="display: none;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="농협은행">농협은행</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="농축혐">농·축협</a>
+			</li>
+		</ul>
+	</div><!-- end of 결과 탭 (ATM) -->	
+</div>
+
+<!-- 결과 리스트 영역 -->
+<div id="result_list" style="top: 135px;" title="전체 영업점 목록">
+	<ul>
+		<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>정읍농협 내장지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61137)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61137)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61137); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>517010</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61137">전북특별자치도 정읍시 내장산로 280 (금붕동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-536-4334</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-536-7505</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61137">내장동사무소 앞</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61137"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61137);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61137);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126890287, 35534350);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61137" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61137, 1, 2, 1, 126.890287, 35.53435, html, divHeight, false, '정읍농협 내장지점');
+				bounds.extend( new daum.maps.LatLng(35.53435, 126.890287));				
+			</script>
+			<li class="lists" onclick="goInfo(61137, this);">
+					<h2 class="list_no nonghyup">1</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61137, $(this).parents('li')); return false">정읍농협 내장지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 정읍시 내장산로 280 (금붕동)</p>
+					<p class="list_telno">T. 063-536-4334</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>정읍농협 덕천지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61147)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61147)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61147); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>517061</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61147">전북특별자치도 정읍시 덕천면 황토현로 814 (우덕리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-536-2024</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-536-2029</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61147">덕천초등학교 맞은편 오른쪽</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61147"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61147);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61147);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126843346, 35621710);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61147" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61147, 1, 2, 2, 126.843346, 35.62171, html, divHeight, false, '정읍농협 덕천지점');
+				bounds.extend( new daum.maps.LatLng(35.62171, 126.843346));				
+			</script>
+			<li class="lists" onclick="goInfo(61147, this);">
+					<h2 class="list_no nonghyup">2</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61147, $(this).parents('li')); return false">정읍농협 덕천지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 정읍시 덕천면 황토현로 814 (우덕리)</p>
+					<p class="list_telno">T. 063-536-2024</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>정읍농협 상동지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61140)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61140)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61140); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>517013</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61140">전북특별자치도 정읍시 충정로 58 (상동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-531-3790</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-531-3792</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61140">정읍여고입구</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61140"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61140);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61140);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126869844, 35559232);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61140" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61140, 1, 2, 3, 126.869844, 35.559232, html, divHeight, false, '정읍농협 상동지점');
+				bounds.extend( new daum.maps.LatLng(35.559232, 126.869844));				
+			</script>
+			<li class="lists" onclick="goInfo(61140, this);">
+					<h2 class="list_no nonghyup">3</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61140, $(this).parents('li')); return false">정읍농협 상동지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 정읍시 충정로 58 (상동)</p>
+					<p class="list_telno">T. 063-531-3790</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>정읍농협 수성지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61148)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61148)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61148); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>517062</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61148">전북특별자치도 정읍시 수성2로 44 (수성동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-538-5501</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-538-5535</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61148">정읍농협하나로마트수성점 옆</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61148"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61148);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61148);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126855632, 35580944);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61148" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61148, 1, 2, 4, 126.855632, 35.580944, html, divHeight, false, '정읍농협 수성지점');
+				bounds.extend( new daum.maps.LatLng(35.580944, 126.855632));				
+			</script>
+			<li class="lists" onclick="goInfo(61148, this);">
+					<h2 class="list_no nonghyup">4</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61148, $(this).parents('li')); return false">정읍농협 수성지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 정읍시 수성2로 44 (수성동)</p>
+					<p class="list_telno">T. 063-538-5501</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>정읍농협 시기지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61138)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61138)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61138); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>517011</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61138">전북특별자치도 정읍시 우암로 16-8 (시기동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-535-4051</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-531-7959</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61138">미도파마트 앞 정면 50M 구시장입구</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61138"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61138);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61138);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126854444, 35564589);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61138" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61138, 1, 2, 5, 126.854444, 35.564589, html, divHeight, false, '정읍농협 시기지점');
+				bounds.extend( new daum.maps.LatLng(35.564589, 126.854444));				
+			</script>
+			<li class="lists" onclick="goInfo(61138, this);">
+					<h2 class="list_no nonghyup">5</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61138, $(this).parents('li')); return false">정읍농협 시기지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 정읍시 우암로 16-8 (시기동)</p>
+					<p class="list_telno">T. 063-535-4051</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>정읍농협 정일지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61139)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61139)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61139); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>517012</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61139">전북특별자치도 정읍시 충정로 531-8 (공평동, 농소동주민센터 1층)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-535-4281</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-531-7924</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61139">농소동 주민자치센터 1층</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61139"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61139);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61139);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126828546, 35583275);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61139" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61139, 1, 2, 6, 126.828546, 35.583275, html, divHeight, false, '정읍농협 정일지점');
+				bounds.extend( new daum.maps.LatLng(35.583275, 126.828546));				
+			</script>
+			<li class="lists" onclick="goInfo(61139, this);">
+					<h2 class="list_no nonghyup">6</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61139, $(this).parents('li')); return false">정읍농협 정일지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 정읍시 충정로 531-8 (공평동, 농소동주민센터 1층)</p>
+					<p class="list_telno">T. 063-535-4281</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>정읍농협 중앙지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61143)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61143)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61143); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>517018</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61143">전북특별자치도 정읍시 남북로 34 (수성동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-538-9600</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-533-7578</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61143">삼성병원옆(성림프라자건물)</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61143"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61143);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61143);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126850971, 35568245);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61143" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61143, 1, 2, 7, 126.850971, 35.568245, html, divHeight, false, '정읍농협 중앙지점');
+				bounds.extend( new daum.maps.LatLng(35.568245, 126.850971));				
+			</script>
+			<li class="lists" onclick="goInfo(61143, this);">
+					<h2 class="list_no nonghyup">7</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61143, $(this).parents('li')); return false">정읍농협 중앙지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 정읍시 남북로 34 (수성동)</p>
+					<p class="list_telno">T. 063-538-9600</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>정읍농협 충정로지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61149)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61149)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61149); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>517063</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61149">전북특별자치도 정읍시 충정로 99 (상동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-534-7750</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-534-7752</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61149"></td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61149"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61149);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61149);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126866526, 35561980);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61149" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61149, 1, 2, 8, 126.866526, 35.56198, html, divHeight, false, '정읍농협 충정로지점');
+				bounds.extend( new daum.maps.LatLng(35.56198, 126.866526));				
+			</script>
+			<li class="lists" onclick="goInfo(61149, this);">
+					<h2 class="list_no nonghyup">8</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61149, $(this).parents('li')); return false">정읍농협 충정로지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 정읍시 충정로 99 (상동)</p>
+					<p class="list_telno">T. 063-534-7750</p>
+				</li>				
+				<li class="paging"><a href="javascript:goPage(1);" class="pager_btn"><img src="../images/page_start.png" alt='첫페이지'></a> 
+<a href="javascript:goPage(105);" class="pager_btn"><img src="../images/page_prev.png" alt='이전페이지'></a> 
+&nbsp;<a href="javascript:goPage(106);" class="pager">106</a> 
+<a href="javascript:goPage(107);" class="pager">107</a> 
+<a href="javascript:;" class="pager on">108</a> 
+<a href="javascript:goPage(109);" class="pager">109</a> 
+<a href="javascript:goPage(110);" class="pager last">110</a> 
+<a href="javascript:goPage(111);" class="pager_btn"><img src="../images/page_next.png" alt='다음페이지'></a> 
+<a href="javascript:goPage(128);" class="pager_btn"><img src="../images/page_end.png" alt='끝페이지'></a> 
+</li>			
+			</ul>
+</div>

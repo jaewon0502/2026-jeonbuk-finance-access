@@ -1,0 +1,851 @@
+<div class="result_header">
+	<div id="result_cnt">
+		<p>총 <span>1018</span> 건이 검색되었습니다. </p>
+	</div>
+	<!-- 좌측 검색범위와 상단탭이 같이 있어서 경우의 수를 따져야 함 -->
+	<!-- 결과 탭 (영업점) -->
+	<div class="result_tab" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(5);" class="" title="탄력점포">탄력점포</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="NH All100 종합자산관리센터">NH All100<br>종합자산관리센터</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab2" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="로얄라운지">로얄라운지</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(3);" class="" title="로또당첨금 지급점">로또당첨금<br>지급점</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(4);" class="" title="대여금고 취급점포">대여금고<br>취급점포</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab3" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(6, 1);" class="" title="장애인 편의시설">장애인 편의시설</a>
+			</li>
+			<li>
+				<div id="disabled_chkbox" style="display: none">
+					<input type="checkbox" name="disabled_slope" id="disabled_slope" value="1" checked>
+					<label for="disabled_slope" style="margin-right: 32px;">경사로</label>
+					<input type="checkbox" name="disabled_lift" id="disabled_lift" value="1" checked>
+					<label for="disabled_lift">장애인승강기</label>
+					<input type="checkbox" name="disabled_toilet" id="disabled_toilet" value="1" checked>
+					<label for="disabled_toilet">장애인화장실</label>
+					<br>
+					<input type="checkbox" name="disabled_bell" id="disabled_bell" value="1" checked>
+					<label for="disabled_bell">도움(벨)안내</label>
+					<input type="checkbox" name="disabled_parking" id="disabled_parking" value="1" checked>
+					<label for="disabled_parking">장애인주차장</label>
+					<input type="checkbox" name="disabled_video" id="disabled_video" value="1" checked>
+					<label for="disabled_video">화상수어상담</label>
+					<script>
+						$('input[name^="disabled_"]').click(function () {
+							changeListTab(6, 1);
+						});
+					</script>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- end of 결과 탭 (영업점) -->
+
+	<!-- 결과 탭 (ATM) -->
+	<div class="result_tab ATM" style="display: none;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="농협은행">농협은행</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="농축혐">농·축협</a>
+			</li>
+		</ul>
+	</div><!-- end of 결과 탭 (ATM) -->	
+</div>
+
+<!-- 결과 리스트 영역 -->
+<div id="result_list" style="top: 135px;" title="전체 영업점 목록">
+	<ul>
+		<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>화산농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61045)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61045)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61045); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>501121</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61045">전북특별자치도 완주군 화산면 화산로 840 (화평리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-262-5016</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-263-7473</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61045">화산면 소재지 위치</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61045"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61045);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61045);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127202494, 36034266);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61045" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61045, 1, 2, 1, 127.202494, 36.034266, html, divHeight, false, '화산농협');
+				bounds.extend( new daum.maps.LatLng(36.034266, 127.202494));				
+			</script>
+			<li class="lists" onclick="goInfo(61045, this);">
+					<h2 class="list_no nonghyup">1</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61045, $(this).parents('li')); return false">화산농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 완주군 화산면 화산로 840 (화평리)</p>
+					<p class="list_telno">T. 063-262-5016</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>화순농협 이서지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61564)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61564)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61564); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>623050</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61564">전남광주통합특별시 화순군 이서면 규남로 244 (야사리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>061-372-9005</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>061-373-7094</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61564">이서면사무소옆</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61564"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61564);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61564);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127070102, 35110911);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61564" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61564, 1, 2, 2, 127.070102, 35.110911, html, divHeight, false, '화순농협 이서지점');
+				bounds.extend( new daum.maps.LatLng(35.110911, 127.070102));				
+			</script>
+			<li class="lists" onclick="goInfo(61564, this);">
+					<h2 class="list_no nonghyup">2</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61564, $(this).parents('li')); return false">화순농협 이서지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전남광주통합특별시 화순군 이서면 규남로 244 (야사리)</p>
+					<p class="list_telno">T. 061-372-9005</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '1') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '1') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>화정동지점<span class="branch_type">(농협은행)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(516)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(516)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(516); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>630</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_516">전남광주통합특별시 서구 화정로 116 (쌍촌동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>062-374-4111</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>062-374-4110</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_516">서광주우체국에서 백일초 방향</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_516">외환,로또당첨금지급</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>자동화기기</th>';
+					
+						html += '				<td>ATM</td>';
+									 
+				 	html += '				</tr>';
+				 	
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	divHeight += 35;
+				 	html += '				<tr>';
+				 	html += '					<th>장애인편의시설</th>';
+				 	html += '					<td>';
+				 		
+				 		html += '					<img src="/images/disabled_slope.png" alt="경사로" title="경사로">'; // 경사로
+				 		
+				 		html += '					<img src="/images/disabled_parking.png" alt="장애인주차장" title="장애인주차장">'; // 주차장
+				 		
+				 		html += '					<img src="/images/disabled_video.png" alt="화상수어상담" title="화상수어상담">'; // 화상수어상담
+				 		
+				 	html += '					</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(516);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(516);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126869985, 35144932);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '				<a href="https://smartmarket.nonghyup.com/content/html/sf/cn/sfgateway.html?NAVIGATE_TYPE=1&SERVICE_ID=BFSTW2500R" target="_blank" class="btn_nearbranch ' + styleName + '">방문예약</a>';	
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_516" class="popup_branch_info ' + styleName + '" style="height: 290px;margin-top: -328px;">' + html;
+					
+
+				setMarker(516, 1, 1, 3, 126.869985, 35.144932, html, divHeight, false, '화정동지점');
+				bounds.extend( new daum.maps.LatLng(35.144932, 126.869985));				
+			</script>
+			<li class="lists" onclick="goInfo(516, this);">
+					<h2 class="list_no nhbank">3</h2>
+					<h2 class="list_title nhbank">
+						<a href="#" onclick="goInfo(516, $(this).parents('li')); return false">화정동지점</a>
+						<span class="bank_type_nhbank">(농협은행)</span>
+					</h2>
+					<p class="list_addr">
+					전남광주통합특별시 서구 화정로 116 (쌍촌동)</p>
+					<p class="list_telno">T. 062-374-4111</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>황간농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60409)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60409)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60409); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>407089</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60409">충청북도 영동군 황간면 황간로 34 (남성리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>043-742-4091</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>043-742-5932</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60409">황간서도아파트 앞</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60409">외환</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60409);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60409);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127909571, 36228612);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60409" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60409, 1, 2, 4, 127.909571, 36.228612, html, divHeight, false, '황간농협');
+				bounds.extend( new daum.maps.LatLng(36.228612, 127.909571));				
+			</script>
+			<li class="lists" onclick="goInfo(60409, this);">
+					<h2 class="list_no nonghyup">4</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60409, $(this).parents('li')); return false">황간농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청북도 영동군 황간면 황간로 34 (남성리)</p>
+					<p class="list_telno">T. 043-742-4091</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>황간농협 매곡지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60411)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60411)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60411); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>407104</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60411">충청북도 영동군 매곡면 민주지산로 3597 (노천리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>043-743-2183</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>043-744-1403</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60411">황간I.C에서상촌방면 6KM거리,차량7분소</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60411">외환</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60411);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60411);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127932321, 36191105);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60411" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60411, 1, 2, 5, 127.932321, 36.191105, html, divHeight, false, '황간농협 매곡지점');
+				bounds.extend( new daum.maps.LatLng(36.191105, 127.932321));				
+			</script>
+			<li class="lists" onclick="goInfo(60411, this);">
+					<h2 class="list_no nonghyup">5</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60411, $(this).parents('li')); return false">황간농협 매곡지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청북도 영동군 매곡면 민주지산로 3597 (노천리)</p>
+					<p class="list_telno">T. 043-743-2183</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>황간농협 상촌지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60412)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60412)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60412); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>407115</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60412">충청북도 영동군 상촌면 민주지산로 2989 (임산리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>043-743-3580</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>043-743-1483</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60412">상촌면사무소에서 물한계곡방향 300M</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60412"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60412);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60412);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127913154, 36146530);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60412" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60412, 1, 2, 6, 127.913154, 36.14653, html, divHeight, false, '황간농협 상촌지점');
+				bounds.extend( new daum.maps.LatLng(36.14653, 127.913154));				
+			</script>
+			<li class="lists" onclick="goInfo(60412, this);">
+					<h2 class="list_no nonghyup">6</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60412, $(this).parents('li')); return false">황간농협 상촌지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청북도 영동군 상촌면 민주지산로 2989 (임산리)</p>
+					<p class="list_telno">T. 043-743-3580</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>황등농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61269)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61269)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61269); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>531119</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61269">전북특별자치도 익산시 황등면 황등로 124 (황등리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-856-4661</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-858-0338</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61269">황등파출소  정문 50M전방</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61269"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61269);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61269);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126944690, 36002934);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61269" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61269, 1, 2, 7, 126.94469, 36.002934, html, divHeight, false, '황등농협');
+				bounds.extend( new daum.maps.LatLng(36.002934, 126.94469));				
+			</script>
+			<li class="lists" onclick="goInfo(61269, this);">
+					<h2 class="list_no nonghyup">7</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61269, $(this).parents('li')); return false">황등농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 익산시 황등면 황등로 124 (황등리)</p>
+					<p class="list_telno">T. 063-856-4661</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>황룡농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61703)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61703)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61703); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>645025</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61703">전남광주통합특별시 장성군 황룡면 뱃나드리로 165 (월평리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>061-393-2517</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>061-393-7391</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61703">장성톨게이트에서 500M전방</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61703"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61703);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61703);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126771848, 35290574);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61703" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61703, 1, 2, 8, 126.771848, 35.290574, html, divHeight, false, '황룡농협');
+				bounds.extend( new daum.maps.LatLng(35.290574, 126.771848));				
+			</script>
+			<li class="lists" onclick="goInfo(61703, this);">
+					<h2 class="list_no nonghyup">8</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61703, $(this).parents('li')); return false">황룡농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전남광주통합특별시 장성군 황룡면 뱃나드리로 165 (월평리)</p>
+					<p class="list_telno">T. 061-393-2517</p>
+				</li>				
+				<li class="paging"><a href="javascript:goPage(1);" class="pager_btn"><img src="../images/page_start.png" alt='첫페이지'></a> 
+<a href="javascript:goPage(125);" class="pager_btn"><img src="../images/page_prev.png" alt='이전페이지'></a> 
+&nbsp;<a href="javascript:;" class="pager on">126</a> 
+<a href="javascript:goPage(127);" class="pager">127</a> 
+<a href="javascript:goPage(128);" class="pager last">128</a> 
+<a href="javascript:;" class="pager_btn"><img src="../images/page_next.png" alt='다음페이지'></a> 
+<a href="javascript:;" class="pager_btn"><img src="../images/page_end.png" alt='끝페이지'></a> 
+</li>			
+			</ul>
+</div>

@@ -1,0 +1,830 @@
+<div class="result_header">
+	<div id="result_cnt">
+		<p>총 <span>1018</span> 건이 검색되었습니다. </p>
+	</div>
+	<!-- 좌측 검색범위와 상단탭이 같이 있어서 경우의 수를 따져야 함 -->
+	<!-- 결과 탭 (영업점) -->
+	<div class="result_tab" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(5);" class="" title="탄력점포">탄력점포</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="NH All100 종합자산관리센터">NH All100<br>종합자산관리센터</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab2" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="로얄라운지">로얄라운지</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(3);" class="" title="로또당첨금 지급점">로또당첨금<br>지급점</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(4);" class="" title="대여금고 취급점포">대여금고<br>취급점포</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab3" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(6, 1);" class="" title="장애인 편의시설">장애인 편의시설</a>
+			</li>
+			<li>
+				<div id="disabled_chkbox" style="display: none">
+					<input type="checkbox" name="disabled_slope" id="disabled_slope" value="1" checked>
+					<label for="disabled_slope" style="margin-right: 32px;">경사로</label>
+					<input type="checkbox" name="disabled_lift" id="disabled_lift" value="1" checked>
+					<label for="disabled_lift">장애인승강기</label>
+					<input type="checkbox" name="disabled_toilet" id="disabled_toilet" value="1" checked>
+					<label for="disabled_toilet">장애인화장실</label>
+					<br>
+					<input type="checkbox" name="disabled_bell" id="disabled_bell" value="1" checked>
+					<label for="disabled_bell">도움(벨)안내</label>
+					<input type="checkbox" name="disabled_parking" id="disabled_parking" value="1" checked>
+					<label for="disabled_parking">장애인주차장</label>
+					<input type="checkbox" name="disabled_video" id="disabled_video" value="1" checked>
+					<label for="disabled_video">화상수어상담</label>
+					<script>
+						$('input[name^="disabled_"]').click(function () {
+							changeListTab(6, 1);
+						});
+					</script>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- end of 결과 탭 (영업점) -->
+
+	<!-- 결과 탭 (ATM) -->
+	<div class="result_tab ATM" style="display: none;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="농협은행">농협은행</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="농축혐">농·축협</a>
+			</li>
+		</ul>
+	</div><!-- end of 결과 탭 (ATM) -->	
+</div>
+
+<!-- 결과 리스트 영역 -->
+<div id="result_list" style="top: 135px;" title="전체 영업점 목록">
+	<ul>
+		<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>동부여농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60766)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60766)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60766); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>463164</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60766">충청남도 부여군 석성면 증산로 45 (증산리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>041-836-6280</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>041-836-7691</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60766">십자가</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60766">외환</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60766);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60766);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127001446, 36251931);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60766" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60766, 1, 2, 1, 127.001446, 36.251931, html, divHeight, false, '동부여농협');
+				bounds.extend( new daum.maps.LatLng(36.251931, 127.001446));				
+			</script>
+			<li class="lists" onclick="goInfo(60766, this);">
+					<h2 class="list_no nonghyup">1</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60766, $(this).parents('li')); return false">동부여농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 부여군 석성면 증산로 45 (증산리)</p>
+					<p class="list_telno">T. 041-836-6280</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>동부여농협 석성지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60767)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60767)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60767); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>463165</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60767">충청남도 부여군 석성면 석성북로 9 (석성리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>041-836-5504</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>041-836-1655</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60767">(구) 석성 면소재지</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60767"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60767);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60767);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126990495, 36224542);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60767" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60767, 1, 2, 2, 126.990495, 36.224542, html, divHeight, false, '동부여농협 석성지점');
+				bounds.extend( new daum.maps.LatLng(36.224542, 126.990495));				
+			</script>
+			<li class="lists" onclick="goInfo(60767, this);">
+					<h2 class="list_no nonghyup">2</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60767, $(this).parents('li')); return false">동부여농협 석성지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 부여군 석성면 석성북로 9 (석성리)</p>
+					<p class="list_telno">T. 041-836-5504</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>동부여농협 초촌지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60765)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60765)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60765); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>463153</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60765">충청남도 부여군 초촌면 초촌로31번길 1 (응평리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>041-832-4280</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>041-834-3633</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60765">초촌면사무소 옆</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60765"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60765);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60765);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127021386, 36263340);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60765" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60765, 1, 2, 3, 127.021386, 36.26334, html, divHeight, false, '동부여농협 초촌지점');
+				bounds.extend( new daum.maps.LatLng(36.26334, 127.021386));				
+			</script>
+			<li class="lists" onclick="goInfo(60765, this);">
+					<h2 class="list_no nonghyup">3</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60765, $(this).parents('li')); return false">동부여농협 초촌지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 부여군 초촌면 초촌로31번길 1 (응평리)</p>
+					<p class="list_telno">T. 041-832-4280</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>동서천농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60777)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60777)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60777); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>465100</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60777">충청남도 서천군 기산면 기산길 61 (화산리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>041-951-1010</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>041-951-3763</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60777">기산면사무소 우측옆</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60777"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60777);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60777);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126762585, 36074473);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60777" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60777, 1, 2, 4, 126.762585, 36.074473, html, divHeight, false, '동서천농협');
+				bounds.extend( new daum.maps.LatLng(36.074473, 126.762585));				
+			</script>
+			<li class="lists" onclick="goInfo(60777, this);">
+					<h2 class="list_no nonghyup">4</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60777, $(this).parents('li')); return false">동서천농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 서천군 기산면 기산길 61 (화산리)</p>
+					<p class="list_telno">T. 041-951-1010</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>동서천농협 마산지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60778)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60778)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60778); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>465111</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60778">충청남도 서천군 마산면 삼일로 262-1 (신장리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>041-953-2081</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>041-953-1689</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60778">마산 (명신)우체국 우측으로 100m 위치</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60778"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60778);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60778);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126790054, 36116351);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60778" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60778, 1, 2, 5, 126.790054, 36.116351, html, divHeight, false, '동서천농협 마산지점');
+				bounds.extend( new daum.maps.LatLng(36.116351, 126.790054));				
+			</script>
+			<li class="lists" onclick="goInfo(60778, this);">
+					<h2 class="list_no nonghyup">5</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60778, $(this).parents('li')); return false">동서천농협 마산지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 서천군 마산면 삼일로 262-1 (신장리)</p>
+					<p class="list_telno">T. 041-953-2081</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>동서천농협 화양지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60776)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60776)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60776); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>465096</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60776">충청남도 서천군 화양면 옥포길 17 (옥포리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>041-951-1581</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>041-951-8655</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60776">화양면사무소 200M 전방</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60776"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60776);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60776);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126782691, 36039289);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60776" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60776, 1, 2, 6, 126.782691, 36.039289, html, divHeight, false, '동서천농협 화양지점');
+				bounds.extend( new daum.maps.LatLng(36.039289, 126.782691));				
+			</script>
+			<li class="lists" onclick="goInfo(60776, this);">
+					<h2 class="list_no nonghyup">6</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60776, $(this).parents('li')); return false">동서천농협 화양지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 서천군 화양면 옥포길 17 (옥포리)</p>
+					<p class="list_telno">T. 041-951-1581</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>동진강낙농축협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(58975)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(58975)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(58975); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>175304</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_58975">전북특별자치도 김제시 도작로 26 (검산동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-547-8068</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-544-7522</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_58975">신풍동 부영3차 맞은편</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_58975"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(58975);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(58975);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126904441, 35797902);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_58975" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(58975, 1, 2, 7, 126.904441, 35.797902, html, divHeight, false, '동진강낙농축협');
+				bounds.extend( new daum.maps.LatLng(35.797902, 126.904441));				
+			</script>
+			<li class="lists" onclick="goInfo(58975, this);">
+					<h2 class="list_no nonghyup">7</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(58975, $(this).parents('li')); return false">동진강낙농축협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 김제시 도작로 26 (검산동)</p>
+					<p class="list_telno">T. 063-547-8068</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>동진강낙농축협 군산제일지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(58976)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(58976)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(58976); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>175317</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_58976">전북특별자치도 군산시 하나운로 81 (나운동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-467-8502</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-467-8505</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_58976">나운동 금호타운 사거리</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_58976"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(58976);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(58976);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126702610, 35965691);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_58976" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(58976, 1, 2, 8, 126.70261, 35.965691, html, divHeight, false, '동진강낙농축협 군산제일지점');
+				bounds.extend( new daum.maps.LatLng(35.965691, 126.70261));				
+			</script>
+			<li class="lists" onclick="goInfo(58976, this);">
+					<h2 class="list_no nonghyup">8</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(58976, $(this).parents('li')); return false">동진강낙농축협 군산제일지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 군산시 하나운로 81 (나운동)</p>
+					<p class="list_telno">T. 063-467-8502</p>
+				</li>				
+				<li class="paging"><a href="javascript:goPage(1);" class="pager_btn"><img src="../images/page_start.png" alt='첫페이지'></a> 
+<a href="javascript:goPage(45);" class="pager_btn"><img src="../images/page_prev.png" alt='이전페이지'></a> 
+&nbsp;<a href="javascript:goPage(46);" class="pager">46</a> 
+<a href="javascript:goPage(47);" class="pager">47</a> 
+<a href="javascript:;" class="pager on">48</a> 
+<a href="javascript:goPage(49);" class="pager">49</a> 
+<a href="javascript:goPage(50);" class="pager last">50</a> 
+<a href="javascript:goPage(51);" class="pager_btn"><img src="../images/page_next.png" alt='다음페이지'></a> 
+<a href="javascript:goPage(128);" class="pager_btn"><img src="../images/page_end.png" alt='끝페이지'></a> 
+</li>			
+			</ul>
+</div>

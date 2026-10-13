@@ -1,0 +1,844 @@
+<div class="result_header">
+	<div id="result_cnt">
+		<p>총 <span>1018</span> 건이 검색되었습니다. </p>
+	</div>
+	<!-- 좌측 검색범위와 상단탭이 같이 있어서 경우의 수를 따져야 함 -->
+	<!-- 결과 탭 (영업점) -->
+	<div class="result_tab" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(5);" class="" title="탄력점포">탄력점포</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="NH All100 종합자산관리센터">NH All100<br>종합자산관리센터</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab2" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="로얄라운지">로얄라운지</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(3);" class="" title="로또당첨금 지급점">로또당첨금<br>지급점</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(4);" class="" title="대여금고 취급점포">대여금고<br>취급점포</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab3" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(6, 1);" class="" title="장애인 편의시설">장애인 편의시설</a>
+			</li>
+			<li>
+				<div id="disabled_chkbox" style="display: none">
+					<input type="checkbox" name="disabled_slope" id="disabled_slope" value="1" checked>
+					<label for="disabled_slope" style="margin-right: 32px;">경사로</label>
+					<input type="checkbox" name="disabled_lift" id="disabled_lift" value="1" checked>
+					<label for="disabled_lift">장애인승강기</label>
+					<input type="checkbox" name="disabled_toilet" id="disabled_toilet" value="1" checked>
+					<label for="disabled_toilet">장애인화장실</label>
+					<br>
+					<input type="checkbox" name="disabled_bell" id="disabled_bell" value="1" checked>
+					<label for="disabled_bell">도움(벨)안내</label>
+					<input type="checkbox" name="disabled_parking" id="disabled_parking" value="1" checked>
+					<label for="disabled_parking">장애인주차장</label>
+					<input type="checkbox" name="disabled_video" id="disabled_video" value="1" checked>
+					<label for="disabled_video">화상수어상담</label>
+					<script>
+						$('input[name^="disabled_"]').click(function () {
+							changeListTab(6, 1);
+						});
+					</script>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- end of 결과 탭 (영업점) -->
+
+	<!-- 결과 탭 (ATM) -->
+	<div class="result_tab ATM" style="display: none;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="농협은행">농협은행</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="농축혐">농·축협</a>
+			</li>
+		</ul>
+	</div><!-- end of 결과 탭 (ATM) -->	
+</div>
+
+<!-- 결과 리스트 영역 -->
+<div id="result_list" style="top: 135px;" title="전체 영업점 목록">
+	<ul>
+		<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>익산농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61255)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61255)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61255); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>531014</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61255">전북특별자치도 익산시 평동로 698 (인화동2가)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-858-8651</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-852-8651</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61255">동익산역 500M전방 구 원고 사거리</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61255">외환</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61255);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61255);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126955566, 35929773);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61255" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61255, 1, 2, 1, 126.955566, 35.929773, html, divHeight, false, '익산농협');
+				bounds.extend( new daum.maps.LatLng(35.929773, 126.955566));				
+			</script>
+			<li class="lists" onclick="goInfo(61255, this);">
+					<h2 class="list_no nonghyup">1</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61255, $(this).parents('li')); return false">익산농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 익산시 평동로 698 (인화동2가)</p>
+					<p class="list_telno">T. 063-858-8651</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>익산농협 남중지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61257)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61257)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61257); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>531016</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61257">전북특별자치도 익산시 인북로 205 (남중동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-858-8611</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-858-1746</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61257">시청사거리 남성맨션앞</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61257"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61257);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61257);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126956031, 35947194);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61257" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61257, 1, 2, 2, 126.956031, 35.947194, html, divHeight, false, '익산농협 남중지점');
+				bounds.extend( new daum.maps.LatLng(35.947194, 126.956031));				
+			</script>
+			<li class="lists" onclick="goInfo(61257, this);">
+					<h2 class="list_no nonghyup">2</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61257, $(this).parents('li')); return false">익산농협 남중지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 익산시 인북로 205 (남중동)</p>
+					<p class="list_telno">T. 063-858-8611</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>익산농협 동산제일지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(65565)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(65565)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(65565); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>531029</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_65565">전북특별자치도 익산시 동천로7길 35 (동산동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-858-8595</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-858-8597</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_65565">이리동중학교 앞</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_65565"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>자동화기기</th>';
+					
+						html += '				<td>ATM</td>';
+									 
+				 	html += '				</tr>';
+				 	
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>없음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(65565);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(65565);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126969068, 35932226);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_65565" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(65565, 1, 2, 3, 126.969068, 35.932226, html, divHeight, false, '익산농협 동산제일지점');
+				bounds.extend( new daum.maps.LatLng(35.932226, 126.969068));				
+			</script>
+			<li class="lists" onclick="goInfo(65565, this);">
+					<h2 class="list_no nonghyup">3</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(65565, $(this).parents('li')); return false">익산농협 동산제일지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 익산시 동천로7길 35 (동산동)</p>
+					<p class="list_telno">T. 063-858-8595</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>익산농협 동산지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61261)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61261)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61261); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>531031</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61261">전북특별자치도 익산시 평동로 740 (동산동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-858-9247</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-858-9250</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61261">동산동우체국옆</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61261"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61261);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61261);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126960221, 35928332);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61261" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61261, 1, 2, 4, 126.960221, 35.928332, html, divHeight, false, '익산농협 동산지점');
+				bounds.extend( new daum.maps.LatLng(35.928332, 126.960221));				
+			</script>
+			<li class="lists" onclick="goInfo(61261, this);">
+					<h2 class="list_no nonghyup">4</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61261, $(this).parents('li')); return false">익산농협 동산지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 익산시 평동로 740 (동산동)</p>
+					<p class="list_telno">T. 063-858-9247</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>익산농협 동이리지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61251)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61251)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61251); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>531010</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61251">전북특별자치도 익산시 평동로 667 (인화동2가)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-858-8621</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-858-1743</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61251">인화동제일병원옆2M</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61251"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61251);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61251);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126952955, 35931203);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61251" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61251, 1, 2, 5, 126.952955, 35.931203, html, divHeight, false, '익산농협 동이리지점');
+				bounds.extend( new daum.maps.LatLng(35.931203, 126.952955));				
+			</script>
+			<li class="lists" onclick="goInfo(61251, this);">
+					<h2 class="list_no nonghyup">5</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61251, $(this).parents('li')); return false">익산농협 동이리지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 익산시 평동로 667 (인화동2가)</p>
+					<p class="list_telno">T. 063-858-8621</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>익산농협 모현지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61256)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61256)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61256); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>531015</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61256">전북특별자치도 익산시 고현로 119 (모현동1가)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-858-4611</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-858-4322</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61256">모현동동사무소500M전방</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61256"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61256);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61256);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126943878, 35947655);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61256" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61256, 1, 2, 6, 126.943878, 35.947655, html, divHeight, false, '익산농협 모현지점');
+				bounds.extend( new daum.maps.LatLng(35.947655, 126.943878));				
+			</script>
+			<li class="lists" onclick="goInfo(61256, this);">
+					<h2 class="list_no nonghyup">6</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61256, $(this).parents('li')); return false">익산농협 모현지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 익산시 고현로 119 (모현동1가)</p>
+					<p class="list_telno">T. 063-858-4611</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>익산농협 배산지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61248)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61248)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61248); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>531005</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61248">전북특별자치도 익산시 선화로3길 31-13 (모현동1가, 금송빌딩), 101호</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-858-7229</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-858-7230</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61248">배산부영사랑으로1차아파트 104동 맞은편</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61248">외환</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>자동화기기</th>';
+					
+						html += '				<td>ATM</td>';
+									 
+				 	html += '				</tr>';
+				 	
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61248);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61248);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126938648, 35951837);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61248" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61248, 1, 2, 7, 126.938648, 35.951837, html, divHeight, false, '익산농협 배산지점');
+				bounds.extend( new daum.maps.LatLng(35.951837, 126.938648));				
+			</script>
+			<li class="lists" onclick="goInfo(61248, this);">
+					<h2 class="list_no nonghyup">7</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61248, $(this).parents('li')); return false">익산농협 배산지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 익산시 선화로3길 31-13 (모현동1가, 금송빌딩), 101호</p>
+					<p class="list_telno">T. 063-858-7229</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>익산농협 부송지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61258)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61258)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61258); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>531017</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61258">전북특별자치도 익산시 하나로 448 익산농협 부송지점 (어양동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-831-6131</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-831-6135</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61258">하나로사거리북쪽100미터</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61258"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61258);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61258);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126981819, 35960272);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61258" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61258, 1, 2, 8, 126.981819, 35.960272, html, divHeight, false, '익산농협 부송지점');
+				bounds.extend( new daum.maps.LatLng(35.960272, 126.981819));				
+			</script>
+			<li class="lists" onclick="goInfo(61258, this);">
+					<h2 class="list_no nonghyup">8</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61258, $(this).parents('li')); return false">익산농협 부송지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 익산시 하나로 448 익산농협 부송지점 (어양동)</p>
+					<p class="list_telno">T. 063-831-6131</p>
+				</li>				
+				<li class="paging"><a href="javascript:goPage(1);" class="pager_btn"><img src="../images/page_start.png" alt='첫페이지'></a> 
+<a href="javascript:goPage(90);" class="pager_btn"><img src="../images/page_prev.png" alt='이전페이지'></a> 
+&nbsp;<a href="javascript:goPage(91);" class="pager">91</a> 
+<a href="javascript:;" class="pager on">92</a> 
+<a href="javascript:goPage(93);" class="pager">93</a> 
+<a href="javascript:goPage(94);" class="pager">94</a> 
+<a href="javascript:goPage(95);" class="pager last">95</a> 
+<a href="javascript:goPage(96);" class="pager_btn"><img src="../images/page_next.png" alt='다음페이지'></a> 
+<a href="javascript:goPage(128);" class="pager_btn"><img src="../images/page_end.png" alt='끝페이지'></a> 
+</li>			
+			</ul>
+</div>

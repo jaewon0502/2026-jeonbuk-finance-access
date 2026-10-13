@@ -1,0 +1,897 @@
+<div class="result_header">
+	<div id="result_cnt">
+		<p>총 <span>1018</span> 건이 검색되었습니다. </p>
+	</div>
+	<!-- 좌측 검색범위와 상단탭이 같이 있어서 경우의 수를 따져야 함 -->
+	<!-- 결과 탭 (영업점) -->
+	<div class="result_tab" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(5);" class="" title="탄력점포">탄력점포</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="NH All100 종합자산관리센터">NH All100<br>종합자산관리센터</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab2" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="로얄라운지">로얄라운지</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(3);" class="" title="로또당첨금 지급점">로또당첨금<br>지급점</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(4);" class="" title="대여금고 취급점포">대여금고<br>취급점포</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab3" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(6, 1);" class="" title="장애인 편의시설">장애인 편의시설</a>
+			</li>
+			<li>
+				<div id="disabled_chkbox" style="display: none">
+					<input type="checkbox" name="disabled_slope" id="disabled_slope" value="1" checked>
+					<label for="disabled_slope" style="margin-right: 32px;">경사로</label>
+					<input type="checkbox" name="disabled_lift" id="disabled_lift" value="1" checked>
+					<label for="disabled_lift">장애인승강기</label>
+					<input type="checkbox" name="disabled_toilet" id="disabled_toilet" value="1" checked>
+					<label for="disabled_toilet">장애인화장실</label>
+					<br>
+					<input type="checkbox" name="disabled_bell" id="disabled_bell" value="1" checked>
+					<label for="disabled_bell">도움(벨)안내</label>
+					<input type="checkbox" name="disabled_parking" id="disabled_parking" value="1" checked>
+					<label for="disabled_parking">장애인주차장</label>
+					<input type="checkbox" name="disabled_video" id="disabled_video" value="1" checked>
+					<label for="disabled_video">화상수어상담</label>
+					<script>
+						$('input[name^="disabled_"]').click(function () {
+							changeListTab(6, 1);
+						});
+					</script>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- end of 결과 탭 (영업점) -->
+
+	<!-- 결과 탭 (ATM) -->
+	<div class="result_tab ATM" style="display: none;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="농협은행">농협은행</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="농축혐">농·축협</a>
+			</li>
+		</ul>
+	</div><!-- end of 결과 탭 (ATM) -->	
+</div>
+
+<!-- 결과 리스트 영역 -->
+<div id="result_list" style="top: 135px;" title="전체 영업점 목록">
+	<ul>
+		<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>대성농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61179)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61179)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61179); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>521116</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61179">전북특별자치도 고창군 대산면 대성로 247 (매산리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-562-3981</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-563-2639</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61179">대산파출소에서 고창방면200M전방</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61179"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61179);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61179);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126600945, 35339828);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61179" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61179, 1, 2, 1, 126.600945, 35.339828, html, divHeight, false, '대성농협');
+				bounds.extend( new daum.maps.LatLng(35.339828, 126.600945));				
+			</script>
+			<li class="lists" onclick="goInfo(61179, this);">
+					<h2 class="list_no nonghyup">1</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61179, $(this).parents('li')); return false">대성농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 고창군 대산면 대성로 247 (매산리)</p>
+					<p class="list_telno">T. 063-562-3981</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>대성농협 성송지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61171)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61171)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61171); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>521046</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61171">전북특별자치도 고창군 성송면 대성로 793 (계당리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-563-1010</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-561-1011</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61171">대성농협성송지점하나로마트앞</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61171"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61171);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61171);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126646605, 35366349);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61171" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61171, 1, 2, 2, 126.646605, 35.366349, html, divHeight, false, '대성농협 성송지점');
+				bounds.extend( new daum.maps.LatLng(35.366349, 126.646605));				
+			</script>
+			<li class="lists" onclick="goInfo(61171, this);">
+					<h2 class="list_no nonghyup">2</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61171, $(this).parents('li')); return false">대성농협 성송지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 고창군 성송면 대성로 793 (계당리)</p>
+					<p class="list_telno">T. 063-563-1010</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>대야농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61241)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61241)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61241); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>527097</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61241">전북특별자치도 군산시 대야면 백마길 4 (지경리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-451-2558</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-451-5426</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61241">대야터미널 앞 100MW전방</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61241"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61241);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61241);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126810670, 35945729);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61241" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61241, 1, 2, 3, 126.81067, 35.945729, html, divHeight, false, '대야농협');
+				bounds.extend( new daum.maps.LatLng(35.945729, 126.81067));				
+			</script>
+			<li class="lists" onclick="goInfo(61241, this);">
+					<h2 class="list_no nonghyup">3</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61241, $(this).parents('li')); return false">대야농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 군산시 대야면 백마길 4 (지경리)</p>
+					<p class="list_telno">T. 063-451-2558</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '1') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '1') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>대인동지점<span class="branch_type">(농협은행)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(500)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(500)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(500); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>613</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_500">전남광주통합특별시 동구 구성로 218 (대인동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>062-223-3216</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>062-225-3802</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_500">동부소방서에서 그랜드센트럴 방향 도보 50m 맞은편</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_500">외환,로또당첨금지급,방카슈랑스</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>자동화기기</th>';
+					
+						html += '				<td>ATM</td>';
+									 
+				 	html += '				</tr>';
+				 	
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>O</td>';
+				 	html += '				</tr>';
+				 	
+				 	divHeight += 35;
+				 	html += '				<tr>';
+				 	html += '					<th>장애인편의시설</th>';
+				 	html += '					<td>';
+				 		
+				 		html += '					<img src="/images/disabled_toilet.png" alt="장애인화장실" title="장애인화장실">'; // 화장실
+				 		
+				 		html += '					<img src="/images/disabled_video.png" alt="화상수어상담" title="화상수어상담">'; // 화상수어상담
+				 		
+				 	html += '					</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(500);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(500);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126915622, 35154564);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '				<a href="https://smartmarket.nonghyup.com/content/html/sf/cn/sfgateway.html?NAVIGATE_TYPE=1&SERVICE_ID=BFSTW2500R" target="_blank" class="btn_nearbranch ' + styleName + '">방문예약</a>';	
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_500" class="popup_branch_info ' + styleName + '" style="height: 290px;margin-top: -328px;">' + html;
+					
+
+				setMarker(500, 1, 1, 4, 126.915622, 35.154564, html, divHeight, false, '대인동지점');
+				bounds.extend( new daum.maps.LatLng(35.154564, 126.915622));				
+			</script>
+			<li class="lists" onclick="goInfo(500, this);">
+					<h2 class="list_no nhbank">4</h2>
+					<h2 class="list_title nhbank">
+						<a href="#" onclick="goInfo(500, $(this).parents('li')); return false">대인동지점</a>
+						<span class="bank_type_nhbank">(농협은행)</span>
+					</h2>
+					<p class="list_addr">
+					전남광주통합특별시 동구 구성로 218 (대인동)</p>
+					<p class="list_telno">T. 062-223-3216</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '1') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '1') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>대전계룡지점<span class="branch_type">(농협은행)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(14765)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(14765)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(14765); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>596</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_14765">대전광역시 서구 문정로48번길 48 (탄방동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>042-471-7818</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>042-471-7819</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_14765">탄방역 1번출구</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_14765">외환,보험</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>자동화기기</th>';
+					
+						html += '				<td>ATM</td>';
+									 
+				 	html += '				</tr>';
+				 	
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	divHeight += 35;
+				 	html += '				<tr>';
+				 	html += '					<th>장애인편의시설</th>';
+				 	html += '					<td>';
+				 		
+				 		html += '					<img src="/images/disabled_slope.png" alt="경사로" title="경사로">'; // 경사로
+				 		
+				 		html += '					<img src="/images/disabled_lift.png" alt="장애인승강기" title="장애인승강기">'; // 승강기
+				 		
+				 		html += '					<img src="/images/disabled_toilet.png" alt="장애인화장실" title="장애인화장실">'; // 화장실
+				 		
+				 		html += '					<img src="/images/disabled_parking.png" alt="장애인주차장" title="장애인주차장">'; // 주차장
+				 		
+				 		html += '					<img src="/images/disabled_video.png" alt="화상수어상담" title="화상수어상담">'; // 화상수어상담
+				 		
+				 	html += '					</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(14765);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(14765);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127384351, 36344939);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '				<a href="https://smartmarket.nonghyup.com/content/html/sf/cn/sfgateway.html?NAVIGATE_TYPE=1&SERVICE_ID=BFSTW2500R" target="_blank" class="btn_nearbranch ' + styleName + '">방문예약</a>';	
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_14765" class="popup_branch_info ' + styleName + '" style="height: 290px;margin-top: -328px;">' + html;
+					
+
+				setMarker(14765, 1, 1, 5, 127.384351, 36.344939, html, divHeight, false, '대전계룡지점');
+				bounds.extend( new daum.maps.LatLng(36.344939, 127.384351));				
+			</script>
+			<li class="lists" onclick="goInfo(14765, this);">
+					<h2 class="list_no nhbank">5</h2>
+					<h2 class="list_title nhbank">
+						<a href="#" onclick="goInfo(14765, $(this).parents('li')); return false">대전계룡지점</a>
+						<span class="bank_type_nhbank">(농협은행)</span>
+					</h2>
+					<p class="list_addr">
+					대전광역시 서구 문정로48번길 48 (탄방동)</p>
+					<p class="list_telno">T. 042-471-7818</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>대전농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61408)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61408)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61408); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>603124</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61408">전남광주통합특별시 담양군 대전면 추성1로 208 (대치리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>061-383-6791</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>061-382-9572</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61408">대전파출소옆</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61408"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61408);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61408);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126889367, 35276724);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61408" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61408, 1, 2, 6, 126.889367, 35.276724, html, divHeight, false, '대전농협');
+				bounds.extend( new daum.maps.LatLng(35.276724, 126.889367));				
+			</script>
+			<li class="lists" onclick="goInfo(61408, this);">
+					<h2 class="list_no nonghyup">6</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61408, $(this).parents('li')); return false">대전농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전남광주통합특별시 담양군 대전면 추성1로 208 (대치리)</p>
+					<p class="list_telno">T. 061-383-6791</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '1') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '1') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>대전영업부<span class="branch_type">(농협은행)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(346)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(346)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(346); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>415</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_346">대전광역시 중구 중앙로 113 (선화동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>042-221-5549</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>042-221-0958</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_346">대흥동 삼성생명 옆 중부경찰서 맞은편</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_346">대여금고,로얄라운지,로또당첨금지급,은퇴설계,방카슈랑스,펀드</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>자동화기기</th>';
+					
+						html += '				<td>ATM/STM</td>';
+									 
+				 	html += '				</tr>';
+				 	
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>O(5대)</td>';
+				 	html += '				</tr>';
+				 	
+				 	divHeight += 35;
+				 	html += '				<tr>';
+				 	html += '					<th>장애인편의시설</th>';
+				 	html += '					<td>';
+				 		
+				 		html += '					<img src="/images/disabled_video.png" alt="화상수어상담" title="화상수어상담">'; // 화상수어상담
+				 		
+				 	html += '					</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(346);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(346);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127422529, 36327704);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '				<a href="https://smartmarket.nonghyup.com/content/html/sf/cn/sfgateway.html?NAVIGATE_TYPE=1&SERVICE_ID=BFSTW2500R" target="_blank" class="btn_nearbranch ' + styleName + '">방문예약</a>';	
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_346" class="popup_branch_info ' + styleName + '" style="height: 290px;margin-top: -328px;">' + html;
+					
+
+				setMarker(346, 1, 1, 7, 127.422529, 36.327704, html, divHeight, false, '대전영업부');
+				bounds.extend( new daum.maps.LatLng(36.327704, 127.422529));				
+			</script>
+			<li class="lists" onclick="goInfo(346, this);">
+					<h2 class="list_no nhbank">7</h2>
+					<h2 class="list_title nhbank">
+						<a href="#" onclick="goInfo(346, $(this).parents('li')); return false">대전영업부</a>
+						<span class="bank_type_nhbank">(농협은행)</span>
+					</h2>
+					<p class="list_addr">
+					대전광역시 중구 중앙로 113 (선화동)</p>
+					<p class="list_telno">T. 042-221-5549</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>대전원예농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60639)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60639)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60639); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>453816</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60639">대전광역시 중구 대종로 411 (대흥동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>042-221-5300</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>042-221-5330</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60639"></td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60639"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60639);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60639);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127429441, 36321880);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60639" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60639, 1, 2, 8, 127.429441, 36.32188, html, divHeight, false, '대전원예농협');
+				bounds.extend( new daum.maps.LatLng(36.32188, 127.429441));				
+			</script>
+			<li class="lists" onclick="goInfo(60639, this);">
+					<h2 class="list_no nonghyup">8</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60639, $(this).parents('li')); return false">대전원예농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					대전광역시 중구 대종로 411 (대흥동)</p>
+					<p class="list_telno">T. 042-221-5300</p>
+				</li>				
+				<li class="paging"><a href="javascript:goPage(1);" class="pager_btn"><img src="../images/page_start.png" alt='첫페이지'></a> 
+<a href="javascript:goPage(35);" class="pager_btn"><img src="../images/page_prev.png" alt='이전페이지'></a> 
+&nbsp;<a href="javascript:goPage(36);" class="pager">36</a> 
+<a href="javascript:goPage(37);" class="pager">37</a> 
+<a href="javascript:goPage(38);" class="pager">38</a> 
+<a href="javascript:goPage(39);" class="pager">39</a> 
+<a href="javascript:;" class="pager last pager on">40</a> 
+<a href="javascript:goPage(41);" class="pager_btn"><img src="../images/page_next.png" alt='다음페이지'></a> 
+<a href="javascript:goPage(128);" class="pager_btn"><img src="../images/page_end.png" alt='끝페이지'></a> 
+</li>			
+			</ul>
+</div>

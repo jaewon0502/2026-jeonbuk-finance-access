@@ -1,0 +1,46 @@
+[
+  {
+    "scenario": "all_added_included",
+    "eligible_outlets": 1347,
+    "P1": 21,
+    "P2": 33,
+    "candidate_targets": 54,
+    "quality_deferred": 3,
+    "new_candidate_count_vs_main": 0,
+    "removed_candidate_count_vs_main": 0,
+    "candidate_jaccard_vs_main": 1.0
+  },
+  {
+    "scenario": "exclude_name_flags_2",
+    "eligible_outlets": 1345,
+    "P1": 21,
+    "P2": 33,
+    "candidate_targets": 54,
+    "quality_deferred": 3,
+    "new_candidate_count_vs_main": 0,
+    "removed_candidate_count_vs_main": 0,
+    "candidate_jaccard_vs_main": 1.0
+  },
+  {
+    "scenario": "exclude_no_service_tag_271",
+    "eligible_outlets": 1076,
+    "P1": 26,
+    "P2": 42,
+    "candidate_targets": 68,
+    "quality_deferred": 3,
+    "new_candidate_count_vs_main": 14,
+    "removed_candidate_count_vs_main": 0,
+    "candidate_jaccard_vs_main": 0.794118
+  },
+  {
+    "scenario": "exclude_all_jeonbuk_coops_334",
+    "eligible_outlets": 1013,
+    "P1": 27,
+    "P2": 43,
+    "candidate_targets": 70,
+    "quality_deferred": 3,
+    "new_candidate_count_vs_main": 16,
+    "removed_candidate_count_vs_main": 0,
+    "candidate_jaccard_vs_main": 0.771429
+  }
+]

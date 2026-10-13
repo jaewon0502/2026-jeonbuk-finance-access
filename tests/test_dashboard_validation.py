@@ -38,7 +38,7 @@ class DashboardValidationTests(unittest.TestCase):
         self.assertEqual(sum(row["priority"] == "P1" for row in data["admins"]), 21)
         self.assertEqual(sum(row["priority"] == "P2" for row in data["admins"]), 33)
         self.assertEqual(data["source_as_of"]["outlets"], "원천별 기준일 상이")
-        self.assertIn("보완 목록 2026-10-12 수집", data["source_as_of"]["outlets_note"])
+        self.assertIn("농협·인접 신협 2026-10-12 수집", data["source_as_of"]["outlets_note"])
         self.assertEqual(data["source_as_of"]["outlets_retrieved"], "2026-10-12")
 
     def test_admin_values_match_expanded_access_without_rounded_classification(self):

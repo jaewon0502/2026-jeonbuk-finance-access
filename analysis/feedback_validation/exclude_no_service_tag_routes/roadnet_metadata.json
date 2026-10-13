@@ -1,0 +1,20 @@
+{
+  "pbf_md5": "df6f9430a975f927c08f4afddade7f97",
+  "pbf_sha256": "a856bb1e43c968612b2339af0e01da8bb972e10ba21ca86b9d91aac4d1d64505",
+  "boundary_sha256": "a394b1741d89f9c3556b6d83845b899f8ebe32f13fd77646fa07cabf76c286b4",
+  "graph_manifest": {
+    "inputs": {
+      "pbf_sha256": "a856bb1e43c968612b2339af0e01da8bb972e10ba21ca86b9d91aac4d1d64505",
+      "boundary_sha256": "a394b1741d89f9c3556b6d83845b899f8ebe32f13fd77646fa07cabf76c286b4",
+      "build_roadnet_sha256": "1c49d4bfb568bdc3af98a2a5fa052d3bc31c58a75fb03114889f8125f82112e1",
+      "geo_utils_sha256": "482b593ad1eee6dbb7146911de9098ef33a2f8613c08299261dd98d884637b9d",
+      "python_version": "3.14.6",
+      "osmium_version": "4.3.1",
+      "bbox_margin_degrees": 0.25,
+      "max_snap_km": 2.0,
+      "grid_degrees": 0.01
+    },
+    "graph_sha256": "bc572d342d0652f11e01c91ddd19b80cf585ec539f75750535b9ccd7001fbef9",
+    "cache_file": "/Users/jaewon/Documents/ChatGPT/전북 빅데이터/2026-jeonbuk-finance-access/analysis/theory_validation/spatial/cache/9cd7ec51fc39095a1c50c1289e7dc03d544d035a4f822f3c526a2ff90d674b11.pickle"
+  }
+}

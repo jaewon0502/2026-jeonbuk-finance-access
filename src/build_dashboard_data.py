@@ -342,7 +342,7 @@ def build_payload(legacy: bool = False) -> dict:
         payload["validation"] = provenance
         payload["source_as_of"].update({
             "outlets": "원천별 기준일 상이",
-            "outlets_note": "우체국 2025-03-01 · 은행 2025-12-31 · 신협·새마을금고 2026-08 수집 · 보완 목록 2026-10-12 수집",
+            "outlets_note": "우체국 2025-03-01 · 은행 2025-12-31 · 신협·새마을금고 2026-08 수집 · 농협·인접 신협 2026-10-12 수집",
             "outlets_retrieved": "2026-10-12",
             "generated_on": route["analysis_date"], "roads": provenance["road_date"],
         })

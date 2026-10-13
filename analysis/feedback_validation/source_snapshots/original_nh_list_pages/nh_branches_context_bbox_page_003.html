@@ -1,0 +1,909 @@
+<div class="result_header">
+	<div id="result_cnt">
+		<p>총 <span>1018</span> 건이 검색되었습니다. </p>
+	</div>
+	<!-- 좌측 검색범위와 상단탭이 같이 있어서 경우의 수를 따져야 함 -->
+	<!-- 결과 탭 (영업점) -->
+	<div class="result_tab" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(5);" class="" title="탄력점포">탄력점포</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="NH All100 종합자산관리센터">NH All100<br>종합자산관리센터</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab2" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="로얄라운지">로얄라운지</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(3);" class="" title="로또당첨금 지급점">로또당첨금<br>지급점</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(4);" class="" title="대여금고 취급점포">대여금고<br>취급점포</a>
+			</li>
+		</ul>
+	</div>
+	<div class="result_tab3" style="display: block;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(6, 1);" class="" title="장애인 편의시설">장애인 편의시설</a>
+			</li>
+			<li>
+				<div id="disabled_chkbox" style="display: none">
+					<input type="checkbox" name="disabled_slope" id="disabled_slope" value="1" checked>
+					<label for="disabled_slope" style="margin-right: 32px;">경사로</label>
+					<input type="checkbox" name="disabled_lift" id="disabled_lift" value="1" checked>
+					<label for="disabled_lift">장애인승강기</label>
+					<input type="checkbox" name="disabled_toilet" id="disabled_toilet" value="1" checked>
+					<label for="disabled_toilet">장애인화장실</label>
+					<br>
+					<input type="checkbox" name="disabled_bell" id="disabled_bell" value="1" checked>
+					<label for="disabled_bell">도움(벨)안내</label>
+					<input type="checkbox" name="disabled_parking" id="disabled_parking" value="1" checked>
+					<label for="disabled_parking">장애인주차장</label>
+					<input type="checkbox" name="disabled_video" id="disabled_video" value="1" checked>
+					<label for="disabled_video">화상수어상담</label>
+					<script>
+						$('input[name^="disabled_"]').click(function () {
+							changeListTab(6, 1);
+						});
+					</script>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- end of 결과 탭 (영업점) -->
+
+	<!-- 결과 탭 (ATM) -->
+	<div class="result_tab ATM" style="display: none;">
+		<ul>
+			<li>
+				<a href="javascript:changeListTab(0);" class="on" title="전체">전 체</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(1);" class="" title="농협은행">농협은행</a>
+			</li>
+			<li>
+				<a href="javascript:changeListTab(2);" class="" title="농축혐">농·축협</a>
+			</li>
+		</ul>
+	</div><!-- end of 결과 탭 (ATM) -->	
+</div>
+
+<!-- 결과 리스트 영역 -->
+<div id="result_list" style="top: 135px;" title="전체 영업점 목록">
+	<ul>
+		<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>거창축협 거열지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(63337)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(63337)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(63337); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>177299</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_63337">경상남도 거창군 거창읍 거열로4길 123 (가지리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>055-943-9521</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_63337"></td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_63337"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(63337);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(63337);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127907091, 35693976);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_63337" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(63337, 1, 2, 1, 127.907091, 35.693976, html, divHeight, false, '거창축협 거열지점');
+				bounds.extend( new daum.maps.LatLng(35.693976, 127.907091));				
+			</script>
+			<li class="lists" onclick="goInfo(63337, this);">
+					<h2 class="list_no nonghyup">1</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(63337, $(this).parents('li')); return false">거창축협 거열지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					경상남도 거창군 거창읍 거열로4길 123 (가지리)</p>
+					<p class="list_telno">T. 055-943-9521</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>거창축협 중앙지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(59154)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(59154)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(59154); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>177302</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_59154">경상남도 거창군 거창읍 거창대로 53 (대동리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>055-943-9591</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>055-943-9550</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_59154">2교다리성은빌딩옆</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_59154"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(59154);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(59154);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127916179, 35686283);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_59154" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(59154, 1, 2, 2, 127.916179, 35.686283, html, divHeight, false, '거창축협 중앙지점');
+				bounds.extend( new daum.maps.LatLng(35.686283, 127.916179));				
+			</script>
+			<li class="lists" onclick="goInfo(59154, this);">
+					<h2 class="list_no nonghyup">2</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(59154, $(this).parents('li')); return false">거창축협 중앙지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					경상남도 거창군 거창읍 거창대로 53 (대동리)</p>
+					<p class="list_telno">T. 055-943-9591</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>거창축협 코아루지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(59153)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(59153)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(59153); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>177295</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_59153">경상남도 거창군 거창읍 강남로 266 (대평리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>055-943-9601</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>055-943-9603</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_59153">2층 204호(제상가동)</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_59153"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(59153);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(59153);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127926073, 35687118);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_59153" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(59153, 1, 2, 3, 127.926073, 35.687118, html, divHeight, false, '거창축협 코아루지점');
+				bounds.extend( new daum.maps.LatLng(35.687118, 127.926073));				
+			</script>
+			<li class="lists" onclick="goInfo(59153, this);">
+					<h2 class="list_no nonghyup">3</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(59153, $(this).parents('li')); return false">거창축협 코아루지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					경상남도 거창군 거창읍 강남로 266 (대평리)</p>
+					<p class="list_telno">T. 055-943-9601</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>계룡농협 경천지점<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(60673)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(60673)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(60673); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>457010</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_60673">충청남도 공주시 계룡면 신원사로 123 (경천리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>041-852-4108</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>041-852-8069</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_60673">경천초등학교후문옆</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_60673"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(60673);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(60673);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127151083, 36324804);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_60673" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(60673, 1, 2, 4, 127.151083, 36.324804, html, divHeight, false, '계룡농협 경천지점');
+				bounds.extend( new daum.maps.LatLng(36.324804, 127.151083));				
+			</script>
+			<li class="lists" onclick="goInfo(60673, this);">
+					<h2 class="list_no nonghyup">4</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(60673, $(this).parents('li')); return false">계룡농협 경천지점</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 공주시 계룡면 신원사로 123 (경천리)</p>
+					<p class="list_telno">T. 041-852-4108</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '1') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '1') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>계룡대(출)<span class="branch_type">(농협은행)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(374)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(374)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(374); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>448</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_374">충청남도 계룡시 신도안면 계룡대로 663 (신도안면)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>042-551-0355</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>042-551-3144</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_374">3군본부내</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_374">로또당첨금지급</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>자동화기기</th>';
+					
+						html += '				<td>ATM</td>';
+									 
+				 	html += '				</tr>';
+				 	
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	divHeight += 35;
+				 	html += '				<tr>';
+				 	html += '					<th>장애인편의시설</th>';
+				 	html += '					<td>';
+				 		
+				 		html += '					<img src="/images/disabled_slope.png" alt="경사로" title="경사로">'; // 경사로
+				 		
+				 		html += '					<img src="/images/disabled_toilet.png" alt="장애인화장실" title="장애인화장실">'; // 화장실
+				 		
+				 		html += '					<img src="/images/disabled_parking.png" alt="장애인주차장" title="장애인주차장">'; // 주차장
+				 		
+				 		html += '					<img src="/images/disabled_video.png" alt="화상수어상담" title="화상수어상담">'; // 화상수어상담
+				 		
+				 	html += '					</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(374);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(374);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127234784, 36298009);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '				<a href="https://smartmarket.nonghyup.com/content/html/sf/cn/sfgateway.html?NAVIGATE_TYPE=1&SERVICE_ID=BFSTW2500R" target="_blank" class="btn_nearbranch ' + styleName + '">방문예약</a>';	
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_374" class="popup_branch_info ' + styleName + '" style="height: 290px;margin-top: -328px;">' + html;
+					
+
+				setMarker(374, 1, 1, 5, 127.234784, 36.298009, html, divHeight, false, '계룡대(출)');
+				bounds.extend( new daum.maps.LatLng(36.298009, 127.234784));				
+			</script>
+			<li class="lists" onclick="goInfo(374, this);">
+					<h2 class="list_no nhbank">5</h2>
+					<h2 class="list_title nhbank">
+						<a href="#" onclick="goInfo(374, $(this).parents('li')); return false">계룡대(출)</a>
+						<span class="bank_type_nhbank">(농협은행)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 계룡시 신도안면 계룡대로 663 (신도안면)</p>
+					<p class="list_telno">T. 042-551-0355</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '1') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '1') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>계룡시지부<span class="branch_type">(농협은행)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(338)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(338)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(338); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>406</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_338">충청남도 계룡시 계룡대로 303 (금암동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>042-551-1103</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>042-551-3087</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_338">홈플러스 정문 앞 위치</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_338">외환,로또당첨금지급</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>자동화기기</th>';
+					
+						html += '				<td>ATM</td>';
+									 
+				 	html += '				</tr>';
+				 	
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>있음</td>';
+				 	html += '				</tr>';
+				 	
+				 	divHeight += 35;
+				 	html += '				<tr>';
+				 	html += '					<th>장애인편의시설</th>';
+				 	html += '					<td>';
+				 		
+				 		html += '					<img src="/images/disabled_slope.png" alt="경사로" title="경사로">'; // 경사로
+				 		
+				 		html += '					<img src="/images/disabled_toilet.png" alt="장애인화장실" title="장애인화장실">'; // 화장실
+				 		
+				 		html += '					<img src="/images/disabled_parking.png" alt="장애인주차장" title="장애인주차장">'; // 주차장
+				 		
+				 		html += '					<img src="/images/disabled_video.png" alt="화상수어상담" title="화상수어상담">'; // 화상수어상담
+				 		
+				 	html += '					</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(338);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(338);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127256595, 36273219);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '				<a href="https://smartmarket.nonghyup.com/content/html/sf/cn/sfgateway.html?NAVIGATE_TYPE=1&SERVICE_ID=BFSTW2500R" target="_blank" class="btn_nearbranch ' + styleName + '">방문예약</a>';	
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_338" class="popup_branch_info ' + styleName + '" style="height: 290px;margin-top: -328px;">' + html;
+					
+
+				setMarker(338, 1, 1, 6, 127.256595, 36.273219, html, divHeight, false, '계룡시지부');
+				bounds.extend( new daum.maps.LatLng(36.273219, 127.256595));				
+			</script>
+			<li class="lists" onclick="goInfo(338, this);">
+					<h2 class="list_no nhbank">6</h2>
+					<h2 class="list_title nhbank">
+						<a href="#" onclick="goInfo(338, $(this).parents('li')); return false">계룡시지부</a>
+						<span class="bank_type_nhbank">(농협은행)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 계룡시 계룡대로 303 (금암동)</p>
+					<p class="list_telno">T. 042-551-1103</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '1') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '1') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>계룡시청(출)<span class="branch_type">(농협은행)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(12253)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(12253)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(12253); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>1177</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_12253">충청남도 계룡시 장안로 46 (금암동)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>042-841-1065</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>042-841-2231</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_12253">계룡시청 내</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_12253">외환,로또당첨금지급,탄력점포</td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+					html += '				<tr>';
+					html += '					<th>영업시간</th>';
+					html += '					<td id="td_flex_12253">09:00 ~ 18:00(16시 이후 공과금 수납 등 일부업무만 가능)</td>';
+					html += '				</tr>';
+					
+				 	html += '				<tr>';
+				 	html += '					<th>자동화기기</th>';
+					
+						html += '				<td>ATM</td>';
+									 
+				 	html += '				</tr>';
+				 	
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td>○</td>';
+				 	html += '				</tr>';
+				 	
+				 	divHeight += 35;
+				 	html += '				<tr>';
+				 	html += '					<th>장애인편의시설</th>';
+				 	html += '					<td>';
+				 		
+				 		html += '					<img src="/images/disabled_slope.png" alt="경사로" title="경사로">'; // 경사로
+				 		
+				 		html += '					<img src="/images/disabled_lift.png" alt="장애인승강기" title="장애인승강기">'; // 승강기
+				 		
+				 		html += '					<img src="/images/disabled_toilet.png" alt="장애인화장실" title="장애인화장실">'; // 화장실
+				 		
+				 		html += '					<img src="/images/disabled_bell.png" alt="도움(벨)안내" title="도움(벨)안내">'; // 도움(벨)안내
+				 		
+				 		html += '					<img src="/images/disabled_parking.png" alt="장애인주차장" title="장애인주차장">'; // 주차장
+				 		
+				 		html += '					<img src="/images/disabled_video.png" alt="화상수어상담" title="화상수어상담">'; // 화상수어상담
+				 		
+				 	html += '					</td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(12253);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(12253);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(127248503, 36274564);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '				<a href="https://smartmarket.nonghyup.com/content/html/sf/cn/sfgateway.html?NAVIGATE_TYPE=1&SERVICE_ID=BFSTW2500R" target="_blank" class="btn_nearbranch ' + styleName + '">방문예약</a>';	
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_12253" class="popup_branch_info ' + styleName + '" style="height: 290px;margin-top: -328px;">' + html;
+					
+
+				setMarker(12253, 1, 1, 7, 127.248503, 36.274564, html, divHeight, false, '계룡시청(출)');
+				bounds.extend( new daum.maps.LatLng(36.274564, 127.248503));				
+			</script>
+			<li class="lists" onclick="goInfo(12253, this);">
+					<h2 class="list_no nhbank">7</h2>
+					<h2 class="list_title nhbank">
+						<a href="#" onclick="goInfo(12253, $(this).parents('li')); return false">계룡시청(출)</a>
+						<span class="bank_type_nhbank">(농협은행)</span>
+					</h2>
+					<p class="list_addr">
+					충청남도 계룡시 장안로 46 (금암동)</p>
+					<p class="list_telno">T. 042-841-1065</p>
+				</li>				
+				<script>
+				var styleName = 'nhbank';
+			 	if ('2' == '2') {
+				 	styleName = 'nonghyup';
+			 	} else if ('3' == '2') {
+				 	styleName = 'etc';
+			 	}
+			 
+			 	var divHeight = 242;
+			 
+			 	var html = '';
+				html += '			<div class="branch_info_header etc">';
+				html += '				<h1>계화농협<span class="branch_type">(농.축협)</span></h1>';
+				html += '				<div class="btn_group">';
+				//html += '					<span class="btn_sms etc" onclick="openSMS(61196)">SMS</span>';
+				//html += '					<span class="btn_print etc" onclick="openPrint(61196)">인쇄</span>';
+				html += '					<a href="#" onclick="closeOverlay(61196); return false;"><img src="../images/btn_close_etc3.png" alt="닫기"></a>';
+				html += '				</div>';			
+				html += '			</div>';				 
+				html += '			<table class="description" summary="이 표는 해당 지점의 지점코드, 주소, 전화, 팩스, 오시는 길, 취급업무, 자동화기기, 주차시설, 장애인편의시설을 알려주는 표로 구성되어 있습니다.">';
+				html += '				<caption>해당 지점 상세정보</caption>';
+				html += '				<colgroup>';
+				html += '					<col width="80px" />';
+				html += '					<col width="250px" />';
+				html += '				</colgroup>';
+				html += '				<tbody>';
+				 // 지점
+					html += '			<tr>';
+					html += '				<th>지점코드</th>';
+						
+							html +=			'<td>523130</td>';
+							
+					html += '			</tr>';
+				 	html += '			<tr>';
+				 	html += '				<th>주소</th>';
+					
+						html += '			<td id="td_addr_61196">전북특별자치도 부안군 계화면 간재로 404 (창북리)</td>';
+									 
+				 	html += '				</tr>';
+				 	
+					html += '				<tr>';
+					html += '					<th>전화</th>';
+					html += '					<td>063-581-2321</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>팩스</th>';
+					html += '					<td>063-581-2327</td>';
+					html += '				</tr>';
+					
+					html += '				<tr>';
+					html += '					<th>오시는 길</th>';
+					html += '					<td id="td_loc_61196">계화면사무소 앞</td>';
+					html += '				</tr>';
+					html += '				<tr>';
+					html += '					<th>취급업무</th>';
+					html += '					<td style="word-break: break-all;" id="td_bussiness_61196"></td>';
+					html += '				</tr>';
+					// 탄력점포 영업시간 추가, 20190926 by jylee
+					
+				 	html += '				<tr>';
+				 	html += '					<th>주차시설</th>';
+				 	html += '					<td></td>';
+				 	html += '				</tr>';
+				 	
+				 	html += '				</tbody>';
+				 	html += '			</table>';
+				 	
+			 	html += '			<div class="btn_area">';
+			 	html += '				<a href="javascript:openSMS(61196);" class="btn_sms_print ' + styleName + '" title="새창열림">SMS</a>';
+			 	html += '				<a href="javascript:openPrint(61196);" class="btn_sms_print ' + styleName + '" title="새창열림">인쇄</a>';			 
+			 	html += '				<a href="javascript:showNear(126698378, 35762550);" class="btn_nearbranch ' + styleName + '">인근영업점</a>';
+			 	
+			 	html += '			</div>';
+			 	html += '		</div>';			 
+			 	 // 지점
+				 	html = '	<div id="nh_61196" class="popup_branch_info ' + styleName + '" style="height: 255px;margin-top: -293px;">' + html;
+					
+
+				setMarker(61196, 1, 2, 8, 126.698378, 35.76255, html, divHeight, false, '계화농협');
+				bounds.extend( new daum.maps.LatLng(35.76255, 126.698378));				
+			</script>
+			<li class="lists" onclick="goInfo(61196, this);">
+					<h2 class="list_no nonghyup">8</h2>
+					<h2 class="list_title nonghyup">
+						<a href="#" onclick="goInfo(61196, $(this).parents('li')); return false">계화농협</a>
+						<span class="bank_type_nhbank">(농·축협)</span>
+					</h2>
+					<p class="list_addr">
+					전북특별자치도 부안군 계화면 간재로 404 (창북리)</p>
+					<p class="list_telno">T. 063-581-2321</p>
+				</li>				
+				<li class="paging"><a href="javascript:;" class="pager_btn"><img src="../images/page_start.png" alt='첫페이지'></a> 
+<a href="javascript:;" class="pager_btn"><img src="../images/page_prev.png" alt='이전페이지'></a> 
+&nbsp;<a href="javascript:goPage(1);" class="pager">1</a> 
+<a href="javascript:goPage(2);" class="pager">2</a> 
+<a href="javascript:;" class="pager on">3</a> 
+<a href="javascript:goPage(4);" class="pager">4</a> 
+<a href="javascript:goPage(5);" class="pager last">5</a> 
+<a href="javascript:goPage(6);" class="pager_btn"><img src="../images/page_next.png" alt='다음페이지'></a> 
+<a href="javascript:goPage(128);" class="pager_btn"><img src="../images/page_end.png" alt='끝페이지'></a> 
+</li>			
+			</ul>
+</div>

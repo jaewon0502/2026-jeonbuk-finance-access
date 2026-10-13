@@ -1,0 +1,10 @@
+﻿scenario,method,target_count,covered,P1,P2,unvisited,distance_km,travel_plus_wait_minutes,allocated_route_days,used_route_days,violations
+all_added_included,nearest,54,50,21,29,4,1078.751,1618.126,15,15,0
+all_added_included,priority_nearest,54,50,21,29,4,1103.95,1655.922,15,15,0
+all_added_included,exact_dp,54,50,21,29,4,1003.716,1505.569,15,15,0
+exclude_no_service_tag_271,nearest,68,58,23,35,10,1063.121,1594.679,15,15,0
+exclude_no_service_tag_271,priority_nearest,68,58,26,32,10,1189.454,1784.177,15,15,0
+exclude_no_service_tag_271,exact_dp,68,58,26,32,10,1063.647,1595.469,15,15,0
+exclude_all_jeonbuk_coops_334,nearest,70,58,23,35,12,1049.504,1574.254,15,15,0
+exclude_all_jeonbuk_coops_334,priority_nearest,70,58,27,31,12,1176.259,1764.385,15,15,0
+exclude_all_jeonbuk_coops_334,exact_dp,70,58,27,31,12,1057.792,1586.685,15,15,0

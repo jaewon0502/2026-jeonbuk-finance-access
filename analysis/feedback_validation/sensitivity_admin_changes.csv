@@ -1,0 +1,193 @@
+﻿scenario,admin_code,sigungu,dong,main_road_km,alternative_road_km,main_category,alternative_category,main_nearest_outlet,alternative_nearest_outlet
+exclude_name_flags_2,5211170300,전주시완산구,삼천3동,4.061524994668351,4.208292797817667,P2,P2,전주농협 모악공판장지점,신전주 (본점) 새마을금고
+exclude_no_service_tag_271,5211170300,전주시완산구,삼천3동,4.061524994668351,4.208292797817667,P2,P2,전주농협 모악공판장지점,신전주 (본점) 새마을금고
+exclude_no_service_tag_271,5211171100,전주시완산구,효자1동,0.6180043419965823,0.6804862531776016,within_threshold,within_threshold,전주농협 완산지점,전북은행 효자동
+exclude_no_service_tag_271,5211171300,전주시완산구,효자3동,0.03773290809215668,0.04598309085823022,within_threshold,within_threshold,전주김제완주축협 안행지점,전주파티마신용협동조합 지점
+exclude_no_service_tag_271,5211361100,전주시덕진구,우아1동,0.7037234157814362,0.7294093219674707,within_threshold,within_threshold,전주원예농협 역전지점,전북은행 전주첫마중길
+exclude_no_service_tag_271,5211364200,전주시덕진구,송천2동,2.41854567188913,2.496346831123073,within_threshold,within_threshold,전주원예농협,임실치즈농협 에코그린지점
+exclude_no_service_tag_271,5211367000,전주시덕진구,혁신동,1.3448711692685587,1.3551478446193435,within_threshold,within_threshold,이서농협 중동지점,우리은행 전북혁신도시(출)
+exclude_no_service_tag_271,5213033000,군산시,임피면,2.8114356546111683,3.1393712007808037,within_threshold,P2,동군산농협,군산서수우체국
+exclude_no_service_tag_271,5213035000,군산시,대야면,16.08888474929019,16.472580112641534,P1,P1,금만농협,만경 (본점) 새마을금고
+exclude_no_service_tag_271,5213036000,군산시,개정면,1.4014190880277542,1.4844663539142706,within_threshold,within_threshold,군산농협 개정지점,동군산 (발산) 새마을금고
+exclude_no_service_tag_271,5213038000,군산시,나포면,0.6807926022781597,0.85724073775055,within_threshold,within_threshold,동군산농협 나포지점,군산나포우체국
+exclude_no_service_tag_271,5213056000,군산시,삼학동,0.33476270830930244,0.6360780798157922,within_threshold,within_threshold,군산농협 삼학지점,군산반석신용협동조합 지점
+exclude_no_service_tag_271,5213060500,군산시,중앙동,0.7002115407976921,0.7318225237891944,within_threshold,within_threshold,군산원예농협 죽성지점,금강 (본점) 새마을금고
+exclude_no_service_tag_271,5213064000,군산시,흥남동,0.41921684293553224,0.8476435200826566,within_threshold,within_threshold,익산군산축협 군산지점,군산해성신용협동조합 지점
+exclude_no_service_tag_271,5213072000,군산시,미성동,1.6048179651464283,3.9647312876124614,within_threshold,P2,서군산농협,전북은행 군산대
+exclude_no_service_tag_271,5214025000,익산시,함열읍,2.142360845854001,2.3024178393772523,within_threshold,within_threshold,익산군산축협 함열제일지점,익산신용협동조합 본점
+exclude_no_service_tag_271,5214034000,익산시,웅포면,1.808807119582991,4.021322818946951,within_threshold,P2,서익산농협 웅포지점,익산웅포우체국
+exclude_no_service_tag_271,5214036000,익산시,용안면,0.5590501268727222,0.8050880800192739,within_threshold,within_threshold,북익산농협 용안지점,용안신용협동조합 본점
+exclude_no_service_tag_271,5214038000,익산시,망성면,3.147890163821698,3.414253362063405,P2,P2,망성농협,익산망성우체국
+exclude_no_service_tag_271,5214039000,익산시,여산면,1.1349907765485798,1.279389618198462,within_threshold,within_threshold,여산농협,익산여산우체국
+exclude_no_service_tag_271,5214042000,익산시,춘포면,2.4572240918911596,4.451672499053081,within_threshold,P2,익산농협 오성지점,익산2공단우체국
+exclude_no_service_tag_271,5214056000,익산시,인화동,0.7068109993236628,0.8538381170877336,within_threshold,within_threshold,익산농협 동이리지점,인화 (본점) 새마을금고
+exclude_no_service_tag_271,5214057000,익산시,동산동,2.3281444371185236,2.362728168402811,within_threshold,within_threshold,익산농협 동산지점,익산동산동우체국
+exclude_no_service_tag_271,5214058000,익산시,마동,0.9989752341764582,1.2375252680490763,within_threshold,within_threshold,익산원예농협 동산동지점,이리주현신용협동조합 본점
+exclude_no_service_tag_271,5214062000,익산시,송학동,0.900223744148609,0.9251123347458899,within_threshold,within_threshold,익산농협 평화지점,익산서부 (본점) 새마을금고
+exclude_no_service_tag_271,5214065600,익산시,신동,1.715360155251737,1.7157624467984856,within_threshold,within_threshold,익산농협 북일지점,원광중앙신용협동조합 본점
+exclude_no_service_tag_271,5214069000,익산시,삼성동,3.412818324313075,3.546964863646512,P2,P2,익산원예농협 부송제일지점,익산팔봉동우체국
+exclude_no_service_tag_271,5218025000,정읍시,신태인읍,2.5255722558747897,2.655385558981593,within_threshold,within_threshold,신태인농협,신태인 (본점) 새마을금고
+exclude_no_service_tag_271,5218032000,정읍시,입암면,0.7134738645344025,3.2947938119654814,within_threshold,P2,황토현농협 입암지점,정읍입암우체국
+exclude_no_service_tag_271,5218035000,정읍시,영원면,2.1645117655355612,2.1783496351180043,within_threshold,within_threshold,황토현농협 영원지점,정읍영원우체국
+exclude_no_service_tag_271,5218036000,정읍시,덕천면,3.132380889265267,3.203625039870237,P2,P2,정읍농협 덕천지점,정읍덕천우체국
+exclude_no_service_tag_271,5218038000,정읍시,정우면,1.2255204878502959,1.521420492079405,quality_deferred,quality_deferred,샘골농협,정읍정우우체국
+exclude_no_service_tag_271,5218042000,정읍시,칠보면,4.942661131845389,5.113305659799449,quality_deferred,quality_deferred,칠보농협,정읍칠보우체국
+exclude_no_service_tag_271,5218054500,정읍시,시기동,0.12578741156125195,0.1602121357527325,within_threshold,within_threshold,정읍농협 시기지점,정읍 (시기) 새마을금고
+exclude_no_service_tag_271,5218057000,정읍시,연지동,0.3866882399735059,0.502540391233595,within_threshold,within_threshold,정읍농협,연지 (본점) 새마을금고
+exclude_no_service_tag_271,5218058000,정읍시,농소동,2.0368499916230816,4.375682713367508,within_threshold,P2,정읍농협 정일지점,연지 (본점) 새마을금고
+exclude_no_service_tag_271,5218059500,정읍시,상교동,1.4470873900673098,4.3895107344323625,within_threshold,P2,정읍농협 교암지점,정읍원예농협
+exclude_no_service_tag_271,5219025000,남원시,운봉읍,1.04489886154926,1.1248280230778913,within_threshold,within_threshold,운봉농협,남원운봉우체국
+exclude_no_service_tag_271,5219031000,남원시,주천면,2.0114616497074174,6.24639022051784,within_threshold,P1,남원농협 주천지점,남원이백우체국
+exclude_no_service_tag_271,5219032000,남원시,수지면,0.7158592367521723,0.8268054790489267,within_threshold,within_threshold,춘향골농협 수지지점,남원수지우체국
+exclude_no_service_tag_271,5219037000,남원시,대산면,1.8563487687918918,1.9550562814616814,within_threshold,within_threshold,남원농협 대산지점,남원대산우체국
+exclude_no_service_tag_271,5219038000,남원시,사매면,4.482687870384331,4.535516355424105,P2,P2,남원농협 사매지점,남원사매우체국
+exclude_no_service_tag_271,5219039000,남원시,덕과면,2.98840952133731,4.999521795525847,within_threshold,P2,남원농협 덕과지점,남원사매우체국
+exclude_no_service_tag_271,5219045000,남원시,아영면,2.7157011174769727,2.835156640083905,within_threshold,within_threshold,지리산농협 아영지점,지리산 (아영) 새마을금고
+exclude_no_service_tag_271,5219046000,남원시,산내면,6.901899138924342,7.34651395930896,P1,P1,지리산농협 산내지점,남원 (산내) 새마을금고
+exclude_no_service_tag_271,5219047000,남원시,인월면,0.9373041193612208,1.0769307285677734,within_threshold,within_threshold,지리산농협,온누리신용협동조합 지점
+exclude_no_service_tag_271,5219055000,남원시,금동,0.9852780685443714,1.2312156324299994,within_threshold,within_threshold,전북지리산낙농농협,온누리신용협동조합 지점
+exclude_no_service_tag_271,5219056000,남원시,왕정동,1.6254897604455871,2.67796825154202,within_threshold,within_threshold,남원원예농협 달빛지점,남원 (서부) 새마을금고
+exclude_no_service_tag_271,5221036000,김제시,부량면,0.5742172630287138,5.611389598728871,within_threshold,P1,김제농협 부량지점,부안백산우체국
+exclude_no_service_tag_271,5221040000,김제시,성덕면,0.7993340834081193,2.8618359682531054,within_threshold,within_threshold,금만농협 성덕지점,김제성덕우체국
+exclude_no_service_tag_271,5221041000,김제시,진봉면,1.406419505081086,1.6167582994364178,within_threshold,within_threshold,진봉농협,김제진봉우체국
+exclude_no_service_tag_271,5221043000,김제시,봉남면,1.4889420311679122,1.567966625096209,within_threshold,within_threshold,동김제농협 봉남지점,김제봉남우체국
+exclude_no_service_tag_271,5221044000,김제시,황산면,2.266721748430026,2.461539037342528,within_threshold,within_threshold,동김제농협 황산지점,김제황산우체국
+exclude_no_service_tag_271,5221045000,김제시,금산면,1.7076196959517387,4.196057507375577,within_threshold,P2,금산농협 금산지소,지평선 (본점) 새마을금고
+exclude_no_service_tag_271,5221052000,김제시,신풍동,3.434007666831996,3.8693714990716703,P2,P2,김제농협 동부지점,김제황산우체국
+exclude_no_service_tag_271,5221054000,김제시,검산동,1.8399695784754106,2.1860720358902586,within_threshold,within_threshold,전주김제완주축협 김제지점,새만금 (본점) 새마을금고
+exclude_no_service_tag_271,5271033000,완주군,이서면,7.544805204156664,7.687943248902669,P1,P1,동김제농협,김제금구우체국
+exclude_no_service_tag_271,5271037000,완주군,비봉면,5.668592614028376,5.790371371794898,P1,P1,고산농협 비봉지점,완주비봉우체국
+exclude_no_service_tag_271,5271038000,완주군,운주면,6.1119048283197674,6.119315282405644,P1,P1,운주농협,완주운주우체국
+exclude_no_service_tag_271,5271041000,완주군,경천면,1.6384643696210475,9.06797001636926,within_threshold,P1,운주농협 경천지점,완주운주우체국
+exclude_no_service_tag_271,5272033000,진안군,동향면,0.6137365765079444,1.0873466488871315,within_threshold,within_threshold,진안농협 동향지점,진안동향우체국
+exclude_no_service_tag_271,5272039000,진안군,정천면,3.0060383439286,3.68310658612092,P2,P2,부귀농협 정천지점,진안정천우체국
+exclude_no_service_tag_271,5272040000,진안군,주천면,5.946715923836713,6.1210389315219835,P1,P1,진안농협 주천지점,진안주천우체국
+exclude_no_service_tag_271,5273031000,무주군,무풍면,7.027810235705609,7.179171165665734,P1,P1,구천동농협 무풍지점,무주무풍우체국
+exclude_no_service_tag_271,5273034000,무주군,안성면,3.3176645382191827,3.3284185327118725,P2,P2,무주농협 안성지점,무주안성신용협동조합 본점
+exclude_no_service_tag_271,5274025000,장수군,장수읍,3.1229537998802637,3.2307130412323413,P2,P2,장수농협,장수 (본점) 새마을금고
+exclude_no_service_tag_271,5274032000,장수군,번암면,5.073256010353493,5.225105657887216,P1,P1,장수농협 번암지점,장수번암우체국
+exclude_no_service_tag_271,5274033500,장수군,장계면,5.147335235972313,5.307059952536978,P1,P1,장계농협,장수장계우체국
+exclude_no_service_tag_271,5274034000,장수군,천천면,1.881623133391353,2.081377244834209,within_threshold,within_threshold,장계농협 천천지점,장수천천우체국
+exclude_no_service_tag_271,5275038000,임실군,관촌면,3.0850756843676526,3.153903747946678,P2,P2,오수관촌농협 관촌지점,임실 (관촌) 새마을금고
+exclude_no_service_tag_271,5275041000,임실군,지사면,2.2543381979257475,2.549694605386823,within_threshold,within_threshold,오수관촌농협 지사지점,임실지사우체국
+exclude_no_service_tag_271,5277031000,순창군,인계면,3.0705150807992774,6.5596648543754945,P2,P1,순창농협 인계지점,순정축협
+exclude_no_service_tag_271,5277032000,순창군,동계면,2.1829742783073187,2.4822473414868758,within_threshold,within_threshold,동계농협,동계신용협동조합 본점
+exclude_no_service_tag_271,5277034000,순창군,금과면,0.81937573793191,2.8889208859302107,within_threshold,within_threshold,서순창농협 금과지점,순창금과우체국
+exclude_no_service_tag_271,5277035000,순창군,팔덕면,2.3740177413474037,2.5643167244196934,within_threshold,within_threshold,순창농협 팔덕지점,순창팔덕우체국
+exclude_no_service_tag_271,5277036000,순창군,쌍치면,1.2179542085015778,1.2903523792126292,within_threshold,within_threshold,순창농협 쌍치지점,쌍치 (본점) 새마을금고
+exclude_no_service_tag_271,5277037000,순창군,복흥면,3.430884686446565,3.4909199285838683,P2,P2,서순창농협,순창복흥우체국
+exclude_no_service_tag_271,5277039000,순창군,유등면,1.7892533932175063,5.086990057609757,within_threshold,P1,순창농협 유등지점,NH농협은행 순창군지부
+exclude_no_service_tag_271,5279034000,고창군,공음면,1.584060298162363,1.6158950525441582,within_threshold,within_threshold,선운산농협 공음지점,고창공음우체국
+exclude_no_service_tag_271,5279038000,고창군,대산면,7.340607059541193,7.504792339467449,P1,P1,대성농협,대산신용협동조합 본점
+exclude_no_service_tag_271,5279039000,고창군,심원면,1.8292548541151985,1.8615738385589862,within_threshold,within_threshold,해리농협 심원지점,고창심원우체국
+exclude_no_service_tag_271,5280031000,부안군,주산면,0.917287852518985,1.1147737879811075,within_threshold,within_threshold,부안농협 주산지점,부안주산우체국
+exclude_no_service_tag_271,5280032000,부안군,동진면,0.949900685096671,1.1280399600574191,within_threshold,within_threshold,부안농협 동진지점,부안동진우체국
+exclude_no_service_tag_271,5280033000,부안군,행안면,0.9859423208512718,1.0112188520891336,within_threshold,within_threshold,부안중앙농협 행안지점,부안행안우체국
+exclude_no_service_tag_271,5280034000,부안군,계화면,3.1397386537210483,3.1784902223423908,P2,P2,계화농협,부안계화우체국
+exclude_no_service_tag_271,5280038000,부안군,백산면,0.7226945827518091,3.1359221741038636,within_threshold,P2,부안농협 백산지점,부안백산우체국
+exclude_no_service_tag_271,5280039000,부안군,상서면,7.791817295959801,7.954368534452163,P1,P1,하서농협,부안하서우체국
+exclude_no_service_tag_271,5280040000,부안군,하서면,3.435599815391033,3.656609743949286,P2,P2,하서농협,부안하서우체국
+exclude_no_service_tag_271,5280041000,부안군,줄포면,11.83040779129157,11.950736936380075,P1,P1,고창부안축협 흥덕지점,흥덕농협
+exclude_no_service_tag_271,5280042000,부안군,위도면,2.263470539346078,2.4779470897014546,within_threshold,within_threshold,변산농협 위도지점,부안위도우체국
+exclude_all_jeonbuk_coops_334,5211170300,전주시완산구,삼천3동,4.061524994668351,4.208292797817667,P2,P2,전주농협 모악공판장지점,신전주 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5211171100,전주시완산구,효자1동,0.6180043419965823,0.6804862531776016,within_threshold,within_threshold,전주농협 완산지점,전북은행 효자동
+exclude_all_jeonbuk_coops_334,5211171300,전주시완산구,효자3동,0.03773290809215668,0.04598309085823022,within_threshold,within_threshold,전주김제완주축협 안행지점,전주파티마신용협동조합 지점
+exclude_all_jeonbuk_coops_334,5211361100,전주시덕진구,우아1동,0.7037234157814362,0.7294093219674707,within_threshold,within_threshold,전주원예농협 역전지점,전북은행 전주첫마중길
+exclude_all_jeonbuk_coops_334,5211364200,전주시덕진구,송천2동,2.41854567188913,2.6772410842294248,within_threshold,within_threshold,전주원예농협,전주송천 (대명) 새마을금고
+exclude_all_jeonbuk_coops_334,5211365000,전주시덕진구,조촌동,6.641297228688482,7.40245011358579,P1,P1,백구농협,김제백구우체국
+exclude_all_jeonbuk_coops_334,5211367000,전주시덕진구,혁신동,1.3448711692685587,1.3551478446193435,within_threshold,within_threshold,이서농협 중동지점,우리은행 전북혁신도시(출)
+exclude_all_jeonbuk_coops_334,5213032000,군산시,회현면,0.48116099503632076,4.918422418034533,within_threshold,P2,회현농협,군산옥산우체국
+exclude_all_jeonbuk_coops_334,5213033000,군산시,임피면,2.8114356546111683,3.1393712007808037,within_threshold,P2,동군산농협,군산서수우체국
+exclude_all_jeonbuk_coops_334,5213035000,군산시,대야면,16.08888474929019,16.472580112641534,P1,P1,금만농협,만경 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5213036000,군산시,개정면,1.4014190880277542,1.4844663539142706,within_threshold,within_threshold,군산농협 개정지점,동군산 (발산) 새마을금고
+exclude_all_jeonbuk_coops_334,5213038000,군산시,나포면,0.6807926022781597,0.85724073775055,within_threshold,within_threshold,동군산농협 나포지점,군산나포우체국
+exclude_all_jeonbuk_coops_334,5213056000,군산시,삼학동,0.33476270830930244,0.6360780798157922,within_threshold,within_threshold,군산농협 삼학지점,군산반석신용협동조합 지점
+exclude_all_jeonbuk_coops_334,5213060500,군산시,중앙동,0.7002115407976921,0.7318225237891944,within_threshold,within_threshold,군산원예농협 죽성지점,금강 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5213064000,군산시,흥남동,0.41921684293553224,0.8476435200826566,within_threshold,within_threshold,익산군산축협 군산지점,군산해성신용협동조합 지점
+exclude_all_jeonbuk_coops_334,5213070300,군산시,나운3동,0.5240741381409352,0.8680608518970774,within_threshold,within_threshold,군산농협 미룡지점,남군산 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5213072000,군산시,미성동,1.6048179651464283,3.9647312876124614,within_threshold,P2,서군산농협,전북은행 군산대
+exclude_all_jeonbuk_coops_334,5214025000,익산시,함열읍,2.142360845854001,2.3024178393772523,within_threshold,within_threshold,익산군산축협 함열제일지점,익산신용협동조합 본점
+exclude_all_jeonbuk_coops_334,5214034000,익산시,웅포면,1.808807119582991,4.021322818946951,within_threshold,P2,서익산농협 웅포지점,익산웅포우체국
+exclude_all_jeonbuk_coops_334,5214036000,익산시,용안면,0.5590501268727222,0.8050880800192739,within_threshold,within_threshold,북익산농협 용안지점,용안신용협동조합 본점
+exclude_all_jeonbuk_coops_334,5214038000,익산시,망성면,3.147890163821698,3.414253362063405,P2,P2,망성농협,익산망성우체국
+exclude_all_jeonbuk_coops_334,5214039000,익산시,여산면,1.1349907765485798,1.279389618198462,within_threshold,within_threshold,여산농협,익산여산우체국
+exclude_all_jeonbuk_coops_334,5214042000,익산시,춘포면,2.4572240918911596,4.451672499053081,within_threshold,P2,익산농협 오성지점,익산2공단우체국
+exclude_all_jeonbuk_coops_334,5214056000,익산시,인화동,0.7068109993236628,0.8538381170877336,within_threshold,within_threshold,익산농협 동이리지점,인화 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5214057000,익산시,동산동,2.3281444371185236,2.362728168402811,within_threshold,within_threshold,익산농협 동산지점,익산동산동우체국
+exclude_all_jeonbuk_coops_334,5214058000,익산시,마동,0.9989752341764582,1.2375252680490763,within_threshold,within_threshold,익산원예농협 동산동지점,이리주현신용협동조합 본점
+exclude_all_jeonbuk_coops_334,5214062000,익산시,송학동,0.900223744148609,0.9251123347458899,within_threshold,within_threshold,익산농협 평화지점,익산서부 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5214064600,익산시,영등1동,0.5420294828788531,0.557947553422271,within_threshold,within_threshold,익산농협 영등지점,황등신용협동조합 지점
+exclude_all_jeonbuk_coops_334,5214065600,익산시,신동,1.715360155251737,1.7157624467984856,within_threshold,within_threshold,익산농협 북일지점,원광중앙신용협동조합 본점
+exclude_all_jeonbuk_coops_334,5214069000,익산시,삼성동,3.412818324313075,3.546964863646512,P2,P2,익산원예농협 부송제일지점,익산팔봉동우체국
+exclude_all_jeonbuk_coops_334,5218025000,정읍시,신태인읍,2.5255722558747897,2.655385558981593,within_threshold,within_threshold,신태인농협,신태인 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5218032000,정읍시,입암면,0.7134738645344025,3.2947938119654814,within_threshold,P2,황토현농협 입암지점,정읍입암우체국
+exclude_all_jeonbuk_coops_334,5218035000,정읍시,영원면,2.1645117655355612,2.1783496351180043,within_threshold,within_threshold,황토현농협 영원지점,정읍영원우체국
+exclude_all_jeonbuk_coops_334,5218036000,정읍시,덕천면,3.132380889265267,3.203625039870237,P2,P2,정읍농협 덕천지점,정읍덕천우체국
+exclude_all_jeonbuk_coops_334,5218037000,정읍시,이평면,2.1862335182007415,2.534480885343504,within_threshold,within_threshold,샘골농협 이평지점,정읍이평우체국
+exclude_all_jeonbuk_coops_334,5218038000,정읍시,정우면,1.2255204878502959,1.521420492079405,quality_deferred,quality_deferred,샘골농협,정읍정우우체국
+exclude_all_jeonbuk_coops_334,5218039000,정읍시,태인면,2.862850063123584,3.0005773529398576,within_threshold,P2,태인농협,정읍태인우체국
+exclude_all_jeonbuk_coops_334,5218042000,정읍시,칠보면,4.942661131845389,5.113305659799449,quality_deferred,quality_deferred,칠보농협,정읍칠보우체국
+exclude_all_jeonbuk_coops_334,5218054500,정읍시,시기동,0.12578741156125195,0.1602121357527325,within_threshold,within_threshold,정읍농협 시기지점,정읍 (시기) 새마을금고
+exclude_all_jeonbuk_coops_334,5218057000,정읍시,연지동,0.3866882399735059,0.502540391233595,within_threshold,within_threshold,정읍농협,연지 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5218058000,정읍시,농소동,2.0368499916230816,4.375682713367508,within_threshold,P2,정읍농협 정일지점,연지 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5218059500,정읍시,상교동,1.4470873900673098,5.35630237479573,within_threshold,P1,정읍농협 교암지점,우리은행 정읍지점
+exclude_all_jeonbuk_coops_334,5219025000,남원시,운봉읍,1.04489886154926,1.1248280230778913,within_threshold,within_threshold,운봉농협,남원운봉우체국
+exclude_all_jeonbuk_coops_334,5219031000,남원시,주천면,2.0114616497074174,6.24639022051784,within_threshold,P1,남원농협 주천지점,남원이백우체국
+exclude_all_jeonbuk_coops_334,5219032000,남원시,수지면,0.7158592367521723,0.8268054790489267,within_threshold,within_threshold,춘향골농협 수지지점,남원수지우체국
+exclude_all_jeonbuk_coops_334,5219037000,남원시,대산면,1.8563487687918918,1.9550562814616814,within_threshold,within_threshold,남원농협 대산지점,남원대산우체국
+exclude_all_jeonbuk_coops_334,5219038000,남원시,사매면,4.482687870384331,4.535516355424105,P2,P2,남원농협 사매지점,남원사매우체국
+exclude_all_jeonbuk_coops_334,5219039000,남원시,덕과면,2.98840952133731,4.999521795525847,within_threshold,P2,남원농협 덕과지점,남원사매우체국
+exclude_all_jeonbuk_coops_334,5219045000,남원시,아영면,2.7157011174769727,2.835156640083905,within_threshold,within_threshold,지리산농협 아영지점,지리산 (아영) 새마을금고
+exclude_all_jeonbuk_coops_334,5219046000,남원시,산내면,6.901899138924342,7.34651395930896,P1,P1,지리산농협 산내지점,남원 (산내) 새마을금고
+exclude_all_jeonbuk_coops_334,5219047000,남원시,인월면,0.9373041193612208,1.0769307285677734,within_threshold,within_threshold,지리산농협,온누리신용협동조합 지점
+exclude_all_jeonbuk_coops_334,5219055000,남원시,금동,0.9852780685443714,1.2312156324299994,within_threshold,within_threshold,전북지리산낙농농협,온누리신용협동조합 지점
+exclude_all_jeonbuk_coops_334,5219056000,남원시,왕정동,1.6254897604455871,2.67796825154202,within_threshold,within_threshold,남원원예농협 달빛지점,남원 (서부) 새마을금고
+exclude_all_jeonbuk_coops_334,5221036000,김제시,부량면,0.5742172630287138,5.611389598728871,within_threshold,P1,김제농협 부량지점,부안백산우체국
+exclude_all_jeonbuk_coops_334,5221038000,김제시,공덕면,7.1163023264587135,7.877455211356021,P1,P1,백구농협,김제백구우체국
+exclude_all_jeonbuk_coops_334,5221040000,김제시,성덕면,0.7993340834081193,2.8618359682531054,within_threshold,within_threshold,금만농협 성덕지점,김제성덕우체국
+exclude_all_jeonbuk_coops_334,5221041000,김제시,진봉면,1.406419505081086,1.6167582994364178,within_threshold,within_threshold,진봉농협,김제진봉우체국
+exclude_all_jeonbuk_coops_334,5221043000,김제시,봉남면,1.4889420311679122,1.567966625096209,within_threshold,within_threshold,동김제농협 봉남지점,김제봉남우체국
+exclude_all_jeonbuk_coops_334,5221044000,김제시,황산면,2.266721748430026,2.461539037342528,within_threshold,within_threshold,동김제농협 황산지점,김제황산우체국
+exclude_all_jeonbuk_coops_334,5221045000,김제시,금산면,1.7076196959517387,4.196057507375577,within_threshold,P2,금산농협 금산지소,지평선 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5221052000,김제시,신풍동,3.434007666831996,3.8693714990716703,P2,P2,김제농협 동부지점,김제황산우체국
+exclude_all_jeonbuk_coops_334,5221054000,김제시,검산동,1.8399695784754106,2.1860720358902586,within_threshold,within_threshold,전주김제완주축협 김제지점,새만금 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5271033000,완주군,이서면,7.544805204156664,7.687943248902669,P1,P1,동김제농협,김제금구우체국
+exclude_all_jeonbuk_coops_334,5271037000,완주군,비봉면,5.668592614028376,5.790371371794898,P1,P1,고산농협 비봉지점,완주비봉우체국
+exclude_all_jeonbuk_coops_334,5271038000,완주군,운주면,6.1119048283197674,6.119315282405644,P1,P1,운주농협,완주운주우체국
+exclude_all_jeonbuk_coops_334,5271041000,완주군,경천면,1.6384643696210475,9.06797001636926,within_threshold,P1,운주농협 경천지점,완주운주우체국
+exclude_all_jeonbuk_coops_334,5272033000,진안군,동향면,0.6137365765079444,1.0873466488871315,within_threshold,within_threshold,진안농협 동향지점,진안동향우체국
+exclude_all_jeonbuk_coops_334,5272039000,진안군,정천면,3.0060383439286,3.68310658612092,P2,P2,부귀농협 정천지점,진안정천우체국
+exclude_all_jeonbuk_coops_334,5272040000,진안군,주천면,5.946715923836713,6.1210389315219835,P1,P1,진안농협 주천지점,진안주천우체국
+exclude_all_jeonbuk_coops_334,5273031000,무주군,무풍면,7.027810235705609,7.179171165665734,P1,P1,구천동농협 무풍지점,무주무풍우체국
+exclude_all_jeonbuk_coops_334,5273034000,무주군,안성면,3.3176645382191827,3.3284185327118725,P2,P2,무주농협 안성지점,무주안성신용협동조합 본점
+exclude_all_jeonbuk_coops_334,5274025000,장수군,장수읍,3.1229537998802637,3.2307130412323413,P2,P2,장수농협,장수 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5274032000,장수군,번암면,5.073256010353493,5.225105657887216,P1,P1,장수농협 번암지점,장수번암우체국
+exclude_all_jeonbuk_coops_334,5274033500,장수군,장계면,5.147335235972313,5.307059952536978,P1,P1,장계농협,장수장계우체국
+exclude_all_jeonbuk_coops_334,5274034000,장수군,천천면,1.881623133391353,2.081377244834209,within_threshold,within_threshold,장계농협 천천지점,장수천천우체국
+exclude_all_jeonbuk_coops_334,5275031000,임실군,청웅면,0.8549167077999095,0.9285040204172045,within_threshold,within_threshold,임실농협 청웅지점,임실청웅우체국
+exclude_all_jeonbuk_coops_334,5275034000,임실군,성수면,3.1079197618922616,3.34080712044325,P2,P2,임실농협 성수지점,임실성수우체국
+exclude_all_jeonbuk_coops_334,5275038000,임실군,관촌면,3.0850756843676526,3.153903747946678,P2,P2,오수관촌농협 관촌지점,임실 (관촌) 새마을금고
+exclude_all_jeonbuk_coops_334,5275041000,임실군,지사면,2.2543381979257475,2.549694605386823,within_threshold,within_threshold,오수관촌농협 지사지점,임실지사우체국
+exclude_all_jeonbuk_coops_334,5277031000,순창군,인계면,3.0705150807992774,6.5796949815593875,P2,P1,순창농협 인계지점,순창 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5277032000,순창군,동계면,2.1829742783073187,2.4822473414868758,within_threshold,within_threshold,동계농협,동계신용협동조합 본점
+exclude_all_jeonbuk_coops_334,5277034000,순창군,금과면,0.81937573793191,2.8889208859302107,within_threshold,within_threshold,서순창농협 금과지점,순창금과우체국
+exclude_all_jeonbuk_coops_334,5277035000,순창군,팔덕면,2.3740177413474037,2.5643167244196934,within_threshold,within_threshold,순창농협 팔덕지점,순창팔덕우체국
+exclude_all_jeonbuk_coops_334,5277036000,순창군,쌍치면,1.2179542085015778,1.2903523792126292,within_threshold,within_threshold,순창농협 쌍치지점,쌍치 (본점) 새마을금고
+exclude_all_jeonbuk_coops_334,5277037000,순창군,복흥면,3.430884686446565,3.4909199285838683,P2,P2,서순창농협,순창복흥우체국
+exclude_all_jeonbuk_coops_334,5277038000,순창군,적성면,3.9987913801795587,4.068387993950761,P2,P2,순창농협 적성지점,순창적성우체국
+exclude_all_jeonbuk_coops_334,5277039000,순창군,유등면,1.7892533932175063,5.086990057609757,within_threshold,P1,순창농협 유등지점,NH농협은행 순창군지부
+exclude_all_jeonbuk_coops_334,5279034000,고창군,공음면,1.584060298162363,1.6158950525441582,within_threshold,within_threshold,선운산농협 공음지점,고창공음우체국
+exclude_all_jeonbuk_coops_334,5279035000,고창군,상하면,1.2510321281602947,1.3339852199142708,within_threshold,within_threshold,해리농협 상하지점,고창 (상하) 새마을금고
+exclude_all_jeonbuk_coops_334,5279038000,고창군,대산면,7.340607059541193,7.504792339467449,P1,P1,대성농협,대산신용협동조합 본점
+exclude_all_jeonbuk_coops_334,5279039000,고창군,심원면,1.8292548541151985,1.8615738385589862,within_threshold,within_threshold,해리농협 심원지점,고창심원우체국
+exclude_all_jeonbuk_coops_334,5279042000,고창군,신림면,2.4306094781192042,2.5800116485429148,within_threshold,within_threshold,흥덕농협 신림지점,고창신림우체국
+exclude_all_jeonbuk_coops_334,5280031000,부안군,주산면,0.917287852518985,1.1147737879811075,within_threshold,within_threshold,부안농협 주산지점,부안주산우체국
+exclude_all_jeonbuk_coops_334,5280032000,부안군,동진면,0.949900685096671,1.1280399600574191,within_threshold,within_threshold,부안농협 동진지점,부안동진우체국
+exclude_all_jeonbuk_coops_334,5280033000,부안군,행안면,0.9859423208512718,1.0112188520891336,within_threshold,within_threshold,부안중앙농협 행안지점,부안행안우체국
+exclude_all_jeonbuk_coops_334,5280034000,부안군,계화면,3.1397386537210483,3.1784902223423908,P2,P2,계화농협,부안계화우체국
+exclude_all_jeonbuk_coops_334,5280036000,부안군,변산면,2.864936229977473,2.86904793987727,within_threshold,within_threshold,변산농협,부안변산우체국
+exclude_all_jeonbuk_coops_334,5280038000,부안군,백산면,0.7226945827518091,3.1359221741038636,within_threshold,P2,부안농협 백산지점,부안백산우체국
+exclude_all_jeonbuk_coops_334,5280039000,부안군,상서면,7.791817295959801,7.954368534452163,P1,P1,하서농협,부안하서우체국
+exclude_all_jeonbuk_coops_334,5280040000,부안군,하서면,3.435599815391033,3.656609743949286,P2,P2,하서농협,부안하서우체국
+exclude_all_jeonbuk_coops_334,5280041000,부안군,줄포면,11.83040779129157,12.063785222551275,P1,P1,고창부안축협 흥덕지점,고창흥덕우체국
+exclude_all_jeonbuk_coops_334,5280042000,부안군,위도면,2.263470539346078,2.4779470897014546,within_threshold,within_threshold,변산농협 위도지점,부안위도우체국

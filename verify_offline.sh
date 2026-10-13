@@ -35,7 +35,9 @@ else
 fi
 
 echo "== 4. 상세 무결성 재계산 =="
-if PYTHONPATH=src python3 src/validate_outputs.py; then
+if PYTHONPATH=src python3 src/validate_outputs.py && \
+   python3 analysis/feedback_validation/compare_sensitivity.py --check && \
+   python3 analysis/feedback_validation/verify_evidence.py; then
   echo "  OK  상세 검증 재계산"
 else
   echo "  FAIL 상세 검증"

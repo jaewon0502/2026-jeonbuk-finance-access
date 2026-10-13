@@ -1,0 +1,5 @@
+﻿scenario,eligible_outlets,P1,P2,candidate_targets,quality_deferred,new_candidate_count_vs_main,removed_candidate_count_vs_main,candidate_jaccard_vs_main
+all_added_included,1347,21,33,54,3,0,0,1.0
+exclude_name_flags_2,1345,21,33,54,3,0,0,1.0
+exclude_no_service_tag_271,1076,26,42,68,3,14,0,0.794118
+exclude_all_jeonbuk_coops_334,1013,27,43,70,3,16,0,0.771429

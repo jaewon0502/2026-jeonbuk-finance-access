@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-12T12:31:11.689933+00:00",
+  "repository_head": "fcf4926438062924b15ee3b65026ceaef7b57715",
+  "boundary_source_commit": "655e470",
+  "boundary_matches_submitted_sha256": true,
+  "old_pbf_available": false,
+  "old_pbf_git_evidence": "655e470 commit subject explicitly excludes osm.pbf; no pbf path in accessible full history or release assets",
+  "old_archive_attempts": {
+    "260810": 404,
+    "260811": 404
+  },
+  "common_road_source": "https://download.geofabrik.de/asia/south-korea-261011.osm.pbf",
+  "common_road_data_timestamp": "2026-10-11T20:21:06Z",
+  "common_road_sha256": "a856bb1e43c968612b2339af0e01da8bb972e10ba21ca86b9d91aac4d1d64505",
+  "common_road_md5": "df6f9430a975f927c08f4afddade7f97",
+  "common_road_bytes": 289058579,
+  "boundary_sha256": "a394b1741d89f9c3556b6d83845b899f8ebe32f13fd77646fa07cabf76c286b4",
+  "python": "3.14.6",
+  "design": "Freeze original outlets. Compute original and expanded pools on one common road graph. Treat old submitted road results separately from the controlled experiment."
+}

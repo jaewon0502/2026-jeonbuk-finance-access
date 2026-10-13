@@ -1,0 +1,126 @@
+{
+  "outlets_path": "/Users/jaewon/Documents/ChatGPT/전북 빅데이터/2026-jeonbuk-finance-access/analysis/feedback_validation/exclude_name_flags_outlets.csv",
+  "outlets_sha256": "d0de3bf85883799dca85b3b40e348b3def8662d1bbacec5eb9fcc473c3bfc3b8",
+  "reference_summary_sha256": "73d3b84288192da1fb865de20264edbf7ed5b723a9460272f3a153967fcd6850",
+  "reference_baseline_sha256": "7cd1ae9666f98a5072176cb0d7b03106bcb9155b369e75ae18fa9715850f0e3e",
+  "graph": {
+    "inputs": {
+      "pbf_sha256": "a856bb1e43c968612b2339af0e01da8bb972e10ba21ca86b9d91aac4d1d64505",
+      "boundary_sha256": "a394b1741d89f9c3556b6d83845b899f8ebe32f13fd77646fa07cabf76c286b4",
+      "build_roadnet_sha256": "1c49d4bfb568bdc3af98a2a5fa052d3bc31c58a75fb03114889f8125f82112e1",
+      "geo_utils_sha256": "482b593ad1eee6dbb7146911de9098ef33a2f8613c08299261dd98d884637b9d",
+      "python_version": "3.14.6",
+      "osmium_version": "4.3.1",
+      "bbox_margin_degrees": 0.25,
+      "max_snap_km": 2.0,
+      "grid_degrees": 0.01
+    },
+    "graph_sha256": "bc572d342d0652f11e01c91ddd19b80cf585ec539f75750535b9ccd7001fbef9",
+    "cache_file": "/Users/jaewon/Documents/ChatGPT/전북 빅데이터/2026-jeonbuk-finance-access/analysis/theory_validation/spatial/cache/9cd7ec51fc39095a1c50c1289e7dc03d544d035a4f822f3c526a2ff90d674b11.pickle"
+  },
+  "runner_sha256": "e7cec81387008a7d3d3c251dd84b3c18286137f87216b42bd868127337d79189",
+  "spatial_functions_sha256": "27fcf14ce86626f04ae0af145f14355347512809d61e6e819ae142d28f34ae56",
+  "pool_stats": {
+    "outlet_rows": 1383,
+    "eligible_outlets": 1345,
+    "snapped_outlets": 1345,
+    "outlet_snap_failures": [],
+    "dijkstra_heap_pops": 1836390
+  },
+  "cell": {
+    "admin_count": 243,
+    "distance_category_counts": {
+      "within_threshold": 188,
+      "P2": 34,
+      "P1": 21
+    },
+    "routing_category_counts": {
+      "within_threshold": 186,
+      "P2": 33,
+      "P1": 21,
+      "quality_deferred": 3
+    },
+    "route_status_counts": {
+      "ok": 240,
+      "fallback_nearest_reachable": 3
+    },
+    "outside_origin_codes": [],
+    "distance_km_all_routed": {
+      "n": 243,
+      "min": 0.03773290809215668,
+      "p10": 0.419793218992247,
+      "median": 1.7028409034668233,
+      "p90": 4.472293545987707,
+      "max": 16.08888474929019,
+      "mean": 2.214396401230936
+    },
+    "distance_km_valid_primary": {
+      "n": 240,
+      "min": 0.03773290809215668,
+      "p10": 0.41884999826890035,
+      "median": 1.700543445670737,
+      "p90": 4.43591341059952,
+      "max": 16.08888474929019,
+      "mean": 2.2049654835716876
+    }
+  },
+  "comparison": {
+    "rows": 243,
+    "all_routed_delta_km": {
+      "n": 243,
+      "min": -7.429505646748213,
+      "p10": -0.419480414387968,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0.0,
+      "mean": -0.2887568693746012
+    },
+    "valid_primary_pair_count": 240,
+    "valid_primary_delta_km": {
+      "n": 240,
+      "min": -7.429505646748213,
+      "p10": -0.42912039265637936,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0.0,
+      "mean": -0.29042239469102055
+    },
+    "valid_primary_absolute_delta_km": {
+      "n": 240,
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.42912039265637936,
+      "max": 7.429505646748213,
+      "mean": 0.29042239469102055
+    },
+    "category_transitions_all": {
+      "within_threshold -> within_threshold": 172,
+      "P2 -> P2": 32,
+      "P1 -> P1": 21,
+      "P2 -> within_threshold": 11,
+      "P1 -> P2": 2,
+      "P1 -> within_threshold": 5
+    },
+    "category_transitions_valid_primary": {
+      "within_threshold -> within_threshold": 170,
+      "P2 -> P2": 32,
+      "P1 -> P1": 21,
+      "P2 -> within_threshold": 11,
+      "P1 -> within_threshold": 5,
+      "P1 -> P2": 1
+    },
+    "routing_category_transitions": {
+      "within_threshold -> within_threshold": 170,
+      "P2 -> P2": 32,
+      "P1 -> P1": 21,
+      "P2 -> within_threshold": 11,
+      "quality_deferred -> quality_deferred": 3,
+      "P1 -> within_threshold": 5,
+      "P1 -> P2": 1
+    },
+    "nearest_outlet_changes_all": 101,
+    "nearest_outlet_changes_valid_primary": 99,
+    "additive_fixed_primary_monotonicity_checked": 240
+  }
+}

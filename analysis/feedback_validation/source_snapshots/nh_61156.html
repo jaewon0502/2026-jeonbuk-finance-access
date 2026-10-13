@@ -1,0 +1,120 @@
+
+
+
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/nh_print_style.css" />
+	<title>NH농협 영업점 안내 - 영업점정보 인쇄하기</title>
+	<style>
+		label {
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d26b980a8a9550114fa952c81ea56abd" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+	var map = null;	// 지도 object
+	
+	$(function () {
+		var position = new daum.maps.LatLng(35.651754, 126.942212);
+		// 지도생성
+		map = new daum.maps.Map(document.getElementById("map"), {
+			// 중심좌표
+			center: position,
+			scale: 3
+		});
+		
+		// 마커 생성		
+		var imgSrc = "images/icon_map_loc_01.png";
+	
+		var imgSize = new daum.maps.Size(38, 42);	// 선택된 영업점/ATM
+		// 이미지 offset
+		var imgOption = {offset: new daum.maps.Point(19, 21)};		
+		var marker = new daum.maps.Marker({
+			position: position,
+			image: new daum.maps.MarkerImage(imgSrc, imgSize, imgOption),
+			clickable: true
+		});
+		// 지도에 표시
+		marker.setMap(map);
+		marker.setZIndex(1);
+	});
+	</script>
+</head>
+<body> 
+<div id="wrap">
+	<div class="header">
+		<h2>영업점정보 인쇄하기</h2>
+		<span class="btn_close" onclick="self.close()">X</span>
+	</div>
+
+	<div class="map_area">		
+		<!-- 지도 표시 영역 -->
+		<div id="map"></div>
+	</div>
+
+	<div class="bottom">
+		<!-- 농협은행 지점정보 -->
+		<div class="branch_info">
+			<div class="branch_info_header nonghyup">
+				<h1>태인농협 <span class="branch_type">(농·축협)</span></h1>
+			</div>
+			<table class="description">
+				<colgroup>
+					<col width="74px" />
+					<col width="446px" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>전화번호</th>
+						<td>T. 063-534-4185</td>
+					</tr>
+					<tr>
+						<th>팩스번호</th>
+						<td>F. 063-534-4086</td>
+					</tr>
+					<tr>
+						<th>주 소</th>
+						<td>					
+						(56115)
+						
+						
+						전북특별자치도 정읍시 태인면 태인로 31 (태성리)
+						
+						
+					</td>
+					</tr>
+					<tr>
+						<th>오시는 길</th>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- end of 농협은행 지점정보 -->
+
+		<div class="memo">
+			<ul>
+				<li class="header">MEMO</li>
+				<li>
+					<label for="memo_r01">메모1</label>
+					<input type="text" name="memo_r01" id="memo_r01" maxlength="68" />
+				</li>
+				<li>
+					<label for="memo_r02">메모2</label>
+					<input type="text" name="memo_r02" id="memo_r02" maxlength="68" />
+				</li>
+			</ul>
+		</div>
+		<div class="btn_area">
+			<a href="javascript:window.print();" class="btn nonghyup">인쇄하기</a>
+			<a href="javascript:self.close();" class="btn nonghyup">취 소</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

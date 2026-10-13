@@ -122,6 +122,8 @@
     byId("m-target").textContent = format.format(data.scope.route_eligible_target_count);
     byId("m-senior").textContent = format.format(data.admins.reduce((sum, row) => sum + row.pop_65plus, 0));
     byId("m-outlet").textContent = format.format(data.source_summary.finance_outlet_count);
+    const borderOutlets = data.outlets.filter((outlet) => outlet.expansion_group.startsWith("border_")).length;
+    byId("m-outlet-scope").textContent = `전북 ${format.format(data.outlets.length - borderOutlets)} · 경계 인접 ${format.format(borderOutlets)}곳`;
     byId("m-target-label").textContent = format.format(data.source_summary.finance_outlet_count);
     const listedCount = data.source_summary.finance_outlet_listed_count;
     if (listedCount != null) {
@@ -157,7 +159,7 @@
     byId("m-route-deferred").textContent = format.format(data.scope.route_quality_deferred_count);
     byId("analysis-date").textContent = data.analysis_date;
     byId("ops-speed").textContent = String(data.route.travel_model.uniform_speed_kmh);
-    byId("snapshot-summary").textContent = `전북 전체 고정 결과 · 보완 접점 수집 ${formatDate(data.analysis_date)} · 도로망 ${formatDate(data.validation.road_date)} · 자료 버전 ${data.report_evidence.snapshot_id}`;
+    byId("snapshot-summary").textContent = `전북 전체 고정 결과 · 접점 수집 ${formatDate(data.analysis_date)} · 도로망 ${formatDate(data.validation.road_date)}`;
     renderReportEvidence();
   }
 
@@ -165,12 +167,21 @@
     const evidence = data.report_evidence;
     const methods = evidence.methods;
     const comparison = evidence.comparisons.priority_nearest;
+    const optimized = methods.find((method) => method.id === "exact_dp");
+    const comparisonMethod = methods.find((method) => method.id === "priority_nearest");
+    byId("result-flow").innerHTML = [
+      ["① 방문 검토 대상", `${data.scope.route_eligible_target_count}곳`, "도로거리 3km 초과 · 품질 기준 통과"],
+      ["② 기본 운영안의 방문", `${optimized.covered_target_count}곳`, "차량 3대 · 5일 · 하루 최대 4곳"],
+      ["③ 이번 주기 미방문", `${data.scope.route_eligible_target_count - optimized.covered_target_count}곳`, "다음 일정이나 지역 배정 검토 필요"],
+      ["④ 같은 대상의 이동거리", `${comparison.distance_saved_percent.toFixed(2)}% 감소`, `${formatKm(comparisonMethod.travel_km)} → ${formatKm(optimized.travel_km)}km`],
+    ].map(([label, value, note]) => `<div class="result-step"><span>${label}</span><strong>${value}</strong><small>${note}</small></div>`).join("");
+    byId("result-comparison-note").textContent = `비교 조건: 차량 ${evidence.reference_parameters.vehicle_count}대 × ${evidence.reference_parameters.operating_days_per_cycle}일, 하루 최대 ${evidence.reference_parameters.max_stops_per_route}곳, 장소당 ${evidence.reference_parameters.service_minutes}분. 같은 ${optimized.covered_target_count}곳·같은 시군별 배정에서 ‘우선순위 후 가까운 곳부터’ 방문하는 방법과 비교했습니다.`;
     byId("report-scope").textContent = `대표점 도로거리 3km 초과 ${data.scope.threshold_target_count}곳 중 품질유보 ${data.scope.route_quality_deferred_count}곳을 제외한 ${data.scope.route_eligible_target_count}곳이 경로대상입니다. 시군당 최소 1일을 먼저 배정한 뒤 남은 경로일을 대상 수에 따라 배정했습니다.`;
     byId("report-parameters").textContent = `${parameterCopy(evidence.reference_parameters)}. 아래 결과는 시군 선택이나 사용자 입력에 따라 바뀌지 않습니다.`;
-    byId("report-comparison").innerHTML = `<thead><tr><th scope="col">방법</th><th scope="col">방문</th><th scope="col">P1 / P2</th><th scope="col">이동거리</th><th scope="col">DP와 방문 대상</th></tr></thead><tbody>${methods.map((method) => `<tr><th scope="row">${escapeHtml(method.label)}</th><td>${method.covered_target_count} / ${data.scope.route_eligible_target_count}곳</td><td>${method.coverage_by_tier.P1} / ${method.coverage_by_tier.P2}</td><td>${formatKm(method.travel_km)} km</td><td>${method.id === "exact_dp" ? "비교 기준" : method.same_targets_as_dp ? "같음" : "다름"}</td></tr>`).join("")}</tbody>`;
-    byId("report-takeaway").innerHTML = `우선순위 최근접 방법과 <strong>같은 ${methods.find((method) => method.id === "exact_dp").covered_target_count}곳</strong>을 방문하면서 DP의 이동거리가 <strong>${formatKm(comparison.distance_saved_km)}km (${comparison.distance_saved_percent.toFixed(2)}%)</strong> 짧았습니다. 운영비나 주민의 이동시간이 같은 비율로 줄었다는 뜻은 아닙니다.`;
+    byId("report-comparison").innerHTML = `<thead><tr><th scope="col">방법</th><th scope="col">방문</th><th scope="col">P1 / P2</th><th scope="col">이동거리</th><th scope="col">제안 방법과 방문 대상</th></tr></thead><tbody>${methods.map((method) => `<tr><th scope="row">${escapeHtml(method.label)}</th><td>${method.covered_target_count} / ${data.scope.route_eligible_target_count}곳</td><td>${method.coverage_by_tier.P1} / ${method.coverage_by_tier.P2}</td><td>${formatKm(method.travel_km)} km</td><td>${method.id === "exact_dp" ? "비교 기준" : method.same_targets_as_dp ? "같음" : "다름"}</td></tr>`).join("")}</tbody>`;
+    byId("report-takeaway").innerHTML = `우선순위 후 가까운 곳부터 방문하는 방법과 <strong>같은 ${optimized.covered_target_count}곳</strong>을 방문하면서 제안 방법의 이동거리가 <strong>${formatKm(comparison.distance_saved_km)}km (${comparison.distance_saved_percent.toFixed(2)}%)</strong> 짧았습니다. 운영비나 주민의 이동시간이 같은 비율로 줄었다는 뜻은 아닙니다.`;
     const validation = evidence.validation;
-    byId("report-validation").innerHTML = `<div><dt>누락 접점 보완</dt><dd>같은 도로망에서 경로대상 ${validation.baseline_target_count} → ${validation.expanded_target_count}곳. 접점 추가 효과를 도로망 변경과 분리했습니다.</dd></div><div><dt>대표점 위치 점검</dt><dd>비교 가능한 ${validation.origin_comparable_count}곳 중 ${validation.origin_stable_count}곳의 거리 등급이 같았습니다. 주민 분포의 타당성을 입증한 검증은 아닙니다.</dd></div><div><dt>경로 제약 재확인</dt><dd>${validation.comparison_count}개 조건의 일정 재검산에서 제약 위반 ${validation.route_replay_violations}건. 실제 교통과 현장 운영은 미검증입니다.</dd></div>`;
+    byId("report-validation").innerHTML = `<div><dt>대상 선정 기준</dt><dd>도로거리 3km 초과 ${data.scope.threshold_target_count}곳 중 품질유보 ${data.scope.route_quality_deferred_count}곳을 제외한 ${data.scope.route_eligible_target_count}곳입니다.</dd></div><div><dt>대표점 위치 점검</dt><dd>비교 가능한 ${validation.origin_comparable_count}곳 중 ${validation.origin_stable_count}곳의 거리 등급이 같았습니다. 주민 분포의 타당성을 입증한 검증은 아닙니다.</dd></div><div><dt>경로 제약 재확인</dt><dd>${validation.comparison_count}개 조건의 일정 재검산에서 제약 위반 ${validation.route_replay_violations}건. 실제 교통과 현장 운영은 미검증입니다.</dd></div>`;
   }
 
   function renderOverview(plan) {
@@ -633,6 +644,44 @@
     if (depots.start.node_id === nodeId) return depots.start;
     if (depots.end.node_id === nodeId) return depots.end;
     return null;
+  }
+
+  function renderRouteExample() {
+    const route = planFor("default", "all").routes.find((row) => row.service_zone === "고창군" && row.cycle_day === 1);
+    if (!route) {
+      byId("route-example-summary").textContent = "기본 운영안에서 고창군의 첫째 날 경로를 찾지 못했습니다. 운영 시나리오에서 전체 일정을 확인해 주세요.";
+      return;
+    }
+    const depots = data.route.depots_by_zone[route.service_zone];
+    const stops = route.timeline.map((stop, index) => ({ ...stop, index: index + 1, site: siteFor(route.service_zone, stop.candidate_id), area: adminByCode.get(stop.serves_target_ids[0]).dong }));
+    byId("route-example-summary").textContent = `고창군 · 첫째 날 · ${route.start_time} 출발 → ${route.end_time} 복귀 · ${route.stops.length}곳 방문 · 총 ${formatKm(route.travel_km)}km`;
+    byId("route-example-table").innerHTML = `<thead><tr><th scope="col">순서</th><th scope="col">방문 지역 · 장소</th><th scope="col">예상 시각</th></tr></thead><tbody><tr><td>출발</td><td>${escapeHtml(depots.start.name)}</td><td>${route.start_time}</td></tr>${stops.map((stop) => `<tr><td>${stop.index}</td><td>${escapeHtml(stop.area)} · ${escapeHtml(stop.name)}</td><td>${stop.service_start}–${stop.service_end}</td></tr>`).join("")}<tr><td>복귀</td><td>${escapeHtml(depots.end.name)}</td><td>${route.end_time}</td></tr></tbody>`;
+    byId("route-example-note").textContent = `도로 경로에 출발·방문 장소 연결선을 더한 모형입니다. 시속 ${data.route.travel_model.uniform_speed_kmh}km, 장소당 ${data.report_evidence.reference_parameters.service_minutes}분을 가정했습니다. 교통·점심·휴게시간은 반영하지 않았으며, 장소와 출발지는 미승인 후보입니다.`;
+    const svg = byId("route-example-map");
+    const boundaries = mapData.boundaries.filter((row) => row.service_zone === route.service_zone);
+    const coordinates = boundaries.flatMap((row) => row.polygons.flat(2));
+    const xs = coordinates.map(([lon]) => lon * lonCorrection);
+    const ys = coordinates.map(([, lat]) => lat);
+    const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
+    const scale = Math.min(540 / (maxX - minX), 320 / (maxY - minY));
+    const xy = ([lon, lat]) => [320 + (lon * lonCorrection - (minX + maxX) / 2) * scale, 195 - (lat - (minY + maxY) / 2) * scale];
+    const linePath = (line) => line.map((coordinate, index) => `${index ? "L" : "M"}${xy(coordinate).map((n) => n.toFixed(2)).join(",")}`).join("");
+    svg.replaceChildren();
+    boundaries.forEach((row) => svg.appendChild(svgElement("path", { d: row.polygons.flatMap((polygon) => polygon.map((ring) => `${linePath(ring)}Z`)).join(""), fill: "#e5edf3", stroke: "#b7c7d4", "stroke-width": 1 }, row.name)));
+    routeGeometry(route).legs.forEach((leg) => svg.appendChild(svgElement("path", { d: linePath(leg.path), fill: "none", stroke: "#1769aa", "stroke-width": 3.5, "stroke-linecap": "round", "stroke-linejoin": "round" })));
+    [{ site: depots.start, index: "출발", area: "출발·복귀" }, ...stops].forEach((stop) => {
+      const [x, y] = xy([stop.site.lon, stop.site.lat]);
+      const isDepot = stop.index === "출발";
+      svg.appendChild(svgElement("circle", { cx: x, cy: y, r: isDepot ? 7 : 14, fill: isDepot ? "#143d60" : "#1769aa", stroke: "#fff", "stroke-width": 2 }, `${stop.index} · ${stop.area} · ${stop.site.name}`));
+      const number = svgElement("text", { x: isDepot ? x + 12 : x, y: y + (isDepot ? 16 : 5), fill: isDepot ? "#143d60" : "#fff", "font-size": isDepot ? 12 : 14, "font-weight": 700, "text-anchor": isDepot ? "start" : "middle" });
+      number.textContent = String(stop.index);
+      svg.appendChild(number);
+      if (!isDepot) {
+        const label = svgElement("text", { x: x + (stop.index === 1 ? -20 : 20), y: y + 5, "text-anchor": stop.index === 1 ? "end" : "start", fill: "#143d60", "font-size": 15, "font-weight": 650, "paint-order": "stroke", stroke: "#f4f8fb", "stroke-width": 4 });
+        label.textContent = stop.area;
+        svg.appendChild(label);
+      }
+    });
   }
 
   function renderRouteLayers(svg, routes) {
@@ -1190,7 +1239,7 @@
   }
 
   function renderAppliedSummary(plan) {
-    byId("applied-summary").innerHTML = `<b>현재 결과: ${escapeHtml(scopedPlanLabel())} · ${escapeHtml(zoneSummaryLabel())}</b><br>${escapeHtml(parameterCopy(plan.parameters))}<br>경로일 배정과 방문 순서 재계산 · 자료 ${escapeHtml(data.report_evidence.snapshot_id)} · 분석일 ${escapeHtml(data.analysis_date)}`;
+    byId("applied-summary").innerHTML = `<b>현재 결과: ${escapeHtml(scopedPlanLabel())} · ${escapeHtml(zoneSummaryLabel())}</b><br>${escapeHtml(parameterCopy(plan.parameters))}<br>경로일 배정과 방문 순서 재계산 · 분석 기준일 ${escapeHtml(data.analysis_date)}`;
     updateInputStatus();
   }
 
@@ -1438,4 +1487,5 @@
   setupOutletLegend();
   setupMapControls();
   setupScenarioControls();
+  renderRouteExample();
 })();

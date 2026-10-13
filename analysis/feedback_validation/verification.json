@@ -1,0 +1,66 @@
+{
+  "exclude_no_service_tag_271": {
+    "depot_changes": [
+      {
+        "zone": "김제시",
+        "main_depot": "JB-6DF1E5BD80C3",
+        "alternative_depot": "JB-5C3DA2C7BFBA"
+      },
+      {
+        "zone": "순창군",
+        "main_depot": "JB-1AC8B05EE4D6",
+        "alternative_depot": "JB-2D6D788D1A0D"
+      },
+      {
+        "zone": "완주군",
+        "main_depot": "JB-B541EA8692B2",
+        "alternative_depot": "JB-45768229B00F"
+      },
+      {
+        "zone": "익산시",
+        "main_depot": "JB-4FE7459D93E1",
+        "alternative_depot": "JB-E2AE24191B3D"
+      },
+      {
+        "zone": "정읍시",
+        "main_depot": "JB-CF5B7B528A39",
+        "alternative_depot": "JB-8CA871F692E9"
+      }
+    ]
+  },
+  "exclude_all_jeonbuk_coops_334": {
+    "depot_changes": [
+      {
+        "zone": "김제시",
+        "main_depot": "JB-6DF1E5BD80C3",
+        "alternative_depot": "JB-5C3DA2C7BFBA"
+      },
+      {
+        "zone": "순창군",
+        "main_depot": "JB-1AC8B05EE4D6",
+        "alternative_depot": "JB-2D6D788D1A0D"
+      },
+      {
+        "zone": "완주군",
+        "main_depot": "JB-B541EA8692B2",
+        "alternative_depot": "JB-45768229B00F"
+      },
+      {
+        "zone": "익산시",
+        "main_depot": "JB-4FE7459D93E1",
+        "alternative_depot": "JB-E2AE24191B3D"
+      }
+    ]
+  },
+  "published_main_parity": true,
+  "route_replay_violations": 0,
+  "replayed_results": 9,
+  "service_metadata_counts": {
+    "total_jeonbuk_coops": 334,
+    "specific_service_listed": 63,
+    "외환": 61,
+    "대여금고": 2,
+    "not_recorded": 271
+  },
+  "service_field_raw_verified_count": 334
+}

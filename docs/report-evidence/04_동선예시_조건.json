@@ -1,0 +1,156 @@
+{
+  "zone": "고창군",
+  "depot": {
+    "node_id": "JB-5490BDCDA91B",
+    "name": "고창해리우체국",
+    "lat": 35.4609509917126,
+    "lon": 126.54050749068,
+    "source": "validated_financial_outlet",
+    "selection_basis": "nearest_preferred_open_outlet_to_zone_target_centroid",
+    "confirmation_status": "unverified_as_operational_depot"
+  },
+  "route": {
+    "service_zone": "고창군",
+    "vehicle_id": "vehicle-1",
+    "candidate_mask": 15,
+    "start_node_id": "JB-5490BDCDA91B",
+    "end_node_id": "JB-5490BDCDA91B",
+    "start_time": "09:00",
+    "end_time": "13:50",
+    "elapsed_minutes": 290.391,
+    "travel_minutes": 110.391,
+    "travel_km": 73.594,
+    "wait_minutes": 0.0,
+    "service_minutes": 180,
+    "return_leg": {
+      "travel_minutes": 28.872,
+      "travel_km": 19.248
+    },
+    "stops": [
+      {
+        "candidate_id": "JSC-96F948A50841",
+        "target_ids": [
+          "5279036000"
+        ],
+        "arrival": "09:05",
+        "service_start": "09:05",
+        "service_end": "09:50",
+        "travel_minutes_from_previous": 4.926,
+        "travel_km_from_previous": 3.284,
+        "wait_minutes": 0.0,
+        "service_minutes": 45
+      },
+      {
+        "candidate_id": "JSC-EBB936F72848",
+        "target_ids": [
+          "5279043000"
+        ],
+        "arrival": "10:18",
+        "service_start": "10:18",
+        "service_end": "11:03",
+        "travel_minutes_from_previous": 28.242,
+        "travel_km_from_previous": 18.828,
+        "wait_minutes": 0.0,
+        "service_minutes": 45
+      },
+      {
+        "candidate_id": "JSC-1865842D7D62",
+        "target_ids": [
+          "5279032000"
+        ],
+        "arrival": "11:16",
+        "service_start": "11:16",
+        "service_end": "12:01",
+        "travel_minutes_from_previous": 12.613,
+        "travel_km_from_previous": 8.409,
+        "wait_minutes": 0.0,
+        "service_minutes": 45
+      },
+      {
+        "candidate_id": "JSC-4A86CCC4F9B3",
+        "target_ids": [
+          "5279038000"
+        ],
+        "arrival": "12:37",
+        "service_start": "12:37",
+        "service_end": "13:22",
+        "travel_minutes_from_previous": 35.739,
+        "travel_km_from_previous": 23.826,
+        "wait_minutes": 0.0,
+        "service_minutes": 45
+      }
+    ],
+    "cycle_day": 1
+  },
+  "stops_named": [
+    {
+      "순서": 1,
+      "지역": "해리면",
+      "방문장소": "왕거경로당",
+      "주소": "고창군 해리면 왕거길 4",
+      "도착": "09:05",
+      "서비스시작": "09:05",
+      "서비스종료": "09:50",
+      "이전장소로부터_km": 3.284,
+      "이전장소로부터_분": 4.926
+    },
+    {
+      "순서": 2,
+      "지역": "부안면",
+      "방문장소": "창내경로당",
+      "주소": "고창군 부안면 질마재로 436",
+      "도착": "10:18",
+      "서비스시작": "10:18",
+      "서비스종료": "11:03",
+      "이전장소로부터_km": 18.828,
+      "이전장소로부터_분": 28.242
+    },
+    {
+      "순서": 3,
+      "지역": "아산면",
+      "방문장소": "부정경로당",
+      "주소": "고창군 아산면 사신원로 310-1",
+      "도착": "11:16",
+      "서비스시작": "11:16",
+      "서비스종료": "12:01",
+      "이전장소로부터_km": 8.409,
+      "이전장소로부터_분": 12.613
+    },
+    {
+      "순서": 4,
+      "지역": "대산면",
+      "방문장소": "발산경로당",
+      "주소": "고창군 대산면 발산길 231",
+      "도착": "12:37",
+      "서비스시작": "12:37",
+      "서비스종료": "13:22",
+      "이전장소로부터_km": 23.826,
+      "이전장소로부터_분": 35.739
+    }
+  ],
+  "assumptions": {
+    "speed_kmh": 40,
+    "service_minutes": 45,
+    "operating_hours": "09:00–17:00",
+    "venue_window": "09:00–16:30",
+    "road_geometry": "stored directed OSM route with at most 64 display points per leg",
+    "operational_ready": false
+  },
+  "sources": {
+    "scenario": "analysis/theory_validation/spatial/route_inputs/jeonbuk_route_scenario.json",
+    "comparison": "analysis/theory_validation/comparison/final_expanded_input/comparison_results.json",
+    "map": "docs/demo-jeonbuk/map-data.js"
+  },
+  "origin_example": {
+    "code": "5280042000",
+    "name": "부안군 위도면",
+    "main_origin": [
+      126.2817719,
+      35.596151
+    ],
+    "centroid": [
+      126.26047131369603,
+      35.60499787073381
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+﻿scenario,label_ko,eligible_outlets,target_areas,priority1_targets,priority2_targets,model_covered_areas,model_unvisited_areas,model_distance_km,model_covered_percent,route_days,actual_depots_reselected
+all_added_included,공식 영업점 목록을 모두 반영한 기준안,1347,54,21,33,50,4,1003.716,92.59,15,0
+exclude_no_service_tag_271,구체적 취급업무가 비어 있는 전북 농·축협 271곳 제외,1076,68,26,42,58,10,1063.647,85.29,15,5
+exclude_all_jeonbuk_coops_334,추가 전북 농·축협 334곳 모두 제외,1013,70,27,43,58,12,1057.792,82.86,15,4

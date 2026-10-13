@@ -1,0 +1,94 @@
+{
+  "verified_at": "2026-10-13T01:55:41.319282+09:00",
+  "verification_by": "Codex browser interaction; not participant sign-off or field operation",
+  "scope": "Portable attached dashboard served on loopback; actual UI interactions and rendered text readback",
+  "artifact_hashes": {
+    "대시보드/app.js": "c6c61d42e590fdad5c5d31fff4979c43879f43e5754c281a548a5e3fbbbb8508",
+    "대시보드/data.js": "88767f59b15f50f38c9add715c400edb85d16e335416936253d6e3980853cba9",
+    "대시보드/scenario-engine.js": "bbeebc73a0c5323ebeab252c11acd599434165ee166918d6b80973d78afd0b34"
+  },
+  "baseline": {
+    "region": "전북 전체",
+    "vehicles": 3,
+    "operating_days": 5,
+    "start": "09:00",
+    "end": "17:00",
+    "service_minutes": 45,
+    "max_stops": 4,
+    "cycle_days": 7,
+    "visited": 50,
+    "targets": 54,
+    "distance_km": 1003.716,
+    "p1_visited": 21,
+    "p1_targets": 21,
+    "p2_visited": 29,
+    "p2_targets": 33
+  },
+  "interaction": {
+    "changed_field": "1일 최대 방문",
+    "from": 4,
+    "to": 3,
+    "before_calculation_notice": "입력을 수정했습니다. 아래 결과와 CSV에는 아직 이전 계산 조건이 적용되어 있습니다. 새 시나리오 계산을 눌러 반영해 주세요.",
+    "action": "새 시나리오 계산",
+    "result_label": "사용자 입력안",
+    "visited": 43,
+    "targets": 54,
+    "distance_km": 912.448,
+    "p1_visited": 21,
+    "p2_visited": 22,
+    "route_days": 15,
+    "unvisited": 11,
+    "allocation": "regional route-day allocation recalculated; not the fixed allocation used for 9.08% comparison"
+  },
+  "expanded_current_gocang_itinerary": {
+    "stops": 3,
+    "distance_km": 58.013,
+    "departure": "09:00",
+    "return": "12:42",
+    "sequence": [
+      "고창해리우체국",
+      "왕거경로당",
+      "부정경로당",
+      "발산경로당",
+      "고창해리우체국"
+    ],
+    "service_intervals": [
+      "09:05–09:50",
+      "10:07–10:52",
+      "11:28–12:13"
+    ]
+  },
+  "reset": {
+    "action": "입력 초기화",
+    "result": "기본안",
+    "max_stops": 4
+  },
+  "analysis_region_filter": {
+    "selection": "고창군",
+    "rows": 14,
+    "default_route_stops": 4,
+    "route_sequence": [
+      "왕거경로당",
+      "창내경로당",
+      "부정경로당",
+      "발산경로당"
+    ],
+    "current_visit_status_displayed": true
+  },
+  "fixed_overview_gocang_example": {
+    "stops": 4,
+    "distance_km": 73.594,
+    "departure": "09:00",
+    "return": "13:50",
+    "note": "fixed default example is separate from current scenario itinerary"
+  },
+  "interpretation": "4→3 stop change reduces visits 50→43. Do not interpret differing scenario distance as efficiency improvement. 9.08% applies only to the fixed same-50-place comparison.",
+  "not_verified": [
+    "CSV download payload in this browser session",
+    "live public deployment",
+    "field travel feasibility",
+    "approved venues or depots",
+    "individual current financial service availability",
+    "participant final sign-off"
+  ]
+}

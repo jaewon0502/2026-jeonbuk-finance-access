@@ -1,0 +1,517 @@
+{
+  "generated_at": "2026-10-12T21:35:21+09:00",
+  "inputs": {
+    "pbf": {
+      "path": "/Users/jaewon/Documents/ChatGPT/전북 빅데이터/2026-jeonbuk-finance-access/analysis/theory_validation/inputs/south-korea-261011.osm.pbf",
+      "sha256": "a856bb1e43c968612b2339af0e01da8bb972e10ba21ca86b9d91aac4d1d64505"
+    },
+    "boundaries": {
+      "path": "/Users/jaewon/Documents/ChatGPT/전북 빅데이터/2026-jeonbuk-finance-access/analysis/theory_validation/inputs/hjd2026.geojson",
+      "sha256": "a394b1741d89f9c3556b6d83845b899f8ebe32f13fd77646fa07cabf76c286b4"
+    },
+    "access": {
+      "path": "/Users/jaewon/Documents/ChatGPT/전북 빅데이터/2026-jeonbuk-finance-access/data/processed/access_road.csv",
+      "sha256": "2091a421f250c6f5c8326ccd04fd889dd848c024348959a2991faf1f58fd2b9b"
+    },
+    "outlets_baseline": {
+      "path": "/Users/jaewon/Documents/ChatGPT/전북 빅데이터/2026-jeonbuk-finance-access/data/processed/outlets_validated.csv",
+      "sha256": "04fc53933a80bce09e0d74b4d42d2a1f7cd8b3c7c2122f02e3c34d429a92bca4"
+    },
+    "outlets_expanded": {
+      "path": "/Users/jaewon/Documents/ChatGPT/전북 빅데이터/2026-jeonbuk-finance-access/analysis/theory_validation/inputs/outlets_expanded.csv",
+      "sha256": "0bc36abb3b216220da01e536c699fe5345d37c0328c089935ce405c77cad1d80"
+    }
+  },
+  "runner_sha256": "27fcf14ce86626f04ae0af145f14355347512809d61e6e819ae142d28f34ae56",
+  "graph": {
+    "inputs": {
+      "pbf_sha256": "a856bb1e43c968612b2339af0e01da8bb972e10ba21ca86b9d91aac4d1d64505",
+      "boundary_sha256": "a394b1741d89f9c3556b6d83845b899f8ebe32f13fd77646fa07cabf76c286b4",
+      "build_roadnet_sha256": "1c49d4bfb568bdc3af98a2a5fa052d3bc31c58a75fb03114889f8125f82112e1",
+      "geo_utils_sha256": "482b593ad1eee6dbb7146911de9098ef33a2f8613c08299261dd98d884637b9d",
+      "python_version": "3.14.6",
+      "osmium_version": "4.3.1",
+      "bbox_margin_degrees": 0.25,
+      "max_snap_km": 2.0,
+      "grid_degrees": 0.01
+    },
+    "graph_sha256": "bc572d342d0652f11e01c91ddd19b80cf585ec539f75750535b9ccd7001fbef9",
+    "cache_file": "/Users/jaewon/Documents/ChatGPT/전북 빅데이터/2026-jeonbuk-finance-access/analysis/theory_validation/spatial/cache/9cd7ec51fc39095a1c50c1289e7dc03d544d035a4f822f3c526a2ff90d674b11.pickle"
+  },
+  "packages": {
+    "shapely": "2.2.0",
+    "pyproj": "3.8.0",
+    "osmium": "4.3.1"
+  },
+  "design": {
+    "factorial_cells": "2 outlet pools x 2 origins over all 243 submitted administrative areas",
+    "centroid": "all components and holes; area centroid in EPSG:5179; transformed to EPSG:4326",
+    "internal": "exact submitted CSV coordinates preserved",
+    "outside_centroid": "retained as diagnostic; excluded from valid-origin and routing comparisons",
+    "thresholds": "full precision: P1 > 5 km; P2 > 3 km and <= 5 km",
+    "fallback": "nearest reachable node by connector distance then node index; non-primary; differs from legacy index-order fallback",
+    "resident_coverage_available": false,
+    "monotonicity": "checked only with both primary on the same fixed nearest node",
+    "outlet_seed_order": "outlet_id ascending; same-node equal connector retains first seed"
+  },
+  "pool_stats": {
+    "baseline": {
+      "outlet_rows": 681,
+      "eligible_outlets": 643,
+      "snapped_outlets": 643,
+      "outlet_snap_failures": [],
+      "dijkstra_heap_pops": 1836376
+    },
+    "expanded": {
+      "outlet_rows": 1385,
+      "eligible_outlets": 1347,
+      "snapped_outlets": 1347,
+      "outlet_snap_failures": [],
+      "dijkstra_heap_pops": 1836390
+    }
+  },
+  "cells": {
+    "baseline_internal": {
+      "admin_count": 243,
+      "distance_category_counts": {
+        "within_threshold": 172,
+        "P2": 43,
+        "P1": 28
+      },
+      "routing_category_counts": {
+        "within_threshold": 170,
+        "P2": 43,
+        "P1": 27,
+        "quality_deferred": 3
+      },
+      "route_status_counts": {
+        "ok": 240,
+        "fallback_nearest_reachable": 3
+      },
+      "outside_origin_codes": [],
+      "distance_km_all_routed": {
+        "n": 243,
+        "min": 0.04598309085823022,
+        "p10": 0.4636645587384044,
+        "median": 1.8677438673330176,
+        "p90": 5.290669093607026,
+        "max": 16.472580112641534,
+        "mean": 2.503153270605537
+      },
+      "distance_km_valid_primary": {
+        "n": 240,
+        "min": 0.04598309085823022,
+        "p10": 0.4586736801508308,
+        "median": 1.8646588529460018,
+        "p90": 5.311984194762853,
+        "max": 16.472580112641534,
+        "mean": 2.4953878782627084
+      }
+    },
+    "baseline_centroid": {
+      "admin_count": 243,
+      "distance_category_counts": {
+        "within_threshold": 171,
+        "P2": 43,
+        "P1": 28,
+        "unrouted": 1
+      },
+      "routing_category_counts": {
+        "within_threshold": 169,
+        "P2": 43,
+        "P1": 26,
+        "outside_origin": 2,
+        "quality_deferred": 3
+      },
+      "route_status_counts": {
+        "ok": 239,
+        "admin_snap_failed": 1,
+        "fallback_nearest_reachable": 3
+      },
+      "outside_origin_codes": [
+        "5213039000",
+        "5280042000"
+      ],
+      "distance_km_all_routed": {
+        "n": 242,
+        "min": 0.04596989752479809,
+        "p10": 0.4626775889054127,
+        "median": 1.8516653685198396,
+        "p90": 5.2981906382242645,
+        "max": 16.472691483062857,
+        "mean": 2.496634893009992
+      },
+      "distance_km_valid_primary": {
+        "n": 238,
+        "min": 0.04596989752479809,
+        "p10": 0.4525137431923898,
+        "median": 1.8305025672566766,
+        "p90": 5.250096724601672,
+        "max": 16.472691483062857,
+        "mean": 2.475266500991638
+      }
+    },
+    "expanded_internal": {
+      "admin_count": 243,
+      "distance_category_counts": {
+        "within_threshold": 188,
+        "P2": 34,
+        "P1": 21
+      },
+      "routing_category_counts": {
+        "within_threshold": 186,
+        "P2": 33,
+        "P1": 21,
+        "quality_deferred": 3
+      },
+      "route_status_counts": {
+        "ok": 240,
+        "fallback_nearest_reachable": 3
+      },
+      "outside_origin_codes": [],
+      "distance_km_all_routed": {
+        "n": 243,
+        "min": 0.03773290809215668,
+        "p10": 0.419793218992247,
+        "median": 1.7028409034668233,
+        "p90": 4.472293545987707,
+        "max": 16.08888474929019,
+        "mean": 2.213792418501926
+      },
+      "distance_km_valid_primary": {
+        "n": 240,
+        "min": 0.03773290809215668,
+        "p10": 0.41884999826890035,
+        "median": 1.700543445670737,
+        "p90": 4.43591341059952,
+        "max": 16.08888474929019,
+        "mean": 2.2043539510585655
+      }
+    },
+    "expanded_centroid": {
+      "admin_count": 243,
+      "distance_category_counts": {
+        "within_threshold": 187,
+        "P2": 34,
+        "P1": 21,
+        "unrouted": 1
+      },
+      "routing_category_counts": {
+        "within_threshold": 185,
+        "P2": 33,
+        "P1": 20,
+        "outside_origin": 2,
+        "quality_deferred": 3
+      },
+      "route_status_counts": {
+        "ok": 239,
+        "admin_snap_failed": 1,
+        "fallback_nearest_reachable": 3
+      },
+      "outside_origin_codes": [
+        "5213039000",
+        "5280042000"
+      ],
+      "distance_km_all_routed": {
+        "n": 242,
+        "min": 0.03771971475872455,
+        "p10": 0.4195014450284139,
+        "median": 1.700493402357219,
+        "p90": 4.477349425528499,
+        "max": 16.088996119711513,
+        "mean": 2.20671470344563
+      },
+      "distance_km_valid_primary": {
+        "n": 238,
+        "min": 0.03771971475872455,
+        "p10": 0.41812319581257457,
+        "median": 1.690927976581753,
+        "p90": 4.302849883183378,
+        "max": 16.088996119711513,
+        "mean": 2.1826880725099618
+      }
+    }
+  },
+  "comparisons": {
+    "outlet_effect_internal": {
+      "rows": 243,
+      "all_routed_delta_km": {
+        "n": 243,
+        "min": -7.429505646748213,
+        "p10": -0.419480414387968,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0,
+        "mean": -0.28936085210361073
+      },
+      "valid_primary_pair_count": 240,
+      "valid_primary_delta_km": {
+        "n": 240,
+        "min": -7.429505646748213,
+        "p10": -0.42912039265637936,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0,
+        "mean": -0.2910339272041427
+      },
+      "valid_primary_absolute_delta_km": {
+        "n": 240,
+        "min": 0.0,
+        "p10": 0.0,
+        "median": 0.0,
+        "p90": 0.42912039265637936,
+        "max": 7.429505646748213,
+        "mean": 0.2910339272041427
+      },
+      "category_transitions_all": {
+        "within_threshold -> within_threshold": 172,
+        "P2 -> P2": 32,
+        "P1 -> P1": 21,
+        "P2 -> within_threshold": 11,
+        "P1 -> P2": 2,
+        "P1 -> within_threshold": 5
+      },
+      "category_transitions_valid_primary": {
+        "within_threshold -> within_threshold": 170,
+        "P2 -> P2": 32,
+        "P1 -> P1": 21,
+        "P2 -> within_threshold": 11,
+        "P1 -> within_threshold": 5,
+        "P1 -> P2": 1
+      },
+      "routing_category_transitions": {
+        "within_threshold -> within_threshold": 170,
+        "P2 -> P2": 32,
+        "P1 -> P1": 21,
+        "P2 -> within_threshold": 11,
+        "quality_deferred -> quality_deferred": 3,
+        "P1 -> within_threshold": 5,
+        "P1 -> P2": 1
+      },
+      "nearest_outlet_changes_all": 102,
+      "nearest_outlet_changes_valid_primary": 100,
+      "additive_fixed_primary_monotonicity_checked": 240
+    },
+    "outlet_effect_centroid": {
+      "rows": 243,
+      "all_routed_delta_km": {
+        "n": 242,
+        "min": -7.429505646748214,
+        "p10": -0.42395354576754624,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0,
+        "mean": -0.289920189564362
+      },
+      "valid_primary_pair_count": 238,
+      "valid_primary_delta_km": {
+        "n": 238,
+        "min": -7.429505646748214,
+        "p10": -0.4305078236748894,
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0,
+        "mean": -0.2925784284816759
+      },
+      "valid_primary_absolute_delta_km": {
+        "n": 238,
+        "min": 0.0,
+        "p10": 0.0,
+        "median": 0.0,
+        "p90": 0.4305078236748895,
+        "max": 7.429505646748214,
+        "mean": 0.2925784284816759
+      },
+      "category_transitions_all": {
+        "within_threshold -> within_threshold": 171,
+        "P2 -> P2": 32,
+        "P1 -> P1": 21,
+        "P2 -> within_threshold": 11,
+        "unrouted -> unrouted": 1,
+        "P1 -> P2": 2,
+        "P1 -> within_threshold": 5
+      },
+      "category_transitions_valid_primary": {
+        "within_threshold -> within_threshold": 169,
+        "P2 -> P2": 32,
+        "P1 -> P1": 20,
+        "P2 -> within_threshold": 11,
+        "P1 -> within_threshold": 5,
+        "P1 -> P2": 1
+      },
+      "routing_category_transitions": {
+        "within_threshold -> within_threshold": 169,
+        "P2 -> P2": 32,
+        "P1 -> P1": 20,
+        "P2 -> within_threshold": 11,
+        "outside_origin -> outside_origin": 2,
+        "quality_deferred -> quality_deferred": 3,
+        "P1 -> within_threshold": 5,
+        "P1 -> P2": 1
+      },
+      "nearest_outlet_changes_all": 102,
+      "nearest_outlet_changes_valid_primary": 99,
+      "additive_fixed_primary_monotonicity_checked": 239
+    },
+    "origin_effect_baseline": {
+      "rows": 243,
+      "all_routed_delta_km": {
+        "n": 242,
+        "min": -0.02571193028498131,
+        "p10": -0.0004280522610068616,
+        "median": -2.8701886481408145e-07,
+        "p90": 0.0004227245942070468,
+        "max": 3.2208063902973523,
+        "mean": 0.013472517075228518
+      },
+      "valid_primary_pair_count": 238,
+      "valid_primary_delta_km": {
+        "n": 238,
+        "min": -0.02571193028498131,
+        "p10": -0.0004338070690094175,
+        "median": -1.984211779840206e-06,
+        "p90": 0.00042040234225790843,
+        "max": 0.056183383369494244,
+        "mean": 0.00016484589745399076
+      },
+      "valid_primary_absolute_delta_km": {
+        "n": 238,
+        "min": 6.757726242478945e-07,
+        "p10": 1.4846733148615734e-05,
+        "median": 0.00013806300254842752,
+        "p90": 0.0006276719865409008,
+        "max": 0.056183383369494244,
+        "mean": 0.0006328794906083557
+      },
+      "category_transitions_all": {
+        "within_threshold -> within_threshold": 171,
+        "P2 -> P2": 43,
+        "P1 -> P1": 27,
+        "P1 -> unrouted": 1,
+        "within_threshold -> P1": 1
+      },
+      "category_transitions_valid_primary": {
+        "within_threshold -> within_threshold": 169,
+        "P2 -> P2": 43,
+        "P1 -> P1": 26
+      },
+      "routing_category_transitions": {
+        "within_threshold -> within_threshold": 169,
+        "P2 -> P2": 43,
+        "P1 -> P1": 26,
+        "P1 -> outside_origin": 1,
+        "quality_deferred -> quality_deferred": 3,
+        "within_threshold -> outside_origin": 1
+      },
+      "nearest_outlet_changes_all": 1,
+      "nearest_outlet_changes_valid_primary": 0,
+      "additive_fixed_primary_monotonicity_checked": null
+    },
+    "origin_effect_expanded": {
+      "rows": 243,
+      "all_routed_delta_km": {
+        "n": 242,
+        "min": -0.02571193028498131,
+        "p10": -0.0004280522610068616,
+        "median": -2.8701886481408145e-07,
+        "p90": 0.00042272459420664713,
+        "max": 3.37480757689917,
+        "mean": 0.014108885614905444
+      },
+      "valid_primary_pair_count": 238,
+      "valid_primary_delta_km": {
+        "n": 238,
+        "min": -0.02571193028498131,
+        "p10": -0.0004338070690094175,
+        "median": -1.984211779840206e-06,
+        "p90": 0.00042040234225777524,
+        "max": 0.056183383369494244,
+        "mean": 0.00016484589745398423
+      },
+      "valid_primary_absolute_delta_km": {
+        "n": 238,
+        "min": 6.757726242478945e-07,
+        "p10": 1.4846733148615734e-05,
+        "median": 0.00013806300254864956,
+        "p90": 0.0006276719865409008,
+        "max": 0.056183383369494244,
+        "mean": 0.0006328794906083618
+      },
+      "category_transitions_all": {
+        "within_threshold -> within_threshold": 187,
+        "P2 -> P2": 34,
+        "P1 -> P1": 20,
+        "P1 -> unrouted": 1,
+        "within_threshold -> P1": 1
+      },
+      "category_transitions_valid_primary": {
+        "within_threshold -> within_threshold": 185,
+        "P2 -> P2": 33,
+        "P1 -> P1": 20
+      },
+      "routing_category_transitions": {
+        "within_threshold -> within_threshold": 185,
+        "P2 -> P2": 33,
+        "P1 -> P1": 20,
+        "P1 -> outside_origin": 1,
+        "quality_deferred -> quality_deferred": 3,
+        "within_threshold -> outside_origin": 1
+      },
+      "nearest_outlet_changes_all": 1,
+      "nearest_outlet_changes_valid_primary": 0,
+      "additive_fixed_primary_monotonicity_checked": null
+    }
+  },
+  "expanded_origin_robustness": {
+    "stable": 238,
+    "not_comparable_quality_or_outside": 5
+  },
+  "origin_geometry": {
+    "submitted_method_counts": {
+      "largest_component_centroid_inside": 242,
+      "largest_component_scanline_inside": 1
+    },
+    "displacement_km_all_243": {
+      "n": 243,
+      "min": 4.122801125832913e-06,
+      "p10": 2.868444543353947e-05,
+      "median": 0.00026386365715568374,
+      "p90": 0.0010259828678967182,
+      "max": 8.894544013867948,
+      "mean": 0.046283708128504845
+    },
+    "displacement_over_10m_count": 4,
+    "displacement_over_100m_count": 2,
+    "spearman_valid_primary_pair_count": 238,
+    "road_distance_spearman_valid_primary": 0.9999902084662053,
+    "interpretation": "geometric sensitivity only; most submitted origins already use the largest-component centroid; no resident-location validation"
+  },
+  "legacy_baseline_category_changes": [
+    {
+      "code": "5274033500",
+      "sigungu": "장수군",
+      "dong": "장계면",
+      "submitted_rounded_km": "4.593",
+      "rerun_unrounded_km": 5.307059952536978,
+      "submitted_category": "P2",
+      "rerun_category": "P1",
+      "rerun_rounded_category": "P1",
+      "submitted_quality": "ok",
+      "rerun_quality": "ok"
+    }
+  ],
+  "precision_only_category_changes_common_road": [],
+  "outputs": {
+    "access_baseline_centroid.csv": "1b7925f442c7166da7d66da84303464c07c743c3fda1c6c8940cab5aea796a52",
+    "access_baseline_internal.csv": "7cd1ae9666f98a5072176cb0d7b03106bcb9155b369e75ae18fa9715850f0e3e",
+    "access_expanded_centroid.csv": "4ef741af1ac29bf217ba441435f8d38f1e30b31464286b3d9c6617c8ac36be7e",
+    "access_expanded_internal.csv": "e4f248ae92787d0cd596b9edb394a28d11aa8dad5c8ef68418f70a8f0902d2cf",
+    "origin_effect_baseline.csv": "9119637c04dce98df649eb6432387e51e32c2be82fd91801b85aab3f6bf988c3",
+    "origin_effect_expanded.csv": "bbea60ff2f86dd38cf70c213236cd0325773ed9d93f9c6e8a04f4ecda797a27a",
+    "origin_robustness_expanded.csv": "3c20bc8f6ec30e64e4ab97f28a90d2fea7f0c89b98fcbe97065f856650c14447",
+    "outlet_effect_centroid.csv": "0ed9af0683655828b9dcb163d4b46026ffb83233561420bb74bd5bdee8338f9c",
+    "outlet_effect_internal.csv": "695a43dace8db0aae0028395647bfec93d3903d5ccc6ace3eeb1ee919c67a28b",
+    "submitted_vs_common_road_baseline.csv": "86c29c4b1a6df5e50e1e13a4f148ce58aab4d604143774a28c2ff270e48edde3",
+    "threshold_sensitivity.csv": "dbfafbb4588c744ff7948fc6f7593018640be6e5e19ca48a6cf69dffeeac0074"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "verified_at": "2026-10-14",
+  "environment": "Local HTTP server, Codex in-app browser",
+  "viewport_width_css_px": 774,
+  "baseline": {
+    "visited": 50,
+    "targets": 54,
+    "unvisited": 4,
+    "distance_km": 1003.716,
+    "P1": 21,
+    "P2": 29
+  },
+  "max_stops_3_recomputed": {
+    "visited": 43,
+    "targets": 54,
+    "distance_km": 912.448,
+    "P1": 21,
+    "P2": 22
+  },
+  "input_reset_restores_baseline": true,
+  "gochang_example": {
+    "start": "09:00",
+    "return": "13:50",
+    "visits": 4,
+    "distance_km": 73.594,
+    "order": [
+      "왕거경로당",
+      "창내경로당",
+      "부정경로당",
+      "발산경로당"
+    ]
+  },
+  "sensitivity_table_matches_saved_analysis": true,
+  "version_change_narrative_removed_from_dashboard": true,
+  "horizontal_page_overflow_at_tested_width": false,
+  "observed_console_errors": 0,
+  "limits": [
+    "No physical field operation or deployment was tested.",
+    "The prior 2026-10-13 record is retained separately; its device and export checks were not repeated here."
+  ],
+  "zone_filter": {
+    "empty_selection": {
+      "visited": 0,
+      "targets": 0,
+      "csv_disabled": true
+    },
+    "gochang_only": {
+      "visited": 4,
+      "targets": 4,
+      "distance_km": 73.594
+    },
+    "all_zones_restored": true
+  }
+}
