@@ -271,29 +271,6 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
 .noscript{padding:20px;background:#fae2e2;color:#8c2626;text-align:center}
 .load-error{margin:24px auto;padding:20px;max-width:760px;background:#fae2e2;color:#8c2626;border-radius:12px}
 .load-error[hidden]{display:none}
-.snapshot-bar{display:flex;flex-wrap:wrap;gap:6px 20px;padding:10px 14px;margin-bottom:16px;border:1px solid var(--line);border-radius:8px;background:#eef4f8;font-size:13px;color:#405465}
-.result-story{margin:0 0 20px;padding:22px 26px;background:#eaf2ff;border:1px solid #bdd3f4;border-radius:12px}
-.result-story h2{margin:0 0 16px;font-size:21px;color:var(--navy)}
-.result-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.result-step{padding-left:18px;border-left:2px solid #abc7eb}
-.result-step:first-child{padding-left:0;border-left:0}
-.result-step span,.result-step small{display:block;color:#405465;font-size:13px}
-.result-step strong{display:block;margin:3px 0;color:#0b4da8;font-size:34px;line-height:1.2}
-.result-step small{margin-top:5px}
-.result-story>p{margin:16px 0 0;font-size:13px;color:#405465}
-.route-example{margin:20px 0}
-.route-example h2{margin:0;font-size:21px}
-.route-example .route-intro{margin:6px 0 16px;color:#405465;font-size:14px}
-.route-example-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center}
-.route-example figure{margin:0;min-width:0}
-.route-example svg{display:block;width:100%;height:auto;background:#f4f8fb;border-radius:8px}
-.route-example figcaption{font-size:12px;color:#526574;margin-top:8px}
-.route-example table{width:100%;border-collapse:collapse;font-size:14px}
-.route-example th,.route-example td{padding:11px 8px;border-bottom:1px solid #dce4ed;text-align:left}
-.route-example th{background:#eef4fa;font-weight:650}
-.route-example .example-note{font-size:13px;color:#526574;line-height:1.65;margin-bottom:0}
-@media(max-width:900px){.route-example-grid{grid-template-columns:1fr}.result-flow{grid-template-columns:1fr 1fr}.result-step:nth-child(3){padding-left:0;border-left:0}}
-@media(max-width:540px){.result-story{padding:18px}.result-story h2{font-size:18px}.result-step strong{font-size:28px}.route-example th,.route-example td{padding:9px 5px;font-size:12px}}
 .reference-panel{margin-top:18px;margin-bottom:18px}
 .reference-panel h2,.itinerary-panel h2{font-size:20px;margin:0 0 8px}
 .reference-panel p,.itinerary-panel>p{margin:6px 0 14px;font-size:13px;color:#526574}
@@ -360,15 +337,6 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
         </div>
       </div>
     </div>
-
-    <div class="snapshot-bar" id="snapshot-summary" aria-label="분석 자료 기준">분석 자료를 불러오는 중입니다.</div>
-
-    <section class="result-story" aria-labelledby="result-story-title">
-      <h2 id="result-story-title">현재 방문 계획과 이동거리</h2>
-      <div class="result-flow" id="result-flow"></div>
-      <p id="result-comparison-note"></p>
-      <p>금융접점은 공개 영업점 목록을 바탕으로 정리했습니다. 농·축협의 개별 금융업무와 영업시간은 모두 확인된 상태가 아니므로, 공식 목록 등재를 가정한 분석 결과입니다.</p>
-    </section>
 
     <div class="metric-row">
       <article class="metric-card">
@@ -495,18 +463,6 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,[t
         </div>
       </aside>
     </div>
-
-    <section class="panel route-example" aria-labelledby="route-example-title" id="route-example">
-      <h2 id="route-example-title">어디를 어떤 순서로 방문하나요?</h2>
-      <p class="route-intro" id="route-example-summary"></p>
-      <div class="route-example-grid">
-        <figure>
-          <svg id="route-example-map" viewBox="0 0 640 390" role="img" aria-label="고창군 첫째 날 방문 순서와 도로 경로"></svg>
-          <figcaption>번호는 시간표의 방문 순서입니다. 경계 SGIS · 경로 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></figcaption>
-        </figure>
-        <div><table aria-label="고창군 첫째 날 예상 방문 시간표" id="route-example-table"></table><p class="example-note" id="route-example-note"></p></div>
-      </div>
-    </section>
 
     <div class="panel ops-panel">
       <h2>보고서 기본조건 <small>전북 전체 · 고정 결과</small></h2>
