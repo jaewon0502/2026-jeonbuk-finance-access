@@ -10,6 +10,28 @@
 
 - 대회 필수 데이터: 한국은행 ECOS `141Y003` 예금은행 지역별 대출금(말잔)
 
+## 제출 자료 안내
+
+**GitHub 제출 주소:** https://github.com/jaewon0502/2026-jeonbuk-finance-access
+
+첨부된 「코드·분석파일 제출 기준」에 맞춰 코드, 실행 설명서, 라이브러리 목록,
+샘플 데이터와 데이터 설명을 함께 제공한다. 심사 시 아래 순서로 확인하면 된다.
+
+| 확인할 내용 | 파일 |
+|---|---|
+| 설치·실행·정상 종료 기준 | 이 문서 1~3절, [실행환경 설명서](docs/실행환경설명서.md) · [PDF](docs/실행환경설명서.pdf) |
+| 코드와 테스트 | [src/](src/), [tests/](tests/), [보완 분석 코드](analysis/theory_validation/README.md) |
+| 데이터 경로·컬럼·샘플 | [데이터 설명서](data_sample/데이터_설명서.md), [샘플 안내](data_sample/README.md) |
+| 현재 결과와 과거 결과 | [결과 파일 안내](result/README.md) |
+| AI·바이브 코딩 활용 범위 | [AI_USAGE.md](docs/AI_USAGE.md) |
+| 오픈소스 출처·라이선스 | [THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md) |
+| 제출 확인사항 6개와 실행 증거 | [제출 체크리스트](docs/제출_체크리스트.md), [실행 로그](docs/verify_offline_log.txt) |
+
+GitHub URL 제출은 기준에서 허용한 형식이다. ZIP으로 제출할 경우 파일명은
+`금방_전북금융사각지대진단과찾아가는은행최적동선설계_코드분석파일.zip`으로 맞춘다.
+GitHub의 **Code → Download ZIP**은 자동 이름이므로 내려받은 뒤 이름을 변경한다.
+제출 시점의 커밋 SHA도 함께 기록하면 이후 변경과 구분할 수 있다.
+
 ## 현재 보고서와 대시보드 기준
 
 현재 대시보드는 `analysis/theory_validation`의 검증 자료를 읽는다. 기존 제출 자료는
@@ -38,12 +60,12 @@
 다르므로 위 세 조건 사이의 거리 차이를 효율 개선율로 해석하지 않는다.
 [지점별 확인·민감도 분석과 재현 방법](analysis/feedback_validation/README.md),
 [보고서 표·고창군 동선·화면 확인 자료](docs/report-evidence/README.md)를 함께 제공한다.
-종합 화면에는 대상 54곳·방문 50곳·미방문 4곳과 고창군 기본 동선 지도·시간표를 표시한다.
+고창군 기본 동선과 시간표는 위 보고서 확인 자료에 보관되어 있다.
 
 ```bash
 python3 src/build_dashboard_data.py
 bash verify_offline.sh
-python3 -m http.server 8000 --bind 127.0.0.1 --directory docs/demo-jeonbuk
+python3 -m http.server 8000 --bind 127.0.0.1 --directory docs
 ```
 
 화면 자료 재생성은 저장된 검증 입력의 SHA-256을 확인한다. 지도 전체 재생성 명령은
@@ -54,25 +76,35 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory docs/demo-jeonbuk
 
 ---
 
-## 1. 빠른 실행 (5분)
+## 1. GitHub에서 받아 실행하기
 
-원본 대용량 데이터나 API 키 없이, 이 압축파일만으로 전체 검증이 돌아간다.
+Git·Python 3.11 이상·Node.js 20 이상이 설치된 macOS/Linux 또는 Windows WSL2에서 실행한다.
+다운로드와 최초 라이브러리 설치에는 인터넷이 필요하며, 설치 후 검증은 원본 대용량
+데이터나 API 키 없이 실행한다.
 
 ```bash
-cd 금방_전북금융사각지대진단과찾아가는은행최적동선설계_코드분석파일
+git clone https://github.com/jaewon0502/2026-jeonbuk-finance-access.git
+cd 2026-jeonbuk-finance-access
 python3 -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
+source .venv/bin/activate          # WSL2에서도 동일
 python3 -m pip install -r requirements.txt
+node --version                    # v20 이상 확인
 bash verify_offline.sh             # 문법·테스트·산출물 재생성·무결성 검증
 ```
 
-마지막 줄에 `PASS (offline)` 이 찍히면 정상이다.
+이미 받은 저장소 또는 Download ZIP을 사용한다면 앞의 두 줄 대신 해당 폴더로 이동한다.
+출력 마지막 줄이 `PASS (offline)`이고 종료 코드가 0이면 정상이다.
 
-대시보드는 서버 없이 파일을 그대로 열면 된다.
+대시보드는 `docs/demo-jeonbuk/index.html`을 브라우저로 열면 된다. 서버 없이도 동작한다.
+운영체제에 관계없이 로컬 서버로 여는 방법은 다음과 같다.
 
 ```bash
-open docs/demo-jeonbuk/index.html          # Windows: start docs\demo-jeonbuk\index.html
+python3 -m http.server 8000 --bind 127.0.0.1 --directory docs
+# 브라우저에서 http://127.0.0.1:8000/demo-jeonbuk/ 접속
 ```
+
+저장소 전체를 받아야 글꼴과 지도 자료가 함께 열린다. 이 검증은 저장된 입력·행렬로
+결과를 재계산하는 범위다. 원천 재수집과 도로망 전체 재구축은 별도 준비가 필요하다.
 
 `verify_offline.sh`가 하는 일은 다섯 단계다.
 
@@ -88,17 +120,17 @@ open docs/demo-jeonbuk/index.html          # Windows: start docs\demo-jeonbuk\in
 
 | 항목 | 요구 |
 |---|---|
-| 운영체제 | macOS / Linux / Windows(WSL 권장) |
+| 운영체제 | macOS / Linux / Windows(WSL2 권장); 이번 실행 검증은 macOS 27.0.1 arm64 |
 | Python | 3.11 이상 (개발·검증: 3.14.6) |
 | Node.js | 20 이상 — 브라우저 시나리오 엔진 테스트용 (개발·검증: 26.4.0) |
 | 브라우저 | Chrome·Safari·Edge 최신 (대시보드 열람) |
-| 네트워크 | **불필요** — 위 검증은 전부 오프라인 |
+| 네트워크 | 다운로드·최초 설치에 필요; 설치 후 위 검증과 대시보드 열람에는 불필요 |
 
 자세한 내용은 [`docs/실행환경설명서.md`](docs/실행환경설명서.md) (PDF 판본: `docs/실행환경설명서.pdf`)를 따른다.
 
 ## 3. 필요 라이브러리
 
-`requirements.txt` 세 개가 전부다. 나머지는 Python 표준 라이브러리만 쓴다.
+기본 제출 검증은 루트의 `requirements.txt`를 설치한다.
 
 ```
 osmium==4.3.1     OSM PBF 파싱 (원본 도로망 재구축 시에만 필요)
@@ -108,10 +140,20 @@ scipy==1.17.1     Ward 계층 군집
 
 Node.js는 별도 패키지 설치 없이 내장 `node:test`만 쓴다.
 
+원본 도로망·경계로 보완 분석까지 다시 계산할 때는
+[`analysis/theory_validation/requirements.txt`](analysis/theory_validation/requirements.txt)를
+설치한다. 위 세 패키지에 `shapely==2.2.0`, `pyproj==3.8.0`, `requests==2.34.2`가 추가된다.
+라이브러리의 하위 의존성은 pip가 함께 설치하며, 기본 검증에는 추가 설치가 필요 없다.
+
+```bash
+# 선택: 원본 자료를 확보해 전체 공간분석을 재구축할 때만
+python3 -m pip install -r analysis/theory_validation/requirements.txt
+```
+
 ## 4. 폴더 구성
 
 ```
-금방_전북금융사각지대진단과찾아가는은행최적동선설계_코드분석파일/
+2026-jeonbuk-finance-access/
 ├── README.md                  이 문서 — 실행 설명서
 ├── requirements.txt           필요 라이브러리
 ├── verify_offline.sh          제출 검증 (키·원본 없이 실행)
@@ -120,13 +162,17 @@ Node.js는 별도 패키지 설치 없이 내장 `node:test`만 쓴다.
 ├── src/                       수집·정제·분석·경로·시각화 코드 (21개 모듈)
 ├── config/                    운영 가정·입력 범위 설정
 ├── tests/                     경로 엔진·유형화·대시보드 엔진 테스트
+├── analysis/
+│   ├── theory_validation/     현재 접점·도로거리·경로 비교 입력과 분석
+│   └── feedback_validation/   금융업무 표시 민감도와 공식 조회 근거
 ├── data/
-│   ├── processed/             코드가 참조하는 실제 가공 데이터 (전량 포함)
-│   └── source_manifest.json   원천별 URL·기준일·수집일·라이선스·SHA-256
-├── data_sample/               가공 데이터 상위 20행 미리보기 + 데이터 설명서
+│   ├── processed/             8월 기준 가공 데이터 (과거 분석 재검증용)
+│   └── source_manifest.json   8월 원천별 URL·기준일·라이선스·SHA-256
+├── data_sample/               과거 미리보기·current/ 현재 미리보기·설명서
 ├── result/
-│   ├── reports/               분석 결과 리포트 4종 (Markdown)
-│   └── outputs/               최종 산출 CSV·JSON 사본
+│   ├── README.md              현재 결과 원본으로 가는 안내
+│   ├── reports/               과거 분석 결과 리포트 4종 (Markdown)
+│   └── outputs/               과거 산출 CSV·JSON 사본
 └── docs/
     ├── 실행환경설명서.md
     ├── 제출_체크리스트.md
@@ -136,26 +182,35 @@ Node.js는 별도 패키지 설치 없이 내장 `node:test`만 쓴다.
     └── demo-jeonbuk/          대시보드·지도·방법론 화면
 ```
 
-Jupyter 노트북은 두지 않았다. 수집부터 시각화까지 전 과정을 재실행 가능한
-스크립트로 구성했고, `verify_offline.sh` 한 줄이 그 파이프라인을 그대로 돌린다.
+Jupyter 노트북은 두지 않았다. Python 스크립트로 실행하며,
+`verify_offline.sh`는 저장된 자료의 재계산·검증 경로를 묶는다. 원천 수집과 도로망
+재구축까지 실행하는 명령은 아니다. 기준표의 노트북은 폴더 구성 예시다.
 
 ## 5. 데이터 경로와 파일명
 
 ### 코드가 읽는 경로
 
-모든 스크립트는 저장소 루트 기준 상대경로만 쓴다. 절대경로·사용자 홈 경로는 없다.
+아래 명령은 저장소 루트에서 실행한다. 기본 입력은 저장소 안의 파일이며 사용자의
+홈 경로를 지정할 필요가 없다. 재구축 스크립트는 명령행 인자로 별도 입력을 받을 수 있다.
 
 | 경로 | 내용 | 포함 여부 |
 |---|---|---|
-| `data/processed/` | 가공·검증 완료 데이터 28개 | **포함** — 그대로 실행 가능 |
+| `analysis/theory_validation/spatial/route_inputs/` | 현재 접점·접근성·후보지·저장 경로행렬 | **포함** |
+| `analysis/theory_validation/comparison/final_expanded_input/` | 현재 비교 결과 CSV·JSON·보고서 근거 | **포함** |
+| `analysis/feedback_validation/` | 현재 금융업무 표시 민감도·공식 조회 스냅샷 | **포함** |
+| `data/processed/` | 8월 기준 가공 데이터 28개 | **포함** — 과거 결과 재검증용 |
 | `data/raw/` | 원본 공개 데이터 | **미포함** — 용량(약 370MB)·재배포 조건 |
-| `data/source_manifest.json` | 원천 URL·기준일·수집일·라이선스·SHA-256 | 포함 |
+| `data/source_manifest.json` | 8월 원천 URL·기준일·수집일·라이선스·SHA-256 | 포함 |
+| `analysis/theory_validation/inputs/input_manifest.json` | 현재 공통 도로망 URL·경계 해시·원본 확보 한계 | 포함; PBF·경계 원본은 미포함 |
 | `docs/demo-jeonbuk/data.js`, `map-data.js` | 대시보드 입력 번들 (재생성됨) | 포함 |
 
 `data/raw/`가 없어도 `verify_offline.sh`는 전부 통과한다. 원본이 필요한 단계
 (OSM 도로망 재구축, 원천 SHA-256 대조)는 `verify_source_lineage.sh`로 분리했다.
 
-### 주요 파일
+현재 데이터의 주요 컬럼과 1,385개 목록 중 1,347개 분석 접점의 구분은
+[데이터 설명서](data_sample/데이터_설명서.md)를 따른다.
+
+### 과거 제출 자료의 주요 파일 (`data/processed/`)
 
 | 파일 | 행 수 | 내용 |
 |---|---:|---|
@@ -217,7 +272,9 @@ Jupyter 노트북은 두지 않았다. 수집부터 시각화까지 전 과정�
 
 [`docs/THIRD_PARTY_NOTICES.md`](docs/THIRD_PARTY_NOTICES.md)에 라이선스 전문 위치를 정리했다.
 주요 항목은 OpenStreetMap(ODbL), SGIS 기반 행정동 경계 재배포본(CC BY 4.0),
-Pretendard 글꼴(SIL OFL 1.1), NumPy·SciPy·PyOsmium(BSD/LGPL)이다.
+Pretendard 글꼴(SIL OFL 1.1), NumPy·SciPy·PyOsmium·Shapely(BSD),
+pyproj(MIT), Requests(Apache-2.0)이다. 바이너리에 포함된 하위 구성요소의 고지는
+각 패키지의 배포 라이선스를 함께 확인한다.
 
 ## 9. 제출 기준 대응
 
