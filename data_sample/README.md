@@ -1,16 +1,19 @@
-# data_sample — 데이터 미리보기와 설명
+# 데이터 샘플 안내
 
-## 이 폴더에 있는 것
+샘플은 컬럼과 값을 살펴보는 미리보기이며, 실제 계산에는 저장소에 포함된 전체 입력을 쓴다.
+상위 20행은 임의 표본이나 통계적 대표 표본이 아니다.
 
-- `*.sample.csv` — `data/processed/`의 각 가공 CSV 상위 20행 미리보기. 컬럼 구조를
-  빠르게 확인하는 용도다.
-- `source_manifest.json` — 원천별 URL·기준일·수집일·라이선스·SHA-256 원장.
-- `데이터_설명서.md` — 데이터 목록·출처·정제 규칙·재현 조건 전문.
+| 위치 | 원본과 용도 |
+|---|---|
+| [current/access_road.sample.csv](current/access_road.sample.csv) | 현재 `analysis/theory_validation/spatial/route_inputs/access_road.csv` 243행 중 앞 20행 |
+| [current/outlets_validated.sample.csv](current/outlets_validated.sample.csv) | 현재 `analysis/theory_validation/spatial/route_inputs/outlets_validated.csv` 1,385행 중 앞 20행 |
+| 이 폴더의 기존 `*.sample.csv` | 8월 기준 `data/processed/` CSV의 앞 20행 이하. 현재 결과와 구분 |
+| [source_manifest.json](source_manifest.json) | 8월 원천별 URL·기준일·라이선스·해시 기록 |
+| [데이터_설명서.md](데이터_설명서.md) | 현재·과거 입력 경로, 컬럼·단위, 해석과 재현 범위 |
 
-## 실제 분석에 쓰이는 데이터는 어디에 있나
+현재 원천 기록은 `analysis/theory_validation/inputs/input_manifest.json`,
+`analysis/theory_validation/outlets/`의 매니페스트,
+`analysis/feedback_validation/source_manifest.json`에 나누어 보관한다.
 
-코드가 읽는 경로는 `data/processed/`이고, **가공 데이터는 전량 포함**되어 있다.
-따라서 이 폴더의 미리보기 파일을 쓰지 않아도 `bash verify_offline.sh`가 그대로 돌아간다.
-
-`data/raw/`의 원본 공개 데이터(약 370MB)만 용량·재배포 조건 때문에 제외했다.
-재다운로드 방법은 `데이터_설명서.md`와 `source_manifest.json`에 있다.
+`bash verify_offline.sh`는 전체 저장 입력·행렬로 실행한다. 샘플 CSV로 입력을 바꾸면
+원래 수치나 무결성 검사를 재현할 수 없다. 대용량 도로망·경계 등 원본은 포함하지 않는다.

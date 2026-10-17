@@ -1,6 +1,21 @@
+Verification date (Asia/Seoul): 2026-10-17
+Base commit: 346b362962f25bdd9bf3ebc032ed276a09d20c6e
+Scope: clean tracked checkout, fresh venv, root requirements.txt
+Python: 3.14.6
+Node.js: v26.4.0
+OS: macOS 27.0.1 arm64
+Raw data present: False
+Command: bash verify_offline.sh
+Log normalization: local checkout path replaced by <repository-root>.
+
 == 1. Python 문법 ==
   OK  src/*.py 컴파일
 == 2. 경로 엔진 단위 테스트 ==
+test_admin_values_match_expanded_access_without_rounded_classification (test_dashboard_validation.DashboardValidationTests.test_admin_values_match_expanded_access_without_rounded_classification) ... ok
+test_comparison_is_same_targets_only_for_priority_nearest (test_dashboard_validation.DashboardValidationTests.test_comparison_is_same_targets_only_for_priority_nearest) ... ok
+test_default_rebuild_uses_expanded_report_inputs (test_dashboard_validation.DashboardValidationTests.test_default_rebuild_uses_expanded_report_inputs) ... ok
+test_map_uses_current_road_and_every_current_directed_leg (test_dashboard_validation.DashboardValidationTests.test_map_uses_current_road_and_every_current_directed_leg) ... ok
+test_route_matrix_and_provenance_match_report (test_dashboard_validation.DashboardValidationTests.test_route_matrix_and_provenance_match_report) ... ok
 test_transpose_and_reachability_preserve_direction (test_jeonbuk_builder.JeonbukBuilderTests.test_transpose_and_reachability_preserve_direction) ... ok
 test_configure_province_allows_partial_zone_comparison (test_route_scenario.RouteScenarioTests.test_configure_province_allows_partial_zone_comparison) ... ok
 test_configure_province_applies_service_and_time_inputs (test_route_scenario.RouteScenarioTests.test_configure_province_applies_service_and_time_inputs) ... ok
@@ -16,41 +31,47 @@ test_returns_none_when_no_candidate_passes_every_gate (test_typology.TypologySel
 test_selects_highest_silhouette_without_forcing_three_clusters (test_typology.TypologySelectionTests.test_selects_highest_silhouette_without_forcing_three_clusters) ... ok
 
 ----------------------------------------------------------------------
-Ran 13 tests in 0.003s
+Ran 18 tests in 0.077s
 
 OK
   OK  경로 엔진 테스트
-== 3. 전북 분석·시나리오 산출물 재생성 ==
+== 3. 기존 제출 분석 재검증과 보완 대시보드 재생성 ==
 typology rows: 243 → data/processed/access_typology.csv
 fit cohort: 155; status: accepted_for_exploratory_typology_not_policy_ranking
 selected k=2; silhouette=0.686; stability median/p10=1.000/0.753
 저장 행렬 재계산: 57개 대표점 대상 방문·15개 경로일
 시나리오 증거: 243개 행정동·7개 임계값·7개 방문상한·9개 속도×서비스 조합
 → data/processed/scenario_evidence.json, reports/scenario_evidence.md
-전북 대시보드 데이터: 243개 행정동·643개 분석가용 접점·69개 경로대상
+전북 대시보드 데이터: 243개 행정동·1347개 분석가용 접점·54개 경로대상
 → docs/demo-jeonbuk/data.js
-✔ dashboard bundle covers all Jeonbuk admins and service zones (2.123334ms)
-✔ map bundle contains real boundaries, roads, and directed route geometry (0.835167ms)
-✔ input controls enforce integer, 15-minute, and 30-minute steps (0.520875ms)
-✔ reachable form error branches: end before start, malformed HH:MM, unknown zone, empty zone list (0.504666ms)
-✔ service cycle control: range check, operating-days cross check, and no effect on coverage (226.392416ms)
-✔ zones with no feasible route in the operating window get zero allocated days (1.957458ms)
-✔ 최소안 browser result matches the Python reference (76.720959ms)
-✔ 기본안 browser result matches the Python reference (103.683875ms)
-✔ 확대안 browser result matches the Python reference (104.689333ms)
-✔ two-zone slice matches the Python reference solver numerically (9.66325ms)
-✔ two-zone slice stays inside those zones and skips 14-zone fairness (112.534625ms)
-✔ one-zone calculate stays inside that zone and skips 14-zone fairness (118.041417ms)
-✔ shorter service time cannot reduce optimized coverage (204.7695ms)
-ℹ tests 13
+✔ dashboard bundle covers all Jeonbuk admins and service zones (2.700667ms)
+✔ map bundle contains real boundaries, roads, and directed route geometry (0.505042ms)
+✔ input controls enforce integer, 15-minute, and 30-minute steps (0.395959ms)
+✔ reachable form error branches: end before start, malformed HH:MM, unknown zone, empty zone list (0.471ms)
+✔ service cycle control: range check, operating-days cross check, and no effect on coverage (122.586084ms)
+✔ zones with no feasible route in the operating window get zero allocated days (0.957792ms)
+✔ 최소안 browser result matches the Python reference (41.332125ms)
+✔ 기본안 browser result matches the Python reference (56.681083ms)
+✔ 확대안 browser result matches the Python reference (55.408209ms)
+✔ two-zone slice matches the Python reference solver numerically (0.965583ms)
+✔ two-zone slice stays inside those zones and skips 14-zone fairness (56.078625ms)
+✔ one-zone calculate stays inside that zone and skips 14-zone fairness (53.26225ms)
+✔ shorter service time cannot reduce optimized coverage (104.722583ms)
+✔ all three browser methods match frozen report experiment at cap 3 (46.146875ms)
+✔ all three browser methods match frozen report experiment at cap 4 (57.121417ms)
+✔ all three browser methods match frozen report experiment at cap 5 (55.701791ms)
+✔ timeline independently replays raw matrix legs, windows, return and target complement (52.940542ms)
+✔ fixed reference comparison handles empty scope and distinguishes allocation optimization (87.010834ms)
+✔ sufficient day capacity cannot overcome closed venue windows (0.234375ms)
+ℹ tests 19
 ℹ suites 0
-ℹ pass 13
+ℹ pass 19
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 1093.867542
-  OK  전북 243개 행정동 유형·경로·민감도와 브라우저 엔진
+ℹ duration_ms 906.178541
+  OK  기존 제출 분석 + 보완 자료의 보고서 수치·브라우저 엔진
 == 4. 상세 무결성 재계산 ==
 PASS raw_outlet_count: 681
 PASS raw_type_counts: {'우체국': 242, '은행': 175, '신협': 128, '새마을금고': 136}
@@ -124,7 +145,9 @@ PASS jeongeup_post_ids_valid: 19
 PASS jeongeup_distances_match_master: 23
 PASS jeongeup_population_guard: False
 
-71/71 checks PASS → /Users/jaewon/Downloads/금방_전북금융사각지대진단과찾아가는은행최적동선설계_코드분석파일/data/processed/validation_checks.csv
+71/71 checks PASS → <repository-root>/data/processed/validation_checks.csv
+PASS: 9 sensitivity method/scenario results reproduced; 0 constraint violations
+PASS: 83 public-source hashes, 334 service fields, and both exclusion input/target sets
   OK  상세 검증 재계산
 == 5. 공유 데이터 ==
   OK  points_raw.csv: 681행
@@ -151,11 +174,21 @@ PASS jeongeup_population_guard: False
   OK  scenario_evidence.json: JSON 파싱
   OK  ecos_jeonbuk_loans_metadata.json: JSON 파싱
   OK  geocode_reverse_audit.csv: 60행
-  OK  docs/demo-jeonbuk/index.html: 48,059 bytes
-  OK  docs/demo-jeonbuk/methodology.html: 30,413 bytes
-  OK  docs/demo-jeonbuk/app.js: 64,587 bytes
-  OK  docs/demo-jeonbuk/data.js: 277,938 bytes
-  OK  docs/demo-jeonbuk/map-data.js: 2,689,681 bytes
-  OK  docs/demo-jeonbuk/scenario-engine.js: 19,310 bytes
+  OK  docs/demo-jeonbuk/index.html: 53,307 bytes
+  OK  docs/demo-jeonbuk/methodology.html: 33,568 bytes
+  OK  docs/demo-jeonbuk/app.js: 75,394 bytes
+  OK  docs/demo-jeonbuk/data.js: 509,470 bytes
+  OK  docs/demo-jeonbuk/map-data.js: 2,306,857 bytes
+  OK  docs/demo-jeonbuk/scenario-engine.js: 27,423 bytes
 
 PASS (offline)
+
+Exit code: 0
+Elapsed seconds: 32.48
+
+Additional documentation command check (2026-10-17):
+python3 analysis/theory_validation/comparison/run_comparison.py --input analysis/theory_validation/spatial/route_inputs/jeonbuk_route_scenario.json --output result/reproduced --label current_submission_replay
+PASS: 21 CSV rows match published results excluding label and runtime columns; 0 constraint violations.
+PASS: 62 relative Markdown links resolve; two current sample CSVs match their first 20 source rows.
+PASS: 34 local HTTP document/asset requests under the documented docs/ server root.
+PASS: runtime PDF has 3 pages; all 132 source text segments found; all pages rendered and visually inspected.
